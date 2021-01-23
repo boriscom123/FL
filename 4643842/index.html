@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Калькулятор быстрого займа</title>
+    <meta name="description" content="Калькулятор быстрого займа">
+    <meta name="keywords" content="Калькулятор быстрого займа">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <script src="https://kit.fontawesome.com/418d1ec454.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">Калькулятор быстрого займа</header>
+    <main class="main">
+      <div class="calc" id="calc">
+        <h2>Первый заем <span>Бесплатно</span></h2>
+        <div class="calc-title">
+          <div class="title">Выберите сумму</div>
+          <div class="info">2 500<i class="fas fa-ruble-sign"></i></div>
+        </div>
+        <div class="range">
+          <input type="range" name="" value="2500" min="2500" max="30000" step="500" id="summ">
+        </div>
+        <div class="range-info">
+          <div class="">
+            2 500<i class="fas fa-ruble-sign"></i>
+          </div>
+          <div class="">
+            30 000<i class="fas fa-ruble-sign"></i>
+          </div>
+        </div>
+        <div class="calc-title">
+          <div class="title">
+            Выберите срок
+          </div>
+          <div class="info">
+            3<span>дня</span>
+          </div>
+        </div>
+        <div class="range">
+          <input type="range" name="" value="3" min="3" max="32" step="1" id="days">
+        </div>
+        <div class="range-info">
+          <div class="">
+            3<span>дня</span>
+          </div>
+          <div class="">
+            32<span>дня</span>
+          </div>
+        </div>
+        <button type="button" name="button" id="calculate">Получить деньги</button>
+        <div class="calc-info" id="info">
+          <div class="">
+            <h3>Процентов в день:</h3><p>575<i class="fas fa-ruble-sign"></i></p>
+          </div>
+          <div class="">
+            <h3>Дата возврата:</h3><p>31.12.2021</p>
+          </div>
+          <div class="">
+            <h3>К оплате:</h3><p>3 275<i class="fas fa-ruble-sign"></i></p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer"></footer>
+    <script src="script/index.js"></script>
+  </body>
+</html>
