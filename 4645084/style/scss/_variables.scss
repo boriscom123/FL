@@ -1,0 +1,21 @@
+@import url('../fonts/geometria/stylesheet.css');
+
+$mainColor: #f16d7f; // Розовый цвет
+$alterColor: #f6f6f6; // Серый цвет
+$bgColor: lightblue; // Белый цвет
+$fontFamily: 'Geometria';
+$fontSize: 14px;
+$fontWeight: 400;
+$fontColor: #222222;
+$border: 1px solid #ececec;
+$cartTitleBg: rgba(248, 243, 244, 1); // цвет для заголовка на странице корзина
+$transition: 0.1s; // скорость для переходов
+$shadow: 0px 1px 3px 2px rgba(0,0,0,0.3);
+
+@mixin elHover($_color) { // цвет при наведении
+  background-color: darken($_color, 10%);
+}
+
+@mixin elActive($_color) { // цвет при нажатии
+  background-color: darken($_color, 20%);
+}

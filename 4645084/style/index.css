@@ -1,0 +1,1352 @@
+@import url("../fonts/geometria/stylesheet.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Geometria";
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.header {
+  position: relative;
+}
+
+.header-content_fixed {
+  position: fixed;
+  width: 100%;
+  top: 35px;
+  left: 0;
+  z-index: 100;
+}
+
+.navigation {
+  flex-grow: 1;
+  margin: 0 55px;
+  list-style: none;
+}
+.navigation > li {
+  width: 15%;
+  text-align: center;
+}
+.navigation > li > a {
+  padding: 5px 0;
+}
+.navigation > li > a:hover {
+  color: #FF0000;
+  font-weight: 500;
+  border-bottom: 2px solid #FF0000;
+}
+
+.contacts > a {
+  font-size: 17px;
+  font-weight: 700;
+  color: black;
+  margin-right: 25px;
+}
+.contacts > button {
+  height: 50px;
+  width: 200px;
+  background: none;
+  outline: none;
+  border: 1px solid #FF0000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 500;
+  color: #FF0000;
+  transition: 0.1s;
+}
+.contacts > button:hover {
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+
+.main {
+  background: none;
+}
+
+.block-1 {
+  background-color: #F6F6F6;
+  padding-top: 235px;
+  background-image: url("../image/block-1.png");
+  background-repeat: no-repeat;
+  background-position: 75% 85px;
+  background-size: 35%;
+  position: relative;
+  min-height: 670px;
+  overflow: hidden;
+}
+.block-1 > .white-circle {
+  position: absolute;
+  height: 1333px;
+  width: 1333px;
+  border-radius: 50%;
+  border: 100px solid #FAFAFA;
+  box-sizing: border-box;
+  z-index: 1;
+  top: -10%;
+  right: -6%;
+}
+.block-1 > div > .block-1-content {
+  position: absolute;
+  z-index: 10;
+}
+.block-1 > div > .block-1-content > h1 {
+  max-width: 540px;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+}
+.block-1 > div > .block-1-content > div > a {
+  margin-left: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #FF0000;
+}
+.block-1 > div > .block-1-content > div > a > img {
+  height: 25px;
+  width: 25px;
+}
+.block-1 > div > .block-1-content > h2 {
+  margin: 70px 0 0 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #000000;
+}
+.block-1 > div > .block-1-content > h2 > span {
+  color: #FF0000;
+}
+.block-1 > div > .block-1-content > p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 39px;
+  color: #000000;
+}
+.block-1 > div > .block-1-content > p > span {
+  font-weight: 700;
+}
+.block-1 > div > .block-1-content > form {
+  margin: 20px 0 0 0;
+  max-width: 650px;
+}
+.block-1 > div > .block-1-content > form > div {
+  margin: 10px 0;
+}
+.block-1 > div > .block-1-content > form > div > input {
+  height: 50px;
+  width: calc(50% - 10px);
+  overflow: hidden;
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 25px;
+  font-size: 14px;
+  color: #000000;
+}
+.block-1 > div > .block-1-content > form > div > input[type=submit] {
+  width: calc(50% - 10px);
+  background-color: #FF0000;
+  outline: none;
+  border: 1px solid #FF0000;
+  padding: 0;
+  font-weight: 500;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.block-1 > div > .block-1-content > form > div > input[type=submit]:hover {
+  color: #FF0000;
+  background-color: #FFFFFF;
+}
+.block-1 > div > .block-1-content > form > div > div {
+  width: calc(50% - 10px);
+}
+.block-1 > div > .block-1-content > form > div > div > div > .check-box {
+  height: 20px;
+  width: 20px;
+  background-color: #000000;
+  cursor: pointer;
+}
+.block-1 > div > .block-1-content > form > div > div > div > .check-box > img {
+  display: none;
+}
+.block-1 > div > .block-1-content > form > div > div > div > .check-box-label {
+  margin-left: 5px;
+}
+.block-1 > div > .block-1-content > form > div > div > div > .check-box-label > label {
+  font-size: 9px;
+  cursor: pointer;
+}
+.block-1 > div > .block-1-content > form > div > div > div > .check-box-label > label > a {
+  border-bottom: 1px solid #000000;
+}
+.block-1 > div > .block-1-content > form > div > div > input[type=checkbox]:checked ~ div > label > img {
+  display: block;
+}
+
+.block-2 {
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+  padding: 100px 0 120px 0;
+}
+.block-2 > div > h2 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 30px 0;
+}
+.block-2 > div > div > .card {
+  margin: 10px 0;
+  height: 488px;
+  width: 100%;
+  max-width: 315px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.block-2 > div > div > .card:hover > .card-hover {
+  opacity: 1;
+  height: 100%;
+}
+.block-2 > div > div > .card:hover > .info {
+  opacity: 0;
+}
+.block-2 > div > div > .card > .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.block-2 > div > div > .card > .image > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.block-2 > div > div > .card > .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.block-2 > div > div > .card > .info > h2 {
+  margin: 130% auto 0;
+  max-width: 90%;
+  text-align: center;
+  font-size: 17px;
+  line-height: 28px;
+}
+.block-2 > div > div > .card > .info > h2 > span {
+  vertical-align: super;
+  font-size: 12px;
+}
+.block-2 > div > div > .card > .card-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 4px;
+  transition: 0.1s;
+}
+.block-2 > div > div > .card > .card-hover > h2 {
+  margin: 40% auto 0;
+  font-size: 17px;
+  color: #FFFFFF;
+  max-width: 90%;
+}
+.block-2 > div > div > .card > .card-hover > h2 > span {
+  vertical-align: super;
+  font-size: 12px;
+}
+.block-2 > div > div > .card > .card-hover > p {
+  margin: 5% auto 0;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FFFFFF;
+  max-width: 90%;
+}
+
+.block-3 {
+  background: #F6F6F6;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 120px 0;
+}
+.block-3 .block-3-circle {
+  position: absolute;
+  height: 1333px;
+  width: 1333px;
+  border-radius: 50%;
+  border: 100px solid #FAFAFA;
+  box-sizing: border-box;
+  z-index: 1;
+  top: -100px;
+  left: -30%;
+}
+.block-3 > div {
+  position: relative;
+  z-index: 1;
+}
+.block-3 > div > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 35px 0;
+}
+.block-3 > div > div > div > .small {
+  border-radius: 4px;
+  height: 265px;
+  width: 100%;
+  max-width: 425px;
+  margin: 0 0 20px 0;
+}
+.block-3 > div > div > div > .small > img {
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-3 > div > div > div > .big {
+  border-radius: 4px;
+  height: 390px;
+  width: 100%;
+  max-width: 425px;
+  margin: 0 0 20px 0;
+}
+.block-3 > div > div > div > .big > img {
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-3 > div > .btn > button {
+  margin: 30px 0 0 0;
+  height: 50px;
+  width: 200px;
+  outline: none;
+  background-color: #FFFFFF;
+  border: 1px solid #FF0000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FF0000;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.block-3 > div > .btn > button:hover {
+  color: #FFFFFF;
+  background-color: #FF0000;
+}
+
+.block-4 {
+  background-color: #FAFAFA;
+  padding: 75px 0 50px 0;
+}
+.block-4 > div > .block-4-content {
+  height: 210px;
+  background-color: #FF0000;
+  border-radius: 5px;
+  padding: 0 60px 0 90px;
+  position: relative;
+}
+.block-4 > div > .block-4-content > .info > h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+.block-4 > div > .block-4-content > .info > p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.block-4 > div > .block-4-content > .info > p > span {
+  font-weight: 700;
+  font-size: 25px;
+}
+.block-4 > div > .block-4-content > .circle {
+  height: 100%;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.block-4 > div > .block-4-content > .circle > div {
+  height: 400px;
+  width: 400px;
+  border: 35px solid #E64444;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  left: 0;
+}
+.block-4 > div > .block-4-content > button {
+  height: 50px;
+  width: 200px;
+  outline: none;
+  background-color: #FF0000;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.block-4 > div > .block-4-content > button:hover {
+  color: #FF0000;
+  background-color: #FFFFFF;
+}
+.block-4 > div > .block-4-content > .image {
+  position: absolute;
+  top: -47px;
+  left: 43%;
+}
+.block-4 > div > .block-4-content > .image > img {
+  width: 450px;
+}
+.block-4 > div > .block-4-correction {
+  background-color: #FAFAFA;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.block-5 {
+  background-color: #FAFAFA;
+}
+.block-5 > div h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+}
+.block-5 > div > h3 {
+  margin: 20px 0 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+}
+.block-5 > div > div {
+  padding: 65px 0 0 0;
+}
+.block-5 > div > div > div {
+  width: 100%;
+  max-width: 425px;
+}
+.block-5 > div > div > div > .card {
+  border-radius: 4px;
+  width: 100%;
+  max-width: 425px;
+  position: relative;
+}
+.block-5 > div > div > div > .card > .image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.block-5 > div > div > div > .card > .info {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.block-5 > div > div > div > .card > .info > h2 {
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.block-5 > div > div > div > .card > .info > p {
+  font-weight: 300;
+  font-size: 15px;
+}
+.block-5 > div > div > div > .card-1 {
+  height: 390px;
+  background-color: #212425;
+  margin: 0 0 25px 0;
+}
+.block-5 > div > div > div > .card-1 > .image-1 > img {
+  height: 140%;
+  width: 140%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 60px 30px;
+  object-position: 60px 30px;
+}
+.block-5 > div > div > div > .card-1 > .info-1 > h2 {
+  margin: 50px 0 0 50px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.block-5 > div > div > div > .card-1 > .info-1 > p {
+  margin: 5px 0 0 50px;
+  color: #FFFFFF;
+}
+.block-5 > div > div > div > .card-2 {
+  height: 265px;
+  background-color: #FFFFFF;
+}
+.block-5 > div > div > div > .card-2 > .image-2 > img {
+  height: 125%;
+  width: 125%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 235px -26px;
+  object-position: 235px -26px;
+}
+.block-5 > div > div > div > .card-2 > .info-2 > h2 {
+  margin: 100px 0 0 50px;
+  text-align: left;
+  color: #000000;
+}
+.block-5 > div > div > div > .card-2 > .info-2 > p {
+  margin: 5px 0 0 50px;
+  color: #000000;
+}
+.block-5 > div > div > div > .card-3 {
+  height: 680px;
+  background-color: #FFFFFF;
+}
+.block-5 > div > div > div > .card-3 > .image-3 > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 0px 300px;
+  object-position: 0px 300px;
+}
+.block-5 > div > div > div > .card-3 > .info-3 > h2 {
+  margin: 85px 0 0 0;
+  text-align: center;
+  color: #000000;
+}
+.block-5 > div > div > div > .card-3 > .info-3 > p {
+  margin: 5px 0 0 0;
+  text-align: center;
+  color: #000000;
+}
+.block-5 > div > div > div > .card-4 {
+  height: 390px;
+  background-color: #FFFFFF;
+  margin: 0 0 25px 0;
+}
+.block-5 > div > div > div > .card-4 > .image-4 > img {
+  height: 125%;
+  width: 125%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: -10px 40px;
+  object-position: -10px 40px;
+}
+.block-5 > div > div > div > .card-4 > .info-4 > h2 {
+  margin: 275px 0 0 225px;
+  text-align: left;
+  color: #000000;
+}
+.block-5 > div > div > div > .card-4 > .info-4 > p {
+  margin: 5px 0 0 225px;
+  text-align: left;
+  color: #000000;
+}
+.block-5 > div > div > div > .card-5 {
+  height: 265px;
+  background-color: #212425;
+}
+.block-5 > div > div > div > .card-5 > .image-5 > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 190px 0px;
+  object-position: 190px 0px;
+}
+.block-5 > div > div > div > .card-5 > .info-5 > h2 {
+  margin: 100px 0 0 40px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.block-5 > div > div > div > .card-5 > .info-5 > p {
+  margin: 5px 0 0 40px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.block-6 {
+  background-color: #FAFAFA;
+  padding: 125px 0 100px 0;
+}
+.block-6 > div > .block-6-left {
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+}
+.block-6 > div > .block-6-left > .circle {
+  height: 322px;
+  width: 322px;
+  border-radius: 50%;
+  border: 42px solid #212425;
+  box-sizing: border-box;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1;
+}
+.block-6 > div > .block-6-left > .image {
+  height: 140%;
+  width: 140%;
+  position: absolute;
+  z-index: 3;
+  top: -1%;
+  left: -16%;
+}
+.block-6 > div > .block-6-left > .image > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.block-6 > div > .block-6-center {
+  width: 100%;
+  max-width: 470px;
+}
+.block-6 > div > .block-6-center > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  margin: -30px 0 0 0;
+}
+.block-6 > div > .block-6-center > p {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px 0 50px 0;
+  font-weight: 700;
+  font-size: 21px;
+  color: #FF0000;
+}
+.block-6 > div > .block-6-center > p > span {
+  font-weight: 900;
+}
+.block-6 > div > .block-6-center > button {
+  margin: 60px 0 0 0;
+  height: 50px;
+  width: 215px;
+  outline: none;
+  background-color: #FAFAFA;
+  border: 1px solid #FF0000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FF0000;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.block-6 > div > .block-6-center > button:hover {
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+.block-6 > div > .block-6-right {
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+}
+.block-6 > div > .block-6-right > .circle {
+  height: 322px;
+  width: 322px;
+  border-radius: 50%;
+  border: 42px solid #FF0000;
+  box-sizing: border-box;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1;
+}
+.block-6 > div > .block-6-right > .image {
+  height: 95%;
+  width: 95%;
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 5%;
+}
+.block-6 > div > .block-6-right > .image > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.block-7 {
+  background-color: #F6F6F6;
+  padding: 25px 0 0 0;
+}
+.block-7 > div > h2 {
+  margin: 100px 0 0 0;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+}
+.block-7 > div > .slider {
+  margin: 30px 0 0 0;
+  position: relative;
+}
+.block-7 > div > .slider > .left-side {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  top: 35%;
+  left: -2%;
+  cursor: pointer;
+  background-image: url("../image/left-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.1s;
+}
+.block-7 > div > .slider > .left-side:hover {
+  background-image: url("../image/left-white.svg");
+  background-color: #FF0000;
+}
+.block-7 > div > .slider > .right-side {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  top: 35%;
+  right: -2%;
+  cursor: pointer;
+  background-image: url("../image/right-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.1s;
+}
+.block-7 > div > .slider > .right-side:hover {
+  background-image: url("../image/right-white.svg");
+  background-color: #FF0000;
+}
+.block-7 > div > .slider > .card {
+  width: 100%;
+  max-width: 315px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-7 > div > .slider > .card > .image {
+  height: 490px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.block-7 > div > .slider > .card > .image > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-7 > div > .slider > .card > h3 {
+  margin: 10px 0 5px 0;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+}
+.block-7 > div > .slider > .card > p {
+  font-size: 13px;
+  text-align: center;
+  color: #000000;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.block-7 > div > .slider > .card > button {
+  margin: 10px 0 0 0;
+  height: 50px;
+  width: 255px;
+  outline: none;
+  border: 1px solid #FF0000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FF0000;
+  background-color: #FAFAFA;
+  transition: 0.1s;
+}
+.block-7 > div > .slider > .card > button:hover {
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+.block-7 > div > .pagination {
+  height: 1px;
+  margin: 30px 0 0 0;
+  position: relative;
+}
+.block-7 > div > .pagination > div {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  height: 10px;
+  width: 100%;
+}
+.block-7 > div > .pagination > div > div {
+  margin: 0 10px 0 0;
+  transition: 0.1s;
+}
+.block-7 > div > .pagination > div > div:hover {
+  background-color: #FF0000;
+}
+.block-7 > div > .pagination > div > div:last-child {
+  margin: 0 0 0 0;
+}
+.block-7 > div > .pagination > div > .selected {
+  height: 10px;
+  width: 10px;
+  box-sizing: border-box;
+  border: 1px solid #FF0000;
+  border-radius: 50px;
+  background-color: #FF0000;
+  cursor: pointer;
+}
+.block-7 > div > .pagination > div > .not-selected {
+  height: 10px;
+  width: 10px;
+  box-sizing: border-box;
+  border: 1px solid #FF0000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.block-8 {
+  background-color: #FAFAFA;
+  padding: 150px 0 100px 0;
+}
+.block-8 > div > div > .info {
+  width: 100%;
+  max-width: 600px;
+}
+.block-8 > div > div > .info > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #000000;
+  margin: 10px 0 0 0;
+}
+.block-8 > div > div > .info > p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  margin: 15px 0 0 0;
+}
+.block-8 > div > div > .info > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  margin: 60px 0 0 0;
+}
+.block-8 > div > div > .info > p:last-child {
+  max-width: 500px;
+}
+.block-8 > div > div > .image {
+  width: 100%;
+  max-width: 650px;
+  height: 433px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.block-8 > div > div > .image > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-8 > div > .counters {
+  max-width: 860px;
+  margin: 120px auto 0;
+}
+.block-8 > div > .counters > div > h2 {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  color: #FF0000;
+}
+.block-8 > div > .counters > div > p {
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.block-9 {
+  background-color: #F6F6F6;
+  padding: 50px 0 70px 0;
+}
+.block-9 > div > h2 {
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: center;
+  color: #000000;
+}
+.block-9 > div > p {
+  margin: 30px 0 30px 0;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+}
+.block-9 > div > h3 {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 30px 0;
+}
+.block-9 > div > div > .card {
+  height: 86px;
+  width: 100%;
+  max-width: 430px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.block-9 > div > div > .card > input[type=checkbox]:checked ~ .circle {
+  background-color: #FF0000;
+  border: 1px solid #FF0000;
+  background-image: url("../image/check-mark.svg");
+}
+.block-9 > div > div > .card > .circle {
+  display: flex;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+  margin: 0 20px 0 25px;
+  cursor: pointer;
+  transition: 0.1s;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.block-9 > div > div > .card > .circle:hover {
+  background-color: #FF0000;
+  border: 1px solid #FF0000;
+}
+.block-9 > div > div > .card > .title {
+  margin: 0 0 0 12px;
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+}
+.block-9 > div > .buttons {
+  max-width: 245px;
+  margin: 50px auto 0;
+}
+.block-9 > div > .buttons > .btn-back {
+  height: 50px;
+  width: 100%;
+  max-width: 110px;
+  background-color: #F6F6F6;
+  outline: none;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  transition: 0.1s;
+}
+.block-9 > div > .buttons > .btn-back:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.block-9 > div > .buttons > .btn-next {
+  height: 50px;
+  width: 100%;
+  max-width: 110px;
+  background-color: #F6F6F6;
+  outline: none;
+  border: 1px solid #FF0000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FF0000;
+  transition: 0.1s;
+}
+.block-9 > div > .buttons > .btn-next:hover {
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+
+.block-10 {
+  background-color: #FAFAFA;
+  padding: 85px 0 100px 0;
+}
+.block-10 > div > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+}
+.block-10 > div > .slider {
+  margin: 50px 0 0 0;
+  position: relative;
+}
+.block-10 > div > .slider > .left-side {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  top: 45%;
+  left: -2%;
+  z-index: 1;
+  cursor: pointer;
+  background-image: url("../image/left-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.1s;
+}
+.block-10 > div > .slider > .left-side:hover {
+  background-image: url("../image/left-white.svg");
+  background-color: #FF0000;
+}
+.block-10 > div > .slider > .right-side {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  top: 45%;
+  right: -2%;
+  z-index: 1;
+  cursor: pointer;
+  background-image: url("../image/right-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.1s;
+}
+.block-10 > div > .slider > .right-side:hover {
+  background-image: url("../image/right-white.svg");
+  background-color: #FF0000;
+}
+.block-10 > div > .slider > .card {
+  height: 415px;
+  width: 100%;
+  max-width: 425px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.block-10 > div > .slider > .card:hover > .hover {
+  opacity: 1;
+}
+.block-10 > div > .slider > .card > .image {
+  height: 100%;
+  width: 100%;
+}
+.block-10 > div > .slider > .card > .image > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-10 > div > .slider > .card > .hover {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.block-10 > div > .slider > .card > .hover > h2 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #FFFFFF;
+  margin: 65px 0 0 65px;
+}
+.block-10 > div > .slider > .card > .hover > p {
+  font-size: 14px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin: 15px 0 0 65px;
+  max-width: 300px;
+}
+.block-10 > div > .slider > .card > .blank-image {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.block-10 > div > .slider > .card > .blank-info > h2 {
+  max-width: 200px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.block-10 > div > .slider > .blank {
+  background-color: #FF0000;
+}
+
+.block-11 {
+  min-height: 665px;
+  position: relative;
+}
+.block-11 > .background-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-11 > .hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.72);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.block-11 > .circle {
+  height: 524px;
+  width: 524px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #FF0000;
+  top: 13%;
+  left: 40%;
+  z-index: 2;
+}
+.block-11 > div {
+  position: relative;
+  z-index: 3;
+}
+.block-11 > div > div > .info > h2 {
+  margin: 52% 0 0 0;
+  max-width: 375px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+.block-11 > div > div > .info > p {
+  margin: 5% 0 0 0;
+  max-width: 375px;
+  font-size: 26px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+.block-11 > div > div > .info > h3 {
+  margin: 5% 0 0 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.block-11 > div > div > .workout {
+  margin: 7% 0 0 0;
+  padding: 55px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.block-11 > div > div > .workout > h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #000000;
+}
+.block-11 > div > div > .workout > input {
+  margin: 10px 0;
+  height: 50px;
+  width: 100%;
+  max-width: 315px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 0 0 25px;
+  font-size: 14px;
+  color: #000000;
+}
+.block-11 > div > div > .workout > div {
+  height: 50px;
+  margin: 10px 0;
+}
+.block-11 > div > div > .workout > div > div > .check-box {
+  height: 20px;
+  width: 20px;
+  background-color: #000000;
+  cursor: pointer;
+}
+.block-11 > div > div > .workout > div > div > .check-box > img {
+  display: none;
+}
+.block-11 > div > div > .workout > div > div > .check-box-label {
+  margin-left: 5px;
+}
+.block-11 > div > div > .workout > div > div > .check-box-label > label {
+  font-size: 10px;
+  cursor: pointer;
+}
+.block-11 > div > div > .workout > div > div > .check-box-label > label > a {
+  border-bottom: 1px solid #000000;
+}
+.block-11 > div > div > .workout > div > input[type=checkbox]:checked ~ div > label > img {
+  display: block;
+}
+.block-11 > div > div > .workout > button {
+  margin: 10px 0;
+  height: 50px;
+  width: 100%;
+  max-width: 315px;
+  background-color: #FF0000;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #FF0000;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: 0.1s;
+}
+.block-11 > div > div > .workout > button:hover {
+  background-color: #FFFFFF;
+  color: #FF0000;
+}
+.block-11 .top-image {
+  position: absolute;
+  height: 103%;
+  bottom: 0;
+  left: 41%;
+  z-index: 4;
+}
+
+.footer {
+  padding: 50px 0 0 0;
+}
+.footer > div > div > .footer-info {
+  flex-grow: 1;
+}
+.footer > div > div > .footer-info > div {
+  font-size: 18px;
+  color: #000000;
+}
+.footer > div > div > .footer-info > div > div > .image {
+  height: 16px;
+  width: 16px;
+  margin-right: 7px;
+}
+.footer > .footer-copyright {
+  height: 75px;
+  background-color: #F6F6F6;
+  margin: 50px 0 0 0;
+  font-size: 15px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=index.css.map */

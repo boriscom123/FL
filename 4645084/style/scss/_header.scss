@@ -1,0 +1,52 @@
+.header {
+  position: relative;
+}
+.header-content_fixed {
+    position: fixed;
+    width: 100%;
+    top: 35px;
+    left: 0;
+    z-index: 100;
+}
+.navigation {
+  flex-grow: 1;
+  margin: 0 55px;
+  list-style: none;
+  > li {
+    width: 15%;
+    text-align: center;
+    > a {
+      padding: 5px 0;
+      &:hover {
+        color: #FF0000;
+        font-weight: 500;
+        border-bottom: 2px solid #FF0000;
+      }
+    }
+  }
+}
+.contacts {
+  > a {
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+    margin-right: 25px;
+  }
+  > button {
+    height: 50px;
+    width: 200px;
+    background: none;
+    outline: none;
+    border: 1px solid #FF0000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 500;
+    color: #FF0000;
+    transition: $transition;
+    &:hover {
+      background-color: #FF0000;
+      color: #FFFFFF;
+    }
+  }
+}

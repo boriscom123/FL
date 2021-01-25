@@ -1,0 +1,1284 @@
+.main {
+  background: none;
+}
+.block-1 {
+  background-color: #F6F6F6;
+  padding-top: 235px;
+  background-image: url('../image/block-1.png');
+  background-repeat: no-repeat;
+  background-position: 75% 85px;
+  background-size: 35%;
+  position: relative;
+  min-height: 670px;
+  overflow: hidden;
+
+  > .white-circle {
+    position: absolute;
+    height: 1333px;
+    width: 1333px;
+    border-radius: 50%;
+    border: 100px solid #FAFAFA;
+    box-sizing: border-box;
+    z-index: 1;
+    top: -10%;
+    right: -6%;
+  }
+  > div {
+    > .block-1-content {
+      position: absolute;
+      z-index: 10;
+      > h1 {
+        max-width: 540px;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 70px;
+        color: #000000;
+      }
+      > div {
+        > a {
+          margin-left: 5px;
+          font-size: 25px;
+          font-weight: 500;
+          color: #FF0000;
+          > img {
+            height: 25px;
+            width: 25px;
+          }
+        }
+      }
+      > h2 {
+        margin: 70px 0 0 0;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 39px;
+        color: #000000;
+        > span {
+          color: #FF0000;
+        }
+      }
+      > p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 39px;
+        color: #000000;
+        > span {
+          font-weight: 700;
+        }
+      }
+      > form {
+        margin: 20px 0 0 0;
+        max-width: 650px;
+        > div {
+          margin: 10px 0;
+          > input {
+            height: 50px;
+            width: #{calc(50% - 10px)};
+            overflow: hidden;
+            outline: none;
+            background: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding-left: 25px;
+            font-size: 14px;
+            color: #000000;
+          }
+          > input[type=submit] {
+            width: #{calc(50% - 10px)};
+            background-color: #FF0000;
+            outline: none;
+            border: 1px solid #FF0000;
+            padding: 0;
+            font-weight: 500;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+              color: #FF0000;
+              background-color: #FFFFFF;
+            }
+          }
+          > div {
+            width: #{calc(50% - 10px)};
+            > div {
+              > .check-box {
+                height: 20px;
+                width: 20px;
+                background-color: #000000;
+                cursor: pointer;
+                > img {
+                  display: none;
+                }
+              }
+              > .check-box-label {
+                margin-left: 5px;
+                > label {
+                  font-size: 9px;
+                  // letter-spacing: -0.1em;
+                  cursor: pointer;
+                  > a {
+                    border-bottom: 1px solid #000000;
+                  }
+                }
+              }
+            }
+            > input[type=checkbox]:checked ~ div > label > img {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.block-2 {
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+  padding: 100px 0 120px 0;
+  > div {
+    > h2 {
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      color: #000000;
+      margin: 0 0 30px 0;
+    }
+    > div {
+      > .card {
+        margin: 10px 0;
+        height: 488px;
+        width: 100%;
+        max-width: 315px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        &:hover > .card-hover {
+          opacity: 1;
+          height: 100%;
+        }
+        &:hover > .info {
+          opacity: 0;
+        }
+        > .image {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          > img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+            border-radius: 4px;
+          }
+        }
+        > .info {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          color: #FFFFFF;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 4px;
+          > h2 {
+            margin: 130% auto 0;
+            max-width: 90%;
+            text-align: center;
+            font-size: 17px;
+            line-height: 28px;
+            > span {
+              vertical-align: super;
+              font-size: 12px;
+            }
+          }
+        }
+        > .card-hover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          background-color: rgba(255, 0, 0, 0.8);
+          border-radius: 4px;
+          transition: $transition;
+          > h2 {
+            margin: 40% auto 0;
+            font-size: 17px;
+            color: #FFFFFF;
+            max-width: 90%;
+            > span {
+              vertical-align: super;
+              font-size: 12px;
+            }
+          }
+          > p {
+            margin: 5% auto 0;
+            font-size: 15px;
+            line-height: 28px;
+            color: #FFFFFF;
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+.block-3 {
+  background: #F6F6F6;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 120px 0;
+  .block-3-circle {
+    position: absolute;
+    height: 1333px;
+    width: 1333px;
+    border-radius: 50%;
+    border: 100px solid #FAFAFA;
+    box-sizing: border-box;
+    z-index: 1;
+    top: -100px;
+    left: -30%;
+  }
+  > div {
+    position: relative;
+    z-index: 1;
+    > h2 {
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #000000;
+      margin: 0 0 35px 0;
+    }
+    > div {
+      > div {
+        > .small {
+          border-radius: 4px;
+          height: 265px;
+          width: 100%;
+          max-width: 425px;
+          margin: 0 0 20px 0;
+          > img {
+            border-radius: 4px;
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+          }
+        }
+        > .big {
+          border-radius: 4px;
+          height: 390px;
+          width: 100%;
+          max-width: 425px;
+          margin: 0 0 20px 0;
+          > img {
+            border-radius: 4px;
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+          }
+        }
+      }
+    }
+    > .btn {
+      > button {
+        margin: 30px 0 0 0;
+        height: 50px;
+        width: 200px;
+        outline: none;
+        background-color: #FFFFFF;
+        border: 1px solid #FF0000;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #FF0000;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          color: #FFFFFF;
+          background-color: #FF0000;
+        }
+      }
+    }
+  }
+}
+.block-4 {
+  background-color: #FAFAFA;
+  padding: 75px 0 50px 0;
+  > div {
+    > .block-4-content {
+      height: 210px;
+      background-color: #FF0000;
+      border-radius: 5px;
+      // margin: 75px auto 0;
+      padding: 0 60px 0 90px;
+      position: relative;
+      > .info {
+        > h2 {
+          font-weight: 700;
+          font-size: 25px;
+          color: #FFFFFF;
+        }
+        > p {
+          font-weight: 400;
+          font-size: 20px;
+          color: #FFFFFF;
+          > span {
+            font-weight: 700;
+            font-size: 25px;
+          }
+        }
+      }
+      > .circle {
+        height: 100%;
+        width: 400px;
+        position: relative;
+        overflow: hidden;
+        > div {
+          height: 400px;
+          width: 400px;
+          border: 35px solid #E64444;
+          box-sizing: border-box;
+          border-radius: 50%;
+          position: absolute;
+          top: -50%;
+          left: 0;
+        }
+      }
+      > button {
+        height: 50px;
+        width: 200px;
+        outline: none;
+        background-color: #FF0000;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          color: #FF0000;
+          background-color: #FFFFFF;
+        }
+      }
+      > .image {
+        position: absolute;
+        top: -47px;
+        left: 43%;
+        > img {
+          width: 450px;
+        }
+
+      }
+    }
+    > .block-4-correction {
+      background-color: #FAFAFA;
+      height: 50px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+.block-5 {
+  background-color: #FAFAFA;
+  > div {
+    h2 {
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #000000;
+    }
+    > h3 {
+      margin: 20px 0 0 0;
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: #000000;
+    }
+    > div {
+      padding: 65px 0 0 0;
+      > div {
+        width: 100%;
+        max-width: 425px;
+        > .card {
+          border-radius: 4px;
+          width: 100%;
+          max-width: 425px;
+          position: relative;
+          > .image {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 4px;
+          }
+          > .info {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            > h2 {
+              font-weight: 700;
+              font-size: 17px;
+              text-transform: uppercase;
+            }
+            > p {
+              font-weight: 300;
+              font-size: 15px;
+            }
+          }
+        }
+        > .card-1 {
+          height: 390px;
+          background-color: #212425;
+          margin: 0 0 25px 0;
+          > .image-1 {
+            > img {
+              height: 140%;
+              width: 140%;
+              -o-object-fit: contain;
+                object-fit: contain;
+              -o-object-position: 60px 30px;
+                object-position: 60px 30px;
+            }
+          }
+          > .info-1 {
+            > h2 {
+              margin: 50px 0 0 50px;
+              text-align: left;
+              color: #FFFFFF;
+            }
+            > p {
+              margin: 5px 0 0 50px;
+              color: #FFFFFF;
+            }
+          }
+        }
+        > .card-2 {
+          height: 265px;
+          background-color: #FFFFFF;
+          > .image-2 {
+            > img {
+              height: 125%;
+              width: 125%;
+              -o-object-fit: contain;
+                object-fit: contain;
+              -o-object-position: 235px -26px;
+                object-position: 235px -26px;
+            }
+          }
+          > .info-2 {
+            > h2 {
+              margin: 100px 0 0 50px;
+              text-align: left;
+              color: #000000;
+            }
+            > p {
+              margin: 5px 0 0 50px;
+              color: #000000;
+            }
+          }
+        }
+        > .card-3 {
+          height: 680px;
+          background-color: #FFFFFF;
+          > .image-3 {
+            > img {
+              height: 100%;
+              width: 100%;
+              -o-object-fit: contain;
+                object-fit: contain;
+              -o-object-position: 0px 300px;
+                object-position: 0px 300px;
+            }
+          }
+          > .info-3 {
+            > h2 {
+              margin: 85px 0 0 0;
+              text-align: center;
+              color: #000000;
+            }
+            > p {
+              margin: 5px 0 0 0;
+              text-align: center;
+              color: #000000;
+            }
+          }
+
+        }
+        > .card-4 {
+          height: 390px;
+          background-color: #FFFFFF;
+          margin: 0 0 25px 0;
+          > .image-4 {
+            > img {
+              height: 125%;
+              width: 125%;
+              -o-object-fit: contain;
+                object-fit: contain;
+              -o-object-position: -10px 40px;
+                object-position: -10px 40px;
+            }
+          }
+          > .info-4 {
+            > h2 {
+              margin: 275px 0 0 225px;
+              text-align: left;
+              color: #000000;
+            }
+            > p {
+              margin: 5px 0 0 225px;
+              text-align: left;
+              color: #000000;
+            }
+          }
+        }
+        > .card-5 {
+          height: 265px;
+          background-color: #212425;
+          > .image-5 {
+            > img {
+              height: 100%;
+              width: 100%;
+              -o-object-fit: contain;
+                object-fit: contain;
+              -o-object-position: 190px 0px;
+                object-position: 190px 0px;
+            }
+          }
+          > .info-5 {
+            > h2 {
+              margin: 100px 0 0 40px;
+              text-align: left;
+              color: #FFFFFF;
+            }
+            > p {
+              margin: 5px 0 0 40px;
+              text-align: left;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.block-6 {
+  background-color: #FAFAFA;
+  padding: 125px 0 100px 0;
+  > div {
+    > .block-6-left {
+      width: 100%;
+      max-width: 380px;
+      position: relative;
+      > .circle {
+        height: 322px;
+        width: 322px;
+        border-radius: 50%;
+        border: 42px solid #212425;
+        box-sizing: border-box;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        z-index: 1;
+      }
+      > .image {
+        height: 140%;
+        width: 140%;
+        position: absolute;
+        z-index: 3;
+        top: -1%;
+        left: -16%;
+        > img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: contain;
+             object-fit: contain;
+        }
+      }
+    }
+    > .block-6-center {
+      width: 100%;
+      max-width: 470px;
+      > h2 {
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        color: #000000;
+        margin: -30px 0 0 0;
+      }
+      > p {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 30px 0 50px 0;
+        font-weight: 700;
+        font-size: 21px;
+        color: #FF0000;
+        > span {
+          font-weight: 900;
+        }
+      }
+      > button {
+        margin: 60px 0 0 0;
+        height: 50px;
+        width: 215px;
+        outline: none;
+        background-color: #FAFAFA;
+        border: 1px solid #FF0000;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #FF0000;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          background-color: #FF0000;
+          color: #FFFFFF;
+        }
+      }
+    }
+    > .block-6-right {
+      width: 100%;
+      max-width: 380px;
+      position: relative;
+      > .circle {
+        height: 322px;
+        width: 322px;
+        border-radius: 50%;
+        border: 42px solid #FF0000;
+        box-sizing: border-box;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        z-index: 1;
+      }
+      > .image {
+        height: 95%;
+        width: 95%;
+        position: absolute;
+        z-index: 3;
+        top: 10%;
+        left: 5%;
+        > img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: contain;
+             object-fit: contain;
+        }
+      }
+    }
+  }
+}
+.block-7 {
+  background-color: #F6F6F6;
+  padding: 25px 0 0 0;
+  > div {
+    > h2 {
+      margin: 100px 0 0 0;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #000000;
+    }
+    > .slider {
+      margin: 30px 0 0 0;
+      position: relative;
+      > .left-side {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        top: 35%;
+        left: -2%;
+        cursor: pointer;
+        background-image: url('../image/left-black.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: $transition;
+        &:hover {
+          background-image: url('../image/left-white.svg');
+          background-color: #FF0000;
+        }
+      }
+      > .right-side {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        top: 35%;
+        right: -2%;
+        cursor: pointer;
+        background-image: url('../image/right-black.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: $transition;
+        &:hover {
+          background-image: url('../image/right-white.svg');
+          background-color: #FF0000;
+        }
+      }
+      > .card {
+        width: 100%;
+        max-width: 315px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        > .image {
+          height: 490px;
+          width: 100%;
+          border-radius: 4px;
+          overflow: hidden;
+          > img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+          }
+        }
+        > h3 {
+          margin: 10px 0 5px 0;
+          font-weight: 500;
+          font-size: 18px;
+          text-align: center;
+          color: #000000;
+        }
+        > p {
+          font-size: 13px;
+          text-align: center;
+          color: #000000;
+          max-width: 95%;
+          margin: 0 auto;
+        }
+        > button {
+          margin: 10px 0 0 0;
+          height: 50px;
+          width: 255px;
+          outline: none;
+          border: 1px solid #FF0000;
+          box-sizing: border-box;
+          border-radius: 4px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 14px;
+          color: #FF0000;
+          background-color: #FAFAFA;
+          transition: $transition;
+          &:hover {
+            background-color: #FF0000;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+    > .pagination {
+      height: 1px;
+      margin: 30px 0 0 0;
+      position: relative;
+      > div {
+        position: absolute;
+        top: 11px;
+        left: 0;
+        height: 10px;
+        width: 100%;
+        > div {
+          margin: 0 10px 0 0;
+          transition: $transition;
+          &:hover{
+            background-color: #FF0000;
+          }
+        }
+        > div:last-child {
+          margin: 0 0 0 0;
+        }
+        > .selected {
+          height: 10px;
+          width: 10px;
+          box-sizing: border-box;
+          border: 1px solid #FF0000;
+          border-radius: 50px;
+          background-color: #FF0000;
+          cursor: pointer;
+        }
+        > .not-selected {
+          height: 10px;
+          width: 10px;
+          box-sizing: border-box;
+          border: 1px solid #FF0000;
+          border-radius: 50px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.block-8 {
+  background-color: #FAFAFA;
+  padding: 150px 0 100px 0;
+  > div {
+    > div {
+      > .info {
+        width: 100%;
+        max-width: 600px;
+        > h2 {
+          font-weight: 700;
+          font-size: 40px;
+          color: #000000;
+          margin: 10px 0 0 0;
+        }
+        > p {
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;
+          margin: 15px 0 0 0;
+        }
+        > h3 {
+          font-weight: 700;
+          font-size: 20px;
+          color: #000000;
+          margin: 60px 0 0 0;
+        }
+        > p:last-child {
+          max-width: 500px;
+        }
+      }
+      > .image {
+        width: 100%;
+        max-width: 650px;
+        height: 433px;
+        border-radius: 5px;
+        overflow: hidden;
+        > img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: cover;
+             object-fit: cover;
+        }
+      }
+    }
+    > .counters {
+      max-width: 860px;
+      margin: 120px auto 0;
+      > div {
+        > h2 {
+          font-weight: bold;
+          font-size: 48px;
+          text-align: center;
+          color: #FF0000;
+        }
+        > p {
+          font-size: 18px;
+          text-align: center;
+          color: #000000;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+.block-9 {
+  background-color: #F6F6F6;
+  padding: 50px 0 70px 0;
+  > div {
+    > h2 {
+      max-width: 900px;
+      margin: 0 auto;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 70px;
+      text-align: center;
+      color: #000000;
+    }
+    > p {
+      margin: 30px 0 30px 0;
+      font-size: 18px;
+      text-align: center;
+      color: #000000;
+    }
+    > h3 {
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      color: #000000;
+      margin: 0 0 30px 0;
+    }
+    > div {
+      > .card {
+        height: 86px;
+        width: 100%;
+        max-width: 430px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        > input[type=checkbox]:checked ~.circle {
+          background-color: #FF0000;
+          border: 1px solid #FF0000;
+          background-image: url('../image/check-mark.svg');
+        }
+        > .circle {
+          display: flex;
+          height: 26px;
+          width: 26px;
+          border-radius: 50%;
+          border: 1px solid #DCDCDC;
+          box-sizing: border-box;
+          margin: 0 20px 0 25px;
+          cursor: pointer;
+          transition: $transition;
+          background-repeat: no-repeat;
+          background-position: center;
+          &:hover {
+            background-color: #FF0000;
+            border: 1px solid #FF0000;
+          }
+        }
+        > .title {
+          margin: 0 0 0 12px;
+          font-size: 18px;
+          color: #000000;
+          cursor: pointer;
+        }
+      }
+    }
+    > .buttons {
+      max-width: 245px;
+      margin: 50px auto 0;
+      > .btn-back {
+        height: 50px;
+        width: 100%;
+        max-width: 110px;
+        background-color: #F6F6F6;
+        outline: none;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+        transition: $transition;
+        &:hover {
+          background-color: #000000;
+          color: #FFFFFF;
+        }
+      }
+      > .btn-next {
+        height: 50px;
+        width: 100%;
+        max-width: 110px;
+        background-color: #F6F6F6;
+        outline: none;
+        border: 1px solid #FF0000;
+        box-sizing: border-box;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        color: #FF0000;
+        transition: $transition;
+        &:hover {
+          background-color: #FF0000;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+.block-10 {
+  background-color: #FAFAFA;
+  padding: 85px 0 100px 0;
+  > div {
+    > h2 {
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #000000;
+    }
+    > .slider {
+      margin: 50px 0 0 0;
+      position: relative;
+      > .left-side {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        top: 45%;
+        left: -2%;
+        z-index: 1;
+        cursor: pointer;
+        background-image: url('../image/left-black.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: $transition;
+        &:hover {
+          background-image: url('../image/left-white.svg');
+          background-color: #FF0000;
+        }
+      }
+      > .right-side {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        top: 45%;
+        right: -2%;
+        z-index: 1;
+        cursor: pointer;
+        background-image: url('../image/right-black.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: $transition;
+        &:hover {
+          background-image: url('../image/right-white.svg');
+          background-color: #FF0000;
+        }
+      }
+      > .card {
+        height: 415px;
+        width: 100%;
+        max-width: 425px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: $transition;
+        &:hover > .hover {
+          opacity: 1;
+        }
+        > .image {
+          height: 100%;
+          width: 100%;
+          > img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+          }
+        }
+        > .hover {
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          > h2 {
+            font-weight: 500;
+            font-size: 17px;
+            color: #FFFFFF;
+            margin: 65px 0 0 65px;
+          }
+          > p {
+            font-size: 14px;
+            line-height: 23px;
+            color: #FFFFFF;
+            margin: 15px 0 0 65px;
+            max-width: 300px;
+          }
+        }
+        > .blank-image {
+          height: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+        }
+        > .blank-info {
+          > h2 {
+            max-width: 200px;
+            margin: 0 auto;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 39px;
+            text-align: center;
+            color: #FFFFFF;
+          }
+        }
+      }
+      > .blank {
+        background-color: #FF0000;
+      }
+    }
+  }
+}
+.block-11 {
+  min-height: 665px;
+  position: relative;
+  > .background-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  > .hover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.72);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  > .circle {
+    height: 524px;
+    width: 524px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FF0000;
+    top: 13%;
+    left: 40%;
+    z-index: 2;
+  }
+  > div {
+    position: relative;
+    z-index: 3;
+    > div {
+      > .info {
+        > h2 {
+          margin: 52% 0 0 0;
+          max-width: 375px;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 53px;
+          color: #FFFFFF;
+        }
+        > p {
+          margin: 5% 0 0 0;
+          max-width: 375px;
+          font-size: 26px;
+          line-height: 38px;
+          color: #FFFFFF;
+        }
+        > h3 {
+          margin: 5% 0 0 0;
+          font-weight: 700;
+          font-size: 20px;
+          color: #FFFFFF;
+        }
+      }
+      > .workout {
+        margin: 7% 0 0 0;
+        padding: 55px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        > h2 {
+          font-weight: 700;
+          font-size: 25px;
+          color: #000000;
+        }
+        > input {
+          margin: 10px 0;
+          height: 50px;
+          width: 100%;
+          max-width: 315px;
+          background: #FFFFFF;
+          border: 1px solid #E5E5E5;
+          box-sizing: border-box;
+          border-radius: 4px;
+          outline: none;
+          overflow: hidden;
+          padding: 0 0 0 25px;
+          font-size: 14px;
+          color: #000000;
+        }
+        > div {
+          height: 50px;
+          margin: 10px 0;
+          > div {
+            > .check-box {
+              height: 20px;
+              width: 20px;
+              background-color: #000000;
+              cursor: pointer;
+              > img {
+                display: none;
+              }
+            }
+            > .check-box-label {
+              margin-left: 5px;
+              > label {
+                font-size: 10px;
+                cursor: pointer;
+                > a {
+                  border-bottom: 1px solid #000000;
+                }
+              }
+            }
+          }
+          > input[type=checkbox]:checked ~ div > label > img {
+            display: block;
+          }
+        }
+        > button {
+          margin: 10px 0;
+          height: 50px;
+          width: 100%;
+          max-width: 315px;
+          background-color: #FF0000;
+          border-radius: 4px;
+          outline: none;
+          border: 1px solid #FF0000;
+          box-sizing: border-box;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 14px;
+          color: #FFFFFF;
+          transition: $transition;
+          &:hover {
+            background-color: #FFFFFF;
+            color: #FF0000;
+          }
+        }
+      }
+    }
+  }
+  .top-image {
+    position: absolute;
+    height: 103%;
+    bottom: 0;
+    left: 41%;
+    z-index: 4;
+  }
+}
+.footer {
+  padding: 50px 0 0 0;
+  > div {
+    > div {
+      > .footer-info {
+        flex-grow: 1;
+        > div {
+          font-size: 18px;
+          color: #000000;
+          > div {
+            > .image {
+              height: 16px;
+              width: 16px;
+              margin-right: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+  > .footer-copyright {
+    height: 75px;
+    background-color: #F6F6F6;
+    margin: 50px 0 0 0;
+    font-size: 15px;
+    color: #000000;
+  }
+}

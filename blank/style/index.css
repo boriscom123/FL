@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #222222;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.main {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+.main > .calc {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+}
+.main > .calc > h2 {
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+.main > .calc > h2 > span {
+  text-transform: uppercase;
+  color: red;
+  font-weight: 700;
+}
+.main > .calc > .calc-title {
+  display: flex;
+  justify-content: space-between;
+}
+.main > .calc > .calc-title .title {
+  font-weight: 700;
+}
+.main > .calc > .calc-title .info {
+  font-weight: 700;
+}
+.main > .calc > .calc-title .info > i {
+  font-size: 0.7em;
+  margin-left: 5px;
+}
+.main > .calc > .calc-title .info > span {
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+.main > .calc > .range {
+  margin: 5px 0;
+}
+.main > .calc > .range > input {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.main > .calc > .range > input::-webkit-slider-thumb {
+  border: 1px solid lightgrey;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+}
+.main > .calc > .range > input::-moz-range-thumb {
+  border: 1px solid lightgrey;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+}
+.main > .calc > .range > input::-ms-thumb {
+  border: 1px solid lightgrey;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+}
+.main > .calc > .range > input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: lightgrey;
+  border-radius: 7.5px;
+  border: none;
+}
+.main > .calc > .range > input::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: lightgrey;
+  border-radius: 7.5px;
+  border: none;
+}
+.main > .calc > .range > input::-ms-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: lightgrey;
+  border-radius: 7.5px;
+  border: none;
+}
+.main > .calc > .range-info {
+  display: flex;
+  justify-content: space-between;
+}
+.main > .calc > .range-info > div {
+  font-weight: 300;
+  color: grey;
+  margin: 0 0 20px 0;
+}
+.main > .calc > .range-info > div > i {
+  font-size: 0.7em;
+  margin-left: 5px;
+}
+.main > .calc > .range-info > div > span {
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+.main > .calc > button {
+  height: 55px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 15px;
+  background-color: red;
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.main > .calc > button:hover {
+  background-color: darkred;
+}
+.main > .calc > button:active {
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.main > .calc .calc-info > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+.main > .calc .calc-info > div > p {
+  color: grey;
+}
+.main > .calc .calc-info > div > p > i {
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+.footer {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=index.css.map */
