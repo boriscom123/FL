@@ -1,3 +1,4 @@
+itgeek.kz
 ftp:
 195.210.46.17
 proger_uppercase
