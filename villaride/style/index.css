@@ -1,0 +1,703 @@
+@import url("../fonts/proximanova/stylesheet.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.space-justify-around {
+  justify-content: space-around;
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-baseline {
+  align-items: baseline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.header {
+  height: 90px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 10px 10px 5px rgba(34, 60, 80, 0.3);
+}
+.header > div > .header-navigation {
+  flex-grow: 1;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Lt";
+  padding: 0 30px;
+  font-size: 1.1em;
+}
+.header > div > .header-navigation > li > a {
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+.header > div > .header-navigation > li > a:hover {
+  border-bottom: 1px solid #404040;
+}
+.header > div > .header-tel {
+  margin: 0 25px 0 0;
+}
+.header > div > .header-tel > a {
+  font-family: "Proxima Nova Rg";
+  letter-spacing: 0.02em;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.header > div > .header-tel > a span {
+  font-family: "Proxima Nova Bl";
+  color: #1f7ec0;
+}
+.header > div > .header-tel > p {
+  font-family: "Proxima Nova Lt";
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+.header > div > .header-button {
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid #404040;
+  transition: 0.3s;
+}
+.header > div > .header-button:hover {
+  background-color: #404040;
+  color: white;
+}
+
+.main {
+  background-color: white;
+  padding: 90px 0 0 0;
+}
+.main > .block-1 {
+  min-height: 850px;
+  background-image: url("../image/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.main > .block-1 > div > .block-1-left {
+  width: 100%;
+  max-width: 800px;
+}
+.main > .block-1 > div > .block-1-left > h3 {
+  margin: 50px 0 0 65px;
+  font-family: "Proxima Nova Rg";
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 400;
+}
+.main > .block-1 > div > .block-1-left > .block-1-title {
+  margin: 35px 0 0 0;
+}
+.main > .block-1 > div > .block-1-left > .block-1-title > .border {
+  height: inherit;
+  width: 11px;
+  margin: 0 37px 0 17px;
+  border-radius: 6px;
+  background-color: #1f7ec0;
+}
+.main > .block-1 > div > .block-1-left > .block-1-title > .text {
+  text-transform: uppercase;
+}
+.main > .block-1 > div > .block-1-left > .block-1-title > .text > h1 {
+  font-family: "Proxima Nova Bl";
+  font-size: 3em;
+}
+.main > .block-1 > div > .block-1-left > .block-1-title > .text > h2 {
+  font-family: "Proxima Nova Rg";
+  font-size: 2em;
+  font-weight: 700;
+}
+.main > .block-1 > div > .block-1-left > .block-1-info {
+  margin: 50px 0 0 65px;
+}
+.main > .block-1 > div > .block-1-left > .block-1-info > div > .image {
+  padding-top: 3px;
+  margin: 0 25px 0 0;
+}
+.main > .block-1 > div > .block-1-left > .block-1-info > div > .text {
+  margin: 0 35px 0 0;
+}
+.main > .block-1 > div > .block-1-left > .block-1-info > div > .text > h4 {
+  font-family: "Proxima Nova Lt";
+  font-size: 1em;
+  font-weight: 700;
+}
+.main > .block-1 > div > .block-1-left > .block-1-info > div > .text > p {
+  font-family: "Proxima Nova Bl";
+  font-size: 1em;
+}
+.main > .block-1 > div > .block-1-left > .block-1-buttons {
+  margin: 385px 0 0 65px;
+}
+.main > .block-1 > div > .block-1-left > .block-1-buttons > .button {
+  height: 55px;
+  width: 270px;
+  border-radius: 27px;
+  outline: none;
+  border: none;
+  background: #0a8ce5;
+  background: linear-gradient(to bottom, #0a8ce5 0%, #09629f 100%);
+  font-family: "Proxima Nova Rg";
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+.main > .block-1 > div > .block-1-left > .block-1-buttons > .button:hover {
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+}
+.main > .block-1 > div > .block-1-left > .block-1-buttons > .text {
+  margin: 0 0 0 25px;
+  font-family: "Proxima Nova Lt";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.main > .block-1 > div > .block-1-right {
+  width: 100%;
+  max-width: 410px;
+  position: relative;
+  z-index: 2;
+}
+.main > .block-1 > div > .block-1-right > div {
+  padding: 25px 0 0 0;
+}
+.main > .block-1 > div > .block-1-right > div > .icons > a {
+  margin: 0 5px 0 0;
+}
+.main > .block-1 > div > .block-1-right > div > .icons > a:last-child {
+  margin: 0;
+}
+.main > .block-1 > div > .block-1-right > div > .tel {
+  font-family: "Proxima Nova Bl";
+  margin: 0 25px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.main > .block-1 > div > .block-1-right > div > .tel > a {
+  margin: 0 0 10px 0;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form {
+  margin: 50px 0 0 0;
+  padding: 50px 35px 130px;
+  background-color: whitesmoke;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  box-shadow: 0px 5px 10px 5px rgba(34, 60, 80, 0.2);
+  position: relative;
+  z-index: 2;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > h2 {
+  font-family: "Proxima Nova Bl";
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > h2 > span {
+  color: #21b744;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > p {
+  font-family: "Proxima Nova Rg";
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px 0 40px 0;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > input {
+  height: 50px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  border: 1px solid #cacaca;
+  border-radius: 25px;
+  outline: none;
+  padding-left: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Proxima Nova Lt";
+  font-size: 1em;
+  transition: 0.3s;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > input:hover {
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > button {
+  height: 50px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background: #ff5400;
+  background: linear-gradient(to bottom, #ff5400 0%, #ed1200 100%);
+  font-family: "Proxima Nova Rg";
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > button:hover {
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > .form-checkbox > input[type=checkbox]:checked ~ .checkbox-field {
+  background-color: grey;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > .form-checkbox > .checkbox-field {
+  height: 18px;
+  width: 18px;
+  border: 1px solid grey;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > .form-checkbox > .checkbox-label {
+  margin-left: 20px;
+  max-width: 200px;
+  font-family: "Proxima Nova Lt";
+  font-size: 1em;
+  cursor: pointer;
+}
+.main > .block-1 > div > .block-1-right > .block-1-form > .form-checkbox > .checkbox-label > a {
+  text-decoration: underline;
+  color: #1a8fdf;
+}
+.main > .block-1 > div > .block-1-right > .form-decoration {
+  position: absolute;
+  height: 86%;
+  width: 60%;
+  top: 15%;
+  left: 20%;
+  z-index: 1;
+  background-color: #21b744;
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+}
+.main > .block-1 > div > .block-1-right > .form-decoration > div {
+  background-color: white;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+}
+.main > .block-2 {
+  position: relative;
+  overflow: hidden;
+}
+.main > .block-2 > .block-2-image-left {
+  position: absolute;
+  top: 0;
+  left: -10%;
+}
+.main > .block-2 > .block-2-image-right {
+  position: absolute;
+  top: 0;
+  right: -10%;
+}
+.main > .block-2 > div > .title > h2 {
+  text-align: center;
+  font-family: "Proxima Nova Bl";
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 10px 0 10px 0;
+}
+.main > .block-2 > div > .title > .decoration {
+  margin: 10px 0 0 0;
+}
+.main > .block-2 > div > .title > .decoration > .line {
+  position: relative;
+  height: 1px;
+  width: 400px;
+  background: linear-gradient(to right, rgba(186, 186, 186, 0) 0%, #bababa 10%, #bababa 90%, rgba(186, 186, 186, 0) 100%);
+}
+.main > .block-2 > div > .title > .decoration > .line > .pointer {
+  position: absolute;
+  height: 10px;
+  width: 30px;
+  background: #0a8ce5;
+  background: linear-gradient(to bottom, #0a8ce5 0%, #09629f 100%);
+  border-radius: 5px;
+  top: -4px;
+  left: calc(50% - 15px);
+}
+.main > .block-2 > div > .block-2-content {
+  margin: 100px 0 0 0;
+  position: relative;
+  z-index: 2;
+}
+.main > .block-2 > div > .block-2-content > .left {
+  max-width: 270px;
+}
+.main > .block-2 > div > .block-2-content > .left > .item {
+  height: 160px;
+}
+.main > .block-2 > div > .block-2-content > .left > .item > .item-decoration {
+  height: 30px;
+  width: 30px;
+  background-color: #cee6f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main > .block-2 > div > .block-2-content > .left > .item > .item-decoration > .circle {
+  height: 15px;
+  width: 15px;
+  background: #0a80d2;
+  background: radial-gradient(ellipse at center, #0a80d2 0%, #0a8ce5 100%);
+  border-radius: 50%;
+  position: relative;
+}
+.main > .block-2 > div > .block-2-content > .left > .item > .item-decoration > .circle > .top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 2px;
+  background: linear-gradient(to bottom, #0a80d2 0%, rgba(10, 128, 210, 0) 100%);
+  transform: translateX(-50%);
+}
+.main > .block-2 > div > .block-2-content > .left > .item > .item-decoration > .circle > .bottom {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  height: 80px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(10, 128, 210, 0) 0%, #0a80d2 100%);
+  transform: translateX(-50%);
+}
+.main > .block-2 > div > .block-2-content > .left > .item > .item-decoration > .circle > .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(10, 128, 210, 0) 0%, #0a80d2 40%, #0a80d2 60%, rgba(10, 128, 210, 0) 100%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.main > .block-2 > div > .block-2-content > .left > .item > .item-text {
+  max-width: 210px;
+  margin-left: 20px;
+  font-family: "Proxima Nova Lt";
+}
+.main > .block-2 > div > .block-2-content > .left > .item > .item-text > span {
+  font-family: "Proxima Nova Rg";
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main > .block-2 > div > .block-2-content > .center {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main > .block-2 > div > .block-2-content > .right {
+  max-width: 270px;
+}
+.main > .block-2 > div > .block-2-content > .right > .item {
+  height: 160px;
+}
+.main > .block-2 > div > .block-2-content > .right > .item > .item-decoration {
+  height: 30px;
+  width: 30px;
+  background-color: #cee6f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main > .block-2 > div > .block-2-content > .right > .item > .item-decoration > .circle {
+  height: 15px;
+  width: 15px;
+  background: #0a80d2;
+  background: radial-gradient(ellipse at center, #0a80d2 0%, #0a8ce5 100%);
+  border-radius: 50%;
+  position: relative;
+}
+.main > .block-2 > div > .block-2-content > .right > .item > .item-decoration > .circle > .top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 2px;
+  background: linear-gradient(to bottom, #0a80d2 0%, rgba(10, 128, 210, 0) 100%);
+  transform: translateX(-50%);
+}
+.main > .block-2 > div > .block-2-content > .right > .item > .item-decoration > .circle > .bottom {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  height: 80px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(10, 128, 210, 0) 0%, #0a80d2 100%);
+  transform: translateX(-50%);
+}
+.main > .block-2 > div > .block-2-content > .right > .item > .item-decoration > .circle > .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(10, 128, 210, 0) 0%, #0a80d2 40%, #0a80d2 60%, rgba(10, 128, 210, 0) 100%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.main > .block-2 > div > .block-2-content > .right > .item > .item-text {
+  max-width: 210px;
+  margin-left: 20px;
+  font-family: "Proxima Nova Lt";
+}
+.main > .block-2 > div > .block-2-content > .right > .item > .item-text > span {
+  font-family: "Proxima Nova Rg";
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main > .block-3 {
+  position: relative;
+  overflow: hidden;
+}
+.main > .block-3 > .block-3-image-left {
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  z-index: 0;
+}
+.main > .block-3 > .block-3-image-right {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  z-index: 0;
+}
+.main > .block-3 > div > .title > h2 {
+  text-align: center;
+  font-family: "Proxima Nova Bl";
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 10px 0 10px 0;
+}
+.main > .block-3 > div > .title > .decoration {
+  margin: 10px 0 0 0;
+}
+.main > .block-3 > div > .title > .decoration > .line {
+  position: relative;
+  height: 1px;
+  width: 400px;
+  background: linear-gradient(to right, rgba(186, 186, 186, 0) 0%, #bababa 10%, #bababa 90%, rgba(186, 186, 186, 0) 100%);
+}
+.main > .block-3 > div > .title > .decoration > .line > .pointer {
+  position: absolute;
+  height: 10px;
+  width: 30px;
+  background: #0a8ce5;
+  background: linear-gradient(to bottom, #0a8ce5 0%, #09629f 100%);
+  border-radius: 5px;
+  top: -4px;
+  left: calc(50% - 15px);
+}
+.main > .block-3 > div > .block-3-video {
+  height: 380px;
+  width: 100%;
+  max-width: 770px;
+  margin: 30px auto 100px;
+}
+.main > .block-3 > div > .block-3-video > div {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  border-radius: 50px;
+  border: 3px solid white;
+  box-shadow: 0px 10px 10px 10px rgba(50, 50, 50, 0.5);
+  transition: 0.3s;
+}
+.main > .block-3 > div > .block-3-video > div:hover {
+  border: 3px solid red;
+}
+.main > .block-3 > div > .block-3-video > div > .title {
+  border-radius: 50px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.main > .block-3 > div > .block-3-video > div > .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+
+.footer {
+  height: 205px;
+  padding: 25px 0 0 0;
+  background-color: white;
+  background-image: url("../image/herb.png");
+  background-repeat: no-repeat;
+  background-position: -15% top;
+  box-shadow: 0px -10px 10px 5px rgba(34, 60, 80, 0.3);
+}
+.footer > div > .header-navigation {
+  flex-grow: 1;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Lt";
+  padding: 0 30px;
+  font-size: 1.1em;
+}
+.footer > div > .header-navigation > li > a {
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+.footer > div > .header-navigation > li > a:hover {
+  border-bottom: 1px solid #404040;
+}
+.footer > div > .header-tel {
+  margin: 0 25px 0 0;
+}
+.footer > div > .header-tel > a {
+  font-family: "Proxima Nova Rg";
+  letter-spacing: 0.02em;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.footer > div > .header-tel > a span {
+  font-family: "Proxima Nova Bl";
+  color: #1f7ec0;
+}
+.footer > div > .header-tel > p {
+  font-family: "Proxima Nova Lt";
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+.footer > div > .header-button {
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid #404040;
+  transition: 0.3s;
+}
+.footer > div > .header-button:hover {
+  background-color: #404040;
+  color: white;
+}
+.footer > .footer-bottom-content {
+  padding: 25px 0 0 0;
+}
+.footer > .footer-bottom-content > div > .footer-ogrn {
+  font-family: "Proxima Nova Lt";
+  font-size: 1.1em;
+}
+.footer > .footer-bottom-content > div > .footer-privacy {
+  font-family: "Proxima Nova Lt";
+  font-size: 1.1em;
+  margin: 10px 0 0 0;
+}
+.footer > .footer-bottom-content > div > .footer-copy {
+  font-family: "Proxima Nova Lt";
+  font-size: 1.1em;
+  margin: 10px 0 0 0;
+}
+.footer > .footer-bottom-content > div > .footer-tel {
+  font-family: "Proxima Nova Bl";
+  margin: 0 25px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer > .footer-bottom-content > div > .footer-tel > a {
+  margin: 0 0 10px 0;
+}
+.footer > .footer-bottom-content > div > div > div {
+  margin: 0 15px 20px 0;
+}
+.footer > .footer-bottom-content > div > div > div > .image {
+  margin: 3px 10px 0 0;
+}
+.footer > .footer-bottom-content > div > div > div > .info {
+  max-width: 200px;
+}
+
+/*# sourceMappingURL=index.css.map */
