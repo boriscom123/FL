@@ -124,9 +124,10 @@
               <div class="main-search" >
                 <div>
                   <input type="text" name="search" class="ajax-live-search" autocomplete="off" placeholder="<?php echo $ULang->t("Найти товар или услугу"); ?>" value="<?php echo clear($_GET["search"]); ?>" >
-                  <div class="main-search-results" ></div>
+                  <div class="main-search-results" > </div>
                   <div class="main-search-action" >
-                    <button class="btn"><i class="las la-search"></i></button>
+                    <button class="btn">Поиск</button>
+                    <!-- <button class="btn"><i class="las la-search"></i></button> -->
                   </div>
                 </div>
               </div>

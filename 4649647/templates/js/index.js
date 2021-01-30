@@ -1,9 +1,9 @@
 $(document).ready(function () {
-   
+
    var url_path = $("body").data("prefix");
    var currentCountPage = 1;
    var loadingAdScroll = true;
-   
+
    function auctionTime(){
       $('[data-countdown="true"]').each(function (index, element) {
           $(element).countdown( $(element).attr("data-date") )
@@ -16,8 +16,8 @@ $(document).ready(function () {
           });
 
       });
-   }   
-   
+   }
+
    function tippyLoad(){
         tippy('[data-tippy-placement]', {
           delay: 100,
@@ -37,7 +37,7 @@ $(document).ready(function () {
     loadingAdScroll = false;
 
         if( _this_button != null ) _this_button.prop('disabled', true);
-        $.ajax({type: "POST",url: url_path + "systems/ajax/ads.php",data: "page="+_page+"&action=load_index_ads",dataType: "json",cache: false,success: function (data) { 
+        $.ajax({type: "POST",url: url_path + "systems/ajax/ads.php",data: "page="+_page+"&action=load_index_ads",dataType: "json",cache: false,success: function (data) {
 
             $(".action-index-load-ads").hide();
             $(".catalog-results").append('<div class="load-page'+_page+' col-lg-12" ></div><div class="row no-gutters gutters10" style="display: none;" >'+data["content"]+'</div>');
@@ -51,10 +51,10 @@ $(document).ready(function () {
 
             }
 
-            auctionTime();  
-            tippyLoad();   
+            auctionTime();
+            tippyLoad();
 
-            loadingAdScroll = data["found"]; 
+            loadingAdScroll = data["found"];
 
             $(".preload, .preload-scroll").hide();
 
@@ -62,25 +62,25 @@ $(document).ready(function () {
 
    }
 
-   $(document).on('click','.action-index-load-ads > button', function () { 
-        
+   $(document).on('click','.action-index-load-ads > button', function () {
+
         currentCountPage = currentCountPage + 1;
-        
-        indexLoadAds( currentCountPage , $(this), true );    
+
+        indexLoadAds( currentCountPage , $(this), true );
 
    });
 
    if( $("body").data("type-loading") == 2 ){
 
-      $(window).scroll(function(){ 
+      $(window).scroll(function(){
 
          if( ( $(document).scrollTop() + 500 ) >= $(".catalog-results").height() ){
             if(loadingAdScroll == true){
 
                $(".preload-scroll").show();
-               
+
                currentCountPage = currentCountPage + 1;
-              
+
                indexLoadAds( currentCountPage , null, false );
 
             }
@@ -92,5 +92,5 @@ $(document).ready(function () {
 
 
    indexLoadAds();
-
+   console.log('index.js');
 });
