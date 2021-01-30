@@ -1,0 +1,369 @@
+.block-4 {
+  position: relative;
+  overflow: hidden;
+  > .bg-image {
+    position: absolute;
+    z-index: 0;
+  }
+  > .position-1 {
+    top: 0%;
+    left: 63%;
+  }
+  > .position-2 {
+    top: 8%;
+    left: 10%;
+  }
+  > .position-3 {
+    top: 15%;
+    left: -15%;
+  }
+  > .position-4 {
+    top: 20%;
+    left: 90%;
+  }
+  > .position-5 {
+    top: 25%;
+    left: 10%;
+  }
+  > .position-6 {
+    top: 33%;
+    left: 72%;
+  }
+  > .position-7 {
+    top: 49%;
+    left: 70%;
+  }
+  > .position-8 {
+    top: 46%;
+    left: -15%;
+  }
+  > .position-9 {
+    top: 55%;
+    left: 92%;
+  }
+  > .position-10 {
+    top: 64%;
+    left: 8%;
+  }
+  > .position-11 {
+    top: 70%;
+    left: 67%;
+  }
+  > .position-12 {
+    top: 75%;
+    left: -15%;
+  }
+  > .position-13 {
+    top: 75%;
+    left: 90%;
+  }
+  > .position-14 {
+    top: 86%;
+    left: 7%;
+  }
+  > .position-15 {
+    top: 88%;
+    left: 80%;
+  }
+  > div {
+    > .title {
+      > h2 {
+        text-align: center;
+        font-family: 'Proxima Nova Bl';
+        font-size: 3em;
+        text-transform: uppercase;
+        margin: 10px 0 10px 0;
+        @media (max-width: 450px) { font-size: 2.2em;}
+      }
+      > .decoration {
+        margin: 10px 0 0 0;
+        > .line {
+          position: relative;
+          height: 1px;
+          width: 400px;
+          background: linear-gradient(to right,  rgba(186,186,186,0) 0%,rgba(186,186,186,1) 10%,rgba(186,186,186,1) 90%,rgba(186,186,186,0) 100%);
+          > .pointer {
+            position: absolute;
+            height: 10px;
+            width: 30px;
+            background: rgb(10,140,229);
+            background: linear-gradient(to bottom,  rgba(10,140,229,1) 0%,rgba(9,98,159,1) 100%);
+            border-radius: 5px;
+            top: -4px;
+            left: #{calc(50% - 15px)};
+          }
+        }
+
+      }
+      > h3 {
+        font-family: 'Proxima Nova Rg';
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #dd3232;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px 0 10px 0;
+      }
+      > p {
+        font-family: 'Proxima Nova Rg';
+        font-size: 1em;
+        font-weight: 700;
+        text-align: center;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
+    > div {
+      position: relative;
+      margin: 80px 0;
+      > .card {
+        background-color: rgba(255, 255, 255, 1);
+        background-image: url('../image/card-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: right top;
+        position: relative;
+        padding: 40px 30px 30px 40px;
+        box-shadow: 0px 5px 10px 5px rgba(34, 60, 80, 0.2);
+        border-radius: 10px;
+        z-index: 99;
+        @media (max-width: 1000px) { flex-direction: column; align-items: center;}
+        > .left {
+          @media (max-width: 1000px) { width: 100%; }
+          > .title {
+            > .decoration {
+              height: 33px;
+              width: 10px;
+              background: rgb(41,203,79);
+              background: linear-gradient(to bottom,  rgba(41,203,79,1) 0%,rgba(19,146,49,1) 100%);
+              border-radius: 5px;
+              margin: 0 15px 0 0;
+            }
+            > h2 {
+              font-family: 'Proxima Nova Rg';
+              font-size: 2em;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+          }
+          > .product {
+            margin: 30px 0 0 0;
+            @media (max-width: 750px) { flex-direction: column; align-items: center;}
+            > .image {
+              height: 240px;
+              width: 100%;
+              max-width: 390px;
+              border-radius: 5px;
+              > img {
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+                -o-object-fit: cover;
+                   object-fit: cover;
+              }
+            }
+            > .table {
+              margin: 0 0 0 20px;
+              flex-grow: 1;
+              max-width: 400px;
+              @media (max-width: 750px) { margin: 0;}
+              > h2 {
+                font-family: 'Proxima Nova Rg';
+                font-size: 1.5em;
+                font-weight: 400;
+                margin-left: 10px;
+              }
+              > .title {
+                background-color: #333333;
+                border-radius: 5px;
+                color: white;
+                > div {
+                  width: 25%;
+                  padding: 5px 0;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  font-family: 'Proxima Nova Lt';
+                  font-size: 1em;
+                  font-weight: 600;
+                  @media (max-width: 400px) { font-size: 0.8em;}
+                }
+              }
+              > .info {
+                > div {
+                  width: 25%;
+                  padding: 5px 0;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  font-family: 'Proxima Nova Lt';
+                  font-size: 1em;
+                  font-weight: 400;
+                  border-right: 1px solid #cfcfcf;
+                  @media (max-width: 400px) { font-size: 0.8em;}
+                }
+                > div:last-child{
+                  border: none;
+                }
+              }
+            }
+          }
+          > .contact {
+            margin: 25px 0 0 0;
+            @media (max-width: 750px) { flex-direction: column; align-items: center;}
+            > div {
+              @media (max-width: 750px) { text-align: center;}
+              > a {
+                font-family: 'Proxima Nova Rg';
+                font-size: 1.5em;
+                font-weight: 900;
+                > span {
+                  color: #f2370b;
+                }
+              }
+              > button {
+                height: 40px;
+                width: 250px;
+                margin: 15px 0 0 0;
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                background: rgb(10,140,229);
+                background: linear-gradient(to bottom,  rgba(10,140,229,1) 0%,rgba(9,98,159,1) 100%);
+                font-family: 'Proxima Nova Rg';
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.1em;
+                transition: $transition;
+                &:hover {
+                  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+                }
+              }
+            }
+            > p {
+              font-family: 'Proxima Nova Lt';
+              font-size: 1em;
+              max-width: 500px;
+              margin: 0 0 0 30px;
+              align-self: flex-end;
+              @media (max-width: 750px) { margin: 25px auto 0; text-align: center;}
+            }
+          }
+        }
+        > .block-4-form {
+          height: inherit;
+          max-width: 250px;
+          z-index: 2;
+          @media (max-width: 1000px) { margin: 25px 0 0 0; min-height: 300px;}
+          > h2 {
+            font-family: 'Proxima Nova Bl';
+            font-size: 1.5em;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            > span {
+              color: #21b744;
+            }
+          }
+          > p {
+            font-family: 'Proxima Nova Rg';
+            font-size: 1em;
+            font-weight: 400;
+            text-align: center;
+          }
+          > input {
+            height: 50px;
+            width: 100%;
+            border: 1px solid #cacaca;
+            border-radius: 25px;
+            outline: none;
+            padding-left: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-family: 'Proxima Nova Lt';
+            font-size: 1em;
+            transition: $transition;
+            &:hover {
+              box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+            }
+          }
+          > button {
+            height: 50px;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 25px;
+            background: rgb(41,203,79);
+            background: linear-gradient(to bottom,  rgba(41,203,79,1) 0%,rgba(19,146,49,1) 100%);
+            font-family: 'Proxima Nova Rg';
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            transition: $transition;
+            &:hover {
+              box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+            }
+          }
+          > .form-checkbox {
+            > input[type=checkbox]:checked ~.checkbox-field {
+              background-color: grey;
+            }
+            > .checkbox-field {
+              height: 18px;
+              width: 18px;
+              border: 1px solid grey;
+              cursor: pointer;
+              border-radius: 3px;
+              transition: $transition;
+            }
+            > .checkbox-label {
+              margin-left: 20px;
+              max-width: 200px;
+              font-family: 'Proxima Nova Lt';
+              font-size: 1em;
+              cursor: pointer;
+              > a {
+                text-decoration: underline;
+                color: #1a8fdf;
+              }
+            }
+          }
+        }
+        > .decoration-1 {
+          position: absolute;
+          background-color: #21b744;
+          height: 35px;
+          width: 170px;
+          top: -35px;
+          left: 40px;
+          z-index: 1;
+          -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
+          > div {
+            background-color: rgba(255, 255, 255, 1);
+            height: calc(100% - 10px);
+            width: calc(100% - 10px);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            -webkit-clip-path: polygon(0 0, 0 100%, 80% 100%);
+            clip-path: polygon(0 0, 0 100%, 80% 100%);
+          }
+        }
+      }
+      > .decoration-2 {
+        position: absolute;
+        height: 100%;
+        width: 96%;
+        top: 0;
+        left: 2%;
+        z-index: 0;
+        transform: rotate(-3deg);
+        background-color: #f6f6f6;
+        box-shadow: 0px 5px 10px 5px rgba(34, 60, 80, 0.2);
+        border-radius: 10px;
+      }
+    }
+  }
+}

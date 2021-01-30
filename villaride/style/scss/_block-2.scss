@@ -1,0 +1,187 @@
+.block-2 {
+  position: relative;
+  overflow: hidden;
+  > .block-2-image-left {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    @media (max-width: 900px) { left: -30%; }
+  }
+  > .block-2-image-right {
+    position: absolute;
+    top: 0;
+    right: -10%;
+    @media (max-width: 900px) { right: -30%; }
+    @media (max-width: 520px) { top: 50%; }
+  }
+  > div {
+    > .title {
+      > h2 {
+        text-align: center;
+        font-family: 'Proxima Nova Bl';
+        font-size: 3em;
+        text-transform: uppercase;
+        margin: 10px 0 10px 0;
+        @media (max-width: 450px) { font-size: 2.2em;}
+      }
+      > .decoration {
+        margin: 10px 0 0 0;
+        > .line {
+          position: relative;
+          height: 1px;
+          width: 400px;
+          background: linear-gradient(to right,  rgba(186,186,186,0) 0%,rgba(186,186,186,1) 10%,rgba(186,186,186,1) 90%,rgba(186,186,186,0) 100%);
+          > .pointer {
+            position: absolute;
+            height: 10px;
+            width: 30px;
+            background: rgb(10,140,229);
+            background: linear-gradient(to bottom,  rgba(10,140,229,1) 0%,rgba(9,98,159,1) 100%);
+            border-radius: 5px;
+            top: -4px;
+            left: #{calc(50% - 15px)};
+          }
+        }
+
+      }
+    }
+    > .block-2-content{
+      margin: 100px 0 0 0;
+      position: relative;
+      z-index: 2;
+      @media (max-width: 520px) { flex-direction: column; align-items: center; }
+      > .left {
+        max-width: 270px;
+
+        > .item {
+          height: 160px;
+          > .item-decoration {
+            height: 30px;
+            width: 30px;
+            background-color: #cee6f7;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > .circle {
+              height: 15px;
+              width: 15px;
+              background: rgb(10,128,210);
+              background: radial-gradient(ellipse at center,  rgba(10,128,210,1) 0%,rgba(10,140,229,1) 100%);
+              border-radius: 50%;
+              position: relative;
+              > .top {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 80px;
+                width: 2px;
+                background: linear-gradient(to bottom,  rgba(10,128,210,1) 0%,rgba(10,128,210,0) 100%);
+                transform: translateX(-50%);
+              }
+              > .bottom {
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                height: 80px;
+                width: 2px;
+                background: linear-gradient(to bottom,  rgba(10,128,210,0) 0%,rgba(10,128,210,1) 100%);
+                transform: translateX(-50%);
+              }
+              > .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 150px;
+                width: 2px;
+                background: linear-gradient(to bottom,  rgba(10,128,210,0) 0%,rgba(10,128,210,1) 40%,rgba(10,128,210,1) 60%,rgba(10,128,210,0) 100%);
+                transform: translateX(-50%) translateY(-50%);
+              }
+            }
+          }
+          > .item-text {
+            max-width: 210px;
+            margin-left: 20px;
+            font-family: 'Proxima Nova Lt';
+            > span {
+              font-family: 'Proxima Nova Rg';
+              font-size: 1em;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      > .center {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        @media (max-width: 520px) { top: 25%; }
+      }
+      > .right {
+        max-width: 270px;
+
+        > .item {
+          height: 160px;
+          > .item-decoration {
+            height: 30px;
+            width: 30px;
+            background-color: #cee6f7;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > .circle {
+              height: 15px;
+              width: 15px;
+              background: rgb(10,128,210);
+              background: radial-gradient(ellipse at center,  rgba(10,128,210,1) 0%,rgba(10,140,229,1) 100%);
+              border-radius: 50%;
+              position: relative;
+              > .top {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 80px;
+                width: 2px;
+                background: linear-gradient(to bottom,  rgba(10,128,210,1) 0%,rgba(10,128,210,0) 100%);
+                transform: translateX(-50%);
+              }
+              > .bottom {
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                height: 80px;
+                width: 2px;
+                background: linear-gradient(to bottom,  rgba(10,128,210,0) 0%,rgba(10,128,210,1) 100%);
+                transform: translateX(-50%);
+              }
+              > .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 150px;
+                width: 2px;
+                background: linear-gradient(to bottom,  rgba(10,128,210,0) 0%,rgba(10,128,210,1) 40%,rgba(10,128,210,1) 60%,rgba(10,128,210,0) 100%);
+                transform: translateX(-50%) translateY(-50%);
+              }
+            }
+          }
+          > .item-text {
+            max-width: 210px;
+            margin-left: 20px;
+            font-family: 'Proxima Nova Lt';
+            > span {
+              font-family: 'Proxima Nova Rg';
+              font-size: 1em;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}

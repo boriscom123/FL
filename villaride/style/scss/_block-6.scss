@@ -1,0 +1,98 @@
+.block-6 {
+  margin: 30px 0 0 0;
+  min-height: 555px;
+  background-image: url('../image/bg-6.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  > div {
+    display: flex;
+    justify-content: flex-end;
+    > div {
+      width: 100%;
+      max-width: 700px;
+      > h2 {
+        margin: 130px 0 0 10px;
+        font-family: 'Proxima Nova Bl';
+        font-size: 2em;
+        text-transform: uppercase;
+        color: white;
+        @media (max-width: 600px) {margin: 80px 0 0 0; text-align: center;}
+      }
+      > p {
+        margin: 20px 0 0 10px;
+        font-family: 'Proxima Nova Lt';
+        font-size: 1em;
+        color: white;
+        max-width: 600px;
+        @media (max-width: 600px) {margin: 20px 0 0 0; text-align: center;}
+      }
+      > .block-6-form {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 0 0 0;
+        @media (max-width: 600px) { justify-content: center; }
+        > div {
+          width: 50%;
+          height: 50px;
+          min-width: 300px;
+          margin-bottom: 30px;
+          > input {
+            height: 50px;
+            width: 300px;
+            border: 1px solid #cacaca;
+            box-sizing: border-box;
+            outline: none;
+            border-radius: 25px;
+            padding-left: 25px;
+            overflow: hidden;
+            font-family: 'Proxima Nova Lt';
+            font-size: 1em;
+          }
+          > button {
+            height: 50px;
+            width: 300px;
+            outline: none;
+            border: none;
+            border-radius: 25px;
+            background: rgb(41,203,79);
+            background: linear-gradient(to bottom,  rgba(41,203,79,1) 0%,rgba(19,146,49,1) 100%);
+            font-family: 'Proxima Nova Rg';
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            transition: $transition;
+            &:hover {
+              box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+            }
+          }
+        }
+        > .form-checkbox {
+          > input[type=checkbox]:checked ~.checkbox-field {
+            background-color: grey;
+          }
+          > .checkbox-field {
+            height: 18px;
+            width: 18px;
+            border: 1px solid grey;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: $transition;
+            background-color: white;
+          }
+          > .checkbox-label {
+            margin-left: 20px;
+            max-width: 200px;
+            font-family: 'Proxima Nova Lt';
+            font-size: 1em;
+            cursor: pointer;
+            color: white;
+            > a {
+              text-decoration: underline;
+              color: #2c9837;
+            }
+          }
+        }
+      }
+    }
+  }
+}

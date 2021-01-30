@@ -10,7 +10,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: $bgColor;
+  background-color: $mainColor;
   font-family: $fontFamily;
   font-size: $fontSize;
   font-weight: $fontWeight;
@@ -41,7 +41,7 @@ button {
   display: flex;
 }
 .d-none {
-display: none; 
+display: none;
 }
 .flex-column {
   flex-direction: column;

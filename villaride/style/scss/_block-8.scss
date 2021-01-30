@@ -1,0 +1,126 @@
+.block-8 {
+  > div {
+    > .title {
+      > h2 {
+        text-align: center;
+        font-family: 'Proxima Nova Bl';
+        font-size: 3em;
+        text-transform: uppercase;
+        margin: 10px 0 10px 0;
+        @media (max-width: 450px) { font-size: 2.2em;}
+      }
+      > .decoration {
+        margin: 10px 0 0 0;
+        > .line {
+          position: relative;
+          height: 1px;
+          width: 400px;
+          background: linear-gradient(to right,  rgba(186,186,186,0) 0%,rgba(186,186,186,1) 10%,rgba(186,186,186,1) 90%,rgba(186,186,186,0) 100%);
+          > .pointer {
+            position: absolute;
+            height: 10px;
+            width: 30px;
+            background: rgb(10,140,229);
+            background: linear-gradient(to bottom,  rgba(10,140,229,1) 0%,rgba(9,98,159,1) 100%);
+            border-radius: 5px;
+            top: -4px;
+            left: #{calc(50% - 15px)};
+          }
+        }
+
+      }
+    }
+    > .slider {
+      margin: 40px 0 0 0;
+      position: relative;
+      > .left {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 37%;
+        left: 1%;
+        cursor: pointer;
+        z-index: 1;
+        background-color: white;
+        border-radius: 50%;
+        @media (max-width: 700px) { display: none;}
+      }
+      > .right {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        position: absolute;
+        top: 37%;
+        right: 1%;
+        cursor: pointer;
+        z-index: 1;
+        background-color: white;
+        border-radius: 50%;
+        @media (max-width: 700px) { display: none;}
+      }
+      > .card-block {
+        width: 100%;
+        @media (max-width: 700px) { flex-direction: column; align-items: center;}
+        > .card {
+          width: 30%;
+          position: relative;
+          border-radius: 10px;
+          box-shadow: 0px 5px 10px 5px rgba(34, 60, 80, 0.2);
+          @media (max-width: 700px) { width: 95%; margin: 25px 0 0 0; }
+          > .image {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: $transition;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+              transform: scale(1.05);
+            }
+            > img {
+              height: 100%;
+              width: 100%;
+              border-radius: 10px;
+              -o-object-fit: cover;
+                 object-fit: cover;
+            }
+          }
+        }
+      }
+      > .pagination {
+        height: 15px;
+        width: 100%;
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > .item {
+          height: 5px;
+          width: 5px;
+          border-radius: 50%;
+          border: 5px solid white;
+          background-color: #cccccc;
+          margin: 0 5px;
+          cursor: pointer;
+          transition: $transition;
+          &:hover {
+            border: 5px solid #0a87dd;
+            background-color: white;
+          }
+        }
+        > .active {
+          border: 5px solid #0a87dd;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
