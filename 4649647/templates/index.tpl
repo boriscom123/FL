@@ -172,10 +172,14 @@
        <div class="row mt30" >
           <div class="col-lg-12" ><!-- <div class="col-lg-9" > -->
 
-
-            <?php // print_r($data);
-            if($data["vip"]["count"]){ ?>
             <h3 class="mt20 mb25" > <strong><?php echo $ULang->t( "VIP объявления" ); ?></strong> </h3>
+            <div class="vip-catalog-results">
+
+            </div>
+
+            <?php
+            // print_r($data);
+            if($data["vip"]["count"]){ ?>
               <div class="row no-gutters gutters10" >
               <?php
 

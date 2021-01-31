@@ -23,13 +23,13 @@
           <?php if($data["city_areas"] && $data["city_metro"]){ ?>
                   <div data-id="1" class="active" > <?php echo $ULang->t("Метро"); ?> </div>
                   <div data-id="2" > <?php echo $ULang->t("Районы"); ?> </div>
-          <?php }elseif($data["city_areas"]){ ?> 
+          <?php }elseif($data["city_areas"]){ ?>
                   <div data-id="2" class="active" > <?php echo $ULang->t("Районы"); ?> </div>
           <?php }elseif($data["city_metro"]){ ?>
                   <div data-id="1" class="active" > <?php echo $ULang->t("Метро"); ?> </div>
-          <?php } ?>        
+          <?php } ?>
       </div>
-      
+
       <form class="modal-geo-options-form" >
       <div class="modal-geo-options-tab-content" >
           <div data-tab="1" <?php if($data["city_metro"]){ echo 'class="active"'; } ?> >
@@ -79,7 +79,7 @@
 
           <div class="geo-list-popular modal-geo-change-city" >
 
-               <?php 
+               <?php
 
                if( $_SESSION["geo"] ){
                    $country_alias = $_SESSION["geo"]["data"]["country_alias"];
@@ -88,7 +88,7 @@
                }
 
                echo $Geo->cityDefault($country_alias,30);
-               ?>                              
+               ?>
 
           </div>
       </div>
@@ -100,7 +100,7 @@
     <div class="modal-custom" style="max-width: 850px;" >
 
       <span class="modal-custom-close" ><i class="las la-times"></i></span>
-      
+
       <h4> <strong><?php echo $ULang->t("Выберите рубрику"); ?></strong> </h4>
 
       <div class="main-category-list row no-gutters" >
@@ -114,7 +114,7 @@
                   <div class="main-category-list-item mt25" >
                     <a href="<?php echo $CategoryBoard->alias($value["category_board_chain"]); ?>">
                       <span class="main-category-list-icon" style="background-color: <?php echo generateRandomColor(); ?>" >
-                        
+
                         <?php if($value["category_board_image"]){ ?>
                         <img src="<?php echo Exists($config["media"]["other"],$value["category_board_image"],$config["media"]["no_image"]); ?>">
                         <?php }else{ ?>
@@ -142,11 +142,11 @@
     <div class="modal-custom animation-modal" style="max-width: 400px" >
 
       <span class="modal-custom-close" ><i class="las la-times"></i></span>
-      
+
       <div class="modal-notification-content" >
           <i class="las la-check"></i>
 
-          <h4 class="modal-notification-text" ></h4>            
+          <h4 class="modal-notification-text" ></h4>
       </div>
 
     </div>
@@ -169,7 +169,7 @@
       <div class="row" >
          <div class="col-lg-7" >
            <button class="button-style-custom schema-color-button color-green mb10 auth-forgot" ><span class="spinner-border spinner-border-sm button-ajax-loader" role="status" aria-hidden="true"></span> <?php echo $ULang->t("Восстановить пароль"); ?></button>
-         </div>            
+         </div>
       </div>
 
     </div>
@@ -207,7 +207,7 @@
       <div class="row" >
          <div class="col-lg-7" >
            <a class="button-style-custom schema-color-button color-green mb10" href="<?php echo _link("feedback"); ?>" ><?php echo $ULang->t("Написать в поддержку"); ?></a>
-         </div>            
+         </div>
       </div>
 
     </div>
@@ -225,7 +225,7 @@
       <div class="row" >
          <div class="col-lg-7" >
            <a class="button-style-custom schema-color-button color-green mb10" href="<?php echo _link("feedback"); ?>" ><?php echo $ULang->t("Написать в поддержку"); ?></a>
-         </div>            
+         </div>
       </div>
 
     </div>
@@ -246,14 +246,14 @@
 
       <h5 class="text-center" ><?php echo $ULang->t("Ваш баланс"); ?> <strong class="modal-balance-summa" ></strong> </h5>
 
-      <div class="mt30" ></div> 
+      <div class="mt30" ></div>
 
       <div class="row" >
          <div class="col-lg-3" ></div>
          <div class="col-lg-6" >
            <a class="button-style-custom schema-color-button color-green mb10" href="<?php echo _link("user/".$_SESSION["profile"]["data"]["clients_id_hash"]."/balance"); ?>" ><?php echo $ULang->t("Пополнить"); ?></a>
          </div>
-         <div class="col-lg-3" ></div>            
+         <div class="col-lg-3" ></div>
       </div>
 
     </div>
@@ -276,25 +276,25 @@
 
 <div class="footer-bg" >
 <div class="container" >
-  
+
 <div class="mt50" ></div>
 
 <footer>
 
    <div class="row" >
 
-     <div class="col-lg-4 col-md-4" >
+     <!-- <div class="col-lg-4 col-md-4" >
 
           <div class="footer-list-link" >
             <a href="<?php echo _link("rules"); ?>"><?php echo $ULang->t("Правила сервиса"); ?></a>
             <a href="<?php echo _link("polzovatelskoe-soglashenie"); ?>"><?php echo $ULang->t("Пользовательское соглашение"); ?></a>
             <a href="<?php echo _link("feedback"); ?>"><?php echo $ULang->t("Служба поддержки"); ?></a>
-          </div>            
-       
+          </div>
+
      </div>
 
      <div class="col-lg-8 col-md-8" >
-        
+
         <?php if($Main->socialLink()){ ?>
         <div class="footer-list-social" >
            <?php echo $settings["site_name"]; ?> <?php echo $ULang->t("в социальных сетях"); ?>
@@ -302,15 +302,66 @@
            <?php echo $Main->socialLink(); ?>
         </div>
         <?php } ?>
-        
+
         <p class="footer-list-text" >
           © <?php echo date("Y"); ?> <?php echo $settings["title"]; ?>
         </p>
 
+     </div> -->
+
+     <div class="col-lg-3 col-md-3">
+       <div class="footer-list-link" >
+         <a href="<?php echo _link("rules"); ?>"><?php echo $ULang->t("Правила сервиса"); ?></a>
+         <a href="<?php echo _link("polzovatelskoe-soglashenie"); ?>"><?php echo $ULang->t("Пользовательское соглашение"); ?></a>
+         <a href="<?php echo _link("feedback"); ?>"><?php echo $ULang->t("Служба поддержки"); ?></a>
+       </div>
+     </div>
+
+     <div class="col-lg-3 col-md-3">
+       <div class="footer-list-text" >
+          <?php echo $settings["title"]; ?> в социальных сетях
+       </div>
+       <div class="footer-list-icons">
+         <div class="">
+            <img src="templates/images/icon-vk.png" alt="vk">
+         </div>
+         <div class="">
+            <img src="templates/images/icon-ok.png" alt="ok">
+         </div>
+         <div class="">
+            <img src="templates/images/icon-fb.png" alt="fb">
+         </div>
+         <div class="">
+            <img src="templates/images/icon-inst.png" alt="inst">
+         </div>
+         <div class="">
+            <img src="templates/images/icon-you.png" alt="youtube">
+         </div>
+       </div>
+     </div>
+
+     <div class="col-lg-3 col-md-3">
+       <div class="footer-list-text" >
+          Мобильное приложение <?php echo $settings["title"]; ?>
+       </div>
+       <div class="footer-list-apps">
+         <div class="">
+            <img src="templates/images/appstore.svg" alt="appstore">
+         </div>
+         <div class="">
+            <img src="templates/images/google-play-badge.png" alt="google-play">
+         </div>
+      </div>
+     </div>
+
+     <div class="col-lg-3 col-md-3">
+       <p class="footer-list-text" >
+         © <?php echo date("Y"); ?> <?php echo $settings["title"]; ?>
+       </p>
      </div>
 
    </div>
-  
+
 </footer>
 
 </div>
@@ -319,11 +370,11 @@
 <?php
 
   }
-  
+
   echo $Main->assets($config["js_plugins"]);
   echo urldecode($settings["code_script"]);
   include $config["basePath"] . "/systems/widget/admin-toolbar.php";
-  
+
 ?>
 
 <!-- Работает на системе UniSite CMS. https://unisitecms.ru/ -->

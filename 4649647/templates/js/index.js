@@ -38,9 +38,32 @@ $(document).ready(function () {
 
         if( _this_button != null ) _this_button.prop('disabled', true);
         $.ajax({type: "POST",url: url_path + "systems/ajax/ads.php",data: "page="+_page+"&action=load_index_ads",dataType: "json",cache: false,success: function (data) {
-
+            // console.log(data);
             $(".action-index-load-ads").hide();
             $(".catalog-results").append('<div class="load-page'+_page+' col-lg-12" ></div><div class="row no-gutters gutters10" style="display: none;" >'+data["content"]+'</div>');
+            $('.load-page'+_page).next().fadeIn('slow');
+
+            if(_scroll){
+
+              $('html, body').animate({
+              scrollTop: $('.load-page'+_page).offset().top-50
+              }, 500, 'linear');
+
+            }
+
+            auctionTime();
+            tippyLoad();
+
+            loadingAdScroll = data["found"];
+
+            $(".preload, .preload-scroll").hide();
+
+        }});
+        // VIP
+        $.ajax({type: "POST",url: url_path + "systems/ajax/ads.php",data: "page="+_page+"&action=load_index_vip_ads",dataType: "json",cache: false,success: function (data) {
+            // console.log(data);
+            $(".action-index-load-ads").hide();
+            $(".vip-catalog-results").append('<div class="load-page'+_page+' col-lg-12" ></div><div class="row no-gutters gutters10" style="display: none;" >'+data["content"]+'</div>');
             $('.load-page'+_page).next().fadeIn('slow');
 
             if(_scroll){

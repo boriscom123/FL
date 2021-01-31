@@ -1,17 +1,21 @@
-<?php 
+<?php
+$Ads->updateCD($value["ads_id"]);
 $image = $Ads->getImages($value["ads_images"]);
+$service = $Ads->adServices($value["ads_id"]);
+print_r($Ads);
+echo "Шаблон формирования ВИП ОБъявлений";
 ?>
 <div class="col-lg-3 col-md-3 col-sm-6 col-12" >
 <div class="item-grid" title="<?php echo $value["ads_title"]; ?>" >
    <a class="item-grid-img" href="<?php echo $Ads->alias($value); ?>" >
 
      <div class="item-labels" >
-        <?php 
+        <?php
         if($Ads->getStatusSecure($value)){
            ?>
            <div class="item-secure" data-tippy-placement="top" title="<?php echo $ULang->t("Доступна безопасная сделка"); ?>" > <i class="las la-shield-alt"></i> </div>
-           <?php            
-        }          
+           <?php
+        }
         if($value["ads_auction"]){
            ?>
            <div class="item-auction" data-tippy-placement="top" title="<?php echo $ULang->t("Аукцион"); ?>" > <i class="las la-gavel"></i> <span <?php echo $Ads->auctionTimeCompletion( $value["ads_auction_duration"], "pulse-time-grid" ); ?> ></span> </div>
