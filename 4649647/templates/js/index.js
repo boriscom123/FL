@@ -63,7 +63,7 @@ $(document).ready(function () {
         $.ajax({type: "POST",url: url_path + "systems/ajax/ads.php",data: "page="+_page+"&action=load_index_vip_ads",dataType: "json",cache: false,success: function (data) {
             // console.log(data);
             $(".action-index-load-ads").hide();
-            $(".vip-catalog-results").append('<div class="load-page'+_page+' col-lg-12" ></div><div class="row no-gutters gutters10" style="display: none;" >'+data["content"]+'</div>');
+            $(".vip-catalog-results").append('<div class="load-page'+_page+' col-lg-12" ></div><div class="row flex-nowrap no-gutters gutters10 vip-slider"><div class="vip-slider-arrow left-arrow"><i class="las la-arrow-left"></i></div><div class="vip-slider-arrow right-arrow"><i class="las la-arrow-right"></i></div>'+data["content"]+'</div>');
             $('.load-page'+_page).next().fadeIn('slow');
 
             if(_scroll){
@@ -116,4 +116,60 @@ $(document).ready(function () {
 
    indexLoadAds();
    console.log('index.js');
+   // news slider
+   let newsBlock = $(".news-items");
+   newsBlock.click(function () {
+    if(event.target.classList.contains('left-arrow') || event.target.classList.contains('la-arrow-left')) {
+      // console.log('Кнопка влево');
+      this.children[3].classList.add('left-out');
+      this.children[3].classList.remove('left-outside');
+      this.children[4].classList.add('left-outside');
+      this.children[4].classList.remove('left-news');
+      this.children[5].classList.add('left-news');
+      this.children[5].classList.remove('right-news');
+      this.children[6].classList.add('right-news');
+      this.children[6].classList.remove('right-outside');
+      this.children[7].classList.add('right-outside');
+      this.children[7].classList.remove('right-out');
+      this.children[2].classList.remove('left-out');
+      this.children[2].classList.add('d-none');
+      this.append(this.children[2]);
+      this.children[7].classList.add('right-out');
+      this.children[7].classList.remove('d-none');
+    }
+    if(event.target.classList.contains('right-arrow') || event.target.classList.contains('la-arrow-right')) {
+      // console.log('Кнопка вправо');
+      this.children[2].classList.add('left-outside');
+      this.children[2].classList.remove('left-out');
+      this.children[3].classList.add('left-news');
+      this.children[3].classList.remove('left-outside');
+      this.children[4].classList.add('right-news');
+      this.children[4].classList.remove('left-news');
+      this.children[5].classList.add('right-outside');
+      this.children[5].classList.remove('right-news');
+      this.children[6].classList.add('right-out');
+      this.children[6].classList.remove('right-outside');
+      this.children[7].classList.add('d-none');
+      this.children[7].classList.remove('right-out');
+      this.children[1].after(this.lastElementChild);
+      this.children[2].classList.add('left-out');
+      this.children[2].classList.remove('d-none');
+    }
+   });
+   let vipBlock = $(".vip-catalog-results");
+   vipBlock.click(function () {
+     let containerEl = this.children[1];
+     this.children[1].style.height = this.children[1].children[2].offsetHeight+'px';
+     if(event.target.classList.contains('left-arrow') || event.target.classList.contains('la-arrow-left')) {
+       // console.log('Кнопка влево');
+       containerEl.children[2].classList.add('move-to-left');
+       setTimeout(()=>{containerEl.children[2].classList.remove('move-to-left'); containerEl.append(containerEl.children[2]);}, 300);
+     }
+      if(event.target.classList.contains('right-arrow') || event.target.classList.contains('la-arrow-right')) {
+        // console.log('Кнопка вправо');
+        containerEl.children[6].classList.add('move-to-right');
+        setTimeout(()=>{containerEl.children[6].classList.remove('move-to-right'); containerEl.children[1].after(containerEl.lastElementChild);}, 300);
+
+      }
+   });
 });

@@ -71,3 +71,71 @@ display: none;
 .text-left {
   text-align: left;
 }
+.btn-green {
+  transition: 0.1s;
+  background: rgb(41,203,79);
+  background: linear-gradient(to bottom,  rgba(41,203,79,1) 0%,rgba(18,144,48,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29cb4f', endColorstr='#129030',GradientType=0 );
+  &:hover {
+    background: rgb(0,135,32);
+    background: linear-gradient(to bottom,  rgba(0,135,32,1) 0%,rgba(0,92,22,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008720', endColorstr='#005c16',GradientType=0 );
+  }
+  &:active {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 1) inset;
+  }
+}
+.btn-blue {
+  transition: 0.1s;
+  background: rgb(10,140,229);
+  background: linear-gradient(to bottom,  rgba(10,140,229,1) 0%,rgba(9,98,160,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a8ce5', endColorstr='#0962a0',GradientType=0 );
+  &:hover {
+    background: rgb(0,84,141);
+    background: linear-gradient(to bottom,  rgba(0,84,141,1) 0%,rgba(0,58,98,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00548d', endColorstr='#003a62',GradientType=0 );
+  }
+  &:active {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 1) inset;
+  }
+}
+.btn-red {
+  transition: 0.1s;
+  background: rgb(255,84,0);
+  background: linear-gradient(to bottom,  rgba(255,84,0,1) 0%,rgba(237,18,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5400', endColorstr='#ed1200',GradientType=0 );
+  &:hover {
+    background: rgb(137,45,0);
+    background: linear-gradient(to bottom,  rgba(137,45,0,1) 0%,rgba(131,10,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#892d00', endColorstr='#830a00',GradientType=0 );
+  }
+  &:active {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 1) inset;
+  }
+}
+.btn-white {
+  transition: 0.1s;
+  color: #505050;
+  border: 2px solid #505050;
+  background-color: white;
+  &:hover {
+    background: rgb(10,140,229);
+    background: linear-gradient(to bottom,  rgba(10,140,229,1) 0%,rgba(9,98,159,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a8ce5', endColorstr='#09629f',GradientType=0 );
+    color: white;
+    border: none;
+  }
+  &:active {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 1) inset;
+  }
+}
+.input-text {
+  transition: 0.1s;
+  border: 1px solid #cacaca;
+  &:hover {
+    border: 1px solid #23bc47;
+  }
+  &:active {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 1) inset;
+  }
+}

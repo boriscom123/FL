@@ -1,6 +1,10 @@
 .block-4 {
   position: relative;
   overflow: hidden;
+  > a[name=catalog]{
+    position: absolute;
+    top: -100px;
+  }
   > .bg-image {
     position: absolute;
     z-index: 0;
@@ -229,16 +233,10 @@
                 outline: none;
                 border: none;
                 border-radius: 20px;
-                background: rgb(10,140,229);
-                background: linear-gradient(to bottom,  rgba(10,140,229,1) 0%,rgba(9,98,159,1) 100%);
                 font-family: 'Proxima Nova Rg';
                 color: white;
                 text-transform: uppercase;
                 font-size: 1.1em;
-                transition: $transition;
-                &:hover {
-                  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
-                }
               }
             }
             > p {
@@ -275,7 +273,6 @@
           > input {
             height: 50px;
             width: 100%;
-            border: 1px solid #cacaca;
             border-radius: 25px;
             outline: none;
             padding-left: 20px;
@@ -283,10 +280,6 @@
             box-sizing: border-box;
             font-family: 'Proxima Nova Lt';
             font-size: 1em;
-            transition: $transition;
-            &:hover {
-              box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
-            }
           }
           > button {
             height: 50px;
@@ -294,16 +287,10 @@
             outline: none;
             border: none;
             border-radius: 25px;
-            background: rgb(41,203,79);
-            background: linear-gradient(to bottom,  rgba(41,203,79,1) 0%,rgba(19,146,49,1) 100%);
             font-family: 'Proxima Nova Rg';
             color: white;
             text-transform: uppercase;
             font-size: 1.1em;
-            transition: $transition;
-            &:hover {
-              box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
-            }
           }
           > .form-checkbox {
             > input[type=checkbox]:checked ~.checkbox-field {

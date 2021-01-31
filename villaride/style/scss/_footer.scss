@@ -22,12 +22,19 @@
       @media (max-width: 750px) { justify-content: space-between; width: 100%; padding: 0;}
       @media (max-width: 450px) { flex-direction: column;}
       > li {
+        padding: 10px 0 0 0;
         @media (max-width: 450px) { margin: 10px 0;}
         > a {
-          border-bottom: 1px solid rgba(255, 255, 255, 1);
-          transition: $transition;
-          &:hover {
-            border-bottom: 1px solid #404040;
+          &:hover > .decoration {
+            background-color: #25c24a;
+          }
+          > .decoration {
+            background-color: none;
+            height: 6px;
+            width: 100%;
+            border-radius: 6px;
+            transition: $transition;
+            margin-top: 5px;
           }
         }
       }

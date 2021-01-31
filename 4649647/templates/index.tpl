@@ -24,20 +24,20 @@
     <span class="shape5 d-none d-md-block" ></span>
 
 
-     <div class="fix-calling-add owl-calling owl-carousel owl-theme" >
+     <!-- <div class="fix-calling-add owl-calling owl-carousel owl-theme" >
          <div>
            <h1><?php echo $ULang->t( "Подать бесплатно – Продать быстро!" ); ?></h1>
            <p><?php echo $ULang->t( "Получите Бонусы в подарок!" ); ?></p>
            <a href="<?php echo _link("ad/create"); ?>"><?php echo $ULang->t( "Подать объявление" ); ?></a>
          </div>
 
-         <!-- <?php if( $settings["secure_status"] ){ ?>
+         <?php if( $settings["secure_status"] ){ ?>
          <div>
            <h1><?php echo $ULang->t( "Продавайте товары через безопасную сделку" ); ?></h1>
            <p><?php echo $ULang->t( "Это просто и безопасно!" ); ?></p>
            <a href="<?php echo _link("ad/create"); ?>"><?php echo $ULang->t( "Добавить товар" ); ?></a>
          </div>
-         <?php } ?> -->
+         <?php } ?>
 
          <?php if($settings["functionality"]["auction"]){ ?>
          <div>
@@ -47,7 +47,7 @@
          </div>
          <?php } ?>
 
-     </div>
+     </div> -->
 
      <div class="news-block mt35">
 
@@ -56,9 +56,29 @@
          <div class="news-block-arrow left-arrow"><i class="las la-arrow-left"></i></div>
          <div class="news-block-arrow right-arrow"><i class="las la-arrow-right"></i></div>
 
-         <div class="news left-news">
+         <div class="news left-out">
+           <div class="info">
+             <h2>Название новости 0</h2>
+             <p>Короткое описание</p>
+             <a href="#">Подробнее</a>
+           </div>
+           <div class="image">
+             <img src="templates/images/news/005.jpg" alt="block">
+           </div>
+         </div>
+         <div class="news left-outside">
            <div class="info">
              <h2>Название новости 1</h2>
+             <p>Короткое описание</p>
+             <a href="#">Подробнее</a>
+           </div>
+           <div class="image">
+             <img src="templates/images/news/005.jpg" alt="block">
+           </div>
+         </div>
+         <div class="news left-news">
+           <div class="info">
+             <h2>Название новости 2</h2>
              <p>Короткое описание</p>
              <a href="#">Подробнее</a>
            </div>
@@ -68,22 +88,12 @@
          </div>
          <div class="news right-news">
            <div class="info">
-             <h2>Название новости 2</h2>
-             <p>Короткое описание</p>
-             <a href="#">Подробнее</a>
-           </div>
-           <div class="image">
-             <img src="templates/images/news/002.jpg" alt="worker">
-           </div>
-         </div>
-         <div class="news left-outside">
-           <div class="info">
              <h2>Название новости 3</h2>
              <p>Короткое описание</p>
              <a href="#">Подробнее</a>
            </div>
            <div class="image">
-             <img src="templates/images/news/003.jpg" alt="pc">
+             <img src="templates/images/news/002.jpg" alt="worker">
            </div>
          </div>
          <div class="news right-outside">
@@ -93,17 +103,27 @@
              <a href="#">Подробнее</a>
            </div>
            <div class="image">
-             <img src="templates/images/news/004.jpg" alt="rocket">
+             <img src="templates/images/news/003.jpg" alt="pc">
            </div>
          </div>
-         <div class="news d-none">
+         <div class="news right-out">
            <div class="info">
              <h2>Название новости 5</h2>
              <p>Короткое описание</p>
              <a href="#">Подробнее</a>
            </div>
            <div class="image">
-             <img src="templates/images/news/005.jpg" alt="block">
+             <img src="templates/images/news/004.jpg" alt="rocket">
+           </div>
+         </div>
+         <div class="news d-none">
+           <div class="info">
+             <h2>Название новости 6</h2>
+             <p>Короткое описание</p>
+             <a href="#">Подробнее</a>
+           </div>
+           <div class="image">
+             <img src="templates/images/news/002.jpg" alt="worker">
            </div>
          </div>
 
@@ -174,7 +194,6 @@
 
             <h3 class="mt20 mb25" > <strong><?php echo $ULang->t( "VIP объявления" ); ?></strong> </h3>
             <div class="vip-catalog-results">
-
             </div>
 
             <?php

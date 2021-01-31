@@ -1,4 +1,10 @@
 .block-7 {
+  position: relative;
+  padding: 50px 0 0 0;
+  > a[name=feedback]{
+    position: absolute;
+    top: -80px;
+  }
   > div {
     > .title {
       > h2 {
