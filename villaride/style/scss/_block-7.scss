@@ -51,7 +51,12 @@
         z-index: 1;
         background-color: white;
         border-radius: 50%;
-        @media (max-width: 700px) { display: none;}
+        transition: $transition;
+        transform: rotate(180deg);
+        &:hover {
+          transform: scale(1.1) rotate(180deg);
+        }
+        // @media (max-width: 700px) { display: none;}
       }
       > .right {
         height: 50px;
@@ -65,13 +70,17 @@
         right: 1%;
         cursor: pointer;
         z-index: 1;
-        background-color: white;
+        background: white;
         border-radius: 50%;
-        @media (max-width: 700px) { display: none;}
+        transition: $transition;
+        &:hover {
+          transform: scale(1.1);
+        }
+        // @media (max-width: 700px) { display: none;}
       }
       > .card-block {
         width: 100%;
-        @media (max-width: 700px) { flex-direction: column; align-items: center;}
+        @media (max-width: 700px) { justify-content: center; align-items: center; >.card:nth-child(2) {display: none;}}
         > .card {
           width: #{calc(50% - 30px)};
           position: relative;
@@ -99,15 +108,14 @@
             }
           }
           > .play {
+            height: 100px;
+            width: 100px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             cursor: pointer;
             transition: $transition;
-            &:hover {
-              transform: scale(1.1) translateX(-49%) translateY(-49%);
-            }
           }
           > .info {
             position: absolute;

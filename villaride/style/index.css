@@ -486,6 +486,8 @@ button {
 }
 .block-1 > div > .block-1-right > div > .icons > a {
   margin: 0 5px 0 0;
+  height: 35px;
+  width: 35px;
 }
 .block-1 > div > .block-1-right > div > .icons > a:last-child {
   margin: 0;
@@ -926,6 +928,19 @@ button {
   -o-object-fit: cover;
   object-fit: cover;
 }
+.block-3 > div > .block-3-video > .play {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.block-3 > div > .block-3-video > .play:hover {
+  transform: scale(1.1) translateX(-49%) translateY(-49%);
+}
 
 .block-4 {
   position: relative;
@@ -1096,25 +1111,45 @@ button {
     align-items: center;
   }
 }
-.block-4 > div > div > .card > .left > .product > .image {
+.block-4 > div > div > .card > .left > .product > .video {
+  position: relative;
   height: 240px;
   width: 100%;
   max-width: 390px;
   border-radius: 5px;
 }
-.block-4 > div > div > .card > .left > .product > .image > img {
+.block-4 > div > div > .card > .left > .product > .video > .image {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.block-4 > div > div > .card > .left > .product > .video > .image > img {
   height: 100%;
   width: 100%;
   border-radius: 5px;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.block-4 > div > div > .card > .left > .product > .image > video {
+.block-4 > div > div > .card > .left > .product > .video > .image > video {
   height: 100%;
   width: 100%;
   border-radius: 5px;
+  outline: none;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.block-4 > div > div > .card > .left > .product > .video > .play {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.block-4 > div > div > .card > .left > .product > .video > .play:hover {
+  transform: scale(1.1) translateX(-49%) translateY(-49%);
 }
 .block-4 > div > div > .card > .left > .product > .table {
   margin: 0 0 0 20px;
@@ -1381,11 +1416,11 @@ button {
   z-index: 1;
   background-color: white;
   border-radius: 50%;
+  transition: 0.3s;
+  transform: rotate(180deg);
 }
-@media (max-width: 700px) {
-  .block-5 > div > .slider > .left {
-    display: none;
-  }
+.block-5 > div > .slider > .left:hover {
+  transform: scale(1.1) rotate(180deg);
 }
 .block-5 > div > .slider > .right {
   height: 50px;
@@ -1399,21 +1434,23 @@ button {
   right: 1%;
   cursor: pointer;
   z-index: 1;
-  background-color: white;
+  background: white;
   border-radius: 50%;
+  transition: 0.3s;
 }
-@media (max-width: 700px) {
-  .block-5 > div > .slider > .right {
-    display: none;
-  }
+.block-5 > div > .slider > .right:hover {
+  transform: scale(1.1);
 }
 .block-5 > div > .slider > .card-block {
   width: 100%;
 }
 @media (max-width: 700px) {
   .block-5 > div > .slider > .card-block {
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+  .block-5 > div > .slider > .card-block > .card:nth-child(2) {
+    display: none;
   }
 }
 .block-5 > div > .slider > .card-block > .card {
@@ -1453,6 +1490,8 @@ button {
   object-fit: cover;
 }
 .block-5 > div > .slider > .card-block > .card > .play {
+  height: 100px;
+  width: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1708,11 +1747,11 @@ button {
   z-index: 1;
   background-color: white;
   border-radius: 50%;
+  transition: 0.3s;
+  transform: rotate(180deg);
 }
-@media (max-width: 700px) {
-  .block-7 > div > .slider > .left {
-    display: none;
-  }
+.block-7 > div > .slider > .left:hover {
+  transform: scale(1.1) rotate(180deg);
 }
 .block-7 > div > .slider > .right {
   height: 50px;
@@ -1726,21 +1765,23 @@ button {
   right: 1%;
   cursor: pointer;
   z-index: 1;
-  background-color: white;
+  background: white;
   border-radius: 50%;
+  transition: 0.3s;
 }
-@media (max-width: 700px) {
-  .block-7 > div > .slider > .right {
-    display: none;
-  }
+.block-7 > div > .slider > .right:hover {
+  transform: scale(1.1);
 }
 .block-7 > div > .slider > .card-block {
   width: 100%;
 }
 @media (max-width: 700px) {
   .block-7 > div > .slider > .card-block {
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+  .block-7 > div > .slider > .card-block > .card:nth-child(2) {
+    display: none;
   }
 }
 .block-7 > div > .slider > .card-block > .card {
@@ -1780,15 +1821,14 @@ button {
   object-fit: cover;
 }
 .block-7 > div > .slider > .card-block > .card > .play {
+  height: 100px;
+  width: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
   transition: 0.3s;
-}
-.block-7 > div > .slider > .card-block > .card > .play:hover {
-  transform: scale(1.1) translateX(-49%) translateY(-49%);
 }
 .block-7 > div > .slider > .card-block > .card > .info {
   position: absolute;
@@ -1931,11 +1971,11 @@ button {
   z-index: 1;
   background-color: white;
   border-radius: 50%;
+  transition: 0.3s;
+  transform: rotate(180deg);
 }
-@media (max-width: 700px) {
-  .block-8 > div > .slider > .left {
-    display: none;
-  }
+.block-8 > div > .slider > .left:hover {
+  transform: scale(1.1) rotate(180deg);
 }
 .block-8 > div > .slider > .right {
   height: 50px;
@@ -1949,21 +1989,26 @@ button {
   right: 1%;
   cursor: pointer;
   z-index: 1;
-  background-color: white;
+  background: white;
   border-radius: 50%;
+  transition: 0.3s;
 }
-@media (max-width: 700px) {
-  .block-8 > div > .slider > .right {
-    display: none;
-  }
+.block-8 > div > .slider > .right:hover {
+  transform: scale(1.1);
 }
 .block-8 > div > .slider > .card-block {
   width: 100%;
 }
 @media (max-width: 700px) {
   .block-8 > div > .slider > .card-block {
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+  .block-8 > div > .slider > .card-block > .card:nth-child(2) {
+    display: none;
+  }
+  .block-8 > div > .slider > .card-block > .card:nth-child(3) {
+    display: none;
   }
 }
 .block-8 > div > .slider > .card-block > .card {
@@ -2004,6 +2049,19 @@ button {
   border-radius: 10px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.block-8 > div > .slider > .card-block > .card > .play {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.block-8 > div > .slider > .card-block > .card > .play:hover {
+  transform: scale(1.1) translateX(-49%) translateY(-49%);
 }
 .block-8 > div > .slider > .pagination {
   height: 15px;
