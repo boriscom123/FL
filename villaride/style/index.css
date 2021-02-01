@@ -2261,7 +2261,7 @@ button {
 }
 
 .modals {
-  position: fixed;
+  position: none;
   top: 90px;
   left: 0;
   height: calc(100vh - 90px);
