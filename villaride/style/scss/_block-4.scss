@@ -164,6 +164,13 @@
                 -o-object-fit: cover;
                    object-fit: cover;
               }
+              > video {
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+                -o-object-fit: cover;
+                   object-fit: cover;
+              }
             }
             > .table {
               margin: 0 0 0 20px;

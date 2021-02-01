@@ -60,6 +60,7 @@
       height: 40px;
       width: 200px;
       border-radius: 20px;
+      outline: none;
       @media (max-width: 750px) { display: none; }
     }
     > .mobile-navigation {

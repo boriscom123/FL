@@ -33,7 +33,6 @@
             left: #{calc(50% - 15px)};
           }
         }
-
       }
     }
     > .slider {
@@ -85,6 +84,13 @@
             width: 100%;
             border-radius: 10px;
             > img {
+              height: 100%;
+              width: 100%;
+              border-radius: 10px;
+              -o-object-fit: cover;
+                 object-fit: cover;
+            }
+            > video {
               height: 100%;
               width: 100%;
               border-radius: 10px;

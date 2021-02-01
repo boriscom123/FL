@@ -62,7 +62,7 @@
       height: 40px;
       width: 200px;
       border-radius: 20px;
-      border: 1px solid #404040;
+      outline: none;
       transition: $transition;
       &:hover {
         background-color: #404040;
