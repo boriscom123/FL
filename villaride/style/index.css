@@ -29,8 +29,16 @@ a {
   color: #404040;
 }
 
+a:visited {
+  color: #404040;
+}
+
 button {
   cursor: pointer;
+}
+
+video {
+  outline: none;
 }
 
 .container {
@@ -203,6 +211,11 @@ button {
   padding: 0 30px;
   font-size: 1.1em;
 }
+@media (max-width: 1200px) {
+  .header > div > .header-navigation {
+    margin: 0;
+  }
+}
 @media (max-width: 1100px) {
   .header > div > .header-navigation {
     display: none;
@@ -268,22 +281,22 @@ button {
     display: flex;
   }
 }
-.header > div > .mobile-navigation:hover > ul {
-  display: flex;
+@media (max-width: 500px) {
+  .header > div > .mobile-navigation {
+    font-size: 3.5em;
+  }
 }
 .header > div > .mobile-navigation > ul {
   padding: 5px;
   position: absolute;
   top: 100%;
   right: 0;
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   background-color: white;
   box-shadow: 0px 10px 10px 5px rgba(34, 60, 80, 0.3);
   border-radius: 5px;
-  transition: 0.3s;
 }
 .header > div > .mobile-navigation > ul > li {
   margin: 5px 0;
@@ -323,6 +336,7 @@ button {
   font-family: "Proxima Nova Lt";
   text-transform: uppercase;
   font-size: 0.7em;
+  margin: 0;
 }
 @media (max-width: 1100px) {
   .header > .mobile-header > div > .header-tel {
@@ -488,6 +502,12 @@ button {
   margin: 0 5px 0 0;
   height: 35px;
   width: 35px;
+}
+.block-1 > div > .block-1-right > div > .icons > a > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .block-1 > div > .block-1-right > div > .icons > a:last-child {
   margin: 0;
@@ -909,17 +929,6 @@ button {
   -o-object-fit: cover;
   object-fit: cover;
 }
-.block-3 > div > .block-3-video > div > .play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  cursor: pointer;
-  transition: 0.3s;
-}
-.block-3 > div > .block-3-video > div > .play-btn:hover {
-  transform: scale(1.1) translateX(-49%) translateY(-49%);
-}
 .block-3 > div > .block-3-video > div > video {
   height: 100%;
   width: 100%;
@@ -932,14 +941,17 @@ button {
   height: 100px;
   width: 100px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
   transition: 0.3s;
 }
 .block-3 > div > .block-3-video > .play:hover {
-  transform: scale(1.1) translateX(-49%) translateY(-49%);
+  transform: scale(1.1);
+}
+.block-3 > div > .block-3-video > .play:hover > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .block-4 {
@@ -957,6 +969,11 @@ button {
 .block-4 > .position-1 {
   top: 0%;
   left: 63%;
+}
+@media (max-width: 900px) {
+  .block-4 > .position-1 {
+    top: 2%;
+  }
 }
 .block-4 > .position-2 {
   top: 8%;
@@ -994,6 +1011,11 @@ button {
   top: 64%;
   left: 8%;
 }
+@media (max-width: 750px) {
+  .block-4 > .position-10 {
+    top: 67%;
+  }
+}
 .block-4 > .position-11 {
   top: 70%;
   left: 67%;
@@ -1010,9 +1032,24 @@ button {
   top: 86%;
   left: 7%;
 }
+@media (max-width: 1000px) {
+  .block-4 > .position-14 {
+    top: 88%;
+  }
+}
 .block-4 > .position-15 {
   top: 88%;
   left: 80%;
+}
+@media (max-width: 1000px) {
+  .block-4 > .position-15 {
+    top: 89%;
+  }
+}
+@media (max-width: 450px) {
+  .block-4 > .position-15 {
+    display: none;
+  }
 }
 .block-4 > div > .title > h2 {
   text-align: center;
@@ -1263,7 +1300,7 @@ button {
 @media (max-width: 1000px) {
   .block-4 > div > div > .card > .block-4-form {
     margin: 25px 0 0 0;
-    min-height: 300px;
+    min-height: 370px;
   }
 }
 .block-4 > div > div > .card > .block-4-form > h2 {
@@ -1368,6 +1405,11 @@ button {
   position: absolute;
   top: -80px;
 }
+@media (max-width: 500px) {
+  .block-5 > a[name=video] {
+    top: -115px;
+  }
+}
 .block-5 > div > .title > h2 {
   text-align: center;
   font-family: "Proxima Nova Bl";
@@ -1410,17 +1452,22 @@ button {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 37%;
+  top: 35%;
   left: 1%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
   border-radius: 50%;
   transition: 0.3s;
-  transform: rotate(180deg);
 }
 .block-5 > div > .slider > .left:hover {
-  transform: scale(1.1) rotate(180deg);
+  transform: scale(1.1);
+}
+.block-5 > div > .slider > .left > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .block-5 > div > .slider > .right {
   height: 50px;
@@ -1430,7 +1477,7 @@ button {
   align-items: center;
   position: absolute;
   position: absolute;
-  top: 37%;
+  top: 35%;
   right: 1%;
   cursor: pointer;
   z-index: 1;
@@ -1440,6 +1487,12 @@ button {
 }
 .block-5 > div > .slider > .right:hover {
   transform: scale(1.1);
+}
+.block-5 > div > .slider > .right > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .block-5 > div > .slider > .card-block {
   width: 100%;
@@ -1490,8 +1543,8 @@ button {
   object-fit: cover;
 }
 .block-5 > div > .slider > .card-block > .card > .play {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1631,6 +1684,7 @@ button {
 .block-6 > div > div > .block-6-form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: 25px 0 0 0;
 }
 @media (max-width: 600px) {
@@ -1638,26 +1692,26 @@ button {
     justify-content: center;
   }
 }
-.block-6 > div > div > .block-6-form > div {
-  width: 50%;
-  height: 50px;
-  min-width: 300px;
-  margin-bottom: 30px;
-}
-.block-6 > div > div > .block-6-form > div > input {
-  height: 50px;
+.block-6 > div > div > .block-6-form > .input-text {
+  display: flex;
   width: 300px;
-  box-sizing: border-box;
+  height: 50px;
+  margin-bottom: 30px;
   outline: none;
+  box-sizing: border-box;
   border-radius: 25px;
   padding-left: 25px;
   overflow: hidden;
   font-family: "Proxima Nova Lt";
   font-size: 1em;
 }
-.block-6 > div > div > .block-6-form > div > button {
-  height: 50px;
+.block-6 > div > div > .block-6-form > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
+  height: 50px;
+  margin-bottom: 30px;
   outline: none;
   border: none;
   border-radius: 25px;
@@ -1665,6 +1719,10 @@ button {
   color: white;
   text-transform: uppercase;
   font-size: 1.1em;
+}
+.block-6 > div > div > .block-6-form > .form-checkbox {
+  width: 300px;
+  justify-content: center;
 }
 .block-6 > div > div > .block-6-form > .form-checkbox > input[type=checkbox]:checked ~ .checkbox-field {
   background-color: grey;
@@ -1686,6 +1744,11 @@ button {
   cursor: pointer;
   color: white;
 }
+@media (max-width: 473px) {
+  .block-6 > div > div > .block-6-form > .form-checkbox > .checkbox-label {
+    color: #2c9837;
+  }
+}
 .block-6 > div > div > .block-6-form > .form-checkbox > .checkbox-label > a {
   text-decoration: underline;
   color: #2c9837;
@@ -1698,6 +1761,11 @@ button {
 .block-7 > a[name=feedback] {
   position: absolute;
   top: -80px;
+}
+@media (max-width: 500px) {
+  .block-7 > a[name=feedback] {
+    top: -115px;
+  }
 }
 .block-7 > div > .title > h2 {
   text-align: center;
@@ -1741,17 +1809,22 @@ button {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 37%;
+  top: 35%;
   left: 1%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
   border-radius: 50%;
   transition: 0.3s;
-  transform: rotate(180deg);
 }
 .block-7 > div > .slider > .left:hover {
-  transform: scale(1.1) rotate(180deg);
+  transform: scale(1.1);
+}
+.block-7 > div > .slider > .left > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .block-7 > div > .slider > .right {
   height: 50px;
@@ -1761,7 +1834,7 @@ button {
   align-items: center;
   position: absolute;
   position: absolute;
-  top: 37%;
+  top: 35%;
   right: 1%;
   cursor: pointer;
   z-index: 1;
@@ -1771,6 +1844,12 @@ button {
 }
 .block-7 > div > .slider > .right:hover {
   transform: scale(1.1);
+}
+.block-7 > div > .slider > .right > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .block-7 > div > .slider > .card-block {
   width: 100%;
@@ -1821,8 +1900,8 @@ button {
   object-fit: cover;
 }
 .block-7 > div > .slider > .card-block > .card > .play {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1923,6 +2002,11 @@ button {
   position: absolute;
   top: -80px;
 }
+@media (max-width: 500px) {
+  .block-8 > a[name=gallery] {
+    top: -115px;
+  }
+}
 .block-8 > div > .title > h2 {
   text-align: center;
   font-family: "Proxima Nova Bl";
@@ -1965,17 +2049,22 @@ button {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 37%;
+  top: 35%;
   left: 1%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
   border-radius: 50%;
   transition: 0.3s;
-  transform: rotate(180deg);
 }
 .block-8 > div > .slider > .left:hover {
-  transform: scale(1.1) rotate(180deg);
+  transform: scale(1.1);
+}
+.block-8 > div > .slider > .left > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .block-8 > div > .slider > .right {
   height: 50px;
@@ -1985,7 +2074,7 @@ button {
   align-items: center;
   position: absolute;
   position: absolute;
-  top: 37%;
+  top: 35%;
   right: 1%;
   cursor: pointer;
   z-index: 1;
@@ -1995,6 +2084,12 @@ button {
 }
 .block-8 > div > .slider > .right:hover {
   transform: scale(1.1);
+}
+.block-8 > div > .slider > .right > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .block-8 > div > .slider > .card-block {
   width: 100%;
@@ -2051,8 +2146,8 @@ button {
   object-fit: cover;
 }
 .block-8 > div > .slider > .card-block > .card > .play {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2144,6 +2239,7 @@ button {
   position: relative;
   z-index: 2;
   line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .block-9 > div > .map {
   width: 95%;
@@ -2176,6 +2272,31 @@ button {
     background-position: 50% 200%;
   }
 }
+@media (max-width: 950px) {
+  .footer {
+    background-position: -50% 750%;
+  }
+}
+@media (max-width: 778px) {
+  .footer {
+    background-position: 50% 450%;
+  }
+}
+@media (max-width: 750px) {
+  .footer {
+    background-position: 50% 300%;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    background-position: 50% 200%;
+  }
+}
+@media (max-width: 450px) {
+  .footer {
+    background-position: 50% 150%;
+  }
+}
 @media (max-width: 1100px) {
   .footer > div {
     flex-wrap: wrap;
@@ -2204,6 +2325,7 @@ button {
     justify-content: space-between;
     width: 100%;
     padding: 0;
+    margin: 0;
   }
 }
 @media (max-width: 450px) {
@@ -2233,7 +2355,7 @@ button {
 .footer > div > .header-tel {
   margin: 0 25px 0 0;
 }
-@media (max-width: 450px) {
+@media (max-width: 750px) {
   .footer > div > .header-tel {
     margin: 25px 0 0 0;
   }
@@ -2282,7 +2404,14 @@ button {
 .footer > .footer-bottom-content {
   padding: 25px 0 0 0;
 }
-@media (max-width: 450px) {
+@media (max-width: 950px) {
+  .footer > .footer-bottom-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
   .footer > .footer-bottom-content > div {
     flex-direction: column;
     justify-content: center;
@@ -2324,8 +2453,30 @@ button {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 650px) {
+  .footer > .footer-bottom-content > div > .footer-tel {
+    margin: 0;
+  }
+}
 .footer > .footer-bottom-content > div > .footer-tel > a {
   margin: 0 0 10px 0;
+}
+.footer > .footer-bottom-content > div > .icons {
+  margin-right: 15px;
+}
+.footer > .footer-bottom-content > div > .icons > a {
+  margin: 0 5px 0 0;
+  height: 35px;
+  width: 35px;
+}
+.footer > .footer-bottom-content > div > .icons > a > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.footer > .footer-bottom-content > div > .icons > a:last-child {
+  margin: 0;
 }
 @media (max-width: 450px) {
   .footer > .footer-bottom-content > div > div {
@@ -2357,11 +2508,11 @@ button {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  overflow-y: auto;
+  padding-bottom: 50px;
 }
 @media (max-width: 500px) {
   .modals {
-    top: 125px;
+    top: 139px;
   }
 }
 .modals > .image {
@@ -2399,25 +2550,33 @@ button {
 }
 .modals > .modal-info {
   height: 100%;
-  max-height: 460px;
   width: 95%;
-  max-width: 840px;
+  max-width: 1210px;
   background-color: white;
   background-image: url("../image/bg-modal.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 50px;
-  overflow: hidden;
-  padding: 0 0 0 40px;
+  overflow-y: auto;
+  padding: 0 10px 0 40px;
+}
+@media (max-width: 500px) {
+  .modals > .modal-info {
+    padding: 0 10px 0 10px;
+  }
 }
 .modals > .modal-info > .decoration {
-  height: calc(100% - 80px);
-  margin: 40px 15px 0 0;
+  margin: 40px 15px 40px 0;
   width: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 700px) {
+  .modals > .modal-info > .decoration {
+    margin: 80px 10px 40px 0;
+  }
 }
 .modals > .modal-info > .decoration > div {
   height: 12px;
@@ -2461,13 +2620,20 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
-.modals > .modal-info > .text > div {
-  max-width: 500px;
+@media (max-width: 700px) {
+  .modals > .modal-info > .text {
+    padding: 80px 0 40px;
+  }
 }
 .modals > .modal-info > .text > div > h3 {
   font-family: "Proxima Nova Rg";
   font-size: 1.2em;
   font-weight: 400;
+}
+@media (max-width: 600px) {
+  .modals > .modal-info > .text > div > h3 {
+    font-size: 1em;
+  }
 }
 .modals > .modal-info > .text > div > h3 > span {
   color: #d60909;
@@ -2477,11 +2643,21 @@ button {
   font-size: 1.5em;
   font-weight: 900;
 }
+@media (max-width: 600px) {
+  .modals > .modal-info > .text > div > h2 {
+    font-size: 1.2em;
+  }
+}
 .modals > .modal-info > .text > p {
-  max-width: 450px;
   font-family: "Proxima Nova Rg";
   font-size: 1em;
   font-weight: 400;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .modals > .modal-info > .text > p {
+    font-size: 0.9em;
+  }
 }
 .modals > .modal-info > .text > p > span {
   font-family: "Proxima Nova Rg";
@@ -2518,9 +2694,11 @@ button {
 .modals > .modal-info > .close > .close-block > .close-icon:hover {
   border: 3px solid #23bc47;
 }
-.modals > .modal-info > .close > .close-block > .close-icon > .close-sigil {
-  font-size: 2.5em;
-  margin: 0 0 5px 0;
+.modals > .modal-info > .close > .close-block > .close-icon > img {
+  height: 70%;
+  width: 70%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .modals > .modal-form {
   height: 100%;
@@ -2549,6 +2727,11 @@ button {
   font-weight: 400;
   color: white;
 }
+@media (max-height: 650px) {
+  .modals > .modal-form > .close > .close-block > .close-text {
+    color: black;
+  }
+}
 .modals > .modal-form > .close > .close-block > .close-icon {
   height: 40px;
   width: 40px;
@@ -2560,13 +2743,19 @@ button {
   background-color: none;
   cursor: pointer;
 }
+@media (max-height: 650px) {
+  .modals > .modal-form > .close > .close-block > .close-icon {
+    border: 3px solid black;
+  }
+}
 .modals > .modal-form > .close > .close-block > .close-icon:hover {
   border: 3px solid #23bc47;
 }
-.modals > .modal-form > .close > .close-block > .close-icon > .close-sigil {
-  font-size: 2.5em;
-  margin: 0 0 5px 0;
-  color: white;
+.modals > .modal-form > .close > .close-block > .close-icon > img {
+  height: 70%;
+  width: 70%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .modals > .modal-form > form {
   background-color: white;
@@ -2593,6 +2782,7 @@ button {
   font-size: 1em;
   font-weight: 400;
   text-align: center;
+  margin: 0;
 }
 .modals > .modal-form > form > input {
   height: 50px;
@@ -2679,10 +2869,11 @@ button {
 .modals > .modal-thanks > .close > .close-block > .close-icon:hover {
   border: 3px solid #23bc47;
 }
-.modals > .modal-thanks > .close > .close-block > .close-icon > .close-sigil {
-  font-size: 2.5em;
-  margin: 0 0 5px 0;
-  color: white;
+.modals > .modal-thanks > .close > .close-block > .close-icon > img {
+  height: 70%;
+  width: 70%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .modals > .modal-thanks > .info {
   background-color: white;

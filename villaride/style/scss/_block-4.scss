@@ -12,6 +12,7 @@
   > .position-1 {
     top: 0%;
     left: 63%;
+    @media (max-width: 900px) { top: 2%; }
   }
   > .position-2 {
     top: 8%;
@@ -48,6 +49,7 @@
   > .position-10 {
     top: 64%;
     left: 8%;
+    @media (max-width: 750px) { top: 67%; }
   }
   > .position-11 {
     top: 70%;
@@ -64,10 +66,13 @@
   > .position-14 {
     top: 86%;
     left: 7%;
+    @media (max-width: 1000px) { top: 88%; }
   }
   > .position-15 {
     top: 88%;
     left: 80%;
+    @media (max-width: 1000px) { top: 89%; }
+    @media (max-width: 450px) { display: none; }
   }
   > div {
     > .title {
@@ -280,7 +285,7 @@
           height: inherit;
           max-width: 250px;
           z-index: 2;
-          @media (max-width: 1000px) { margin: 25px 0 0 0; min-height: 300px;}
+          @media (max-width: 1000px) { margin: 25px 0 0 0; min-height: 370px;}
           > h2 {
             font-family: 'Proxima Nova Bl';
             font-size: 1.5em;

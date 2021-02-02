@@ -29,37 +29,40 @@
       > .block-6-form {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         margin: 25px 0 0 0;
         @media (max-width: 600px) { justify-content: center; }
-        > div {
-          width: 50%;
+        > .input-text {
+          display: flex;
+          width: 300px;
           height: 50px;
-          min-width: 300px;
           margin-bottom: 30px;
-          > input {
-            height: 50px;
-            width: 300px;
-            box-sizing: border-box;
-            outline: none;
-            border-radius: 25px;
-            padding-left: 25px;
-            overflow: hidden;
-            font-family: 'Proxima Nova Lt';
-            font-size: 1em;
-          }
-          > button {
-            height: 50px;
-            width: 300px;
-            outline: none;
-            border: none;
-            border-radius: 25px;
-            font-family: 'Proxima Nova Rg';
-            color: white;
-            text-transform: uppercase;
-            font-size: 1.1em;
-          }
+          outline: none;
+          box-sizing: border-box;
+          border-radius: 25px;
+          padding-left: 25px;
+          overflow: hidden;
+          font-family: 'Proxima Nova Lt';
+          font-size: 1em;
+        }
+        > button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 300px;
+          height: 50px;
+          margin-bottom: 30px;
+          outline: none;
+          border: none;
+          border-radius: 25px;
+          font-family: 'Proxima Nova Rg';
+          color: white;
+          text-transform: uppercase;
+          font-size: 1.1em;
         }
         > .form-checkbox {
+          width: 300px;
+          justify-content: center;
           > input[type=checkbox]:checked ~.checkbox-field {
             background-color: grey;
           }
@@ -79,6 +82,7 @@
             font-size: 1em;
             cursor: pointer;
             color: white;
+            @media (max-width: 473px) { color: #2c9837; }
             > a {
               text-decoration: underline;
               color: #2c9837;

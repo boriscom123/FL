@@ -1,5 +1,54 @@
 console.log('blank');
 
+// AJAX отправка формы
+function postData(el){
+  // console.log('Перешли по нажатию на кнопку');
+  // console.log('EL: ', el);
+  event.preventDefault();
+  // подготавливаем запрос
+  // берем значения из полей info, Имени и Телефона
+  let info = el.previousElementSibling.previousElementSibling.previousElementSibling.value;
+  let name = el.previousElementSibling.previousElementSibling.value;
+  let tel = el.previousElementSibling.value;
+  let send = {};
+  // проверяем чекбокс пользовательского соглашения
+  if(!el.nextElementSibling.children[0].checked){
+    console.log('Примите пользовательское соглашение');
+    send.checkbox = false;
+  } else { send.checkbox = true; }
+  if(name.length < 2){
+    console.log('Заполните поле Имя');
+    send.name = false;
+  } else { send.name = true; }
+  if(tel.length < 10){
+    console.log('Заполните поле Телефон');
+    send.tel = false;
+  } else { send.tel = true; }
+  if(send.checkbox && send.name && send.tel){
+    // Если все есть - отправляем запрос
+    let url = 'http://villaraid.ru/wp-content/themes/villaraid/assets/ajax/ajax.php';
+    let formData = new FormData();
+    formData.set('name', name);
+    formData.set('tel', tel);
+    formData.set('info', info);
+    // console.log('Запрос для отправки: name=', name, ' tel=', tel, ' info=', info);
+    fetch(url, {
+      method: 'POST',
+      // headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: formData
+    }).then(response => response.text()).then((response)=>{
+      // console.log(response);
+      if(response=='ok'){
+        hideAll();
+        let infoEl = document.createElement('div');
+        infoEl.classList.add('info');
+        openModalForm(infoEl);
+        setTimeout(()=>hideAll(), 3000);
+      }
+    });
+  }
+}
+
 // Slider - Наши Видео - Блок-5
 let videoSliderEl = document.getElementById('video-slider');
 function videoSlider(el){
@@ -405,11 +454,12 @@ gallerySliderEl.addEventListener('click', function(){gallerySlider(this);});
 // modals
 let modalsEl = document.getElementsByClassName('modals');
 let openFormButtonEl = document.getElementsByClassName('header-button');
+let sendFormButtonEl = document.getElementsByClassName('send-form');
 let openInfoButtonEl = document.getElementsByClassName('show-modal-info');
 let closeModalsEl = document.getElementsByClassName('close');
 function openModalForm(el){
-  console.log(modalsEl[0]);
-  console.log(el);
+  // console.log(modalsEl[0]);
+  // console.log(el);
   if(el.classList.contains('header-button')){
     modalsEl[0].classList.remove('d-none');
     modalsEl[0].classList.add('d-flex');
@@ -426,11 +476,27 @@ function openModalForm(el){
     modalsEl[0].classList.add('d-flex');
     modalsEl[0].children[2].classList.remove('d-none');
     modalsEl[0].children[2].classList.add('d-flex');
+    // необходимо добавить текст
+    let text = el.nextElementSibling.innerHTML;
+    let textField = modalsEl[0].children[2].children[1];
+    textField.innerHTML = '';
+    textField.innerHTML = text;
     // decoration
     modalsEl[0].children[0].classList.remove('d-none');
     modalsEl[0].children[0].classList.add('position-1');
     modalsEl[0].children[1].classList.remove('d-none');
     modalsEl[0].children[1].classList.add('position-2');
+  }
+  if(el.classList.contains('info')){
+    modalsEl[0].classList.remove('d-none');
+    modalsEl[0].classList.add('d-flex');
+    modalsEl[0].children[4].classList.remove('d-none');
+    modalsEl[0].children[4].classList.add('d-flex');
+    // decoration
+    modalsEl[0].children[0].classList.remove('d-none');
+    modalsEl[0].children[0].classList.add('position-1-2');
+    modalsEl[0].children[1].classList.remove('d-none');
+    modalsEl[0].children[1].classList.add('position-2-2');
   }
 }
 function hideAll(){
@@ -442,48 +508,17 @@ function hideAll(){
   }
 }
 function closeModals(el){
-  console.log('Элемент: ', el);
-  console.log('EVENT: ', event);
-  console.log('TARGET: ', event.target);
+  // console.log('Элемент: ', el);
+  // console.log('EVENT: ', event);
+  // console.log('TARGET: ', event.target);
   if(event.target.tagName == 'BUTTON'){
-    event.preventDefault();
-    let buttonEl = event.target;
-    console.log('Нажали на кнопку');
-    // подготавливаем запрос
-    // проверяем чекбокс пользовательского соглашения
-    // console.log('Чекбокс:', buttonEl.nextElementSibling.children[0]);
-    if(buttonEl.nextElementSibling.children[0].checked){
-      // console.log('Отмечен');
-      // берем значения из полей Имени и Телефона
-      let name = buttonEl.previousElementSibling.previousElementSibling.value;
-      let tel = buttonEl.previousElementSibling.value;
-      if(name.length > 1 && tel.length > 10){
-        let info = 'Форма в шапке / футере';
-        // Если все есть - отправляем запрос
-        let url = 'http://prebor.ru/ajax/ajax.php';
-        let formData = new FormData();
-        formData.set('name', name);
-        formData.set('tel', tel);
-        formData.set('info', info);
-        fetch(url, {
-          method: 'POST',
-          // headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-          body: formData
-        }).then(response => response.text()).then((response)=>{console.log(response);});
-      } else {
-        console.log('Заполните пустые поля');
-        console.log(name.length);
-        console.log(tel.length);
-      }
-    } else {
-      console.log('Примите пользовательское соглашение');
-    }
+    postData(event.target);
   }
   if(event.target.classList.contains('close')) { hideAll(); }
   if(event.target.classList.contains('close-block')) { hideAll(); }
   if(event.target.classList.contains('close-text')) { hideAll(); }
   if(event.target.classList.contains('close-icon')) { hideAll(); }
-  if(event.target.classList.contains('close-sigil')) { hideAll(); }
+  if(event.target.classList.contains('close-image')) { hideAll(); }
   if(event.target.classList.contains('modals')) { hideAll(); }
 }
 for (let i = 0; i < openFormButtonEl.length; i++) {
@@ -492,13 +527,13 @@ for (let i = 0; i < openFormButtonEl.length; i++) {
 for (let i = 0; i < openInfoButtonEl.length; i++) {
   openInfoButtonEl[i].addEventListener('click', function(){openModalForm(this);});
 }
+for (let i = 0; i < sendFormButtonEl.length; i++) {
+  sendFormButtonEl[i].addEventListener('click', function(){postData(this);});
+}
 modalsEl[0].addEventListener('click', function(){closeModals(this);});
 
 // Воспроизведение Видео
 function startVideo(el){
-  console.log('Запускаем видео под кнопкой');
-  console.log('Элемент: ', el);
-  console.log('Элемент с видео: ', el.parentNode.children[0].children[0]);
   // скрываем кнопку
   el.classList.add('d-none');
   // запускаем воспроизведение
@@ -508,3 +543,15 @@ let playButtonEl = document.getElementsByClassName('play');
 for (let i = 0; i < playButtonEl.length; i++) {
   playButtonEl[i].addEventListener('click', function(){startVideo(this);});
 }
+
+// mobile menu
+let trigramEl = document.getElementsByClassName('mobile-navigation');
+function mobileMenu(el){
+  console.log('Операция с мобильным меню');
+  console.log(el);
+  console.log(el.children[0]);
+  el.children[0].classList.toggle('d-none');
+  el.children[0].classList.toggle('d-flex');
+}
+trigramEl[0].addEventListener('click', function(){mobileMenu(this);});
+trigramEl[1].addEventListener('click', function(){mobileMenu(this);});
