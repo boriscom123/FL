@@ -28,8 +28,8 @@
         </ul>
 
         <div class="header-tel">
-          <a href="tel:+73452610304" rel="nofollow"><span>8 800</span> 350 87 01</a>
-          <p>Звонок по России бесплатный</p>
+          <a href="tel:8932321610304" rel="nofollow"><span>8 3452</span> 61 03 04</a>
+          <!-- <p>Звонок по России бесплатный</p> -->
         </div>
 
         <button class="header-button btn-white" type="button" name="button">Обратный звонок</button>
@@ -46,10 +46,11 @@
         <div class="d-flex">
 
           <div class="icons d-flex flex-align-center">
-            <a class="d-flex flex-justify-center flex-align-center" href="https://www.youtube.com/channel/UCEqRh4RSeBYYewFa3M1RBhQ"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/youtube.svg" alt="youtube"></a>
-            <a class="d-flex flex-justify-center flex-align-center" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/instagram.png" alt="instagram"></a>
-            <a class="d-flex flex-justify-center flex-align-center" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/watsapp.png" alt="watsapp"></a>
-            <a class="d-flex flex-justify-center flex-align-center" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/viber.png" alt="viber"></a>
+
+            <a class="d-flex flex-justify-center flex-align-center" href="https://www.youtube.com/channel/UCEqRh4RSeBYYewFa3M1RBhQ" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/youtube.svg" alt="youtube"></a>
+            <a class="d-flex flex-justify-center flex-align-center" href="https://www.instagram.com/teplica_villarayd/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/instagram.png" alt="instagram"></a>
+            <a class="d-flex flex-justify-center flex-align-center" href="https://wa.me/79199558070"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/watsapp.png" alt="watsapp"></a>
+            <a class="d-flex flex-justify-center flex-align-center" href="tel:+79199558070"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/viber.png" alt="viber"></a>
           </div>
 
           <div class="">
@@ -72,9 +73,9 @@
           </div>
 
           <div class="footer-tel">
-            <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a>
-            <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a>
-            <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a>
+						<a href="tel:8932321610304" rel="nofollow">8 932 321 61 03 04</a>
+            <!-- <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a> -->
+            <a href="tel:+79199558070" rel="nofollow">+7 (919) 955-80-70</a>
           </div>
 
         </div>

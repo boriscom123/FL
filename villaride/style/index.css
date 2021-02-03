@@ -41,6 +41,14 @@ video {
   outline: none;
 }
 
+.screen-reader-text {
+  display: none;
+}
+
+.skip-link {
+  display: none;
+}
+
 .container {
   max-width: 1210px;
   margin: 0 auto;
@@ -379,8 +387,12 @@ video {
   margin: 50px 0 0 65px;
   font-family: "Proxima Nova Rg";
   text-transform: uppercase;
-  font-size: 2em;
-  font-weight: 400;
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #21b744;
+}
+.block-1 > div > .block-1-left > h3 > span {
+  color: #1f7ec0;
 }
 .block-1 > div > .block-1-left > .block-1-title {
   margin: 35px 0 0 0;
@@ -610,7 +622,7 @@ video {
   position: absolute;
   height: 86%;
   width: 60%;
-  top: 15%;
+  top: 10%;
   left: 20%;
   z-index: 1;
   background-color: #21b744;
@@ -665,7 +677,7 @@ video {
 }
 .block-2 > div > .title > h2 {
   text-align: center;
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Rg";
   font-size: 3em;
   text-transform: uppercase;
   margin: 10px 0 10px 0;
@@ -874,7 +886,7 @@ video {
 }
 .block-3 > div > .title > h2 {
   text-align: center;
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Rg";
   font-size: 3em;
   text-transform: uppercase;
   margin: 10px 0 10px 0;
@@ -1053,7 +1065,7 @@ video {
 }
 .block-4 > div > .title > h2 {
   text-align: center;
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Rg";
   font-size: 3em;
   text-transform: uppercase;
   margin: 10px 0 10px 0;
@@ -1412,7 +1424,7 @@ video {
 }
 .block-5 > div > .title > h2 {
   text-align: center;
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Rg";
   font-size: 3em;
   text-transform: uppercase;
   margin: 10px 0 10px 0;
@@ -1657,7 +1669,7 @@ video {
 }
 .block-6 > div > div > h2 {
   margin: 130px 0 0 10px;
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Rg";
   font-size: 2em;
   text-transform: uppercase;
   color: white;
@@ -1769,7 +1781,7 @@ video {
 }
 .block-7 > div > .title > h2 {
   text-align: center;
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Rg";
   font-size: 3em;
   text-transform: uppercase;
   margin: 10px 0 10px 0;
@@ -2009,7 +2021,7 @@ video {
 }
 .block-8 > div > .title > h2 {
   text-align: center;
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Rg";
   font-size: 3em;
   text-transform: uppercase;
   margin: 10px 0 10px 0;
@@ -2199,7 +2211,7 @@ video {
 }
 .block-9 > div > .title > h2 {
   text-align: center;
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Rg";
   font-size: 3em;
   text-transform: uppercase;
   margin: 10px 0 10px 0;
@@ -2512,7 +2524,8 @@ video {
 }
 @media (max-width: 500px) {
   .modals {
-    top: 139px;
+    top: 113px;
+    height: calc(100vh - 113px);
   }
 }
 .modals > .image {
@@ -2549,9 +2562,9 @@ video {
   z-index: -1;
 }
 .modals > .modal-info {
-  height: 100%;
+  max-height: 100%;
   width: 95%;
-  max-width: 1210px;
+  max-width: 800px;
   background-color: white;
   background-image: url("../image/bg-modal.jpg");
   background-repeat: no-repeat;
@@ -2559,6 +2572,7 @@ video {
   background-size: cover;
   border-radius: 50px;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 0 10px 0 40px;
 }
 @media (max-width: 500px) {
@@ -2625,6 +2639,11 @@ video {
     padding: 80px 0 40px;
   }
 }
+@media (max-width: 400px) {
+  .modals > .modal-info > .text {
+    padding: 50px 0 10px;
+  }
+}
 .modals > .modal-info > .text > div > h3 {
   font-family: "Proxima Nova Rg";
   font-size: 1.2em;
@@ -2666,6 +2685,8 @@ video {
 }
 .modals > .modal-info > .close {
   position: relative;
+  top: -20px;
+  right: -20px;
 }
 .modals > .modal-info > .close > .close-block {
   position: absolute;

@@ -50,131 +50,131 @@ function postData(el){
 }
 
 // Slider - Наши Видео - Блок-5
-let videoSliderEl = document.getElementById('video-slider');
-function videoSlider(el){
-  // console.log(el);
-  if(event.target.classList.contains('left') || event.target.alt == 'left-arrow'){
-    // console.log('left');
-    for (let i = 0; i < el.children[3].children.length; i++) {
-      if(window.innerWidth < 700){
-        // console.log('1 элемент');
-        if(el.children[3].children[i].classList.contains('active')){
-          el.children[3].children[i].classList.remove('active');
-          el.children[2].children[i].style.display = 'none';
-          if(i == el.children[3].children.length - 1){
-            // console.log('Последний элемент');
-            el.children[3].children[0].classList.add('active');
-            el.children[2].children[0].style.display = 'flex';
-            break;
-          } else {
-            // console.log('Не Последний элемент');
-            el.children[3].children[i+1].classList.add('active');
-            el.children[2].children[i+1].style.display = 'flex';
-            break;
-          }
-        }
-      } else {
-        // console.log('2 элемента');
-        if(el.children[3].children[i].classList.contains('active')){
-          el.children[3].children[i].classList.remove('active');
-          el.children[2].children[i].style.display = 'none';
-          el.children[2].children[i+1].style.display = 'none';
-          if(i == el.children[3].children.length - 2){
-            // console.log('2 Последних элемента');
-            el.children[3].children[0].classList.add('active');
-            el.children[2].children[0].style.display = 'flex';
-            el.children[2].children[1].style.display = 'flex';
-            break;
-          } else {
-            // console.log('Не Последний элемент');
-            el.children[3].children[i+1].classList.add('active');
-            el.children[2].children[i+1].style.display = 'flex';
-            el.children[2].children[i+2].style.display = 'flex';
-            break;
-          }
-        }
-      }
-    }
-  }
-  if(event.target.classList.contains('right') || event.target.alt == 'right-arrow'){
-    // console.log('right');
-    for (let i = 0; i < el.children[3].children.length; i++) {
-      if(window.innerWidth < 700){
-        // console.log('1 элемент');
-        if(el.children[3].children[i].classList.contains('active')){
-          el.children[3].children[i].classList.remove('active');
-          el.children[2].children[i].style.display = 'none';
-          if(i == 0){
-            //console.log('Первый элемент');
-            el.children[3].children[el.children[3].children.length-1].classList.add('active');
-            el.children[2].children[el.children[3].children.length-1].style.display = 'flex';
-            break;
-          } else {
-            //console.log('Не Первый элемент');
-            el.children[3].children[i-1].classList.add('active');
-            el.children[2].children[i-1].style.display = 'flex';
-            break;
-          }
-        }
-      } else {
-        // console.log('2 элемента');
-        if(el.children[3].children[i].classList.contains('active')){
-          el.children[3].children[i].classList.remove('active');
-          el.children[2].children[i].style.display = 'none';
-          el.children[2].children[i+1].style.display = 'none';
-          if(i == 0){
-            // console.log('2 Первых элемента');
-            el.children[3].children[el.children[3].children.length-2].classList.add('active');
-            el.children[2].children[el.children[3].children.length-1].style.display = 'flex';
-            el.children[2].children[el.children[3].children.length-2].style.display = 'flex';
-            break;
-          } else {
-            // console.log('Не Первые элемент');
-            el.children[3].children[i-1].classList.add('active');
-            el.children[2].children[i].style.display = 'flex';
-            el.children[2].children[i-1].style.display = 'flex';
-            break;
-          }
-        }
-      }
-    }
-  }
-  if(event.target.classList.contains('item')) {
-    // console.log('Элемент пагинации');
-    for (let i = 0; i < el.children[3].children.length; i++) {
-      if(window.innerWidth < 700){
-        // console.log('1 элемент');
-        if(el.children[3].children[i] == event.target){
-          if(!el.children[3].children[i].classList.contains('active')){el.children[3].children[i].classList.add('active');}
-          el.children[2].children[i].style.display = 'flex';
-        } else {
-          if(el.children[3].children[i].classList.contains('active')){el.children[3].children[i].classList.remove('active');}
-          el.children[2].children[i].style.display = 'none';
-        }
-      } else {
-        // console.log('2 элемента');
-        if(el.children[3].children[i] == event.target){
-          if(i == el.children[3].children.length-1){
-            // console.log('Последний');
-            if(!el.children[3].children[i].classList.contains('active')){el.children[3].children[i-1].classList.add('active');}
-            el.children[2].children[i].style.display = 'flex';
-            el.children[2].children[i-1].style.display = 'flex';
-          } else {
-            // console.log('Не Последний');
-            if(!el.children[3].children[i].classList.contains('active')){el.children[3].children[i].classList.add('active');}
-            el.children[2].children[i].style.display = 'flex';
-            el.children[2].children[i+1].style.display = 'flex';
-            i++;
-          }
-        } else {
-          if(el.children[3].children[i].classList.contains('active')){el.children[3].children[i].classList.remove('active');}
-          el.children[2].children[i].style.display = 'none';
-        }
-      }
-    }
-  }
-}
-videoSliderEl.addEventListener('click', function(){videoSlider(this);});
+// let videoSliderEl = document.getElementById('video-slider');
+// function videoSlider(el){
+//   // console.log(el);
+//   if(event.target.classList.contains('left') || event.target.alt == 'left-arrow'){
+//     // console.log('left');
+//     for (let i = 0; i < el.children[3].children.length; i++) {
+//       if(window.innerWidth < 700){
+//         // console.log('1 элемент');
+//         if(el.children[3].children[i].classList.contains('active')){
+//           el.children[3].children[i].classList.remove('active');
+//           el.children[2].children[i].style.display = 'none';
+//           if(i == el.children[3].children.length - 1){
+//             // console.log('Последний элемент');
+//             el.children[3].children[0].classList.add('active');
+//             el.children[2].children[0].style.display = 'flex';
+//             break;
+//           } else {
+//             // console.log('Не Последний элемент');
+//             el.children[3].children[i+1].classList.add('active');
+//             el.children[2].children[i+1].style.display = 'flex';
+//             break;
+//           }
+//         }
+//       } else {
+//         // console.log('2 элемента');
+//         if(el.children[3].children[i].classList.contains('active')){
+//           el.children[3].children[i].classList.remove('active');
+//           el.children[2].children[i].style.display = 'none';
+//           el.children[2].children[i+1].style.display = 'none';
+//           if(i == el.children[3].children.length - 2){
+//             // console.log('2 Последних элемента');
+//             el.children[3].children[0].classList.add('active');
+//             el.children[2].children[0].style.display = 'flex';
+//             el.children[2].children[1].style.display = 'flex';
+//             break;
+//           } else {
+//             // console.log('Не Последний элемент');
+//             el.children[3].children[i+1].classList.add('active');
+//             el.children[2].children[i+1].style.display = 'flex';
+//             el.children[2].children[i+2].style.display = 'flex';
+//             break;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   if(event.target.classList.contains('right') || event.target.alt == 'right-arrow'){
+//     // console.log('right');
+//     for (let i = 0; i < el.children[3].children.length; i++) {
+//       if(window.innerWidth < 700){
+//         // console.log('1 элемент');
+//         if(el.children[3].children[i].classList.contains('active')){
+//           el.children[3].children[i].classList.remove('active');
+//           el.children[2].children[i].style.display = 'none';
+//           if(i == 0){
+//             //console.log('Первый элемент');
+//             el.children[3].children[el.children[3].children.length-1].classList.add('active');
+//             el.children[2].children[el.children[3].children.length-1].style.display = 'flex';
+//             break;
+//           } else {
+//             //console.log('Не Первый элемент');
+//             el.children[3].children[i-1].classList.add('active');
+//             el.children[2].children[i-1].style.display = 'flex';
+//             break;
+//           }
+//         }
+//       } else {
+//         // console.log('2 элемента');
+//         if(el.children[3].children[i].classList.contains('active')){
+//           el.children[3].children[i].classList.remove('active');
+//           el.children[2].children[i].style.display = 'none';
+//           el.children[2].children[i+1].style.display = 'none';
+//           if(i == 0){
+//             // console.log('2 Первых элемента');
+//             el.children[3].children[el.children[3].children.length-2].classList.add('active');
+//             el.children[2].children[el.children[3].children.length-1].style.display = 'flex';
+//             el.children[2].children[el.children[3].children.length-2].style.display = 'flex';
+//             break;
+//           } else {
+//             // console.log('Не Первые элемент');
+//             el.children[3].children[i-1].classList.add('active');
+//             el.children[2].children[i].style.display = 'flex';
+//             el.children[2].children[i-1].style.display = 'flex';
+//             break;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   if(event.target.classList.contains('item')) {
+//     // console.log('Элемент пагинации');
+//     for (let i = 0; i < el.children[3].children.length; i++) {
+//       if(window.innerWidth < 700){
+//         // console.log('1 элемент');
+//         if(el.children[3].children[i] == event.target){
+//           if(!el.children[3].children[i].classList.contains('active')){el.children[3].children[i].classList.add('active');}
+//           el.children[2].children[i].style.display = 'flex';
+//         } else {
+//           if(el.children[3].children[i].classList.contains('active')){el.children[3].children[i].classList.remove('active');}
+//           el.children[2].children[i].style.display = 'none';
+//         }
+//       } else {
+//         // console.log('2 элемента');
+//         if(el.children[3].children[i] == event.target){
+//           if(i == el.children[3].children.length-1){
+//             // console.log('Последний');
+//             if(!el.children[3].children[i].classList.contains('active')){el.children[3].children[i-1].classList.add('active');}
+//             el.children[2].children[i].style.display = 'flex';
+//             el.children[2].children[i-1].style.display = 'flex';
+//           } else {
+//             // console.log('Не Последний');
+//             if(!el.children[3].children[i].classList.contains('active')){el.children[3].children[i].classList.add('active');}
+//             el.children[2].children[i].style.display = 'flex';
+//             el.children[2].children[i+1].style.display = 'flex';
+//             i++;
+//           }
+//         } else {
+//           if(el.children[3].children[i].classList.contains('active')){el.children[3].children[i].classList.remove('active');}
+//           el.children[2].children[i].style.display = 'none';
+//         }
+//       }
+//     }
+//   }
+// }
+// videoSliderEl.addEventListener('click', function(){videoSlider(this);});
 
 // Slider - Наши отзывы - Блок-7
 let feedbackSliderEl = document.getElementById('feedback-slider');

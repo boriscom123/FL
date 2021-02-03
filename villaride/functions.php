@@ -144,6 +144,7 @@ function villaraid_scripts() {
 	wp_enqueue_style( 'villaraid-index', get_template_directory_uri().'/assets/style/index.css', array(), _S_VERSION );
 	wp_style_add_data( 'villaraid-style', 'rtl', 'replace' );
 
+	wp_enqueue_script( 'villaraid-index-jivosite', '//code.jivosite.com/widget/bHF5K63tjm', array(), _S_VERSION, true );
 	/** wp_enqueue_script( 'villaraid-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true ); */
 	wp_enqueue_script( 'villaraid-index-script', get_template_directory_uri() . '/assets/script/index.js', array(), _S_VERSION, true );
 
@@ -179,4 +180,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

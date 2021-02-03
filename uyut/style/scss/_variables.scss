@@ -1,9 +1,9 @@
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('../fonts/museo-sans/stylesheet.css');
 
 $mainColor: #f16d7f; // Розовый цвет
 $alterColor: #f6f6f6; // Серый цвет
-$bgColor: lightblue; // Белый цвет
-$fontFamily: 'Roboto', sans-serif;
+$bgColor: rgba(255, 255, 255, 1);
+$fontFamily: 'Museo Sans Cyrl 300';
 $fontSize: 16px;
 $fontWeight: 300;
 $fontColor: #222222;

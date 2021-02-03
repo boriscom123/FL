@@ -43,8 +43,8 @@
         </ul>
 
         <div class="header-tel">
-          <a href="tel:+73452610304" rel="nofollow"><span>8 800</span> 350 87 01</a>
-          <p>Звонок по России бесплатный</p>
+          <a href="tel:8932321610304" rel="nofollow"><span>8 3452</span> 61 03 04</a>
+          <!-- <p>Звонок по России бесплатный</p> -->
         </div>
 
         <button class="header-button btn-white" type="button" name="button" id="header-button">Обратный звонок</button>
@@ -68,8 +68,8 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo.png" alt="logo">
           </a>
           <div class="header-tel">
-            <a href="tel:+73452610304" rel="nofollow"><span>8 800</span> 350 87 01</a>
-            <p>Звонок по России бесплатный</p>
+            <a href="tel:8932321610304" rel="nofollow"><span>61 03 04</span></a>
+            <!-- <p>Звонок по России бесплатный</p> -->
           </div>
         </div>
         <div class="mobile-navigation">

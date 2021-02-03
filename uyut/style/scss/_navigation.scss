@@ -1,0 +1,70 @@
+.navigation {
+  height: 40px;
+  box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.3);
+  position: relative;
+  z-index: 2;
+  > ul {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    > li {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px 0 15px;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: $transition;
+      > a {
+        font-family: 'Museo Sans Cyrl 500';
+        font-size: 1.2em;
+      }
+      > .image {
+        height: 15px;
+        width: 15px;
+        margin: 0 0 0 15px;
+        transition: $transition;
+        > img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: contain;
+             object-fit: contain;
+        }
+      }
+      &:hover {
+        background: rgb(31,178,246);
+        background: linear-gradient(to bottom,  rgba(31,178,246,1) 0%,rgba(6,101,165,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb2f6', endColorstr='#0665a5',GradientType=0 );
+        > a {
+          color: white;
+        }
+        > .image {
+          transform: translateX(-80%);
+        }
+      }
+    }
+    > .active {
+      background: rgb(31,178,246);
+      background: linear-gradient(to bottom,  rgba(31,178,246,1) 0%,rgba(6,101,165,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb2f6', endColorstr='#0665a5',GradientType=0 );
+      > a {
+        color: white;
+      }
+    }
+  }
+}
+.nav-bottom {
+  background-color: #2b2f36;
+  box-shadow: none;
+  > ul {
+    > li {
+      padding: 0 40px 0 15px;
+      > a {
+        color: white;
+        font-size: 1em;
+      }
+    }
+  }
+}

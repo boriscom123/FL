@@ -34,6 +34,12 @@ button {
 video {
   outline: none;
 }
+.screen-reader-text {
+  display: none;
+}
+.skip-link {
+  display: none;
+}
 .container {
   max-width: 1210px;
   margin: 0 auto;

@@ -1,0 +1,271 @@
+.block-1 {
+  padding: 50px 0 0 0;
+  background-image: url('../image/block-1-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  position: relative;
+
+  > .block-1-content {
+    > .block-1-content-left {
+      width: 100%;
+      max-width: 600px;
+      > .text {
+        > h2 {
+          font-family: 'Museo Sans Cyrl 300';
+          font-size: 1.2em;
+        }
+        > div {
+          font-family: 'Museo Sans Cyrl 700';
+          font-size: 1.2em;
+          height: 30px;
+          padding: 0 12px 0 12px;
+          margin: 0 0 0 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          color: white;
+        }
+      }
+      > h1 {
+        margin: 50px 0 0 0;
+        font-family: 'Museo Sans Cyrl 900';
+        font-size: 4em;
+        text-transform: uppercase;
+        line-height: 55px;
+      }
+      > h2 {
+        font-family: 'Museo Sans Cyrl 100';
+        font-size: 1.5em;
+        margin: 25px 0 0 0;
+      }
+      > .cards {
+        position: relative;
+        margin: 40px 0 0 0;
+        > .card {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 90px;
+          width: 270px;
+          border-radius: 3px;
+          padding: 0 15px 0 15px;
+          box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+          background-color: white;
+          cursor: pointer;
+          transition: $transition;
+          &:hover {
+            transform: scale(1.2);
+          }
+          > .image {
+            height: 45px;
+            width: 45px;
+            margin: 0 15px 0 0;
+            > img {
+              height: 100%;
+              width: 100%;
+              -o-object-fit: contain;
+                 object-fit: contain;
+            }
+          }
+          > p {
+            font-family: 'Museo Sans Cyrl 300';
+            font-size: 1em;
+            > span {
+              font-family: 'Museo Sans Cyrl 700';
+              font-size: 1em;
+            }
+          }
+        }
+        > .arrow {
+          position: absolute;
+          top: 50%;
+          right: -10%;
+          transform: translateY(-50%);
+          z-index: 2;
+          cursor: pointer;
+          > .image {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            transition: $transition;
+            &:hover {
+              transform: scale(1.2);
+            }
+            > img {
+              height: 100%;
+              width: 100%;
+              -o-object-fit: contain;
+                 object-fit: contain;
+            }
+          }
+        }
+      }
+      > .buttons {
+        margin: 45px 0 0 0;
+
+        > button {
+          height: 55px;
+          width: 270px;
+          border-radius: 30px;
+        }
+      }
+    }
+    > .block-1-content-right {
+      width: 100%;
+      max-width: 370px;
+      min-height: 750px;
+      background-image: url('../image/block-1-form-bg.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 130px 40px 150px 40px;
+      > .title {
+        > h2 {
+          font-family: 'Museo Sans Cyrl 900';
+          font-size: 1.2em;
+          text-align: center;
+          text-transform: uppercase;
+          > span {
+            color: #1490d2;
+          }
+        }
+        > p {
+          font-family: 'Museo Sans Cyrl 100';
+          font-size: 1em;
+          text-align: center;
+        }
+      }
+      > input {
+        height: 45px;
+        width: 100%;
+        border: 1px solid grey;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        padding-left: 20px;
+        overflow: hidden;
+        font-family: 'Museo Sans Cyrl 300';
+        font-size: 1em;
+      }
+      > textarea {
+        outline: none;
+        height: 100px;
+        width: 100%;
+        border: 1px solid grey;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        padding: 10px 0 0 20px;
+        overflow: hidden;
+        font-family: 'Museo Sans Cyrl 300';
+        font-size: 1em;
+        resize: none;
+      }
+      > button {
+        height: 55px;
+        width: 100%;
+        border-radius: 30px;
+      }
+      > .form-checkbox {
+        > input[type=checkbox]:checked ~.checkbox-field > div {
+          background-color: #1593d5;
+        }
+        > .checkbox-field {
+          height: 15px;
+          width: 15px;
+          border: 1px solid #1593d5;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 0 10px 0 0;
+          > div {
+            margin: 2px 0 0 2px;
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+            background-color: white;
+          }
+        }
+        > .checkbox-label {
+          > p {
+            font-family: 'Museo Sans Cyrl 300';
+            font-size: 1em;
+            cursor: pointer;
+          }
+          > a {
+            font-family: 'Museo Sans Cyrl 300';
+            font-size: 1em;
+            color: #1593d5;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  > .decoration-1 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(232, 246, 252, 0.5);
+    > div {
+      height: 85%;
+      width: 85%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(181, 223, 245, 0.5);
+      > div {
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        background: rgba(31,178,246,0.5);
+        background: linear-gradient(to bottom,  rgba(31,178,246,0.5) 0%,rgba(6,101,165,0.5) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb2f6', endColorstr='#0665a5',GradientType=0 );
+      }
+    }
+  }
+  > .decoration-2 {
+    position: absolute;
+    top: 26%;
+    right: 44%;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(181, 223, 245, 0.5);
+    z-index: 1;
+    > div {
+      height: 70%;
+      width: 70%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(31,178,246,0.5);
+      background: linear-gradient(to bottom,  rgba(31,178,246,0.5) 0%,rgba(6,101,165,0.5) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb2f6', endColorstr='#0665a5',GradientType=0 );
+    }
+  }
+  > .decoration-3 {
+    position: absolute;
+    top: -10%;
+    left: 48%;
+  }
+  > .decoration-4 {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+  }
+}

@@ -24,7 +24,7 @@ get_header();
 
           <div class="block-1-left">
 
-            <h3>Поставщик садовых теплиц №1</h3>
+            <h3>Поставщик садовых теплиц <span>№1</span></h3>
 
             <div class="block-1-title d-flex">
               <div class="border"></div>
@@ -73,23 +73,37 @@ get_header();
             <div class="d-flex space-justify-around">
 
               <div class="icons d-flex flex-align-baseline">
+								<?php
+									function check_mobile_device() {
+								    $mobile_agent_array = array('ipad', 'iphone', 'android', 'pocket', 'palm', 'windows ce', 'windowsce', 'cellphone', 'opera mobi', 'ipod', 'small', 'sharp', 'sonyericsson', 'symbian', 'opera mini', 'nokia', 'htc_', 'samsung', 'motorola', 'smartphone', 'blackberry', 'playstation portable', 'tablet browser');
+								    $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+								    foreach ($mobile_agent_array as $value) {
+								        if (strpos($agent, $value) !== false) return true;
+								    };
+								    return false;
+									};
+								?>
                 <a class="d-flex flex-justify-center flex-align-center" href="https://www.youtube.com/channel/UCEqRh4RSeBYYewFa3M1RBhQ"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/youtube.svg" alt="youtube"></a>
-                <a class="d-flex flex-justify-center flex-align-center" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/instagram.png" alt="instagram"></a>
-                <a class="d-flex flex-justify-center flex-align-center" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/watsapp.png" alt="watsapp"></a>
-                <a class="d-flex flex-justify-center flex-align-center" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/viber.png" alt="viber"></a>
+                <a class="d-flex flex-justify-center flex-align-center" href="https://www.instagram.com/teplica_villarayd/"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/instagram.png" alt="instagram"></a>
+                <a class="d-flex flex-justify-center flex-align-center" href="https://wa.me/79199558070"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/watsapp.png" alt="watsapp"></a>
+								<? if(check_mobile_device()) :?>
+									<a class="d-flex flex-justify-center flex-align-center" title="Viber" href="viber://add?number=79199558070"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/viber.png" alt="viber"></a>
+								<? else : ?>
+									<a class="d-flex flex-justify-center flex-align-center" title="Viber" href="viber://chat?number=+779199558070"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/viber.png" alt="viber"></a>
+								<? endif; ?>
               </div>
 
               <div class="tel">
-                <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a>
-                <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a>
-                <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a>
+								<a href="tel:8932321610304" rel="nofollow">8 932 321 61 03 04</a>
+		            <!-- <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a> -->
+		            <a href="tel:+79199558070" rel="nofollow">+7 (919) 955-80-70</a>
               </div>
 
             </div>
 
             <form class="block-1-form d-flex flex-column flex-align-center" action="index.html" method="get">
               <h2>Оставьте <span>заявку</span></h2>
-              <p>Оставьте, пожалуйста, ваши контактные данные. В ближайшее время с Вами свяжется специалист и проконсультирует Вас.</p>
+              <p>В ближайшее время с Вами свяжется специалист и проконсультирует Вас.</p>
               <input class="d-none" type="hiddeh" name="info" value="block-1-form">
               <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
               <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
@@ -1242,7 +1256,7 @@ get_header();
 
           </div>
 
-          <div class="">
+          <!-- <div class="">
 
             <div class="card d-flex flex-justify-between">
 
@@ -1355,7 +1369,7 @@ get_header();
             </div>
             <div class="decoration-2"></div>
 
-          </div>
+          </div> -->
 
 
         </div>
@@ -1509,7 +1523,7 @@ get_header();
 
       </div>
 
-      <div class="block-5">
+      <!-- <div class="block-5">
         <a name="video"></a>
 
         <div class="container">
@@ -1626,7 +1640,7 @@ get_header();
 
         </div>
 
-      </div>
+      </div> -->
 
       <div class="block-8">
         <a name="gallery"></a>
