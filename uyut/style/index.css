@@ -6677,7 +6677,7 @@ input {
   overflow: hidden;
   border-radius: 25px;
   background-color: white;
-  box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
   cursor: pointer;
   transition: 0.3s;
   z-index: 1;
@@ -6973,7 +6973,7 @@ input {
   height: 40px;
   width: 100%;
   margin: 40px 0 0 0;
-  box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
   border-radius: 20px;
 }
 .block-4 > .block-4-content > .block-4-nav > div {
@@ -7006,7 +7006,7 @@ input {
   width: 100%;
   margin: 10px 0 0 0;
   padding: 25px 25px 25px 25px;
-  box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
   border-radius: 20px;
 }
 .block-4 > .block-4-content > .block-4-table > .title {
@@ -7061,7 +7061,7 @@ input {
 }
 .block-4 > .block-4-content > .block-4-table > .table-row:hover {
   transform: scale(1.03);
-  box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
   border-radius: 20px;
 }
 .block-4 > .block-4-content > .block-4-table > .table-row > div {
@@ -7310,7 +7310,7 @@ input {
   font-weight: 900;
 }
 .block-6 > .block-6-content {
-  margin: 70px auto;
+  margin: 70px auto 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -7418,6 +7418,441 @@ input {
   width: 100%;
   margin: 30px 0 30px 0;
   background-color: #cbcbcb;
+}
+.block-6 > .block-6-buttons > div {
+  flex-grow: 1;
+}
+.block-6 > .block-6-buttons > .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.block-6 > .block-6-buttons > .buttons > button {
+  height: 50px;
+  width: 270px;
+  border-radius: 25px;
+}
+.block-6 > .block-6-buttons > .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-6 > .block-6-buttons > .text > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  max-width: 75%;
+}
+
+.block-7 {
+  position: relative;
+  width: 100%;
+}
+.block-7 > .title {
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+.block-7 > .title > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.block-7 > .title > h2 > span {
+  font-family: "Museo Sans Cyrl 900";
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.block-7 > .block-7-content {
+  margin: 60px 0 0 0;
+}
+.block-7 > .block-7-content > .slider {
+  position: relative;
+}
+.block-7 > .block-7-content > .slider > .slider-arrow {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: red;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.block-7 > .block-7-content > .slider > .left {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+}
+.block-7 > .block-7-content > .slider > .left:hover {
+  transform: scale(1.2) translateY(-50%);
+}
+.block-7 > .block-7-content > .slider > .right {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+}
+.block-7 > .block-7-content > .slider > .right:hover {
+  transform: scale(1.2) translateY(-50%);
+}
+.block-7 > .block-7-content > .slider > .slider-content {
+  display: flex;
+  justify-content: space-around;
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card {
+  position: relative;
+  height: 250px;
+  width: 95%;
+  max-width: 550px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+  padding: 30px;
+  display: flex;
+  background-color: white;
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card > .avatar {
+  height: 70px;
+  width: 70px;
+  border: 1px solid #138ccf;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 5px rgba(19, 140, 207, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card > .avatar:hover {
+  transform: scale(1.2);
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card > .avatar > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card > .text {
+  height: 100%;
+  width: calc(100% - 100px);
+  margin: 0 0 0 20px;
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card > .text > h2 {
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 1.5em;
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card > .text > h3 {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1.2em;
+  margin: 5px 0 0 0;
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card > .text > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  margin: 10px 0 0 0;
+}
+.block-7 > .block-7-content > .slider > .slider-content > .card > .decoration {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+  height: calc(100% - 50px);
+  width: calc(100% - 50px);
+  background: #1fb2f6;
+  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
+  transform: rotate(2deg);
+  border-radius: 50px;
+  z-index: -1;
+}
+.block-7 > .block-7-content > .slider > .slider-navigation {
+  margin: 50px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-7 > .block-7-content > .slider > .slider-navigation > .element {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px 0 5px;
+}
+.block-7 > .block-7-content > .slider > .slider-navigation > .element > div {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #d0d0d0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.block-7 > .block-7-content > .slider > .slider-navigation > .element > div:hover {
+  transform: scale(2);
+}
+.block-7 > .block-7-content > .slider > .slider-navigation > .active {
+  background-color: #d0d0d0;
+}
+.block-7 > .block-7-content > .slider > .slider-navigation > .active > div {
+  background: #1fb2f6;
+  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
+}
+
+.block-8 {
+  position: relative;
+  min-height: 800px;
+  width: 100%;
+}
+.block-8 > .block-8-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.block-8 > .block-8-bg > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-8 > .title {
+  margin: 50px auto 0;
+  padding: 150px 0 0 0;
+  text-align: center;
+  max-width: 830px;
+}
+.block-8 > .title > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+}
+.block-8 > .block-8-content > .block-8-form {
+  width: 100%;
+  max-width: 700px;
+  margin: 200px 0 0 0;
+}
+.block-8 > .block-8-content > .block-8-form > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+}
+.block-8 > .block-8-content > .block-8-form > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1.1em;
+  color: white;
+}
+.block-8 > .block-8-content > .block-8-form > .input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 570px;
+  margin: 40px 0 0 0;
+}
+.block-8 > .block-8-content > .block-8-form > .input > input {
+  height: 45px;
+  width: 270px;
+  border-radius: 25px;
+  border: none;
+  padding: 0 0 0 25px;
+  overflow: hidden;
+  background-color: #3f4e5b;
+  color: white;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1.1em;
+  border: 1px solid #3f4e5b;
+  transition: 0.3s;
+}
+.block-8 > .block-8-content > .block-8-form > .input > input:hover {
+  border: 1px solid white;
+}
+.block-8 > .block-8-content > .block-8-form > .textarea {
+  max-width: 570px;
+  margin: 20px 0 0 0;
+}
+.block-8 > .block-8-content > .block-8-form > .textarea > textarea {
+  min-height: 100px;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 0 0 25px;
+  overflow: hidden;
+  background-color: #3f4e5b;
+  color: white;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1.1em;
+  outline: none;
+  resize: none;
+  border: 1px solid #3f4e5b;
+  transition: 0.3s;
+}
+.block-8 > .block-8-content > .block-8-form > .textarea > textarea:hover {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.block-8 > .block-8-content > .block-8-form > .button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 570px;
+  margin: 40px 0 0 0;
+}
+.block-8 > .block-8-content > .block-8-form > .button > button {
+  height: 50px;
+  width: 50%;
+  border-radius: 25px;
+}
+.block-8 > .block-8-content > .block-8-form > .button > .form-checkbox > input[type=checkbox]:checked ~ .checkbox-field > div {
+  background-color: #1593d5;
+}
+.block-8 > .block-8-content > .block-8-form > .button > .form-checkbox > .checkbox-field {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #1593d5;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  background-color: white;
+}
+.block-8 > .block-8-content > .block-8-form > .button > .form-checkbox > .checkbox-field > div {
+  margin: 2px 0 0 2px;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: none;
+}
+.block-8 > .block-8-content > .block-8-form > .button > .form-checkbox > .checkbox-label {
+  text-align: center;
+}
+.block-8 > .block-8-content > .block-8-form > .button > .form-checkbox > .checkbox-label > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  cursor: pointer;
+  color: white;
+}
+.block-8 > .block-8-content > .block-8-form > .button > .form-checkbox > .checkbox-label > a {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  color: #1593d5;
+  text-decoration: underline;
+}
+.block-8 > .block-8-content > .info {
+  width: 100%;
+  min-height: 450px;
+  margin: 200px 0 0 0;
+  position: relative;
+}
+.block-8 > .block-8-content > .info > .decoration {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  height: 445px;
+  width: 445px;
+  border-radius: 50%;
+  background-color: rgba(33, 64, 84, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-8 > .block-8-content > .info > .decoration > div {
+  height: 385px;
+  width: 385px;
+  border-radius: 50%;
+  background: #1fb2f6;
+  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
+}
+.block-8 > .block-8-content > .info > .image {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+}
+.block-8 > .block-8-content > .info > .info-1 {
+  position: absolute;
+  top: -3%;
+  left: 55%;
+  display: flex;
+  align-items: center;
+}
+.block-8 > .block-8-content > .info > .info-1 > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  color: white;
+  white-space: nowrap;
+}
+.block-8 > .block-8-content > .info > .info-1 > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 3em;
+  color: white;
+  margin: 0 15px 0 15px;
+}
+.block-8 > .block-8-content > .info > .info-2 {
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+}
+.block-8 > .block-8-content > .info > .info-2 > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  color: white;
+}
+.block-8 > .block-8-content > .info > .info-2 > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 3em;
+  color: white;
+  text-align: right;
+  margin: 0 15px 0 15px;
+}
+
+.block-9 {
+  position: relative;
+  width: 100%;
+  background-color: #fefefe;
+  z-index: -3;
+}
+.block-9 > .block-9-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -180px;
+  left: 0;
+  z-index: -2;
+}
+.block-9 > .block-9-bg > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.block-9 > .title {
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+.block-9 > .title > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.block-9 > .title > h2 > span {
+  font-family: "Museo Sans Cyrl 900";
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.block-9 > .block-9-map {
+  width: 100%;
+  height: 500px;
+  margin: 40px auto;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .footer > .footer-content {

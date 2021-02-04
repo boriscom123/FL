@@ -29,7 +29,7 @@
       overflow: hidden;
       border-radius: 25px;
       background-color: white;
-      box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+      box-shadow: $shadow;
       cursor: pointer;
       transition: $transition;
       z-index: 1;
