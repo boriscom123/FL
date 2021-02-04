@@ -1,0 +1,124 @@
+.block-4 {
+  > .title {
+    margin: 100px 0 0 0;
+    text-align: center;
+    > h2 {
+      font-family: 'Museo Sans Cyrl 700';
+      font-size: 2.5em;
+      text-transform: uppercase;
+      font-weight: 500;
+      > span {
+        font-family: 'Museo Sans Cyrl 900';
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+    }
+    > h3 {
+      font-family: 'Museo Sans Cyrl 100';
+      font-size: 1.1em;
+    }
+  }
+  > .block-4-content {
+    > .block-4-nav {
+      background-color: white;
+      height: 40px;
+      width: 100%;
+      margin: 40px 0 0 0;
+      box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+      border-radius: 20px;
+      > div {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        border-radius: 20px;
+        cursor:pointer;
+        font-family: 'Museo Sans Cyrl 300';
+        transition: $transition;
+        &:hover {
+          background: rgb(31,178,246);
+          background: linear-gradient(to bottom,  rgba(31,178,246,1) 0%,rgba(6,101,165,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb2f6', endColorstr='#0665a5',GradientType=0 );
+          color: white;
+          font-family: 'Museo Sans Cyrl 300';
+        }
+      }
+      > .active {
+        background: rgb(31,178,246);
+        background: linear-gradient(to bottom,  rgba(31,178,246,1) 0%,rgba(6,101,165,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb2f6', endColorstr='#0665a5',GradientType=0 );
+        color: white;
+        font-family: 'Museo Sans Cyrl 300';
+      }
+    }
+    > .block-4-table {
+      background-color: white;
+      width: 100%;
+      margin: 10px 0 0 0;
+      padding: 25px 25px 25px 25px;
+      box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+      border-radius: 20px;
+      > .title {
+        font-family: 'Museo Sans Cyrl 900';
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+      > .table-row-info {
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        > div {
+          flex-grow: 1;
+          font-family: 'Museo Sans Cyrl 300';
+          font-size: 1em;
+        }
+        > .number { max-width: 50px; border-color: green; text-align: center; }
+        > .decoration-1 { max-width: 50px;}
+        > .title { margin: 0 0 0 10px;}
+        > .measure { max-width: 80px;  text-align: center; }
+        > .decoration-3 { max-width: 100px; }
+        > .price { max-width: 80px; text-align: center; }
+      }
+      > .h-line {
+        height: 1px;
+        width: 100%;
+        margin: 10px 0 10px 0;
+        background-color: #d5d5d5;
+      }
+      > .table-row {
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0px 0px 5px 5px rgba(34, 60, 80, 0.2);
+          border-radius: 20px;
+        }
+        > div {
+          flex-grow: 1;
+          font-family: 'Museo Sans Cyrl 300';
+          font-size: 1em;
+          display: flex;
+        }
+        > .number { max-width: 50px; justify-content: center;}
+        > .decoration-1 { height: 1px; max-width: 50px; background-color: #d5d5d5; align-self: center; }
+        > .title { margin: 0 0 0 10px; flex-grow: 0; }
+        > .decoration-2 { margin: 0 0 0 10px; height: 1px; background-color: #d5d5d5; align-self: center;  }
+        > .measure { max-width: 80px; justify-content: center; }
+        > .decoration-3 { height: 1px; max-width: 100px; background-color: #d5d5d5; align-self: center;  }
+        > .price { max-width: 80px; justify-content: center; }
+      }
+    }
+    > .block-4-button {
+      > button {
+        height: 55px;
+        width: 270px;
+        border-radius: 30px;
+        margin: 50px 0 0 0;
+      }
+    }
+  }
+}
