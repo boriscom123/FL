@@ -19,40 +19,33 @@
           align-items: center;
           > h3 {
             font-family: 'Proxima Nova Rg';
-            text-transform: uppercase;
             font-size: 2.5em;
-            font-weight: 700;
-            // color: #21b744;
             color: rgba(237,18,0,1);
+            text-transform: uppercase;
+            margin: 0 0 0 17px;
             letter-spacing: -0.03em;
+            max-width: #{calc(100% - 137px)};
+            @media (max-width: 1162px) {font-size: 2.4em;}
+            @media (max-width: 1138px) {font-size: 2.3em;}
+            @media (max-width: 1113px) {font-size: 2.2em;}
+            @media (max-width: 1088px) {font-size: 2.1em;}
+            @media (max-width: 1064px) {font-size: 2em;}
+            @media (max-width: 1039px) {font-size: 1.9em;}
+            @media (max-width: 1015px) {font-size: 1.8em;}
+            @media (max-width: 990px) {font-size: 1.5em;}
+            @media (max-width: 700px) {font-size: 2em;}
+            @media (max-width: 426px) {font-size: 1.8em;}
+            @media (max-width: 400px) {font-size: 1.2em;}
           }
-          > div {
-            margin-left: 10px;
-            height: 75px;
-            width: 90px;
-            border-radius: 3px;
-            border: 3px solid rgba(237,18,0,1);
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            position: relative;
-            > h3 {
-              margin: 0 0 0 0;
-              padding: 0;
-              text-transform: uppercase;
-              font-size: 2.5em;
-              font-weight: 700;
-              color: rgba(237,18,0,1);
-              font-family: 'Proxima Nova Rg';
-              > span {
-                // color: #1f7ec0;
-                position: absolute;
-                top: -18px;
-                right: -1px;
-                font-family: "Proxima Nova Bl";
-                font-size: 2em;
-                font-weight: 700;
-              }
+          > .image {
+            height: 100px;
+            width: 100px;
+            margin: 0 10px 0 10px;
+            > img {
+              height: 100%;
+              width: 100%;
+              -o-object-fit: contain;
+                 object-fit: contain;
             }
           }
         }
@@ -172,7 +165,8 @@
           background-position: center top;
           position: relative;
           z-index: 2;
-          @media (max-width: 820px) {padding: 10px 10px 100px 10px;}
+          @media (max-width: 820px) {padding: 100px 10px 130px 10px;}
+          @media (max-width: 700px) {padding: 100px 15px 130px 25px;}
           > h2 {
             font-family: 'Proxima Nova Bl';
             font-size: 2em;
@@ -180,7 +174,8 @@
             text-transform: uppercase;
             text-align: center;
             > span {
-              color: #21b744;
+              // color: #21b744;
+              color: #1f7ec0;
             }
           }
           > p {

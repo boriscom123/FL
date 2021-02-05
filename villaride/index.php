@@ -28,8 +28,8 @@ get_header();
 							<h3>
 								Поставщик садовых теплиц
 							</h3>
-							<div class="">
-								<h3>№<span>1</span></h3>
+							<div class="image">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/image/block-1-title.png" alt="block-1-title">
 							</div>
 						</div>
 
