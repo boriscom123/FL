@@ -24,7 +24,14 @@ get_header();
 
           <div class="block-1-left">
 
-            <h3>Поставщик садовых теплиц <span>№1</span></h3>
+						<div class="title">
+							<h3>
+								Поставщик садовых теплиц
+							</h3>
+							<div class="">
+								<h3>№<span>1</span></h3>					
+							</div>
+						</div>
 
             <div class="block-1-title d-flex">
               <div class="border"></div>
@@ -52,7 +59,7 @@ get_header();
                 </div>
                 <div class="text">
                   <h4>Хранение до весны</h4>
-                  <p>бесплатная</p>
+                  <p>бесплатно</p>
                 </div>
               </div>
 
@@ -115,7 +122,6 @@ get_header();
               </div>
 
             </form>
-            <div class="form-decoration"><div class=""></div></div>
           </div>
 
         </div>

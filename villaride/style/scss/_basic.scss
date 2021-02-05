@@ -113,7 +113,7 @@ display: none;
 }
 .btn-red {
   transition: 0.1s;
-  background: rgb(255,84,0);
+  background: rgba(255,84,0,1);
   background: linear-gradient(to bottom,  rgba(255,84,0,1) 0%,rgba(237,18,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5400', endColorstr='#ed1200',GradientType=0 );
   &:hover {

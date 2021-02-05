@@ -383,16 +383,46 @@ video {
   width: 100%;
   max-width: 800px;
 }
-.block-1 > div > .block-1-left > h3 {
-  margin: 50px 0 0 65px;
+.block-1 > div > .block-1-left > .title {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.block-1 > div > .block-1-left > .title > h3 {
   font-family: "Proxima Nova Rg";
   text-transform: uppercase;
-  font-size: 2.3em;
+  font-size: 2.5em;
   font-weight: 700;
-  color: #21b744;
+  color: #ed1200;
+  letter-spacing: -0.03em;
 }
-.block-1 > div > .block-1-left > h3 > span {
-  color: #1f7ec0;
+.block-1 > div > .block-1-left > .title > div {
+  margin-left: 10px;
+  height: 75px;
+  width: 90px;
+  border-radius: 3px;
+  border: 3px solid #ed1200;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.block-1 > div > .block-1-left > .title > div > h3 {
+  margin: 0 0 0 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #ed1200;
+  font-family: "Proxima Nova Rg";
+}
+.block-1 > div > .block-1-left > .title > div > h3 > span {
+  position: absolute;
+  top: -18px;
+  right: -1px;
+  font-family: "Proxima Nova Bl";
+  font-size: 2em;
+  font-weight: 700;
 }
 .block-1 > div > .block-1-left > .block-1-title {
   margin: 35px 0 0 0;
@@ -541,12 +571,12 @@ video {
   }
 }
 .block-1 > div > .block-1-right > .block-1-form {
-  margin: 50px 0 0 0;
-  padding: 50px 35px 130px;
-  background-color: whitesmoke;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-  box-shadow: 0px 5px 10px 5px rgba(34, 60, 80, 0.2);
+  height: 500px;
+  margin: 25px 0 0 0;
+  padding: 100px 35px 130px;
+  background-image: url("../image/block-1-form.png");
+  background-repeat: no-repeat;
+  background-position: center top;
   position: relative;
   z-index: 2;
 }
