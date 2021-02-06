@@ -101,7 +101,7 @@ get_header();
               </div>
 
               <div class="tel">
-								<a href="tel:8932321610304" rel="nofollow">8 932 321 61 03 04</a>
+								<a href="tel:8932321610304" rel="nofollow">8 932 321 03 04</a>
 		            <!-- <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a> -->
 		            <a href="tel:+79199558070" rel="nofollow">+7 (919) 955-80-70</a>
               </div>
