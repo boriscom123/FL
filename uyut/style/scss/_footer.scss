@@ -1,7 +1,8 @@
 .footer {
   > .footer-content {
     min-height: 125px;
-    padding: 0 10px 0 0 10px;
+    padding: 0 10px 0 10px;
+    @media (max-width: 1040px) {display: none;}
     > .header-info {
       flex-grow: 1;
       padding: 0 50px 0 50px;
@@ -65,6 +66,88 @@
         height: 45px;
         width: 200px;
         border-radius: 25px;
+      }
+    }
+  }
+  > .footer-content-mobile-top {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media (min-width: 1041px) {display: none;}
+    @media (max-width: 400px) {flex-direction: column;}
+    > .footer-contacts {
+      > div {
+        > .image {
+          height: 25px;
+          width: 25px;
+          margin: 0 15px 0 0;
+          > img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: contain;
+               object-fit: contain;
+          }
+        }
+        > a {
+          font-family: 'Museo Sans Cyrl 300';
+          font-size: 1.2em;
+          margin: 0 0 10px 0;
+          > span {
+            font-family: 'Museo Sans Cyrl 900';
+          }
+        }
+      }
+      > .btn {
+        height: 45px;
+        width: 200px;
+        border-radius: 25px;
+      }
+    }
+  }
+  > .footer-content-mobile-bottom {
+    display: flex;
+    justify-content: space-around;
+    @media (min-width: 1041px) {display: none;}
+    > .footer-info {
+      flex-grow: 1;
+      padding: 0 50px 0 50px;
+      @media (max-width: 760px) { padding: 0 10px 0 10px; }
+      @media (max-width: 672px) { flex-direction: column; margin-left: 30%;}
+      @media (max-width: 450px) { flex-direction: column; margin-left: 20%;}
+      @media (max-width: 400px) { flex-direction: column; margin-left: 10%;}
+      > div {
+        > .image {
+          height: 25px;
+          width: 25px;
+          margin: 0 15px 0 0;
+          > img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: contain;
+               object-fit: contain;
+          }
+        }
+        > .text {
+          > h2 {
+            font-family: 'Museo Sans Cyrl 900';
+            font-size: 1em;
+            margin: 0 0 10px 0;
+          }
+          > p {
+            max-width: 200px;
+            font-family: 'Museo Sans Cyrl 100';
+            > span {
+              font-family: 'Museo Sans Cyrl 500';
+            }
+          }
+          > a {
+            font-family: 'Museo Sans Cyrl 100';
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
   }

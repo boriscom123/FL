@@ -1,15 +1,20 @@
 .block-1 {
-  padding: 50px 0 0 0;
   background-image: url('../image/block-1-bg.jpg');
   background-repeat: no-repeat;
   background-position: center 20px;
   position: relative;
-
+  @media (max-width: 700px) { overflow: hidden; }
   > .block-1-content {
+    @media (max-width: 700px) { flex-direction: column;}
     > .block-1-content-left {
       width: 100%;
       max-width: 600px;
+      position: relative;
+      z-index: 5;
+      padding: 50px 0 0 0;
+      @media (max-width: 700px) { background-color: rgba(255,255,255,0.7); max-width: 100%;}
       > .text {
+        @media (max-width: 700px) { margin: 0 0 0 10px;}
         > h2 {
           font-family: 'Museo Sans Cyrl 300';
           font-size: 1.2em;
@@ -25,6 +30,7 @@
           justify-content: center;
           border-radius: 3px;
           color: white;
+          white-space: nowrap;
         }
       }
       > h1 {
@@ -33,15 +39,19 @@
         font-size: 4em;
         text-transform: uppercase;
         line-height: 55px;
+        @media (max-width: 970px) { font-size: 3em;}
+        @media (max-width: 700px) { margin: 0 0 0 10px;}
       }
       > h2 {
         font-family: 'Museo Sans Cyrl 100';
         font-size: 1.5em;
         margin: 25px 0 0 0;
+        @media (max-width: 700px) { margin: 25px 0 0 10px;}
       }
       > .cards {
         position: relative;
         margin: 40px 0 0 0;
+        @media (max-width: 900px) { flex-direction: column;}
         > .card {
           display: flex;
           justify-content: space-between;
@@ -54,6 +64,7 @@
           background-color: white;
           cursor: pointer;
           transition: $transition;
+          @media (max-width: 900px) { margin: 10px 0 0 0;}
           &:hover {
             transform: scale(1.2);
           }
@@ -84,6 +95,7 @@
           transform: translateY(-50%);
           z-index: 2;
           cursor: pointer;
+          @media (max-width: 1030px) { display: none; }
           > .image {
             height: 40px;
             width: 40px;
@@ -103,11 +115,12 @@
       }
       > .buttons {
         margin: 45px 0 0 0;
-
+        @media (max-width: 900px) { flex-direction: column;}
         > button {
           height: 55px;
           width: 270px;
           border-radius: 30px;
+          @media (max-width: 900px) { margin: 10px 0 0 0;}
         }
       }
     }
@@ -124,7 +137,9 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding: 130px 40px 150px 40px;
+      padding: 180px 40px 150px 40px;
+      @media (max-width: 700px) { align-self: center; }
+      @media (max-width: 700px) { padding: 180px 20px 150px 20px; background-color: rgba(255,255,255,0.7); max-width: 100%;}
       > .title {
         > h2 {
           font-family: 'Museo Sans Cyrl 900';
@@ -144,6 +159,7 @@
       > input {
         height: 45px;
         width: 100%;
+        max-width: 320px;
         border: 1px solid grey;
         background-color: #f8f8f8;
         border-radius: 25px;
@@ -156,6 +172,7 @@
         outline: none;
         height: 100px;
         width: 100%;
+        max-width: 320px;
         border: 1px solid grey;
         background-color: #f8f8f8;
         border-radius: 25px;
@@ -168,6 +185,7 @@
       > button {
         height: 55px;
         width: 100%;
+        max-width: 320px;
         border-radius: 30px;
       }
       > .form-checkbox {
@@ -262,6 +280,7 @@
     position: absolute;
     top: -10%;
     left: 48%;
+    @media (max-width: 880px) { left: auto; right: 0;}
   }
   > .decoration-4 {
     position: absolute;

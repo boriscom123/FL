@@ -1,0 +1,38 @@
+.block-11 {
+  > .block-11-content {
+    @media (max-width: 700px) {flex-direction: column; justify-content: center;}
+    > .info {
+      flex-grow: 1;
+      padding: 0 0 0 10px;
+      @media (max-width: 700px) {padding: 10px 10px 0 10px;}
+      > h2 {
+        font-family: 'Museo Sans Cyrl 700';
+        font-size: 1.5em;
+        text-transform: uppercase;
+      }
+      > .text {
+        margin: 20px 0 0 0;
+        > p {
+          font-family: 'Museo Sans Cyrl 100';
+          font-size: 1em;
+        }
+      }
+    }
+    > .work-time {
+      min-width: 300px;
+      @media (max-width: 700px) {padding: 10px 10px 0 10px;}
+      > h2 {
+        font-family: 'Museo Sans Cyrl 700';
+        font-size: 1.5em;
+        text-transform: uppercase;
+      }
+      > .text {
+        margin: 20px 0 0 0;
+        > p {
+          font-family: 'Museo Sans Cyrl 100';
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

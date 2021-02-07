@@ -1,0 +1,52 @@
+.block-10 {
+  > .block-10-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 960px) {justify-content: center;}
+    > .card {
+      margin: 10px 0 0 0;
+      height: 280px;
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      > .image {
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        overflow: hidden;
+        > img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: cover;
+             object-fit: cover;
+        }
+      }
+      > .info {
+        > h2 {
+          text-align: center;
+          font-family: 'Museo Sans Cyrl 700';
+          font-size: 1.5em;
+        }
+        > p {
+          text-align: center;
+          font-family: 'Museo Sans Cyrl 300';
+          font-size: 1em;
+        }
+      }
+      > .links {
+        font-size: 2em;
+        > .icon-viber {
+          color: #552083;
+        }
+        > .icon-telegram {
+          color: #30a9dd;
+        }
+        > .icon-whatsapp {
+          color: #39ba26;
+        }
+      }
+    }
+  }
+}

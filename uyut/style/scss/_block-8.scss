@@ -30,21 +30,29 @@
     }
   }
   > .block-8-content {
+    @media (max-width: 700px) { display: flex; flex-direction: column; }
     > .block-8-form {
       width: 100%;
       max-width: 700px;
       margin: 200px 0 0 0;
+      position: relative;
+      z-index: 5;
+      @media (max-width: 700px) { margin: 90px 0 0 0; }
       > h2 {
         font-family: 'Museo Sans Cyrl 700';
         font-size: 2em;
         text-transform: uppercase;
         font-weight: 500;
         color: white;
+        @media (max-width: 1080px) { max-width: 95%; margin: 0 auto; }
+        @media (max-width: 700px) { text-align: center;}
       }
       > p {
         font-family: 'Museo Sans Cyrl 300';
         font-size: 1.1em;
         color: white;
+        @media (max-width: 1080px) { max-width: 95%; margin: 0 auto; }
+        @media (max-width: 700px) { text-align: center; }
       }
       > .input {
         display: flex;
@@ -52,6 +60,8 @@
         justify-content: space-between;
         max-width: 570px;
         margin: 40px 0 0 0;
+        @media (max-width: 1080px) { flex-direction: column; align-items: center;}
+        @media (max-width: 700px) { max-width: 100%;}
         > input {
           height: 45px;
           width: 270px;
@@ -65,6 +75,7 @@
           font-size: 1.1em;
           border: 1px solid #3f4e5b;
           transition: $transition;
+          @media (max-width: 1080px) { margin: 10px 0 0 0;}
           &:hover {
             border: 1px solid white;
           }
@@ -73,6 +84,7 @@
       > .textarea {
         max-width: 570px;
         margin: 20px 0 0 0;
+        @media (max-width: 1080px) { max-width: 270px; margin: 10px auto 0; }
         > textarea {
           min-height: 100px;
           width: 100%;
@@ -99,12 +111,16 @@
         justify-content: space-between;
         max-width: 570px;
         margin: 40px 0 0 0;
+        @media (max-width: 1080px) { flex-direction: column; align-items: center; margin: 10px 0 0 0; }
+        @media (max-width: 700px) { max-width: 100%;}
         > button {
           height: 50px;
           width: 50%;
           border-radius: 25px;
+          @media (max-width: 1080px) { width: 270px; }
         }
         > .form-checkbox {
+          @media (max-width: 1080px) { margin: 10px 0 0 0; }
           > input[type=checkbox]:checked ~.checkbox-field > div {
             background-color: #1593d5;
           }
@@ -144,9 +160,11 @@
     }
     > .info {
       width: 100%;
-      min-height: 450px;
+      min-height: 470px;
       margin: 200px 0 0 0;
       position: relative;
+      @media (max-width: 700px) { margin: 30px 0 0 0; }
+      @media (max-width: 450px) { overflow: hidden;}
       > .decoration {
         position: absolute;
         top: 5%;
@@ -158,6 +176,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 1210px) { left: auto; right: 0;}
+        @media (max-width: 700px) { left: 50%; transform: translateX(-50%);}
         > div {
           height: 385px;
           width: 385px;
@@ -168,9 +188,20 @@
         }
       }
       > .image {
+        height: 445px;
+        width: 445px;
         position: absolute;
-        top: 12%;
-        left: 20%;
+        top: 10%;
+        left: 25%;
+        @media (max-width: 1320px) { left: auto; right: 0;}
+        @media (max-width: 700px) { left: 50%; transform: translateX(-50%);}
+        @media (max-width: 450px) { color: #333333; }
+        > img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: contain;
+             object-fit: contain;
+        }
       }
       > .info-1 {
         position: absolute;
@@ -178,6 +209,8 @@
         left: 55%;
         display: flex;
         align-items: center;
+        @media (max-width: 1110px) { left: auto; right: 0;}
+        @media (max-width: 700px) { top: 0; left: 50%; transform: translateX(-60%);}
         > p {
           font-family: 'Museo Sans Cyrl 300';
           font-size: 1em;
@@ -201,6 +234,7 @@
           font-family: 'Museo Sans Cyrl 300';
           font-size: 1em;
           color: white;
+          @media (max-width: 700px) { color: #333333; }
         }
         > h2 {
           font-family: 'Museo Sans Cyrl 900';
@@ -208,6 +242,7 @@
           color: white;
           text-align: right;
           margin: 0 15px 0 15px;
+          @media (max-width: 700px) { color: #333333; }
         }
       }
     }

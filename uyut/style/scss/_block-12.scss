@@ -1,0 +1,84 @@
+.block-12 {
+  > .title {
+    margin: 20px 0 0 0;
+    text-align: center;
+    > h2 {
+      font-family: 'Museo Sans Cyrl 700';
+      font-size: 2.5em;
+      text-transform: uppercase;
+      font-weight: 500;
+      > span {
+        font-family: 'Museo Sans Cyrl 900';
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+    }
+    > h3 {
+      font-family: 'Museo Sans Cyrl 100';
+      font-size: 1.1em;
+    }
+  }
+  > .block-12-content {
+    margin: 25px auto 0;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 700px) { flex-direction:column; justify-content: center; align-items: center;}
+    > .info {
+      width: 370px;
+      min-width: 370px;
+      @media (max-width: 370px) {width: 100%; min-width: 100%;}
+      > .image {
+        height: 500px;
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        @media (max-width: 370px) {height: 100%;}
+        > img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: cover;
+             object-fit: cover;
+        }
+        > .hover-image {
+          position: absolute;
+          bottom: 15px;
+          left: 20px;
+        }
+      }
+      > .text {
+        margin-top: 15px;
+        > h2 {
+          text-align: center;
+          font-family: 'Museo Sans Cyrl 300';
+          font-size: 1.5em;
+        }
+        > p {
+          text-align: center;
+          font-family: 'Museo Sans Cyrl 700';
+          font-size: 1em;
+        }
+      }
+      > .links {
+        font-size: 2em;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0 0 0;
+        > .fa-vk {color: #30a9dd;}
+        > .fa-telegram { color: #30a9dd; }
+        > .fa-facebook-messenger { color: #0085ff; }
+        > .fa-viber { color: #552083; }
+        > .fa-skype { color: #00b0f3; }
+        > .fa-whatsapp { color: #39ba26; }
+        > .fa-instagram-square { color: #f5416f; }
+      }
+    }
+    > .text {
+      padding: 0 0 0 20px;
+      @media (max-width: 700px) {padding: 20px 0 0 20px;}
+      > p {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+}
