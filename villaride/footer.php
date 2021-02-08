@@ -73,7 +73,7 @@
           </div>
 
           <div class="footer-tel">
-						<a href="tel:8932321610304" rel="nofollow">8 932 321 03 04</a>
+						<a href="tel:8932321610304" rel="nofollow">+7 (932) 321-03-04</a>
             <!-- <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a> -->
             <a href="tel:+79199558070" rel="nofollow">+7 (919) 955-80-70</a>
           </div>
@@ -113,7 +113,7 @@
           <div class="close-block">
             <div class="close-text">Закрыть</div>
             <div class="close-icon">
-							<img class="close-image" src="<?php echo get_template_directory_uri(); ?>/assets/image/close-black.svg" alt="close">
+							<i class="fas fa-times close-image"></i>
 						</div>
           </div>
         </div>
@@ -126,14 +126,14 @@
           <div class="close-block">
             <div class="close-text">Закрыть</div>
             <div class="close-icon">
-							<img class="close-image" src="<?php echo get_template_directory_uri(); ?>/assets/image/close-white.svg" alt="close">
+							<i class="fas fa-times close-image"></i>
 						</div>
           </div>
         </div>
 
         <form class="block-1-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
-          <h2>Оставьте <span>заявку</span></h2>
-          <p>Оставьте, пожалуйста, ваши контактные данные. В ближайшее время с Вами свяжется специалист и проконсультирует Вас.</p>
+          <h2>Получить <span>Скидку</span></h2>
+          <p>В ближайшее время с Вами свяжется специалист и проконсультирует Вас.</p>
           <input class="d-none" type="hiddeh" name="info" value="pop-up-form">
           <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
           <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
@@ -154,7 +154,7 @@
           <div class="close-block">
             <div class="close-text">Закрыть</div>
             <div class="close-icon">
-							<img class="close-image" src="<?php echo get_template_directory_uri(); ?>/assets/image/close-white.svg" alt="close">
+							<i class="fas fa-times close-image"></i>
 						</div>
           </div>
         </div>
@@ -165,6 +165,27 @@
         </div>
 
       </div>
+
+			<div class="modal-video d-none">
+
+				<div class="close">
+					<div class="close-block">
+						<div class="close-text">Закрыть</div>
+						<div class="close-icon">
+							<i class="fas fa-times close-image"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="video">
+					<video controls="controls" poster="<?php echo get_template_directory_uri(); ?>/assets/video/8-4.jpg" preload="none">
+						<source src="<?php echo get_template_directory_uri(); ?>/assets/video/8-4-hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						Тег video не поддерживается вашим браузером.
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/video/8-4-hd.mp4">Скачайте видео</a>.
+					</video>
+				</div>
+
+			</div>
 
     </div>
 

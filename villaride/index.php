@@ -59,7 +59,7 @@ get_header();
                 </div>
                 <div class="text">
                   <h4>Хранение до весны</h4>
-                  <p>бесплатно</p>
+                  <p>бесплатное</p>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ get_header();
               </div>
 
               <div class="tel">
-								<a href="tel:8932321610304" rel="nofollow">8 932 321 03 04</a>
+								<a href="tel:8932321610304" rel="nofollow">+7 (932) 321-03-04</a>
 		            <!-- <a href="tel:+73452610304" rel="nofollow">+7 (3452) 61-03-04</a> -->
 		            <a href="tel:+79199558070" rel="nofollow">+7 (919) 955-80-70</a>
               </div>
@@ -109,11 +109,67 @@ get_header();
             </div>
 
             <form class="block-1-form d-flex flex-column flex-align-center" action="index.html" method="get">
-              <h2>Получить <span>Скидку</span></h2>
-              <p>В ближайшее время с Вами свяжется специалист и проконсультирует Вас.</p>
-              <input class="d-none" type="hiddeh" name="info" value="block-1-form">
+              <h2>Получить</h2>
+							<h3>Парник в подарок</h3>
+              <p>Оставьте, пожалуйста, Ваши контактные данные.</p>
+              <input class="d-none" type="hidden" name="info" value="block-1-form">
               <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
               <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
+							<div class="promo id="promo-timer"">
+								<h2>до конца <span>акции</span> осталось:</h2>
+								<div class="timer">
+									<div class="month">
+										<div class="1">
+											<div class="upper">0</div>
+											<div class="bottom">0</div>
+										</div>
+										<div class="2">
+											<div class="upper">1</div>
+											<div class="bottom">1</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="1">
+											<div class="upper">2</div>
+											<div class="bottom">2</div>
+										</div>
+										<div class="2">
+											<div class="upper">3</div>
+											<div class="bottom">3</div>
+										</div>
+									</div>
+									<div class="hour">
+										<div class="1">
+											<div class="upper">4</div>
+											<div class="bottom">4</div>
+										</div>
+										<div class="2">
+											<div class="upper">5</div>
+											<div class="bottom">5</div>
+										</div>
+									</div>
+									<div class="min">
+										<div class="1">
+											<div class="upper">4</div>
+											<div class="bottom">4</div>
+										</div>
+										<div class="2">
+											<div class="upper">4</div>
+											<div class="bottom">4</div>
+										</div>
+									</div>
+									<div class="sec">
+										<div class="1">
+											<div class="upper">4</div>
+											<div class="bottom">4</div>
+										</div>
+										<div class="2">
+											<div class="upper">4</div>
+											<div class="bottom">4</div>
+										</div>
+									</div>
+								</div>
+							</div>
               <button class="btn-red send-form" type="submit" name="submit">Оставить заявку</button>
               <div class="form-checkbox d-flex flex-justify-center flex-align-center">
                 <input class="d-none" type="checkbox" name="privacy-checkbox" value="" id="privacy-checkbox">
@@ -450,7 +506,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-1">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-1">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -482,7 +538,7 @@ get_header();
                 <div class="product d-flex">
                   <div class="video">
                     <div class="image">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-1.jpg" alt="product-1-image">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-2.jpg" alt="product-2-image">
                     </div>
                   </div>
                   <div class="table">
@@ -561,7 +617,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-2">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-2">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -671,7 +727,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-3">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-3">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -784,7 +840,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-4">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-4">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -896,7 +952,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-5">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-5">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1012,7 +1068,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-6">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-6">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1126,7 +1182,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-7">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-7">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1241,7 +1297,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-8">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-8">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1270,7 +1326,15 @@ get_header();
                   <h2>Основание под теплицу</h2>
                 </div>
 
-                <div class="product d-flex">
+                <div class="product d-flex card-9">
+
+									<div class="left">
+			              <img src="<?php echo get_template_directory_uri(); ?>/assets/image/left-icon.svg" alt="left-arrow">
+			            </div>
+			            <div class="right">
+			              <img src="<?php echo get_template_directory_uri(); ?>/assets/image/right-icon.svg" alt="right-arrow">
+			            </div>
+
                   <div class="video">
                     <div class="image">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9.jpg" alt="product-9-image">
@@ -1282,46 +1346,84 @@ get_header();
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-1.jpg" alt="product-9-1-image">
 										</div>
 									</div>
-                  <!-- <div class="table">
-                    <h2>Основание под теплицу</h2>
-                    <div class="title d-flex">
-                      <div class="">Д.Ш.В.</div>
-                      <div class="">Каркас, шаг 1м</div>
-                      <div class="">Комплект с СПК 4мм</div>
-                      <div class="">Монтаж</div>
-                    </div>
-                    <div class="info d-flex">
-                      <div class="">4×3×2,1</div>
-                      <div class="">7 700р.</div>
-                      <div class="">16 200р.</div>
-                      <div class="">3 500р.</div>
-                    </div>
-                    <div class="info d-flex">
-                      <div class="">6×3×2,1</div>
-                      <div class="">8 700р.</div>
-                      <div class="">20 600р.</div>
-                      <div class="">4 000р.</div>
-                    </div>
-                    <div class="info d-flex">
-                      <div class="">8×3×2,1</div>
-                      <div class="">10 700р.</div>
-                      <div class="">26 600р.</div>
-                      <div class="">4 500р.</div>
-                    </div>
-                    <div class="info d-flex">
-                      <div class="">10×3×2,1</div>
-                      <div class="">13 700р.</div>
-                      <div class="">32 400р.</div>
-                      <div class="">5 000р.</div>
-                    </div>
-                    <div class="info d-flex">
-                      <div class="">12×3×2,1</div>
-                      <div class="">16 200р.</div>
-                      <div class="">38 300р.</div>
-                      <div class="">5 500р.</div>
-                    </div>
 
-                  </div> -->
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-2.jpg" alt="product-9-2-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-3.jpg" alt="product-9-3-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-4.jpg" alt="product-9-4-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-5.jpg" alt="product-9-5-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-6.jpg" alt="product-9-6-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-7.jpg" alt="product-9-7-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-8.jpg" alt="product-9-8-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-9.jpg" alt="product-9-9-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-10.jpg" alt="product-9-10-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-11.jpg" alt="product-9-11-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-12.jpg" alt="product-9-12-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-13.jpg" alt="product-9-13-image">
+										</div>
+									</div>
+
+									<div class="video d-none" style="margin-left: 10px">
+										<div class="image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-14.jpg" alt="product-9-14-image">
+										</div>
+									</div>
 
                 </div>
 
@@ -1338,21 +1440,33 @@ get_header();
 												Фундамент для теплицы – это основа, которая обеспечит устойчивость, целостность конструкции и прочность.
 												Фундамент под теплицу из поликарбоната однозначно нужен , это база которая выполняет ряд важных задач.
 											</p>
+											<div class="h-line"></div>
 											<p>- фиксирует тепличный каркас, удерживает его при порывах ветра, сильных ливнях, при затоплении участка и от пр. атмосферных сюрпризов;</p>
+											<div class="h-line"></div>
 											<p>- изолирует конструкцию от соприкосновения с землей, защищает материалы от вредных воздействий почвы, значительно продлевает срок службы постройки;</p>
+											<div class="h-line"></div>
 											<p>- помогает сохранить внутри до 10% тепла, способствует благоприятному микроклимату и сэкономить на обогреве;</p>
+											<div class="h-line"></div>
 											<p>- препятствует проникновению внутрь теплицы туману, холодным потокам воздуха;</p>
+											<div class="h-line"></div>
 											<p>- помогает оградить конструкцию и урожай от вредных насекомых и грызунов.</p>
-											<p>Наша компания предлагает несколько возможных вариантов фундаментов</p>
+											<div class="h-line"></div>
+											<p>Наша компания предлагает несколько возможных вариантов фундаментов:</p>
+											<div class="h-line"></div>
 											<p>1. Брус разного  сечения обработанный реагентом против плесени и гниения.</p>
+											<div class="h-line"></div>
 											<p>2. Металическое основание из профильной трубу разного сечения.</p>
+											<div class="h-line"></div>
 											<p>3. Ленточный  бетонный фундамент, не заглублённый -лежащий на твёрдом грунте.</p>
+											<div class="h-line"></div>
 											<p>4. Основание из керамитоблоков.</p>
+											<div class="h-line"></div>
 											<p>5. Столбчатый фундамент. Столбы углубляются на 700-800 мм, может быть и не утопленный в грунт. Оптимальное расстояние между столбами 1,5-2,0 м.</p>
-											<p>Стоимость любого вида основания просчитывается индивидуально.</p>
+											<div class="h-line"></div>
+											<p class="active">Стоимость любого вида основания просчитывается индивидуально.</p>
 										</div>
                   </div>
-                  <p></p>
+                  <p class="card-9-link">Смотреть видео</p>
                 </div>
 
               </div>
@@ -1360,7 +1474,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hiddeh" name="info" value="block-4-form-9">
+                <input class="d-none" type="hidden" name="info" value="block-4-form-9">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1512,10 +1626,10 @@ get_header();
 
         <div class="container">
           <div class="">
-            <h2>свяжитесь с нами</h2>
+            <h2>Получить парник <span>в подарок</span></h2>
             <p>Оставьте, пожалуйста, ваши контактные данные. В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
             <form class="block-6-form" action="index.html" method="get">
-              <input class="d-none" type="hiddeh" name="info" value="block-6-form">
+              <input class="d-none" type="hidden" name="info" value="block-6-form">
               <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
               <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
               <button class="btn-green send-form" type="submit" name="submit">Оставить заявку</button>

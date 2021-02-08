@@ -456,6 +456,7 @@ let modalsEl = document.getElementsByClassName('modals');
 let openFormButtonEl = document.getElementsByClassName('header-button');
 let sendFormButtonEl = document.getElementsByClassName('send-form');
 let openInfoButtonEl = document.getElementsByClassName('show-modal-info');
+let openVideoButtonEl = document.getElementsByClassName('card-9-link');
 let closeModalsEl = document.getElementsByClassName('close');
 function openModalForm(el){
   // console.log(modalsEl[0]);
@@ -498,6 +499,16 @@ function openModalForm(el){
     modalsEl[0].children[1].classList.remove('d-none');
     modalsEl[0].children[1].classList.add('position-2-2');
   }
+  if(el.classList.contains('card-9-link')){
+    // console.log('Показываем видео');
+    modalsEl[0].classList.remove('d-none');
+    modalsEl[0].classList.add('d-flex');
+    modalsEl[0].children[5].classList.remove('d-none');
+    modalsEl[0].children[5].classList.add('d-flex');
+    // запустить видео
+    // запускаем воспроизведение
+    modalsEl[0].children[5].children[1].children[0].play();
+  }
 }
 function hideAll(){
   modalsEl[0].classList.remove('d-flex');
@@ -505,6 +516,10 @@ function hideAll(){
   for (let i = 0; i < modalsEl[0].children.length; i++) {
     modalsEl[0].children[i].classList.add('d-none');
     modalsEl[0].children[i].classList.remove('d-flex', 'position-1', 'position-1-1', 'position-1-2', 'position-2', 'position-2-1', 'position-22');
+    if(i == 5){
+      // останавливаем воспроизведение
+      modalsEl[0].children[i].children[1].children[0].pause();
+    }
   }
 }
 function closeModals(el){
@@ -531,6 +546,7 @@ for (let i = 0; i < sendFormButtonEl.length; i++) {
   sendFormButtonEl[i].addEventListener('click', function(){postData(this);});
 }
 modalsEl[0].addEventListener('click', function(){closeModals(this);});
+openVideoButtonEl[0].addEventListener('click', function(){openModalForm(this);});
 
 // Воспроизведение Видео
 function startVideo(el){
@@ -555,3 +571,32 @@ function mobileMenu(el){
 }
 trigramEl[0].addEventListener('click', function(){mobileMenu(this);});
 trigramEl[1].addEventListener('click', function(){mobileMenu(this);});
+
+// block 4 - card - 9 slider
+function changeImage(el){
+  console.log('Меняем изображения');
+  console.log(el);
+  console.log(event.target);
+  // меняем по 2 элемента
+  if(event.target.classList.contains('left') || event.target.alt == 'left-arrow'){
+    // console.log('Левая кнопка');
+    el.children[2].classList.add('d-none');
+    el.children[2].style.marginLeft = 10+'px';
+    el.append(el.children[2]);
+    el.children[2].classList.add('d-none');
+    el.append(el.children[2]);
+    el.children[2].classList.remove('d-none');
+    el.children[3].classList.remove('d-none');
+  }
+  if(event.target.classList.contains('right') || event.target.alt == 'right-arrow'){
+    console.log('Правая кнопка');
+    el.children[2].classList.add('d-none');
+    el.children[3].classList.add('d-none');
+    el.children[1].after(el.children[el.children.length - 1]);
+    el.children[1].after(el.children[el.children.length - 1]);
+    el.children[2].classList.remove('d-none');
+    el.children[3].classList.remove('d-none');
+  }
+}
+let block4Card9El = document.getElementsByClassName('card-9');
+block4Card9El[0].addEventListener('click', function(){changeImage(this);});
