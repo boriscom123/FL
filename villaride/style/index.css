@@ -6298,6 +6298,55 @@ video {
   box-shadow: 0px 5px 10px 2px #223c50 inset;
 }
 
+.flip-horizontal-bottom {
+  -webkit-animation: flip-horizontal-bottom 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: flip-horizontal-bottom 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateX(-90deg);
+    opacity: 1;
+  }
+  51% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  99% {
+    transform: rotateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateX(-90deg);
+    opacity: 1;
+  }
+  51% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  99% {
+    transform: rotateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
 .header {
   height: 90px;
   background-color: white;
@@ -6617,6 +6666,16 @@ video {
 .block-1 > div > .block-1-left > .block-1-info {
   margin: 50px 0 0 65px;
 }
+@media (max-width: 800px) {
+  .block-1 > div > .block-1-left > .block-1-info {
+    margin: 50px 0 0 10px;
+  }
+}
+@media (max-width: 700px) {
+  .block-1 > div > .block-1-left > .block-1-info {
+    margin: 50px 0 0 65px;
+  }
+}
 @media (max-width: 450px) {
   .block-1 > div > .block-1-left > .block-1-info {
     flex-direction: column;
@@ -6738,14 +6797,9 @@ video {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 820px) {
+@media (max-width: 400px) {
   .block-1 > div > .block-1-right > .block-1-form {
-    padding: 100px 10px 130px 10px;
-  }
-}
-@media (max-width: 700px) {
-  .block-1 > div > .block-1-right > .block-1-form {
-    padding: 100px 15px 130px 25px;
+    background-position: center top;
   }
 }
 .block-1 > div > .block-1-right > .block-1-form > h2 {
@@ -6770,6 +6824,11 @@ video {
   font-weight: 400;
   text-align: center;
   margin: 10px 0 150px 0;
+}
+@media (max-width: 400px) {
+  .block-1 > div > .block-1-right > .block-1-form > p {
+    margin: 10px 0 100px 0;
+  }
 }
 .block-1 > div > .block-1-right > .block-1-form > input {
   height: 50px;
@@ -6835,6 +6894,7 @@ video {
   font-size: 2em;
   z-index: 5;
   transform: rotateX(1deg);
+  font-family: monospace;
 }
 .block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > div > .bottom {
   position: relative;
@@ -6850,6 +6910,7 @@ video {
   font-weight: 900;
   font-size: 2em;
   z-index: 1;
+  font-family: monospace;
 }
 .block-1 > div > .block-1-right > .block-1-form > button {
   height: 50px;

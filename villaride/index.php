@@ -115,57 +115,65 @@ get_header();
               <input class="d-none" type="hidden" name="info" value="block-1-form">
               <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
               <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
-							<div class="promo id="promo-timer"">
+							<?php
+								// получаем дату окончания акции
+								// параметры по умолчанию
+								$post_id = 313;
+								$the_post = get_post( $post_id );
+								$content = $the_post->post_content;
+								$date = explode('-', substr(strstr(strstr($the_post->post_content, '</p>', true), '<p>'), 3));
+							?>
+							<div class="promo" id="promo-timer" data-action="<?php echo $date[2].'-'.$date[1].'-'.$date[0]; ?>">
 								<h2>до конца <span>акции</span> осталось:</h2>
 								<div class="timer">
 									<div class="month">
 										<div class="1">
 											<div class="upper">0</div>
-											<div class="bottom">0</div>
+											<div class="bottom">9</div>
 										</div>
 										<div class="2">
 											<div class="upper">1</div>
-											<div class="bottom">1</div>
+											<div class="bottom">0</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="1">
 											<div class="upper">2</div>
-											<div class="bottom">2</div>
+											<div class="bottom">1</div>
 										</div>
 										<div class="2">
 											<div class="upper">3</div>
-											<div class="bottom">3</div>
+											<div class="bottom">2</div>
 										</div>
 									</div>
 									<div class="hour">
 										<div class="1">
 											<div class="upper">4</div>
-											<div class="bottom">4</div>
+											<div class="bottom">3</div>
 										</div>
 										<div class="2">
 											<div class="upper">5</div>
-											<div class="bottom">5</div>
+											<div class="bottom">4</div>
 										</div>
 									</div>
 									<div class="min">
 										<div class="1">
 											<div class="upper">4</div>
-											<div class="bottom">4</div>
+											<div class="bottom">3</div>
 										</div>
 										<div class="2">
 											<div class="upper">4</div>
-											<div class="bottom">4</div>
+											<div class="bottom">3</div>
 										</div>
 									</div>
 									<div class="sec">
 										<div class="1">
-											<div class="upper">4</div>
-											<div class="bottom">4</div>
+											<div class="upper">0</div>
+											<div class="bottom">0</div>
 										</div>
 										<div class="2">
-											<div class="upper">4</div>
-											<div class="bottom">4</div>
+											<div class="upper">0</div>
+											<div class="bottom">0</div>
 										</div>
 									</div>
 								</div>

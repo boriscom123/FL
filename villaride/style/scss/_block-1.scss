@@ -75,6 +75,8 @@
         }
         > .block-1-info {
           margin: 50px 0 0 65px;
+          @media (max-width: 800px) {margin: 50px 0 0 10px;}
+          @media (max-width: 700px) {margin: 50px 0 0 65px;}
           @media (max-width: 450px) {flex-direction: column; align-items: center; margin: 25px 0 0 0;}
           > div {
             > .image {
@@ -165,8 +167,9 @@
           background-position: 80% top;
           position: relative;
           z-index: 2;
-          @media (max-width: 820px) {padding: 100px 10px 130px 10px;}
-          @media (max-width: 700px) {padding: 100px 15px 130px 25px;}
+          @media (max-width: 400px) {background-position: center top;}
+          // @media (max-width: 820px) {padding: 100px 10px 130px 10px;}
+          // @media (max-width: 700px) {padding: 100px 15px 130px 25px;}
           > h2 {
             font-family: 'Proxima Nova Bl';
             font-size: 2.5em;
@@ -189,6 +192,7 @@
             font-weight: 400;
             text-align: center;
             margin: 10px 0 150px 0;
+            @media (max-width: 400px) {margin: 10px 0 100px 0;}
           }
           > input {
             height: 50px;
@@ -250,6 +254,7 @@
                     font-size: 2em;
                     z-index: 5;
                     transform: rotateX(1deg);
+                    font-family: monospace;
                   }
                   > .bottom {
                     position: relative;
@@ -265,6 +270,7 @@
                     font-weight: 900;
                     font-size: 2em;
                     z-index: 1;
+                    font-family: monospace;
                   }
                 }
               }

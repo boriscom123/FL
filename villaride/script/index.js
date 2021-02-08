@@ -7,9 +7,19 @@ function postData(el){
   event.preventDefault();
   // подготавливаем запрос
   // берем значения из полей info, Имени и Телефона
-  let info = el.previousElementSibling.previousElementSibling.previousElementSibling.value;
-  let name = el.previousElementSibling.previousElementSibling.value;
-  let tel = el.previousElementSibling.value;
+  let formEl = el.parentNode;
+  let info, name, tel;
+  for (let i = 0; i < formEl.children.length; i++) {
+      if(formEl.children[i].name == 'info'){
+        info = formEl.children[i].value;
+      }
+      if(formEl.children[i].name == 'name'){
+        name = formEl.children[i].value;
+      }
+      if(formEl.children[i].name == 'tel'){
+        tel = formEl.children[i].value;
+      }
+  }
   let send = {};
   // проверяем чекбокс пользовательского соглашения
   if(!el.nextElementSibling.children[0].checked){
@@ -600,3 +610,159 @@ function changeImage(el){
 }
 let block4Card9El = document.getElementsByClassName('card-9');
 block4Card9El[0].addEventListener('click', function(){changeImage(this);});
+
+// block-1 timer
+let timerEl = document.getElementById('promo-timer');
+function startTimer(date){
+  // console.log('Запускаем таймер обратного осчета');
+  // console.log('Полученная дата: ', date);
+  // необходимо добавить данные даты к объекту timerEl
+  Date.prototype.daysInMonth = function() {
+		return 33 - new Date(this.getFullYear(), this.getMonth(), 33).getDate();
+	};
+  let endDate = new Date(date);
+  // console.log('Дата окончания: ', endDate);
+  let now = new Date();
+  let month = endDate.getMonth() - now.getMonth() - 1;
+  // console.log('Месяц: ', month);
+  // console.log('Месяцы', month);
+  if(month >= 10){
+    timerEl.timerDMonth = ((month - (month%10)) / 10 );
+    timerEl.timerMonth = (month%10);
+  } else {
+    timerEl.timerDMonth = 0;
+    timerEl.timerMonth = month;
+  }
+  timerEl.children[1].children[0].children[0].children[0].innerHTML = timerEl.timerDMonth;
+  timerEl.children[1].children[0].children[1].children[0].innerHTML = timerEl.timerMonth;
+  let days =  now.daysInMonth() - now.getDate() - 1;
+  // console.log('Всего дней : ', endDate.daysInMonth());
+  // console.log('День: ', days);
+  // console.log('Дни', days);
+  if(days >= 10){
+    timerEl.timerDDays = ((days - (days%10)) / 10 );
+    timerEl.timerDays = (days%10);
+  } else {
+    timerEl.timerDDays = 0;
+    timerEl.timerDays = days;
+  }
+  timerEl.children[1].children[1].children[0].children[0].innerHTML = timerEl.timerDDays;
+  timerEl.children[1].children[1].children[1].children[0].innerHTML = timerEl.timerDays;
+  let hours = endDate.getUTCHours() - now.getHours() + 24 - 1;
+  //console.log('Часы ', hours);
+  if(hours >= 10){
+    timerEl.timerDHours = ((hours - (hours%10)) / 10 );
+    timerEl.timerHours = (hours%10);
+  } else {
+    timerEl.timerDHours = 0;
+    timerEl.timerHours = hours;
+  }
+  timerEl.children[1].children[2].children[0].children[0].innerHTML = timerEl.timerDHours;
+  timerEl.children[1].children[2].children[1].children[0].innerHTML = timerEl.timerHours;
+  let min = endDate.getMinutes() - now.getMinutes() + 60;
+  // console.log('Минуты ', min);
+  if(min >= 10){
+    timerEl.timerDMin = ((min - (min%10)) / 10 );
+    timerEl.timerMin = (min%10);
+  } else {
+    timerEl.timerDMin = 0;
+    timerEl.timerMin = min;
+  }
+  timerEl.children[1].children[3].children[0].children[0].innerHTML = timerEl.timerDMin;
+  timerEl.children[1].children[3].children[1].children[0].innerHTML = timerEl.timerMin;
+  let sec = endDate.getSeconds() - now.getSeconds() + 60;
+  //console.log('Секунды ', sec);
+  if(sec >= 10){
+    timerEl.timerDSec = ((sec - (sec%10)) / 10 );
+    timerEl.timerSec = (sec%10);
+  } else {
+    timerEl.timerDSec = 0;
+    timerEl.timerSec = sec;
+  }
+  timerEl.children[1].children[4].children[0].children[0].innerHTML = timerEl.timerDSec;
+  timerEl.children[1].children[4].children[1].children[0].innerHTML = timerEl.timerSec;
+  setInterval(showSec, 1000);
+}
+function showSec(){
+  let secEl = timerEl.children[1].children[4].children[1];
+  let now = timerEl.timerSec;
+  if(timerEl.timerSec < 0){
+    timerEl.timerSec = 9;
+    now = 8;
+    secEl.children[0].innerHTML = timerEl.timerSec;
+    secEl.children[0].classList.add('flip-horizontal-bottom');
+    secEl.children[1].innerHTML = now;
+  } else {
+    secEl.children[0].innerHTML = timerEl.timerSec;
+    secEl.children[0].classList.add('flip-horizontal-bottom');
+    now--;
+    if(now < 0){ now = 9;}
+    secEl.children[1].innerHTML = now;
+  }
+  if(timerEl.timerSec == 0) { showDSec(); }
+  setTimeout(()=>{secEl.children[0].innerHTML = now; secEl.children[0].classList.remove('flip-horizontal-bottom');}, 500);
+  timerEl.timerSec--;
+}
+function showDSec(){
+  let dsecEl = timerEl.children[1].children[4].children[0];
+  let now = timerEl.timerDSec;
+  if(timerEl.timerDSec < 0){
+    timerEl.timerDSec = 5;
+    now = 4;
+    dsecEl.children[0].innerHTML = timerEl.timerDSec;
+    dsecEl.children[0].classList.add('flip-horizontal-bottom');
+    dsecEl.children[1].innerHTML = now;
+  } else {
+    dsecEl.children[0].innerHTML = timerEl.timerDSec;
+    dsecEl.children[0].classList.add('flip-horizontal-bottom');
+    now--;
+    if(now < 0){ now = 5;}
+    dsecEl.children[1].innerHTML = now;
+  }
+  if(timerEl.timerDSec == 0) { showMin(); }
+  setTimeout(()=>{dsecEl.children[0].innerHTML = now; dsecEl.children[0].classList.remove('flip-horizontal-bottom');}, 500);
+  timerEl.timerDSec--;
+}
+function showMin(){
+  // console.log('меняем минуты');
+  let minEl = timerEl.children[1].children[3].children[1];
+  let now = timerEl.timerMin;
+  if(timerEl.timerMin < 0){
+    timerEl.timerMin = 9;
+    now = 8;
+    minEl.children[0].innerHTML = timerEl.timerMin;
+    minEl.children[0].classList.add('flip-horizontal-bottom');
+    minEl.children[1].innerHTML = now;
+  } else {
+    minEl.children[0].innerHTML = timerEl.timerMin;
+    minEl.children[0].classList.add('flip-horizontal-bottom');
+    now--;
+    if(now < 0){ now = 9;}
+    minEl.children[1].innerHTML = now;
+  }
+  if(timerEl.timerMin == 0) { showDMin(); }
+  setTimeout(()=>{minEl.children[0].innerHTML = now; minEl.children[0].classList.remove('flip-horizontal-bottom');}, 500);
+  timerEl.timerMin--;
+}
+function showDMin(){
+  // console.log('меняем Десятки минут');
+  let dminEl = timerEl.children[1].children[3].children[0];
+  let now = timerEl.timerDMin;
+  if(timerEl.timerDMin < 0){
+    timerEl.timerDMin = 5;
+    now = 4;
+    dminEl.children[0].innerHTML = timerEl.timerDMin;
+    dminEl.children[0].classList.add('flip-horizontal-bottom');
+    dminEl.children[1].innerHTML = now;
+  } else {
+    dminEl.children[0].innerHTML = timerEl.timerDMin;
+    dminEl.children[0].classList.add('flip-horizontal-bottom');
+    now--;
+    if(now < 0){ now = 5;}
+    dminEl.children[1].innerHTML = now;
+  }
+  if(timerEl.timerDMin == 0) { window.location.reload(); }
+  setTimeout(()=>{dminEl.children[0].innerHTML = now; dminEl.children[0].classList.remove('flip-horizontal-bottom');}, 500);
+  timerEl.timerDMin--;
+}
+document.addEventListener('DOMContentLoaded', function(){startTimer(timerEl.getAttribute('data-action'))});
