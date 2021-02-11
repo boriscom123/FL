@@ -6859,7 +6859,7 @@ video {
 }
 .block-1 > div > .block-1-right > .block-1-form > .promo > .timer {
   height: 40px;
-  margin: 10px 0 0 0;
+  margin: 10px 0 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8997,7 +8997,7 @@ video {
   width: 95%;
   max-width: 800px;
   background-color: white;
-  background-image: url("../image/bg-modal.jpg");
+  background-image: url("../image/bg-modal.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

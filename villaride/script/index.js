@@ -23,16 +23,41 @@ function postData(el){
   let send = {};
   // проверяем чекбокс пользовательского соглашения
   if(!el.nextElementSibling.children[0].checked){
-    console.log('Примите пользовательское соглашение');
+    // console.log('Примите пользовательское соглашение');
     send.checkbox = false;
+    // показываем окно с предупреждением
+    hideAll();
+    let infoEl = document.createElement('div');
+    infoEl.classList.add('info');
+    // modalsEl[0].children[4].children[1].innerHTML = '<h2>Спасибо</h2><p>заявка отправлена и будет обработана первым специалистом</p>';
+    modalsEl[0].children[4].children[1].innerHTML = '<h2>Внимание</h2><p>Необходимо принять пользовательское соглашение</p>';
+    openModalForm(infoEl);
+    setTimeout(()=>hideAll(), 3000);
+
   } else { send.checkbox = true; }
   if(name.length < 2){
-    console.log('Заполните поле Имя');
+    // console.log('Заполните поле Имя');
     send.name = false;
+    // показываем окно с предупреждением
+    hideAll();
+    let infoEl = document.createElement('div');
+    infoEl.classList.add('info');
+    // modalsEl[0].children[4].children[1].innerHTML = '<h2>Спасибо</h2><p>заявка отправлена и будет обработана первым специалистом</p>';
+    modalsEl[0].children[4].children[1].innerHTML = '<h2>Внимание</h2><p>Необходимо ввести Имя</p>';
+    openModalForm(infoEl);
+    setTimeout(()=>hideAll(), 3000);
   } else { send.name = true; }
   if(tel.length < 10){
-    console.log('Заполните поле Телефон');
+    // console.log('Заполните поле Телефон');
     send.tel = false;
+    // показываем окно с предупреждением
+    hideAll();
+    let infoEl = document.createElement('div');
+    infoEl.classList.add('info');
+    // modalsEl[0].children[4].children[1].innerHTML = '<h2>Спасибо</h2><p>заявка отправлена и будет обработана первым специалистом</p>';
+    modalsEl[0].children[4].children[1].innerHTML = '<h2>Внимание</h2><p>Необходимо ввести номер телефона</p>';
+    openModalForm(infoEl);
+    setTimeout(()=>hideAll(), 3000);
   } else { send.tel = true; }
   if(send.checkbox && send.name && send.tel){
     // Если все есть - отправляем запрос
@@ -52,6 +77,7 @@ function postData(el){
         hideAll();
         let infoEl = document.createElement('div');
         infoEl.classList.add('info');
+        modalsEl[0].children[4].children[1].innerHTML = '<h2>Спасибо</h2><p>заявка отправлена и будет обработана первым специалистом</p>';
         openModalForm(infoEl);
         setTimeout(()=>hideAll(), 3000);
       }
