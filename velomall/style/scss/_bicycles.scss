@@ -1,0 +1,148 @@
+.bicycles {
+  > .opportunity {
+    > .card {
+      margin: 50px 0 0 0;
+      align-items: center;
+      > .image-contain {
+        height: 35px;
+        width: 35px;
+      }
+      > .info {
+        margin: 0 0 0 15px;
+        > h2 {
+          font-family: $f900;
+          font-size: 1em;
+        }
+        > p {
+          font-family: $f300;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  > .bicycles-title {
+    width: 100%;
+    max-width: 540px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .decoration-left {
+      height: 4px;
+      width: 50px;
+      border-radius: 3px;
+      background: rgb(0,93,168);
+      background: linear-gradient(to right,  rgba(0,93,168,1) 0%,rgba(25,187,245,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005da8', endColorstr='#19bbf5',GradientType=1 );
+    }
+    > .decoration-right {
+      height: 4px;
+      width: 50px;
+      border-radius: 3px;
+      background: rgb(25,187,245);
+      background: linear-gradient(to right,  rgba(25,187,245,1) 0%,rgba(0,93,168,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19bbf5', endColorstr='#005da8',GradientType=1 );
+    }
+    > .text {
+      margin: 0 50px 0 50px;
+      > h2 {
+        font-family: $f700;
+        font-size: 3em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  > .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px auto 0 auto;
+    > .card {
+      height: 255px;
+      width: 100%;
+      max-width: 540px;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: $shadow;
+      margin: 0 0 30px 0;
+      transition: $transition;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      > .image-cover {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+      > .info {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        z-index: 2;
+        padding: 30px 0 25px 0;
+        > .title {
+          display: flex;
+          align-items: center;
+          > .decoration {
+            height: 35px;
+            width: 5px;
+            border-radius: 3px;
+          }
+          > .text {
+            text-transform: uppercase;
+            margin: 0 0 0 15px;
+            > h2 {
+              font-family: $f900;
+              font-size: 1em;
+            }
+            > h3 {
+              font-family: $f300;
+              font-size: 1em;
+            }
+          }
+        }
+        > .links {
+          margin: 30px 0 0 20px;
+          display: flex;
+          flex-direction: column;
+          max-width: 50%;
+          > a {
+            font-family: $f300;
+            font-size: 1em;
+            transition: $transition;
+            &:hover {
+              text-decoration: underline;
+              transform: scale(1.03);
+            }
+          }
+        }
+      }
+      > .details {
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        width: 100%;
+        text-align: center;
+        z-index: 3;
+        > a {
+          color: white;
+          font-family: $f900;
+          font-size: 1em;
+          text-transform: uppercase;
+          transition: $transition;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

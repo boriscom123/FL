@@ -1,0 +1,39 @@
+.main-nav {
+  height: 90px;
+  width: 100%;
+  box-shadow: $shadow;
+  > .container {
+    height: 100%;
+    > a {
+      height: 100%;
+      padding: 0 15px 0 15px;
+      border-radius: 3px;
+      flex-grow: 1;
+      transition: $transition;
+      &:hover {
+        background: rgb(0,192,255);
+        background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+        color: white;
+      }
+      > div {
+        height: 30px;
+        width: 30px;
+      }
+      > p {
+        font-family: $f300;
+        font-size: 1em;
+        margin: 0 0 0 10px;
+      }
+    }
+    > .active {
+      background: rgb(0,192,255);
+      background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+      color: white;
+      > p {
+        font-family: $f700;
+      }
+    }
+  }
+}

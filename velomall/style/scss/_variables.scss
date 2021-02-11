@@ -1,0 +1,30 @@
+@import url('../fonts/museo-sans/stylesheet.css');
+@import url('../fonts/gilroy/stylesheet.css');
+@import "../../fonts/fontawesome/scss/fontawesome.scss";
+@import "../../fonts/fontawesome/scss/solid.scss";
+@import "../../fonts/fontawesome/scss/regular.scss";
+@import "../../fonts/fontawesome/scss/brands.scss";
+
+$mainColor: #f16d7f; // Розовый цвет
+$alterColor: #f6f6f6; // Серый цвет
+$bgColor: #f6f6f6;
+$fontFamily: 'Museo Sans Cyrl 300';
+$f100: 'Museo Sans Cyrl 100';
+$f300: 'Museo Sans Cyrl 300';
+$f700: 'Museo Sans Cyrl 700';
+$f900: 'Museo Sans Cyrl 900';
+$fontSize: 16px;
+$fontWeight: 300;
+$fontColor: #333333;
+$border: 1px solid #ececec;
+$cartTitleBg: rgba(248, 243, 244, 1); // цвет для заголовка на странице корзина
+$transition: 0.3s; // скорость для переходов
+$shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+
+@mixin elHover($_color) { // цвет при наведении
+  background-color: darken($_color, 10%);
+}
+
+@mixin elActive($_color) { // цвет при нажатии
+  background-color: darken($_color, 20%);
+}

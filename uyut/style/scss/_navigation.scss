@@ -1,7 +1,7 @@
 .navigation {
   height: 40px;
+  background-color: $bgColor;
   box-shadow: $shadow;
-  position: relative;
   z-index: 2;
   > .header-navigation {
     list-style-type: none;
@@ -19,9 +19,9 @@
       cursor: pointer;
       border-radius: 3px;
       transition: $transition;
-      @media (max-width: 905px) { padding: 0 10px 0 10px; }
-      @media (max-width: 840px) { padding: 0 5px 0 5px; }
-      @media (max-width: 670px) { padding: 0 10px 0 10px; }
+      @media (max-width: 720px) { padding: 0 10px 0 10px; }
+      // @media (max-width: 840px) { padding: 0 5px 0 5px; }
+      // @media (max-width: 670px) { padding: 0 10px 0 10px; }
       > a {
         font-family: 'Museo Sans Cyrl 500';
         font-size: 1em;
@@ -49,7 +49,7 @@
           color: white;
         }
         > .image {
-          transform: translateX(-80%);
+          transform: rotate(90deg);
         }
       }
     }
@@ -61,6 +61,64 @@
         color: white;
       }
     }
+    .menu-btn {
+      position: relative;
+      .drop-menu-list {
+        max-height: 750px;
+        max-width: 250px;
+        top: 100%;
+        left: #{calc((100% - 1200px)/2)};
+        padding: 5px 0 5px 0;
+        list-style-type: none;
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        > li {
+          height: 55px;
+          background-color: white;
+          display: flex;
+          > div {
+            height: 100%;
+            width: 5px;
+            background-color: #f8f8f8;
+          }
+          > a {
+            height: 100%;
+            padding: 0 20px 0 20px;
+            display: flex;
+            align-items: center;
+            font-family: 'Museo Sans Cyrl 300';
+            font-size: 1em;
+          }
+          &:hover {
+            background-color: #f8f8f8;
+            > div {
+              background: rgb(31,178,246);
+              background: linear-gradient(to bottom,  rgba(31,178,246,1) 0%,rgba(6,101,165,1) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb2f6', endColorstr='#0665a5',GradientType=0 );
+            }
+            > a {
+              font-family: 'Museo Sans Cyrl 700';
+            }
+          }
+        }
+        > .active {
+          background-color: #f8f8f8;
+          > div {
+            background: rgb(31,178,246);
+            background: linear-gradient(to bottom,  rgba(31,178,246,1) 0%,rgba(6,101,165,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb2f6', endColorstr='#0665a5',GradientType=0 );
+          }
+          > a {
+            font-family: 'Museo Sans Cyrl 700';
+          }
+        }
+      }
+    }
+    .menu-btn:hover > .drop-menu-list { display: flex; }
+    > input[type=checkbox]:checked ~ .menu-btn > .drop-menu-list { display: flex; }
   }
   > .header-navigation-mobile {
     list-style-type: none;
@@ -123,6 +181,11 @@
       margin: 0 0 0 auto;
     }
   }
+}
+.top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .nav-bottom {
   background-color: #2b2f36;

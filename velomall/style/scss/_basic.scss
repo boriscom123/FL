@@ -1,0 +1,115 @@
+// #{calc(50% - 10px)};
+// @media (max-width: 780px) {}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $bgColor;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $fontColor;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+a {
+	text-decoration: none;
+	color: $fontColor;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.h-100 {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-cover {
+  > img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.image-contain {
+  > img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.d-none {
+display: none;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-justify-start {
+  justify-content: flex-start;
+}
+.flex-justify-end {
+  justify-content: flex-end;
+}
+.flex-justify-around {
+  justify-content: space-around;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-align-baseline {
+  align-items: baseline;
+}
+.p-fixed {
+  position: fixed;
+}
+.p-relative {
+  position: relative;
+}
+.blue-gradient {
+  background: rgb(0,192,255);
+  background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+}
+.yellow-gradient {
+  background: rgb(255,228,0);
+  background: linear-gradient(to bottom,  rgba(255,228,0,1) 0%,rgba(255,102,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe400', endColorstr='#ff6600',GradientType=0 );
+  &:hover {
+    background: rgb(255,228,0);
+    background: linear-gradient(to bottom,  rgba(255,228,0,1) 0%,rgba(255,102,0,1) 18%,rgba(255,102,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe400', endColorstr='#ff6600',GradientType=0 ); 
+  }
+}

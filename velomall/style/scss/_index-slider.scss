@@ -1,0 +1,135 @@
+.main-top-slider {
+  height: 500px;
+  background-image: url('../image/main-slider-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  > .container {
+    height: 100%;
+    min-height: 100%;
+    > .info {
+      padding: 80px 0 55px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > h2 {
+        font-family: $f900;
+        font-size: 3em;
+        color: white;
+        text-transform: uppercase;
+      }
+      > h3 {
+        font-family: $f100;
+        font-size: 1.2em;
+        color: white;
+      }
+      > div {
+        > p {
+          font-family: $f300;
+          font-size: 1em;
+          font-style: italic;
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+      > button {
+        height: 50px;
+        min-height: 50px;
+        width: 100%;
+        max-width: 255px;
+        border-radius: 25px;
+        color: white;
+        font-family: $f700;
+        font-size: 1em;
+        text-transform: uppercase;
+        border: none;
+        transition: $transition;
+      }
+    }
+    > .pictures {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      > .title {
+        position: absolute;
+        top: 45px;
+        right: -5%;
+        z-index: 5;
+        max-width: 200px;
+        > h2 {
+          font-family: $f900;
+          font-size: 1.5em;
+          font-style: italic;
+          > span {
+            color: #009fe2;
+          }
+        }
+      }
+      > .options {
+        position: absolute;
+        top: 45px;
+        left: #{calc(10% + 50px)};
+        max-width: 360px;
+        z-index: 5;
+        > p {
+          font-family: $f900;
+          font-size: 1em;
+          > span {
+            color: #009fe2;
+          }
+        }
+      }
+      > .pagination {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        > div {
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 0 10px 0 10px;
+          background-color: grey;
+          transition: $transition;
+          &:hover {
+            background-color: black;
+            transform: scale(1.1);
+          }
+        }
+        > .active {
+          background-color: black;
+        }
+      }
+      > .image {
+        height: 100%;
+        background-color: rgba(255,255,255,0.2);
+        display: flex;
+        justify-content: flex-end;
+        transform: skew(-15deg, 0deg);
+        > div {
+          height: 100%;
+          width: #{calc(100% - 25px)};
+          background-color: rgba(255,255,255,0.5);
+          display: flex;
+          justify-content: flex-end;
+          > div {
+            height: 100%;
+            width: #{calc(100% - 25px)};
+            overflow: hidden;
+            background-color: rgba(255,255,255,1);
+            > img {
+              height: 100%;
+              width: 100%;
+              -o-object-fit: contain;
+                 object-fit: contain;
+                 transform: skew(15deg, 0deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

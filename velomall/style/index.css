@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("../fonts/museo-sans/stylesheet.css");
+@import url("../fonts/gilroy/stylesheet.css");
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6122,6 +6123,7 @@ readers do not read off random characters that represent icons */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 html {
@@ -6133,11 +6135,11 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #f6f6f6;
   font-family: "Museo Sans Cyrl 300";
   font-size: 16px;
   font-weight: 300;
-  color: #222222;
+  color: #333333;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6149,22 +6151,13 @@ a {
   color: #333333;
 }
 
-h1, h2, h3, p {
-  color: #333333;
-}
-
 button {
   cursor: pointer;
-  outline: none;
-  transition: 0.3s;
-}
-
-input {
-  outline: none;
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -6174,6 +6167,25 @@ input {
 
 .w-100 {
   width: 100%;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.image-cover > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.image-contain > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .d-flex {
@@ -6188,12 +6200,12 @@ input {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
 .flex-justify-start {
   justify-content: flex-start;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
 }
 
 .flex-justify-around {
@@ -6216,1384 +6228,571 @@ input {
   align-items: baseline;
 }
 
-.btn-blue {
-  transition: 0.1s;
-  border: none;
-  color: white;
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1.05em;
-  text-transform: uppercase;
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
-}
-.btn-blue:hover {
-  background: #00548d;
-  background: linear-gradient(to bottom, #00548d 0%, #003a62 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00548d", endColorstr="#003a62",GradientType=0 );
-}
-.btn-blue:active {
-  box-shadow: 0px 5px 10px 2px #223c50 inset;
+.p-fixed {
+  position: fixed;
 }
 
-.btn-red {
-  transition: 0.1s;
-  border: none;
-  color: white;
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1.05em;
-  text-transform: uppercase;
-  background: #f13d45;
-  background: linear-gradient(to bottom, #f13d45 0%, #a60b0c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f13d45", endColorstr="#a60b0c",GradientType=0 );
-  /* IE6-9 */
-}
-.btn-red:hover {
-  background: #00548d;
-  background: linear-gradient(to bottom, #00548d 0%, #003a62 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00548d", endColorstr="#003a62",GradientType=0 );
-}
-.btn-red:active {
-  box-shadow: 0px 5px 10px 2px #223c50 inset;
-}
-
-.color-blue {
-  color: #1490d2;
-}
-
-.color-green {
-  color: #32ae47;
+.p-relative {
+  position: relative;
 }
 
 .blue-gradient {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
 }
 
-.header > .header-content {
-  min-height: 125px;
-  padding: 0 10px 0 10px;
+.yellow-gradient {
+  background: #ffe400;
+  background: linear-gradient(to bottom, #ffe400 0%, #ff6600 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffe400", endColorstr="#ff6600",GradientType=0 );
 }
-@media (max-width: 1040px) {
-  .header > .header-content {
-    display: none;
-  }
-}
-.header > .header-content > .header-info {
-  flex-grow: 1;
-  padding: 0 50px 0 50px;
-}
-@media (max-width: 1140px) {
-  .header > .header-content > .header-info {
-    padding: 0 10px 0 10px;
-  }
-}
-@media (max-width: 1060px) {
-  .header > .header-content > .header-info {
-    padding: 0 0px 0 0px;
-  }
-}
-@media (max-width: 1040px) {
-  .header > .header-content > .header-info {
-    padding: 0 50px 0 50px;
-  }
-}
-.header > .header-content > .header-info > div > .image {
-  height: 25px;
-  width: 25px;
-  margin: 0 15px 0 0;
-}
-.header > .header-content > .header-info > div > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.header > .header-content > .header-info > div > .text > h2 {
-  font-family: "Museo Sans Cyrl 900";
-  font-size: 1em;
-  margin: 0 0 10px 0;
-}
-.header > .header-content > .header-info > div > .text > p {
-  max-width: 200px;
-  font-family: "Museo Sans Cyrl 100";
-}
-.header > .header-content > .header-info > div > .text > p > span {
-  font-family: "Museo Sans Cyrl 500";
-}
-.header > .header-content > .header-info > div > .text > a {
-  font-family: "Museo Sans Cyrl 100";
-}
-.header > .header-content > .header-info > div > .text > a:hover {
-  text-decoration: underline;
-}
-@media (max-width: 1040px) {
-  .header > .header-content > .header-contacts {
-    flex-grow: 1;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-.header > .header-content > .header-contacts > div > .image {
-  height: 25px;
-  width: 25px;
-  margin: 0 15px 0 0;
-}
-.header > .header-content > .header-contacts > div > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.header > .header-content > .header-contacts > div > a {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1.2em;
-  margin: 0 0 10px 0;
-}
-.header > .header-content > .header-contacts > div > a > span {
-  font-family: "Museo Sans Cyrl 900";
-}
-.header > .header-content > .header-contacts > .btn {
-  height: 45px;
-  width: 200px;
-  border-radius: 25px;
-}
-.header > .header-content-mobile-top {
-  padding: 10px 10px 10px 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-@media (min-width: 1041px) {
-  .header > .header-content-mobile-top {
-    display: none;
-  }
-}
-@media (max-width: 400px) {
-  .header > .header-content-mobile-top {
-    flex-direction: column;
-  }
-}
-.header > .header-content-mobile-top > .header-contacts > div > .image {
-  height: 25px;
-  width: 25px;
-  margin: 0 15px 0 0;
-}
-.header > .header-content-mobile-top > .header-contacts > div > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.header > .header-content-mobile-top > .header-contacts > div > a {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1.2em;
-  margin: 0 0 10px 0;
-}
-.header > .header-content-mobile-top > .header-contacts > div > a > span {
-  font-family: "Museo Sans Cyrl 900";
-}
-.header > .header-content-mobile-top > .header-contacts > .btn {
-  height: 45px;
-  width: 200px;
-  border-radius: 25px;
-}
-.header > .header-content-mobile-bottom {
-  display: flex;
-  justify-content: space-around;
-}
-@media (min-width: 1041px) {
-  .header > .header-content-mobile-bottom {
-    display: none;
-  }
-}
-.header > .header-content-mobile-bottom > .header-info {
-  flex-grow: 1;
-  padding: 0 50px 0 50px;
-}
-@media (max-width: 760px) {
-  .header > .header-content-mobile-bottom > .header-info {
-    padding: 0 10px 0 10px;
-  }
-}
-@media (max-width: 672px) {
-  .header > .header-content-mobile-bottom > .header-info {
-    flex-direction: column;
-    margin-left: 30%;
-  }
-}
-@media (max-width: 450px) {
-  .header > .header-content-mobile-bottom > .header-info {
-    flex-direction: column;
-    margin-left: 20%;
-  }
-}
-@media (max-width: 400px) {
-  .header > .header-content-mobile-bottom > .header-info {
-    flex-direction: column;
-    margin-left: 10%;
-  }
-}
-.header > .header-content-mobile-bottom > .header-info > div > .image {
-  height: 25px;
-  width: 25px;
-  margin: 0 15px 0 0;
-}
-.header > .header-content-mobile-bottom > .header-info > div > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.header > .header-content-mobile-bottom > .header-info > div > .text > h2 {
-  font-family: "Museo Sans Cyrl 900";
-  font-size: 1em;
-  margin: 0 0 10px 0;
-}
-.header > .header-content-mobile-bottom > .header-info > div > .text > p {
-  max-width: 200px;
-  font-family: "Museo Sans Cyrl 100";
-}
-.header > .header-content-mobile-bottom > .header-info > div > .text > p > span {
-  font-family: "Museo Sans Cyrl 500";
-}
-.header > .header-content-mobile-bottom > .header-info > div > .text > a {
-  font-family: "Museo Sans Cyrl 100";
-}
-.header > .header-content-mobile-bottom > .header-info > div > .text > a:hover {
-  text-decoration: underline;
+.yellow-gradient:hover {
+  background: #ffe400;
+  background: linear-gradient(to bottom, #ffe400 0%, #ff6600 18%, #ff6600 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffe400", endColorstr="#ff6600",GradientType=0 );
 }
 
-.navigation {
-  height: 40px;
+.header {
+  min-height: 190px;
+  background-color: #f6f6f6;
+}
+.header > .header-top-content {
+  height: 50px;
+  z-index: 99999;
+}
+.header > .header-top-content > div {
+  height: 100%;
+  max-height: 50px;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.header > .header-top-content > div > .left {
+  height: 100%;
+  width: 50%;
+  border-radius: 0 25px 25px 0;
+}
+.header > .header-top-content > div > .left > .upper {
+  height: 100%;
+  width: 99%;
+  border-radius: 0 25px 25px 0;
   background-color: white;
-  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-  z-index: 2;
 }
-.navigation > .header-navigation {
-  list-style-type: none;
+.header > .header-top-content > div > .left > .upper > .info {
+  margin: 0 15px 0 15px;
+}
+.header > .header-top-content > div > .left > .upper > .info > div {
+  height: 25px;
+  width: 25px;
+}
+.header > .header-top-content > div > .left > .upper > .info > a {
+  margin: 0 0 0 10px;
+  font-family: "Museo Sans Cyrl 300";
+}
+.header > .header-top-content > div > .left > .upper > .info > a:hover {
+  text-decoration: underline;
+}
+.header > .header-top-content > div > .right {
   height: 100%;
-  display: flex;
-  justify-content: flex-start;
+  width: 50%;
+  background-color: #f6f6f6;
 }
-@media (max-width: 624px) {
-  .navigation > .header-navigation {
-    display: none;
-  }
+.header > .header-top-content > div > .right > .info {
+  margin: 0 25px 0 25px;
 }
-.navigation > .header-navigation > li {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px 0 15px;
-  margin: 0 5px 0 0;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: 0.3s;
-}
-@media (max-width: 720px) {
-  .navigation > .header-navigation > li {
-    padding: 0 10px 0 10px;
-  }
-}
-.navigation > .header-navigation > li > a {
-  font-family: "Museo Sans Cyrl 500";
-  font-size: 1em;
-  white-space: nowrap;
-}
-.navigation > .header-navigation > li > .image {
-  height: 15px;
-  width: 15px;
-  margin: 0 0 0 15px;
-  transition: 0.3s;
-}
-@media (max-width: 765px) {
-  .navigation > .header-navigation > li > .image {
-    margin: 0 0 0 5px;
-  }
-}
-@media (max-width: 700px) {
-  .navigation > .header-navigation > li > .image {
-    display: none;
-  }
-}
-.navigation > .header-navigation > li > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.navigation > .header-navigation > li:hover {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
-}
-.navigation > .header-navigation > li:hover > a {
-  color: white;
-}
-.navigation > .header-navigation > li:hover > .image {
-  transform: rotate(90deg);
-}
-.navigation > .header-navigation > .active {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
-}
-.navigation > .header-navigation > .active > a {
-  color: white;
-}
-.navigation > .header-navigation .menu-btn {
+.header > .header-top-content > div > .right > .info > div {
+  height: 25px;
+  width: 25px;
   position: relative;
 }
-.navigation > .header-navigation .menu-btn .drop-menu-list {
-  max-height: 750px;
-  max-width: 250px;
-  top: 100%;
-  left: calc((100% - 1200px)/2);
-  padding: 5px 0 5px 0;
-  list-style-type: none;
-  flex-direction: column;
-  display: none;
+.header > .header-top-content > div > .right > .info > div > .count {
   position: absolute;
-  top: 100%;
-  left: 0;
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > li {
-  height: 55px;
-  background-color: white;
+  top: -5px;
+  right: -10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
   display: flex;
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > li > div {
-  height: 100%;
-  width: 5px;
-  background-color: #f8f8f8;
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > li > a {
-  height: 100%;
-  padding: 0 20px 0 20px;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > li:hover {
-  background-color: #f8f8f8;
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > li:hover > div {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > li:hover > a {
-  font-family: "Museo Sans Cyrl 700";
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > .active {
-  background-color: #f8f8f8;
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > .active > div {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
-}
-.navigation > .header-navigation .menu-btn .drop-menu-list > .active > a {
-  font-family: "Museo Sans Cyrl 700";
-}
-.navigation > .header-navigation .menu-btn:hover > .drop-menu-list {
-  display: flex;
-}
-.navigation > .header-navigation > input[type=checkbox]:checked ~ .menu-btn > .drop-menu-list {
-  display: flex;
-}
-.navigation > .header-navigation-mobile {
-  list-style-type: none;
-  height: 100%;
-}
-@media (min-width: 625px) {
-  .navigation > .header-navigation-mobile {
-    display: none;
-  }
-}
-.navigation > .header-navigation-mobile > li {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px 0 15px;
-  margin: 0 5px 0 0;
-  cursor: pointer;
-  border-radius: 3px;
   transition: 0.3s;
 }
-.navigation > .header-navigation-mobile > li > a {
-  font-family: "Museo Sans Cyrl 500";
-  font-size: 1em;
-  white-space: nowrap;
+.header > .header-top-content > div > .right > .info > div > .count:hover {
+  transform: scale(1.1);
 }
-.navigation > .header-navigation-mobile > li > .image {
-  height: 15px;
-  width: 15px;
+.header > .header-top-content > div > .right > .info > div > .count > a {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 0.7em;
+  color: white;
+}
+.header > .header-top-content > div > .right > .info > a {
   margin: 0 0 0 15px;
-  transition: 0.3s;
+  font-family: "Museo Sans Cyrl 700";
 }
-@media (max-width: 350px) {
-  .navigation > .header-navigation-mobile > li > .image {
-    margin: 0 0 0 10px;
-  }
+.header > .header-top-content > div > .right > .info > a:hover {
+  text-decoration: underline;
 }
-.navigation > .header-navigation-mobile > li > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+.header > .header-middle-content > .container {
+  height: 140px;
 }
-.navigation > .header-navigation-mobile > li:hover {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
+.header > .header-middle-content > .container > .logo > .title {
+  font-family: "Gilroy";
+  font-weight: 300;
+  font-size: 3em;
 }
-.navigation > .header-navigation-mobile > li:hover > a {
-  color: white;
+.header > .header-middle-content > .container > .logo > .title > span {
+  font-family: "Gilroy";
+  font-weight: 800;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.navigation > .header-navigation-mobile > li:hover > .image {
-  transform: translateX(-80%);
+.header > .header-middle-content > .container > .logo > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.8em;
 }
-.navigation > .header-navigation-mobile > .active {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
+.header > .header-middle-content > .container > .address {
+  margin: 0 30px 0 30px;
 }
-.navigation > .header-navigation-mobile > .active > a {
-  color: white;
-}
-.navigation > .header-navigation-mobile > .trigram {
-  font-size: 2em;
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
-  color: white;
-  margin: 0 0 0 auto;
-}
-
-.top {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.nav-bottom {
-  background-color: #2b2f36;
-  box-shadow: none;
-}
-.nav-bottom > .bottom-navigation {
-  list-style-type: none;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-@media (max-width: 599px) {
-  .nav-bottom > .bottom-navigation {
-    display: none;
-  }
-}
-.nav-bottom > .bottom-navigation > li {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: 0.3s;
-  padding: 0 40px 0 15px;
-}
-@media (max-width: 872px) {
-  .nav-bottom > .bottom-navigation > li {
-    padding: 0 10px 0 10px;
-  }
-}
-.nav-bottom > .bottom-navigation > li > a {
-  color: white;
-  font-size: 1em;
-  white-space: nowrap;
-}
-.nav-bottom > .bottom-navigation-mobile {
-  list-style-type: none;
-  height: 100%;
-}
-@media (min-width: 600px) {
-  .nav-bottom > .bottom-navigation-mobile {
-    display: none;
-  }
-}
-.nav-bottom > .bottom-navigation-mobile > li {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px 0 15px;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: 0.3s;
-}
-.nav-bottom > .bottom-navigation-mobile > li > a {
-  font-family: "Museo Sans Cyrl 500";
-  font-size: 1em;
-  white-space: nowrap;
-  color: white;
-}
-.nav-bottom > .bottom-navigation-mobile > li:hover > a {
-  color: white;
-}
-.nav-bottom > .bottom-navigation-mobile > li:hover > .image {
-  transform: translateX(-80%);
-}
-.nav-bottom > .bottom-navigation-mobile > .active {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
-}
-.nav-bottom > .bottom-navigation-mobile > .active > a {
-  color: white;
-}
-.nav-bottom > .bottom-navigation-mobile > .trigram {
-  font-size: 2em;
-  color: white;
-  margin: 0 0 0 auto;
-}
-
-.breadcrumb {
+.header > .header-middle-content > .container > .address > .image-contain {
   height: 25px;
-  margin: 20px auto;
-  align-items: center;
+  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
 }
-@media (max-width: 1220px) {
-  .breadcrumb {
-    padding: 0 0 0 10px;
-  }
+.header > .header-middle-content > .container > .address > p {
+  max-width: 135px;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.8em;
+  margin: 0 0 0 10px;
 }
-.breadcrumb > .nav-item {
+.header > .header-middle-content > .container > .search > p {
   font-family: "Museo Sans Cyrl 100";
   font-size: 1em;
 }
-.breadcrumb > .nav-item > a {
-  border-bottom: 1px solid white;
-}
-.breadcrumb > .nav-item > a:hover {
-  border-bottom: 1px solid rgba(33, 33, 33, 0.5);
-}
-.breadcrumb > i {
-  margin: 0 10px 0 10px;
-  color: rgba(33, 33, 33, 0.5);
-}
-
-.block-3 {
-  background-image: url("../image/block-3-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 750px;
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.block-3 > .block-3-content > .block-3-form {
+.header > .header-middle-content > .container > .search > .search-form {
+  position: relative;
+  height: 50px;
+  min-height: 50px;
   width: 100%;
-  max-width: 700px;
-  margin: 150px 0 0 0;
+  max-width: 350px;
+  margin: 25px 0 0 0;
 }
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .block-3-form {
-    margin: 50px 0 0 0;
-  }
-}
-.block-3 > .block-3-content > .block-3-form > .title {
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .block-3-form > .title {
-    margin-left: 10px;
-  }
-}
-.block-3 > .block-3-content > .block-3-form > .title > .decoration {
-  height: 25px;
-  width: 25px;
-  min-width: 25px;
-  border-radius: 50%;
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
-  margin: 0 10px 0 0;
-}
-.block-3 > .block-3-content > .block-3-form > .title > h2 {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: white;
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .block-3-form > .title > h2 {
-    color: #333333;
-  }
-}
-.block-3 > .block-3-content > .block-3-form > .title > h2 > span {
-  font-family: "Museo Sans Cyrl 900";
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #e0cf12;
-}
-.block-3 > .block-3-content > .block-3-form > p {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1.1em;
-  color: white;
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .block-3-form > p {
-    color: #333333;
-    margin-left: 10px;
-    text-align: center;
-  }
-}
-.block-3 > .block-3-content > .block-3-form > .input {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 570px;
-  margin: 40px 0 0 0;
-}
-@media (max-width: 1080px) {
-  .block-3 > .block-3-content > .block-3-form > .input {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .block-3-form > .input {
-    max-width: 100%;
-  }
-}
-.block-3 > .block-3-content > .block-3-form > .input > input {
-  height: 45px;
-  width: 270px;
+.header > .header-middle-content > .container > .search > .search-form > input {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
   border-radius: 25px;
-  border: none;
   padding: 0 0 0 25px;
   overflow: hidden;
-  background-color: #3f4e5b;
-  color: white;
   font-family: "Museo Sans Cyrl 100";
-  font-size: 1.1em;
-  border: 1px solid #3f4e5b;
+  font-size: 1em;
+  color: #9c9c9c;
+}
+.header > .header-middle-content > .container > .search > .search-form > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100px;
+  background-color: #ffffff;
+  border: 2px solid #00c0ff;
+  border-radius: 25px;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  color: #00c0ff;
   transition: 0.3s;
 }
-@media (max-width: 1080px) {
-  .block-3 > .block-3-content > .block-3-form > .input > input {
-    margin: 10px 0 0 0;
-  }
+.header > .header-middle-content > .container > .search > .search-form > button:hover {
+  color: #ffffff;
+  background-color: #00c0ff;
 }
-.block-3 > .block-3-content > .block-3-form > .input > input:hover {
-  border: 1px solid white;
-}
-.block-3 > .block-3-content > .block-3-form > .textarea {
-  max-width: 570px;
-  margin: 20px 0 0 0;
-}
-@media (max-width: 1080px) {
-  .block-3 > .block-3-content > .block-3-form > .textarea {
-    max-width: 270px;
-    margin: 10px auto 0;
-  }
-}
-.block-3 > .block-3-content > .block-3-form > .textarea > textarea {
-  min-height: 100px;
-  width: 100%;
-  border-radius: 25px;
-  border: none;
-  padding: 15px 0 0 25px;
-  overflow: hidden;
-  background-color: #3f4e5b;
-  color: white;
-  font-family: "Museo Sans Cyrl 100";
-  font-size: 1.1em;
-  outline: none;
-  resize: none;
-  border: 1px solid #3f4e5b;
-  transition: 0.3s;
-}
-.block-3 > .block-3-content > .block-3-form > .textarea > textarea:hover {
-  border: 1px solid rgba(255, 255, 255, 0.7);
-}
-.block-3 > .block-3-content > .block-3-form > .button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 570px;
-  margin: 40px 0 0 0;
-}
-@media (max-width: 1080px) {
-  .block-3 > .block-3-content > .block-3-form > .button {
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0 0 0;
-  }
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .block-3-form > .button {
-    max-width: 100%;
-  }
-}
-.block-3 > .block-3-content > .block-3-form > .button > button {
-  height: 50px;
-  width: 50%;
-  border-radius: 25px;
-}
-@media (max-width: 1080px) {
-  .block-3 > .block-3-content > .block-3-form > .button > button {
-    width: 270px;
-  }
-}
-@media (max-width: 1080px) {
-  .block-3 > .block-3-content > .block-3-form > .button > .form-checkbox {
-    margin: 10px 0 0 0;
-  }
-}
-.block-3 > .block-3-content > .block-3-form > .button > .form-checkbox > input[type=checkbox]:checked ~ .checkbox-field > div {
-  background-color: #1593d5;
-}
-.block-3 > .block-3-content > .block-3-form > .button > .form-checkbox > .checkbox-field {
-  height: 15px;
-  width: 15px;
-  border: 1px solid #1593d5;
-  border-radius: 50%;
-  cursor: pointer;
-  margin: 0 10px 0 0;
-  background-color: white;
-}
-.block-3 > .block-3-content > .block-3-form > .button > .form-checkbox > .checkbox-field > div {
-  margin: 2px 0 0 2px;
-  height: 9px;
-  width: 9px;
-  border-radius: 50%;
-  background-color: none;
-}
-.block-3 > .block-3-content > .block-3-form > .button > .form-checkbox > .checkbox-label {
+.header > .header-middle-content > .container > .tel > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1.6em;
   text-align: center;
 }
-.block-3 > .block-3-content > .block-3-form > .button > .form-checkbox > .checkbox-label > p {
-  font-family: "Museo Sans Cyrl 300";
+.header > .header-middle-content > .container > .tel > h2 > span {
+  color: #00aced;
+  margin: 0 0 0 0;
+}
+.header > .header-middle-content > .container > .tel > button {
+  height: 50px;
+  width: 250px;
+  margin: 15px 0 5px 0;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #00c0ff;
+  font-family: "Museo Sans Cyrl 700";
   font-size: 1em;
-  cursor: pointer;
+  color: #00c0ff;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.header > .header-middle-content > .container > .tel > button:hover {
+  color: #ffffff;
+  background-color: #00c0ff;
+}
+.header > .header-bottom-nav {
+  height: 55px;
+  width: 100%;
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+}
+.header > .header-bottom-nav > .container {
+  height: 100%;
+}
+.header > .header-bottom-nav > .container > a {
+  height: 100%;
+  padding: 0 15px 0 15px;
+  border-radius: 3px;
+  flex-grow: 1;
+  transition: 0.3s;
+}
+.header > .header-bottom-nav > .container > a:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
   color: white;
 }
-.block-3 > .block-3-content > .block-3-form > .button > .form-checkbox > .checkbox-label > a {
+.header > .header-bottom-nav > .container > a > div {
+  height: 30px;
+  width: 30px;
+}
+.header > .header-bottom-nav > .container > a > p {
   font-family: "Museo Sans Cyrl 300";
   font-size: 1em;
-  color: #1593d5;
-  text-decoration: underline;
+  margin: 0 0 0 10px;
 }
-.block-3 > .block-3-content > .info {
-  width: 100%;
-  min-height: 450px;
-  margin: 200px 0 0 0;
-  background-image: URL("../image/block-3-image-2.png");
+.header > .header-bottom-nav > .container > .active {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  color: white;
+}
+.header > .header-bottom-nav > .container > .active > p {
+  font-family: "Museo Sans Cyrl 700";
+}
+
+.main-top-slider {
+  height: 500px;
+  background-image: url("../image/main-slider-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  background-size: cover;
 }
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .info {
-    margin: 100px 0 0 0;
-  }
-}
-.block-3 > .block-3-content > .info > .image {
-  position: absolute;
-  top: -21%;
-  left: 22%;
-}
-@media (max-width: 880px) {
-  .block-3 > .block-3-content > .info > .image {
-    left: 0;
-  }
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .info > .image {
-    left: 20%;
-  }
-}
-@media (max-width: 400px) {
-  .block-3 > .block-3-content > .info > .image {
-    left: 1%;
-  }
-}
-.block-3 > .block-3-content > .info > .image > img {
+.main-top-slider > .container {
   height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  min-height: 100%;
 }
-.block-3 > .block-3-content > .info > .info-1 {
-  position: absolute;
-  top: -5%;
-  left: 12%;
-}
-.block-3 > .block-3-content > .info > .info-1 > p {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-  color: white;
-}
-.block-3 > .block-3-content > .info > .info-1 > h2 {
-  font-family: "Museo Sans Cyrl 900";
-  font-size: 3em;
-  color: white;
-}
-.block-3 > .block-3-content > .info > .info-2 {
-  position: absolute;
-  top: 81%;
-  left: -5%;
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .info > .info-2 {
-    left: 5%;
-  }
-}
-.block-3 > .block-3-content > .info > .info-2 > p {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-  color: white;
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .info > .info-2 > p {
-    color: #333333;
-  }
-}
-.block-3 > .block-3-content > .info > .info-2 > h2 {
-  font-family: "Museo Sans Cyrl 900";
-  font-size: 3em;
-  color: white;
-  text-align: right;
-}
-@media (max-width: 700px) {
-  .block-3 > .block-3-content > .info > .info-2 > h2 {
-    color: #333333;
-  }
-}
-.block-3 > .block-3-content > .info > .info-3 {
-  position: absolute;
-  top: 25%;
-  left: 90%;
-  width: 250px;
-}
-@media (max-width: 1580px) {
-  .block-3 > .block-3-content > .info > .info-3 {
-    width: 26%;
-  }
-}
-@media (max-width: 1400px) {
-  .block-3 > .block-3-content > .info > .info-3 {
-    width: 20%;
-  }
-}
-@media (max-width: 1330px) {
-  .block-3 > .block-3-content > .info > .info-3 {
-    left: auto;
-    right: 10%;
-  }
-}
-@media (max-width: 400px) {
-  .block-3 > .block-3-content > .info > .info-3 {
-    left: auto;
-    right: 20%;
-  }
-}
-.block-3 > .block-3-content > .info > .info-3 > p {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-  color: white;
-}
-@media (max-width: 1000px) {
-  .block-3 > .block-3-content > .info > .info-3 > p {
-    color: #333333;
-  }
-}
-.block-3 > .block-3-content > .info > .info-3 > h2 {
-  font-family: "Museo Sans Cyrl 900";
-  font-size: 3em;
-  color: white;
-}
-@media (max-width: 1000px) {
-  .block-3 > .block-3-content > .info > .info-3 > h2 {
-    color: #333333;
-  }
-}
-
-.block-9 {
-  position: relative;
-  width: 100%;
-  background-color: #fefefe;
-  z-index: -3;
-}
-.block-9 > .block-9-bg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: -180px;
-  left: 0;
-  z-index: -2;
-}
-.block-9 > .block-9-bg > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.block-9 > .title {
-  margin: 100px 0 0 0;
-  text-align: center;
-}
-.block-9 > .title > h2 {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 2.5em;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.block-9 > .title > h2 > span {
-  font-family: "Museo Sans Cyrl 900";
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.block-9 > .block-9-map {
-  width: 100%;
-  height: 500px;
-  margin: 40px auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.block-12 > .title {
-  margin: 20px 0 0 0;
-  text-align: center;
-}
-.block-12 > .title > h2 {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 2.5em;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.block-12 > .title > h2 > span {
-  font-family: "Museo Sans Cyrl 900";
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.block-12 > .title > h3 {
-  font-family: "Museo Sans Cyrl 100";
-  font-size: 1.1em;
-}
-.block-12 > .block-12-content {
-  margin: 25px auto 0;
+.main-top-slider > .container > .info {
+  padding: 80px 0 55px 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 700px) {
-  .block-12 > .block-12-content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.main-top-slider > .container > .info > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
 }
-.block-12 > .block-12-content > .info {
-  width: 370px;
-  min-width: 370px;
+.main-top-slider > .container > .info > h3 {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1.2em;
+  color: white;
 }
-@media (max-width: 370px) {
-  .block-12 > .block-12-content > .info {
-    width: 100%;
-    min-width: 100%;
-  }
-}
-.block-12 > .block-12-content > .info > .image {
-  height: 500px;
-  width: 100%;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-}
-@media (max-width: 370px) {
-  .block-12 > .block-12-content > .info > .image {
-    height: 100%;
-  }
-}
-.block-12 > .block-12-content > .info > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.block-12 > .block-12-content > .info > .image > .hover-image {
-  position: absolute;
-  bottom: 15px;
-  left: 20px;
-}
-.block-12 > .block-12-content > .info > .text {
-  margin-top: 15px;
-}
-.block-12 > .block-12-content > .info > .text > h2 {
-  text-align: center;
+.main-top-slider > .container > .info > div > p {
   font-family: "Museo Sans Cyrl 300";
-  font-size: 1.5em;
+  font-size: 1em;
+  font-style: italic;
+  color: white;
+  text-transform: uppercase;
 }
-.block-12 > .block-12-content > .info > .text > p {
-  text-align: center;
+.main-top-slider > .container > .info > button {
+  height: 50px;
+  min-height: 50px;
+  width: 100%;
+  max-width: 255px;
+  border-radius: 25px;
+  color: white;
   font-family: "Museo Sans Cyrl 700";
   font-size: 1em;
-}
-.block-12 > .block-12-content > .info > .links {
-  font-size: 2em;
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0 0 0;
-}
-.block-12 > .block-12-content > .info > .links > .fa-vk {
-  color: #30a9dd;
-}
-.block-12 > .block-12-content > .info > .links > .fa-telegram {
-  color: #30a9dd;
-}
-.block-12 > .block-12-content > .info > .links > .fa-facebook-messenger {
-  color: #0085ff;
-}
-.block-12 > .block-12-content > .info > .links > .fa-viber {
-  color: #552083;
-}
-.block-12 > .block-12-content > .info > .links > .fa-skype {
-  color: #00b0f3;
-}
-.block-12 > .block-12-content > .info > .links > .fa-whatsapp {
-  color: #39ba26;
-}
-.block-12 > .block-12-content > .info > .links > .fa-instagram-square {
-  color: #f5416f;
-}
-.block-12 > .block-12-content > .text {
-  padding: 0 0 0 20px;
-}
-@media (max-width: 700px) {
-  .block-12 > .block-12-content > .text {
-    padding: 20px 0 0 20px;
-  }
-}
-.block-12 > .block-12-content > .text > p {
-  margin: 0 0 10px 0;
-}
-
-.block-13 > .title {
-  margin: 20px 0 0 0;
-  text-align: center;
-}
-.block-13 > .title > h2 {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 2.5em;
   text-transform: uppercase;
-  font-weight: 500;
-}
-.block-13 > .title > h2 > span {
-  font-family: "Museo Sans Cyrl 900";
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.block-13 > .title > h3 {
-  font-family: "Museo Sans Cyrl 100";
-  font-size: 1.1em;
-}
-.block-13 > .block-13-content {
-  margin: 50px 0 0 0;
-}
-.block-13 > .block-13-content > .slider {
-  position: relative;
-}
-.block-13 > .block-13-content > .slider > .slider-arrow {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  border: none;
   transition: 0.3s;
+}
+.main-top-slider > .container > .pictures {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+.main-top-slider > .container > .pictures > .title {
+  position: absolute;
+  top: 45px;
+  right: -5%;
+  z-index: 5;
+  max-width: 200px;
+}
+.main-top-slider > .container > .pictures > .title > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1.5em;
+  font-style: italic;
+}
+.main-top-slider > .container > .pictures > .title > h2 > span {
+  color: #009fe2;
+}
+.main-top-slider > .container > .pictures > .options {
+  position: absolute;
+  top: 45px;
+  left: calc(10% + 50px);
+  max-width: 360px;
   z-index: 5;
 }
-.block-13 > .block-13-content > .slider > .left {
+.main-top-slider > .container > .pictures > .options > p {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+}
+.main-top-slider > .container > .pictures > .options > p > span {
+  color: #009fe2;
+}
+.main-top-slider > .container > .pictures > .pagination {
   position: absolute;
-  top: 50%;
-  left: calc(((100% - 1200px) / 2) - 50px);
-  transform: translateY(-50%);
-}
-@media (max-width: 1300px) {
-  .block-13 > .block-13-content > .slider > .left {
-    display: none;
-  }
-}
-.block-13 > .block-13-content > .slider > .left:hover {
-  transform: scale(1.2) translateY(-50%);
-}
-.block-13 > .block-13-content > .slider > .right {
-  position: absolute;
-  top: 50%;
-  right: calc(((100% - 1200px) / 2) - 50px);
-  transform: translateY(-50%);
-}
-@media (max-width: 1300px) {
-  .block-13 > .block-13-content > .slider > .right {
-    display: none;
-  }
-}
-.block-13 > .block-13-content > .slider > .right:hover {
-  transform: scale(1.2) translateY(-50%);
-}
-.block-13 > .block-13-content > .slider > .slider-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.block-13 > .block-13-content > .slider > .slider-content > .card {
-  position: relative;
-  height: 380px;
-  width: 95%;
-  max-width: 270px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-  display: flex;
-  overflow: hidden;
-  margin: 0 0 20px 0;
-}
-.block-13 > .block-13-content > .slider > .slider-content > .card > img {
-  height: 100%;
+  bottom: 20px;
+  left: 0;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.block-13 > .block-13-content > .slider > .slider-navigation {
-  margin: 50px;
-  height: 15px;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 900px) {
-  .block-13 > .block-13-content > .slider > .slider-navigation {
-    display: none;
-  }
-}
-.block-13 > .block-13-content > .slider > .slider-navigation > .element {
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 5px 0 5px;
 }
-.block-13 > .block-13-content > .slider > .slider-navigation > .element > div {
-  height: 8px;
-  width: 8px;
+.main-top-slider > .container > .pictures > .pagination > div {
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
-  background-color: #d0d0d0;
   cursor: pointer;
+  margin: 0 10px 0 10px;
+  background-color: grey;
   transition: 0.3s;
 }
-.block-13 > .block-13-content > .slider > .slider-navigation > .element > div:hover {
-  transform: scale(2);
+.main-top-slider > .container > .pictures > .pagination > div:hover {
+  background-color: black;
+  transform: scale(1.1);
 }
-.block-13 > .block-13-content > .slider > .slider-navigation > .active {
-  background-color: #d0d0d0;
+.main-top-slider > .container > .pictures > .pagination > .active {
+  background-color: black;
 }
-.block-13 > .block-13-content > .slider > .slider-navigation > .active > div {
-  background: #1fb2f6;
-  background: linear-gradient(to bottom, #1fb2f6 0%, #0665a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1fb2f6", endColorstr="#0665a5",GradientType=0 );
+.main-top-slider > .container > .pictures > .image {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: flex-end;
+  transform: skew(-15deg, 0deg);
+}
+.main-top-slider > .container > .pictures > .image > div {
+  height: 100%;
+  width: calc(100% - 25px);
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+.main-top-slider > .container > .pictures > .image > div > div {
+  height: 100%;
+  width: calc(100% - 25px);
+  overflow: hidden;
+  background-color: white;
+}
+.main-top-slider > .container > .pictures > .image > div > div > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transform: skew(15deg, 0deg);
 }
 
-.footer > .footer-content {
-  min-height: 125px;
-  padding: 0 10px 0 10px;
+.footer {
+  background-color: yellow;
 }
-@media (max-width: 1040px) {
-  .footer > .footer-content {
-    display: none;
-  }
+
+.main-nav {
+  height: 90px;
+  width: 100%;
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
 }
-.footer > .footer-content > .header-info {
+.main-nav > .container {
+  height: 100%;
+}
+.main-nav > .container > a {
+  height: 100%;
+  padding: 0 15px 0 15px;
+  border-radius: 3px;
   flex-grow: 1;
-  padding: 0 50px 0 50px;
+  transition: 0.3s;
 }
-.footer > .footer-content > .header-info > div > .image {
-  height: 25px;
-  width: 25px;
-  margin: 0 15px 0 0;
+.main-nav > .container > a:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  color: white;
 }
-.footer > .footer-content > .header-info > div > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+.main-nav > .container > a > div {
+  height: 30px;
+  width: 30px;
 }
-.footer > .footer-content > .header-info > div > .text > h2 {
-  font-family: "Museo Sans Cyrl 900";
-  font-size: 1em;
-  margin: 0 0 10px 0;
-}
-.footer > .footer-content > .header-info > div > .text > p {
-  max-width: 200px;
-  font-family: "Museo Sans Cyrl 100";
-}
-.footer > .footer-content > .header-info > div > .text > p > span {
-  font-family: "Museo Sans Cyrl 500";
-}
-.footer > .footer-content > .header-info > div > .text > a {
-  font-family: "Museo Sans Cyrl 100";
-}
-.footer > .footer-content > .header-info > div > .text > a:hover {
-  text-decoration: underline;
-}
-.footer > .footer-content > .header-contacts > div > .image {
-  height: 25px;
-  width: 25px;
-  margin: 0 15px 0 0;
-}
-.footer > .footer-content > .header-contacts > div > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.footer > .footer-content > .header-contacts > div > a {
+.main-nav > .container > a > p {
   font-family: "Museo Sans Cyrl 300";
-  font-size: 1.2em;
-  margin: 0 0 10px 0;
+  font-size: 1em;
+  margin: 0 0 0 10px;
 }
-.footer > .footer-content > .header-contacts > div > a > span {
-  font-family: "Museo Sans Cyrl 900";
+.main-nav > .container > .active {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  color: white;
 }
-.footer > .footer-content > .header-contacts > .btn {
-  height: 45px;
-  width: 200px;
-  border-radius: 25px;
+.main-nav > .container > .active > p {
+  font-family: "Museo Sans Cyrl 700";
 }
-.footer > .footer-content-mobile-top {
-  padding: 10px 10px 10px 10px;
-  display: flex;
-  justify-content: space-around;
+
+.bicycles > .opportunity > .card {
+  margin: 50px 0 0 0;
   align-items: center;
 }
-@media (min-width: 1041px) {
-  .footer > .footer-content-mobile-top {
-    display: none;
-  }
+.bicycles > .opportunity > .card > .image-contain {
+  height: 35px;
+  width: 35px;
 }
-@media (max-width: 400px) {
-  .footer > .footer-content-mobile-top {
-    flex-direction: column;
-  }
+.bicycles > .opportunity > .card > .info {
+  margin: 0 0 0 15px;
 }
-.footer > .footer-content-mobile-top > .footer-contacts > div > .image {
-  height: 25px;
-  width: 25px;
-  margin: 0 15px 0 0;
-}
-.footer > .footer-content-mobile-top > .footer-contacts > div > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.footer > .footer-content-mobile-top > .footer-contacts > div > a {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1.2em;
-  margin: 0 0 10px 0;
-}
-.footer > .footer-content-mobile-top > .footer-contacts > div > a > span {
-  font-family: "Museo Sans Cyrl 900";
-}
-.footer > .footer-content-mobile-top > .footer-contacts > .btn {
-  height: 45px;
-  width: 200px;
-  border-radius: 25px;
-}
-.footer > .footer-content-mobile-bottom {
-  display: flex;
-  justify-content: space-around;
-}
-@media (min-width: 1041px) {
-  .footer > .footer-content-mobile-bottom {
-    display: none;
-  }
-}
-.footer > .footer-content-mobile-bottom > .footer-info {
-  flex-grow: 1;
-  padding: 0 50px 0 50px;
-}
-@media (max-width: 760px) {
-  .footer > .footer-content-mobile-bottom > .footer-info {
-    padding: 0 10px 0 10px;
-  }
-}
-@media (max-width: 672px) {
-  .footer > .footer-content-mobile-bottom > .footer-info {
-    flex-direction: column;
-    margin-left: 30%;
-  }
-}
-@media (max-width: 450px) {
-  .footer > .footer-content-mobile-bottom > .footer-info {
-    flex-direction: column;
-    margin-left: 20%;
-  }
-}
-@media (max-width: 400px) {
-  .footer > .footer-content-mobile-bottom > .footer-info {
-    flex-direction: column;
-    margin-left: 10%;
-  }
-}
-.footer > .footer-content-mobile-bottom > .footer-info > div > .image {
-  height: 25px;
-  width: 25px;
-  margin: 0 15px 0 0;
-}
-.footer > .footer-content-mobile-bottom > .footer-info > div > .image > img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.footer > .footer-content-mobile-bottom > .footer-info > div > .text > h2 {
+.bicycles > .opportunity > .card > .info > h2 {
   font-family: "Museo Sans Cyrl 900";
   font-size: 1em;
-  margin: 0 0 10px 0;
 }
-.footer > .footer-content-mobile-bottom > .footer-info > div > .text > p {
-  max-width: 200px;
-  font-family: "Museo Sans Cyrl 100";
+.bicycles > .opportunity > .card > .info > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
 }
-.footer > .footer-content-mobile-bottom > .footer-info > div > .text > p > span {
-  font-family: "Museo Sans Cyrl 500";
+.bicycles > .bicycles-title {
+  width: 100%;
+  max-width: 540px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.footer > .footer-content-mobile-bottom > .footer-info > div > .text > a {
-  font-family: "Museo Sans Cyrl 100";
+.bicycles > .bicycles-title > .decoration-left {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #005da8;
+  background: linear-gradient(to right, #005da8 0%, #19bbf5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005da8", endColorstr="#19bbf5",GradientType=1 );
 }
-.footer > .footer-content-mobile-bottom > .footer-info > div > .text > a:hover {
+.bicycles > .bicycles-title > .decoration-right {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #19bbf5;
+  background: linear-gradient(to right, #19bbf5 0%, #005da8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#19bbf5", endColorstr="#005da8",GradientType=1 );
+}
+.bicycles > .bicycles-title > .text {
+  margin: 0 50px 0 50px;
+}
+.bicycles > .bicycles-title > .text > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.bicycles > .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px auto 0 auto;
+}
+.bicycles > .list > .card {
+  height: 255px;
+  width: 100%;
+  max-width: 540px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+  margin: 0 0 30px 0;
+  transition: 0.3s;
+}
+.bicycles > .list > .card:hover {
+  transform: scale(1.1);
+}
+.bicycles > .list > .card > .image-cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.bicycles > .list > .card > .info {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 2;
+  padding: 30px 0 25px 0;
+}
+.bicycles > .list > .card > .info > .title {
+  display: flex;
+  align-items: center;
+}
+.bicycles > .list > .card > .info > .title > .decoration {
+  height: 35px;
+  width: 5px;
+  border-radius: 3px;
+}
+.bicycles > .list > .card > .info > .title > .text {
+  text-transform: uppercase;
+  margin: 0 0 0 15px;
+}
+.bicycles > .list > .card > .info > .title > .text > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+}
+.bicycles > .list > .card > .info > .title > .text > h3 {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.bicycles > .list > .card > .info > .links {
+  margin: 30px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.bicycles > .list > .card > .info > .links > a {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  transition: 0.3s;
+}
+.bicycles > .list > .card > .info > .links > a:hover {
+  text-decoration: underline;
+  transform: scale(1.03);
+}
+.bicycles > .list > .card > .details {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+.bicycles > .list > .card > .details > a {
+  color: white;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.bicycles > .list > .card > .details > a:hover {
   text-decoration: underline;
 }
 
-.copyright {
-  height: 55px;
-}
-.copyright > .copyright-content {
-  height: 100%;
-}
-
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=index.css.map */
