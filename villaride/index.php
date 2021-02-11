@@ -127,58 +127,77 @@ get_header();
 								<h2>до конца <span>акции</span> осталось:</h2>
 								<div class="timer">
 									<div class="month">
-										<div class="1">
-											<div class="upper">0</div>
-											<div class="bottom">9</div>
+										<div class="upper">
+											<div class="">
+												<div class="top">0</div>
+												<div class="bottom">9</div>
+											</div>
+											<div class="">
+												<div class="top">1</div>
+												<div class="bottom">0</div>
+											</div>
 										</div>
-										<div class="2">
-											<div class="upper">1</div>
-											<div class="bottom">0</div>
-										</div>
+										<div class="down">Месяцев</div>
 									</div>
+									<div class="colon">:</div>
 									<div class="day">
-										<div class="1">
-											<div class="upper">2</div>
-											<div class="bottom">1</div>
+										<div class="upper">
+											<div class="1">
+												<div class="top">2</div>
+												<div class="bottom">1</div>
+											</div>
+											<div class="2">
+												<div class="top">3</div>
+												<div class="bottom">2</div>
+											</div>
 										</div>
-										<div class="2">
-											<div class="upper">3</div>
-											<div class="bottom">2</div>
-										</div>
+										<div class="down">Дней</div>
 									</div>
+									<div class="colon">:</div>
 									<div class="hour">
-										<div class="1">
-											<div class="upper">4</div>
-											<div class="bottom">3</div>
+										<div class="upper">
+											<div class="">
+												<div class="top">4</div>
+												<div class="bottom">3</div>
+											</div>
+											<div class="">
+												<div class="top">5</div>
+												<div class="bottom">4</div>
+											</div>
 										</div>
-										<div class="2">
-											<div class="upper">5</div>
-											<div class="bottom">4</div>
-										</div>
+										<div class="down">Часов</div>
 									</div>
+									<div class="colon">:</div>
 									<div class="min">
-										<div class="1">
-											<div class="upper">4</div>
-											<div class="bottom">3</div>
+										<div class="upper">
+											<div class="">
+												<div class="top">4</div>
+												<div class="bottom">3</div>
+											</div>
+											<div class="">
+												<div class="top">5</div>
+												<div class="bottom">4</div>
+											</div>
 										</div>
-										<div class="2">
-											<div class="upper">4</div>
-											<div class="bottom">3</div>
-										</div>
+										<div class="down">Минут</div>
 									</div>
+									<div class="colon">:</div>
 									<div class="sec">
-										<div class="1">
-											<div class="upper">0</div>
-											<div class="bottom">0</div>
+										<div class="upper">
+											<div class="">
+												<div class="top">4</div>
+												<div class="bottom">3</div>
+											</div>
+											<div class="">
+												<div class="top">5</div>
+												<div class="bottom">4</div>
+											</div>
 										</div>
-										<div class="2">
-											<div class="upper">0</div>
-											<div class="bottom">0</div>
-										</div>
+										<div class="down">Секунд</div>
 									</div>
 								</div>
 							</div>
-              <button class="btn-red send-form" type="submit" name="submit">Оставить заявку</button>
+              <button class="btn-red send-form" type="submit" name="submit">Получить парник</button>
               <div class="form-checkbox d-flex flex-justify-center flex-align-center">
                 <input class="d-none" type="checkbox" name="privacy-checkbox" value="" id="privacy-checkbox">
                 <label class="checkbox-field" for="privacy-checkbox"></label>
@@ -491,7 +510,7 @@ get_header();
                     <button class="btn-blue show-modal-info" type="button" name="button">Узнать подробности</button>
 										<div class="info d-none">
 											<div class="">
-												<h3>ЦИНК УСИЛЕННАЯ 20/20</span></h3>
+												<h3>ЦИНК УСИЛЕННАЯ 20/20</h3>
 												<h2>БОЛТОВОЕ СОЕДЕНЕНИЕ / устойчива к ржавчине</h2>
 											</div>
 											<p>
@@ -1349,85 +1368,85 @@ get_header();
                     </div>
                   </div>
 
-									<div class="video" style="margin-left: 10px">
+									<div class="video">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-1.jpg" alt="product-9-1-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-2.jpg" alt="product-9-2-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-3.jpg" alt="product-9-3-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-4.jpg" alt="product-9-4-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-5.jpg" alt="product-9-5-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-6.jpg" alt="product-9-6-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-7.jpg" alt="product-9-7-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-8.jpg" alt="product-9-8-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-9.jpg" alt="product-9-9-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-10.jpg" alt="product-9-10-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-11.jpg" alt="product-9-11-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-12.jpg" alt="product-9-12-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-13.jpg" alt="product-9-13-image">
 										</div>
 									</div>
 
-									<div class="video d-none" style="margin-left: 10px">
+									<div class="video d-none">
 										<div class="image">
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/image/4-9-14.jpg" alt="product-9-14-image">
 										</div>
@@ -1474,7 +1493,7 @@ get_header();
 											<p class="active">Стоимость любого вида основания просчитывается индивидуально.</p>
 										</div>
                   </div>
-                  <p class="card-9-link">Смотреть видео</p>
+                  <button class="card-9-link btn-red" type="button" name="button">Смотреть видео</button>
                 </div>
 
               </div>

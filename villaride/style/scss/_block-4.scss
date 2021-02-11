@@ -216,6 +216,10 @@
               width: 100%;
               max-width: 390px;
               border-radius: 5px;
+              &:not(:nth-child(3)) {
+                margin: 0 0 0 10px;
+              }
+              @media (max-width: 750px) { &:nth-child(4) {display: none;} }
               > .image {
                 height: 100%;
                 width: 100%;
@@ -330,13 +334,22 @@
               max-width: 500px;
               margin: 0 0 0 30px;
               align-self: flex-end;
-              @media (max-width: 750px) { margin: 25px auto 0; text-align: center;}
+              @media (max-width: 750px) { margin: 25px auto 0; text-align: center; }
             }
             > .card-9-link {
-              align-self: center;
-              font-size: 1.5em;
-              cursor: pointer;
+              align-self: flex-end;
+              height: 40px;
+              width: 250px;
+              margin: 0 0 0 15px;
+              outline: none;
+              border: none;
+              border-radius: 20px;
+              font-family: 'Proxima Nova Rg';
+              color: white;
+              text-transform: uppercase;
+              font-size: 1.1em;
               transition: $transition;
+              @media (max-width: 750px) { align-self: center; margin: 15px 0 0 0; }
               &:hover {
                 transform: scale(1.1);
               }

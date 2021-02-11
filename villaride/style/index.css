@@ -6868,18 +6868,24 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > div {
+.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > .upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > .upper > div {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   height: 100%;
-  width: 25px;
-  margin: 0 1px;
+  width: 20px;
+  margin: 0 0 0 0;
   perspective: 50px;
 }
-.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > div > .upper {
+.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > .upper > div > .top {
   position: absolute;
   top: 0;
   left: 0;
@@ -6888,15 +6894,14 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: white;
-  font-weight: 900;
+  background-color: white;
+  color: black;
   font-size: 2em;
   z-index: 5;
-  transform: rotateX(1deg);
-  font-family: monospace;
+  transform: rotateX(0deg);
+  font-family: "Proxima Nova Cn Rg";
 }
-.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > div > .bottom {
+.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > .upper > div > .bottom {
   position: relative;
   top: 0;
   left: 0;
@@ -6905,12 +6910,26 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: white;
-  font-weight: 900;
+  background-color: white;
+  color: black;
   font-size: 2em;
   z-index: 1;
-  font-family: monospace;
+  font-family: "Proxima Nova Cn Rg";
+}
+.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > div > .down {
+  background-color: white;
+  color: silver;
+  font-family: "Proxima Nova";
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
+.block-1 > div > .block-1-right > .block-1-form > .promo > .timer > .colon {
+  font-family: "Proxima Nova";
+  background-color: white;
+  color: silver;
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 20px;
 }
 .block-1 > div > .block-1-right > .block-1-form > button {
   height: 50px;
@@ -7545,6 +7564,14 @@ video {
   max-width: 390px;
   border-radius: 5px;
 }
+.block-4 > div > div > .card > .left > .product > .video:not(:nth-child(3)) {
+  margin: 0 0 0 10px;
+}
+@media (max-width: 750px) {
+  .block-4 > div > div > .card > .left > .product > .video:nth-child(4) {
+    display: none;
+  }
+}
 .block-4 > div > div > .card > .left > .product > .video > .image {
   height: 100%;
   width: 100%;
@@ -7683,10 +7710,24 @@ video {
   }
 }
 .block-4 > div > div > .card > .left > .contact > .card-9-link {
-  align-self: center;
-  font-size: 1.5em;
-  cursor: pointer;
+  align-self: flex-end;
+  height: 40px;
+  width: 250px;
+  margin: 0 0 0 15px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-family: "Proxima Nova Rg";
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1em;
   transition: 0.3s;
+}
+@media (max-width: 750px) {
+  .block-4 > div > div > .card > .left > .contact > .card-9-link {
+    align-self: center;
+    margin: 15px 0 0 0;
+  }
 }
 .block-4 > div > div > .card > .left > .contact > .card-9-link:hover {
   transform: scale(1.1);
@@ -8922,12 +8963,12 @@ video {
   position: absolute;
 }
 .modals > .position-1 {
-  top: 12%;
+  top: 25%;
   left: 24%;
   z-index: -1;
 }
 .modals > .position-1-1 {
-  top: 15%;
+  top: 25%;
   left: 37%;
   z-index: -1;
 }
@@ -9127,6 +9168,8 @@ video {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .modals > .modal-form > .close {
   position: relative;
@@ -9192,6 +9235,11 @@ video {
   padding: 85px 35px 40px 35px;
   box-sizing: border-box;
 }
+@media (max-height: 580px) {
+  .modals > .modal-form > form {
+    height: auto;
+  }
+}
 .modals > .modal-form > form > h2 {
   font-family: "Proxima Nova Bl";
   font-size: 2em;
@@ -9211,6 +9259,7 @@ video {
 }
 .modals > .modal-form > form > input {
   height: 50px;
+  min-height: 50px;
   width: 100%;
   border-radius: 25px;
   outline: none;
@@ -9220,8 +9269,14 @@ video {
   font-family: "Proxima Nova Lt";
   font-size: 1em;
 }
+@media (max-height: 580px) {
+  .modals > .modal-form > form > input {
+    margin: 0 0 5px 0;
+  }
+}
 .modals > .modal-form > form > button {
   height: 50px;
+  min-height: 50px;
   width: 100%;
   outline: none;
   border: none;

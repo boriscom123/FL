@@ -15,13 +15,13 @@
     position: absolute;
   }
   > .position-1 {
-    top: 12%;
+    top: 25%;
     left: 24%;
     z-index: -1;
 
   }
   > .position-1-1 {
-    top: 15%;
+    top: 25%;
     left: 37%;
     z-index: -1;
 
@@ -199,7 +199,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    overflow-y: auto;
+    overflow-x: hidden;
     > .close {
       position: relative;
       width: 100%;
@@ -251,6 +252,7 @@
       border-radius: 5px;
       padding: 85px 35px 40px 35px;
       box-sizing: border-box;
+      @media (max-height: 580px) { height: auto; }
       > h2 {
         font-family: 'Proxima Nova Bl';
         font-size: 2em;
@@ -270,6 +272,7 @@
       }
       > input {
         height: 50px;
+        min-height: 50px;
         width: 100%;
         border-radius: 25px;
         outline: none;
@@ -278,9 +281,11 @@
         box-sizing: border-box;
         font-family: 'Proxima Nova Lt';
         font-size: 1em;
+        @media (max-height: 580px) { margin: 0 0 5px 0; }
       }
       > button {
         height: 50px;
+        min-height: 50px;
         width: 100%;
         outline: none;
         border: none;

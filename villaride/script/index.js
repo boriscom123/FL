@@ -215,19 +215,25 @@ function feedBackSlider(el){
         // console.log('2 элемента');
         if(el.children[3].children[i].classList.contains('active')){
           el.children[3].children[i].classList.remove('active');
-          el.children[2].children[i].style.display = 'none';
-          el.children[2].children[i+1].style.display = 'none';
+          el.children[2].children[i].classList.toggle('d-none');
+          el.children[2].children[i].classList.remove('d-flex');
+          el.children[2].children[i+1].classList.toggle('d-none');
+          el.children[2].children[i+1].classList.remove('d-flex');
           if(i == el.children[3].children.length - 2){
             // console.log('2 Последних элемента');
             el.children[3].children[0].classList.add('active');
-            el.children[2].children[0].style.display = 'flex';
-            el.children[2].children[1].style.display = 'flex';
+            el.children[2].children[0].classList.toggle('d-flex');
+            el.children[2].children[0].classList.toggle('d-none');
+            el.children[2].children[1].classList.toggle('d-flex');
+            el.children[2].children[1].classList.toggle('d-none');
             break;
           } else {
             // console.log('Не Последний элемент');
             el.children[3].children[i+1].classList.add('active');
-            el.children[2].children[i+1].style.display = 'flex';
-            el.children[2].children[i+2].style.display = 'flex';
+            el.children[2].children[i+1].classList.toggle('d-flex');
+            el.children[2].children[i+1].classList.toggle('d-none');
+            el.children[2].children[i+2].classList.toggle('d-flex');
+            el.children[2].children[i+2].classList.toggle('d-none');
             break;
           }
         }
@@ -591,7 +597,6 @@ function changeImage(el){
   if(event.target.classList.contains('left') || event.target.alt == 'left-arrow'){
     // console.log('Левая кнопка');
     el.children[2].classList.add('d-none');
-    el.children[2].style.marginLeft = 10+'px';
     el.append(el.children[2]);
     el.children[2].classList.add('d-none');
     el.append(el.children[2]);
@@ -633,8 +638,10 @@ function startTimer(date){
     timerEl.timerDMonth = 0;
     timerEl.timerMonth = month;
   }
-  timerEl.children[1].children[0].children[0].children[0].innerHTML = timerEl.timerDMonth;
-  timerEl.children[1].children[0].children[1].children[0].innerHTML = timerEl.timerMonth;
+  let dMonthEl = timerEl.children[1].children[0].children[0].children[0].children[0];
+  dMonthEl.innerHTML = timerEl.timerDMonth;
+  let monthEl = timerEl.children[1].children[0].children[0].children[1].children[0];
+  monthEl.innerHTML = timerEl.timerMonth;
   let days =  now.daysInMonth() - now.getDate() - 1;
   // console.log('Всего дней : ', endDate.daysInMonth());
   // console.log('День: ', days);
@@ -646,10 +653,12 @@ function startTimer(date){
     timerEl.timerDDays = 0;
     timerEl.timerDays = days;
   }
-  timerEl.children[1].children[1].children[0].children[0].innerHTML = timerEl.timerDDays;
-  timerEl.children[1].children[1].children[1].children[0].innerHTML = timerEl.timerDays;
+  let dDaysEl = timerEl.children[1].children[2].children[0].children[0].children[0];
+  dDaysEl.innerHTML = timerEl.timerDDays;
+  let daysEl = timerEl.children[1].children[2].children[0].children[1].children[0];
+  daysEl.innerHTML = timerEl.timerDays;
   let hours = endDate.getUTCHours() - now.getHours() + 24 - 1;
-  //console.log('Часы ', hours);
+  // console.log('Часы ', hours);
   if(hours >= 10){
     timerEl.timerDHours = ((hours - (hours%10)) / 10 );
     timerEl.timerHours = (hours%10);
@@ -657,8 +666,10 @@ function startTimer(date){
     timerEl.timerDHours = 0;
     timerEl.timerHours = hours;
   }
-  timerEl.children[1].children[2].children[0].children[0].innerHTML = timerEl.timerDHours;
-  timerEl.children[1].children[2].children[1].children[0].innerHTML = timerEl.timerHours;
+  let dHoursEl = timerEl.children[1].children[4].children[0].children[0].children[0];
+  dHoursEl.innerHTML = timerEl.timerDHours;
+  let hoursEl = timerEl.children[1].children[4].children[0].children[1].children[0];
+  hoursEl.innerHTML = timerEl.timerHours;
   let min = endDate.getMinutes() - now.getMinutes() + 60;
   // console.log('Минуты ', min);
   if(min >= 10){
@@ -668,8 +679,10 @@ function startTimer(date){
     timerEl.timerDMin = 0;
     timerEl.timerMin = min;
   }
-  timerEl.children[1].children[3].children[0].children[0].innerHTML = timerEl.timerDMin;
-  timerEl.children[1].children[3].children[1].children[0].innerHTML = timerEl.timerMin;
+  let dMinEl = timerEl.children[1].children[6].children[0].children[0].children[0];
+  dMinEl.innerHTML = timerEl.timerDMin;
+  let minEl = timerEl.children[1].children[6].children[0].children[1].children[0];
+  minEl.innerHTML = timerEl.timerMin;
   let sec = endDate.getSeconds() - now.getSeconds() + 60;
   //console.log('Секунды ', sec);
   if(sec >= 10){
@@ -679,12 +692,14 @@ function startTimer(date){
     timerEl.timerDSec = 0;
     timerEl.timerSec = sec;
   }
-  timerEl.children[1].children[4].children[0].children[0].innerHTML = timerEl.timerDSec;
-  timerEl.children[1].children[4].children[1].children[0].innerHTML = timerEl.timerSec;
+  let dSecEl = timerEl.children[1].children[8].children[0].children[0].children[0];
+  dSecEl.innerHTML = timerEl.timerDSec;
+  let secEl = timerEl.children[1].children[8].children[0].children[1].children[0];
+  secEl.innerHTML = timerEl.timerSec;
   setInterval(showSec, 1000);
 }
 function showSec(){
-  let secEl = timerEl.children[1].children[4].children[1];
+  let secEl = timerEl.children[1].children[8].children[0].children[1];
   let now = timerEl.timerSec;
   if(timerEl.timerSec < 0){
     timerEl.timerSec = 9;
@@ -704,7 +719,7 @@ function showSec(){
   timerEl.timerSec--;
 }
 function showDSec(){
-  let dsecEl = timerEl.children[1].children[4].children[0];
+  let dsecEl = timerEl.children[1].children[8].children[0].children[0];
   let now = timerEl.timerDSec;
   if(timerEl.timerDSec < 0){
     timerEl.timerDSec = 5;
@@ -725,7 +740,7 @@ function showDSec(){
 }
 function showMin(){
   // console.log('меняем минуты');
-  let minEl = timerEl.children[1].children[3].children[1];
+  let minEl = timerEl.children[1].children[6].children[0].children[1];
   let now = timerEl.timerMin;
   if(timerEl.timerMin < 0){
     timerEl.timerMin = 9;
@@ -746,7 +761,7 @@ function showMin(){
 }
 function showDMin(){
   // console.log('меняем Десятки минут');
-  let dminEl = timerEl.children[1].children[3].children[0];
+  let dminEl = timerEl.children[1].children[6].children[0].children[0];
   let now = timerEl.timerDMin;
   if(timerEl.timerDMin < 0){
     timerEl.timerDMin = 5;

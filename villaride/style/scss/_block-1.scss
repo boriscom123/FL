@@ -230,49 +230,75 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                > div {
+                flex-direction: column;
+                > .upper {
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  position: relative;
-                  height: 100%;
-                  width: 25px;
-                  margin: 0 1px;
-                  perspective: 50px;
-                  > .upper {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    width: 100%;
+                  > div {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: black;
-                    color: white;
-                    font-weight: 900;
-                    font-size: 2em;
-                    z-index: 5;
-                    transform: rotateX(1deg);
-                    font-family: monospace;
-                  }
-                  > .bottom {
                     position: relative;
-                    top: 0;
-                    left: 0;
                     height: 100%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: black;
-                    color: white;
-                    font-weight: 900;
-                    font-size: 2em;
-                    z-index: 1;
-                    font-family: monospace;
+                    width: 20px;
+                    margin: 0 0 0 0;
+                    perspective: 50px;
+                    > .top {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      height: 100%;
+                      width: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      background-color: white;
+                      color: black;
+                      // font-weight: 900;
+                      font-size: 2em;
+                      z-index: 5;
+                      transform: rotateX(0deg);
+                      // font-family: monospace;
+                      // font-family: 'Proxima Nova';
+                      font-family: 'Proxima Nova Cn Rg';
+                    }
+                    > .bottom {
+                      position: relative;
+                      top: 0;
+                      left: 0;
+                      height: 100%;
+                      width: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      background-color: white;
+                      color: black;
+                      // font-weight: 900;
+                      font-size: 2em;
+                      z-index: 1;
+                      // font-family: monospace;
+                      // font-family: 'Proxima Nova';
+                      font-family: 'Proxima Nova Cn Rg';
+                    }
                   }
                 }
+                > .down {
+                  background-color: white;
+                  color: silver;
+                  font-family: 'Proxima Nova';
+                  font-size: 0.8em;
+                  text-transform: lowercase;
+                }
+
+              }
+              > .colon {
+                font-family: 'Proxima Nova';
+                background-color: white;
+                color: silver;
+                font-size: 2em;
+                font-weight: 900;
+                margin-bottom: 20px;
               }
             }
           }
