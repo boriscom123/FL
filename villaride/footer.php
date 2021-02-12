@@ -134,7 +134,7 @@
         <form class="block-1-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
           <h2>Получить <span>Скидку</span></h2>
           <p>В ближайшее время с Вами свяжется специалист и проконсультирует Вас.</p>
-          <input class="d-none" type="hiddeh" name="info" value="pop-up-form">
+          <input class="d-none" type="hiddeh" name="info" value="Получить Скидку - подобрать теплицу">
           <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
           <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
           <button class="btn-red" type="submit" name="submit">Оставить заявку</button>

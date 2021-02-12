@@ -112,7 +112,7 @@ get_header();
               <h2>Получить</h2>
 							<h3>Парник в подарок</h3>
               <p>Оставьте, пожалуйста, Ваши контактные данные.</p>
-              <input class="d-none" type="hidden" name="info" value="block-1-form">
+							<input class="d-none" type="hidden" name="info" value="Получить парник в подарок">
               <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
               <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
 							<?php
@@ -535,7 +535,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-1">
+                <input class="d-none" type="hidden" name="info" value="Вариант № 1 СПЕЦ ПРЕДЛОЖЕНИЕ">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -649,7 +649,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-2">
+                <input class="d-none" type="hidden" name="info" value="Вариант № 2">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -762,7 +762,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-3">
+                <input class="d-none" type="hidden" name="info" value="Вариант № 3 ЛУЧШАЯ ЦЕНА">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -878,7 +878,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-4">
+                <input class="d-none" type="hidden" name="info" value="Вариант № 4">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -993,7 +993,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-5">
+                <input class="d-none" type="hidden" name="info" value="Вариант № 5">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1113,7 +1113,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-6">
+                <input class="d-none" type="hidden" name="info" value="Вариант № 6">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1238,7 +1238,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-7">
+                <input class="d-none" type="hidden" name="info" value="Вариант № 7">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1363,7 +1363,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-8">
+                <input class="d-none" type="hidden" name="info" value="Вариант № 8">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1540,7 +1540,7 @@ get_header();
               <form class="block-4-form d-flex flex-column flex-align-center flex-justify-between" action="index.html" method="get">
                 <h2>Оставьте <span>заявку</span></h2>
                 <p>В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
-                <input class="d-none" type="hidden" name="info" value="block-4-form-9">
+                <input class="d-none" type="hidden" name="info" value="Основание под теплицу">
                 <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
                 <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
                 <button class="btn-red send-form" type="submit" name="submit">Заказать</button>
@@ -1695,7 +1695,7 @@ get_header();
             <h2>Получить парник <span>в подарок</span></h2>
             <p>Оставьте, пожалуйста, ваши контактные данные. В ближайшее время с Вами свяжется наш специалист и проконсультирует Вас.</p>
             <form class="block-6-form" action="index.html" method="get">
-              <input class="d-none" type="hidden" name="info" value="block-6-form">
+              <input class="d-none" type="hidden" name="info" value="Получить парник в подарок">
               <input class="input-text" type="text" name="name" value="" placeholder="Ваше имя">
               <input class="input-text" type="tel" name="tel" value="" placeholder="Ваш телефон">
               <button class="btn-green send-form" type="submit" name="submit">Оставить заявку</button>

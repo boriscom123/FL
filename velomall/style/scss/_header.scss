@@ -19,7 +19,10 @@
           border-radius: 0 25px 25px 0;
           background-color: white;
           > .info {
-            margin: 0 15px 0 15px;
+            padding: 0 15px 0 15px;
+            height: 100%;
+            border-radius: 25px;
+            cursor: pointer;
             > div {
               height: 25px;
               width: 25px;
@@ -27,8 +30,19 @@
             > a {
               margin: 0 0 0 10px;
               font-family: $f300;
-              &:hover {
-                text-decoration: underline;
+            }
+            &:last-child {
+              margin: 0 5px 0 0;
+            }
+            &:not(:last-child) {
+              margin: 0 1px 0 0;
+            }
+            &:hover {
+              background: rgb(0,192,255);
+              background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+              > a {
+                color: white;
               }
             }
           }
@@ -56,6 +70,9 @@
               align-items: center;
               transition: $transition;
               &:hover {
+                background: rgb(59,229,0);
+                background: linear-gradient(to bottom,  rgba(59,229,0,1) 0%,rgba(37,172,0,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3be500', endColorstr='#25ac00',GradientType=0 );
                 transform: scale(1.1);
               }
               > a {
@@ -135,6 +152,15 @@
             font-family: $f100;
             font-size: 1em;
             color: #9c9c9c;
+            transition: $transition;
+            &:hover {
+              border: 1px solid #00b9f8;
+              box-shadow: inset $shadow;
+            }
+            &:focus {
+              border: 1px solid #00b9f8;
+              box-shadow: inset $shadow;
+            }
           }
           > button {
             position: absolute;
@@ -150,8 +176,11 @@
             color: #00c0ff;
             transition: $transition;
             &:hover {
-              color: #ffffff;
-              background-color: #00c0ff;
+              border: 2px solid rgb(0,80,136);
+              background: rgb(0,80,136);
+              background: linear-gradient(to bottom,  rgba(0,80,136,1) 0%,rgba(0,62,98,1) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005088', endColorstr='#003e62',GradientType=0 );
+              color: white;
             }
           }
         }
@@ -179,8 +208,11 @@
           text-transform: uppercase;
           transition: $transition;
           &:hover {
-            color: #ffffff;
-            background-color: #00c0ff;
+            border: 2px solid rgb(0,80,136);
+            background: rgb(0,80,136);
+            background: linear-gradient(to bottom,  rgba(0,80,136,1) 0%,rgba(0,62,98,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005088', endColorstr='#003e62',GradientType=0 );
+            color: white;
           }
         }
       }
@@ -192,17 +224,25 @@
     box-shadow: $shadow;
     > .container {
       height: 100%;
-      > a {
+      > div {
+        position: relative;
         height: 100%;
         padding: 0 15px 0 15px;
         border-radius: 3px;
+        cursor: pointer;
         flex-grow: 1;
         transition: $transition;
+        &:not(:last-child) {
+          margin: 0 1px 0 0;
+        }
         &:hover {
           background: rgb(0,192,255);
           background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
           color: white;
+        }
+        &:hover > .header-bottom-nav-hover {
+          display: flex;
         }
         > div {
           height: 30px;
@@ -212,6 +252,128 @@
           font-family: $f300;
           font-size: 1em;
           margin: 0 0 0 10px;
+        }
+        > .header-bottom-nav-hover {
+          display: none;
+          background-color: white;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: auto;
+          max-width: 1110px;
+          background-color: white;
+          height: auto;
+          z-index: 20;
+          padding: 1px;
+          box-shadow: $shadow;
+          > .nav-menu {
+            width: 325px;
+            > .item {
+              margin: 5px 0 5px 0;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 35px;
+              background-color: #f4f4f4;
+              cursor: pointer;
+              &:hover {
+                background: rgb(0,80,136);
+                background: linear-gradient(to bottom,  rgba(0,80,136,1) 0%,rgba(0,62,98,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005088', endColorstr='#003e62',GradientType=0 );
+                > .decoration {
+                  background: none;
+                }
+                > .text {
+                  color: white;
+                }
+                > .chevron {
+                  > i {
+                    color: white;
+                  }
+                }
+                > .nav-menu-links {
+                  display: flex;
+                }
+              }
+              > .decoration {
+                height: 100%;
+                width: 5px;
+                margin-left: 5px;
+                border-radius: 3px;
+              }
+              > .text {
+                font-family: $f700;
+                font-size: 1em;
+                color: $fontColor;
+                width: 100%;
+                margin: 0 0 0 15px;
+              }
+              > .chevron {
+                margin: 0 10px 0 0;
+                > i {
+                  color: $fontColor;
+                  font-size: 1em;
+                }
+              }
+              > .nav-menu-links {
+                width: 800px;
+                max-height: 447px;
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 100%;
+                background-color: white;
+                box-shadow: $shadow;
+                z-index: 20;
+                > .nav-links {
+                  padding: 10px;
+                  display: flex;
+                  flex-direction: column;
+                  > a {
+                    margin: 5px 0 5px 0;
+                    font-family: $f300;
+                    font-size: 0.8em;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                > .nav-brands {
+                  padding: 10px 0 0 0;
+                  display: flex;
+                  flex-direction: column;
+                  flex-wrap: wrap;
+                  align-items: baseline;
+                  width: inherit;
+                  > a {
+                    margin: 5px 20px 5px 20px;
+                    font-family: $f300;
+                    font-size: 0.8em;
+                    transition: $transition;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+            > .active {
+              background: rgb(0,192,255);
+              background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+              > .decoration {
+                background: none;
+              }
+              > .text {
+                color: white;
+              }
+              > .chevron {
+                > i {
+                  color: white;
+                }
+              }
+            }
+          }
         }
       }
       > .active {
