@@ -216,7 +216,115 @@
           height: 40px;
           width: 160px;
           border-radius: 20px;
+          overflow: hidden;
+          padding: 0 0 0 20px;
+          background-color: rgba(100,100,100,0.9);
+          border: none;
+          font-family: $f100;
+          font-size: 1em;
+          color: white;
         }
+        > .select {
+          height: 40px;
+          width: 160px;
+          border-radius: 20px;
+          position: relative;
+          background-color: rgba(100,100,100,0.9);
+          > select {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 0 0 0 20px;
+            background: none;
+            border: none;
+            font-family: $f100;
+            font-size: 1em;
+            color: white;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            > option {
+              background-color: rgba(100,100,100,0.9);
+              color: white;
+            }
+          }
+          > i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: white;
+            z-index: 0;
+          }
+        }
+      }
+      > .total {
+        margin: 40px 0 0 0;
+        > h2 {
+          font-family: $f700;
+          font-size: 2em;
+          color: white;
+          text-align: right;
+          > span {
+            color: #fbe600;
+          }
+        }
+      }
+    }
+    > .selection-form {
+      width: 100%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > h2 {
+        font-family: $f900;
+        font-size: 2em;
+        color: white;
+        text-transform: uppercase;
+      }
+      > p {
+        font-family: $f100;
+        font-size: 1em;
+        color: white;
+      }
+      > input {
+        height: 45px;
+        width: 100%;
+        border-radius: 25px;
+        overflow: hidden;
+        padding: 0 0 0 20px;
+        background-color: rgba(100,100,100,0.9);
+        border: none;
+        font-family: $f100;
+        font-size: 1em;
+        color: white;
+      }
+      > h3 {
+        font-family: $f700;
+        font-size: 1em;
+        color: white;
+      }
+      > .options {
+        > p {
+          font-family: $f100;
+          font-size: 1em;
+          color: white;
+        }
+      }
+      > button {
+        height: 50px;
+        width: 100%;
+        border-radius: 25px;
+        border: none;
+        font-family: $f100;
+        font-size: 1em;
+        color: white;
+        text-transform: uppercase;
       }
     }
   }

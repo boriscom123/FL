@@ -68,6 +68,9 @@ button {
 .d-none {
 display: none;
 }
+.hide {
+  opacity: 0;
+}
 .flex-column {
   flex-direction: column;
 }
@@ -107,9 +110,6 @@ display: none;
     background: linear-gradient(to bottom,  rgba(0,80,136,1) 0%,rgba(0,62,98,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005088', endColorstr='#003e62',GradientType=0 );
   }
-}
-.dark-blue-gradient {
-  
 }
 .yellow-gradient {
   background: rgb(255,228,0);

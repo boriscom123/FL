@@ -1,0 +1,299 @@
+.best-price {
+  > .best-price-title {
+    width: 100%;
+    max-width: 580px;
+    margin: 50px auto 50px auto;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .decoration-left {
+      height: 4px;
+      width: 50px;
+      border-radius: 3px;
+      background: rgb(0,93,168);
+      background: linear-gradient(to right,  rgba(0,93,168,1) 0%,rgba(25,187,245,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005da8', endColorstr='#19bbf5',GradientType=1 );
+    }
+    > .decoration-right {
+      height: 4px;
+      width: 50px;
+      border-radius: 3px;
+      background: rgb(25,187,245);
+      background: linear-gradient(to right,  rgba(25,187,245,1) 0%,rgba(0,93,168,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19bbf5', endColorstr='#005da8',GradientType=1 );
+    }
+    > .text {
+      margin: 0 50px 0 50px;
+      > h2 {
+        font-family: $f700;
+        font-size: 3em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  > .best-price-slider {
+    margin: 50px 0 50px 0;
+    min-height: 540px;
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    > .slider-left-arrow {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-color: #f7f7f7;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      left: #{calc((100% - 1110px) / 2)};
+      transform: translateY(-50%) translateX(-100%);
+      cursor: pointer;
+      &:hover {
+        background: rgb(0,192,255);
+        background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+        box-shadow: $blue-shadow;
+        > i {
+          color:white;
+        }
+      }
+      > i {
+        color: $fontColor;
+        font-size: 1em;
+        transition: $transition;
+      }
+    }
+    > .slider-right-arrow {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-color: #f7f7f7;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      right: #{calc((100% - 1110px) / 2)};
+      transform: translateY(-50%) translateX(100%);
+      cursor: pointer;
+      &:hover {
+        background: rgb(0,192,255);
+        background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+        box-shadow: $blue-shadow;
+        > i {
+          color:white;
+        }
+      }
+      > i {
+        color: $fontColor;
+        font-size: 1em;
+        transition: $transition;
+      }
+    }
+    > .slider-content {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      z-index: 10;
+      > .card {
+        height: auto;
+        width: 100%;
+        max-width: 350px;
+        padding: 10px 0 10px 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transition: $transition;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        z-index: 5;
+        background-color: white;
+        &:hover > .additional {display: flex;}
+        > .image-contain {
+          position: relative;
+          height: 250px;
+          width: 100%;
+          background-color: white;
+          > .hover {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            height: 35px;
+            width: 100%;
+            > .left {
+              width: 70px;
+              background: rgb(0,192,255);
+              background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-family: $f700;
+              font-size: 1em;
+              -webkit-clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+                      clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+            }
+            > .right {
+              display: flex;
+              justify-content: flex-end;
+              padding: 0 10px 0 0;
+              > .image-contain {
+                height: 100%;
+                width: 25px;
+                margin: 0 5px 0 5px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        > .info {
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto;
+          background-color: white;
+          > h3 {
+            font-family: $f700;
+            font-size: 1em;
+          }
+          > h2 {
+            font-family: $f700;
+            font-size: 1.2em;
+            color: #0096ff;
+            max-width: 200px;
+          }
+          > .price {
+            display: flex;
+            justify-content: space-between;
+            > div {
+              > p {
+                font-family: $f300;
+                font-size: 1em;
+                text-decoration: line-through;
+                color: #a4a4a4;
+              }
+              > h2 {
+                font-family: $f700;
+                font-size: 1.5em;
+              }
+              > .decoration {
+                margin: 0 5px 0 0;
+                height: 22px;
+                width: 22px;
+                min-height: 22px;
+                min-width: 22px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgb(59,229,0);
+                background: linear-gradient(to bottom,  rgba(59,229,0,1) 0%,rgba(37,172,0,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3be500', endColorstr='#25ac00',GradientType=0 );
+                > i {
+                  color: white;
+                  font-size: 0.8em;
+                }
+              }
+              > .text {
+                font-family: $f300;
+                font-size: 1em;
+              }
+            }
+            > .right{
+              display: flex;
+              align-items: flex-end;
+            }
+          }
+          > .buttons {
+            margin: 15px 0 15px 0;
+            display: flex;
+            flex-direction: column;
+            > button {
+              height: 50px;
+              min-height: 50px;
+              width: 100%;
+              border: none;
+              border-radius: 25px;
+              color: white;
+              font-family: $f700;
+              font-size: 1em;
+              text-transform: uppercase;
+              margin: 5px 0 5px 0;
+              transition: $transition;
+            }
+          }
+        }
+        > .additional {
+          width: #{calc(100% + 2px)};
+          background-color: white;
+          display: none;
+          position: absolute;
+          flex-direction: column;
+          top: 99%;
+          left: -1px;
+          border: 1px solid #dbdbdb;
+          border-top: none;
+          padding: 0 0 10px 0;
+          > h2 {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            font-family: $f100;
+            font-size: 1em;
+            > span {
+              font-family: $f700;
+            }
+          }
+          > p {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto 0 auto;
+            font-family: $f300;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    > .pagination {
+      height: 15px;
+      width: 100%;
+      margin: 30px 0 0 0;
+      display: flex;
+      justify-content: center;
+      > div {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #e5e5e5;
+        margin: 0 5px 0 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          background: rgba(0,192,255,0.3);
+        }
+        > div {
+          height: 7px;
+          width: 7px;
+          border-radius: 50%;
+        }
+      }
+      > .active {
+        background: rgba(0,192,255,0.3);
+        > div {
+          background: rgb(0,192,255);
+          background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+        }
+      }
+    }
+  }
+}

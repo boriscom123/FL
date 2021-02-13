@@ -1,0 +1,126 @@
+.contacts {
+  min-height: 800px;
+  background-image: url('../image/contacts-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  > .contacts-title {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto 50px auto;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .decoration-left {
+      height: 4px;
+      width: 50px;
+      border-radius: 3px;
+      background: rgb(0,93,168);
+      background: linear-gradient(to right,  rgba(0,93,168,1) 0%,rgba(25,187,245,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005da8', endColorstr='#19bbf5',GradientType=1 );
+    }
+    > .decoration-right {
+      height: 4px;
+      width: 50px;
+      border-radius: 3px;
+      background: rgb(25,187,245);
+      background: linear-gradient(to right,  rgba(25,187,245,1) 0%,rgba(0,93,168,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19bbf5', endColorstr='#005da8',GradientType=1 );
+    }
+    > .text {
+      margin: 0 50px 0 50px;
+      > h2 {
+        font-family: $f700;
+        font-size: 3em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  > .contacts-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 200px auto 0 auto;
+    > div {
+      width: 50%;
+    }
+    > .pointer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > div {
+        display: flex;
+        > i {
+          font-size: 2em;
+          color: rgba(0,192,255,0.7);
+        }
+        > p {
+          color: white;
+          font-family: $f700;
+          font-size: 1em;
+          max-width: 200px;
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+    > .text {
+      max-width: 500px;
+      background-color: white;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 30px 20px 30px;
+      > div {
+        width: 50%;
+        max-width: 195px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        > .block {
+          &:first-child {
+            margin: 0 0 20px 0;
+          }
+          > div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            > .image-contain {
+              height: 25px;
+              width: 25px;
+              min-height: 25px;
+              min-width: 25px;
+              margin: 0 15px 0 0;
+            }
+            > h2 {
+              font-family: $f900;
+              font-size: 1em;
+            }
+          }
+          > p {
+            font-family: $f300;
+            font-size: 1em;
+            color: grey;
+            margin: 5px 0 5px 0;
+            > span {
+              font-family: $f700;
+              font-size: 1em;
+              color: $fontColor;
+            }
+          }
+        }
+        > button {
+          height: 45px;
+          min-height: 45px;
+          border-radius: 25px;
+          border: none;
+          margin: 20px 0 0 0;
+          font-family: $f700;
+          font-size: 1em;
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

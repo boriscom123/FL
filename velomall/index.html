@@ -1052,10 +1052,13 @@
 
             <div class="inputs">
               <input type="text" name="height" value="" placeholder="Рост, см.">
-              <select class="" name="type">
-                <option value="Горный">Горный</option>
-                <option value="Городской">Городской</option>
-              </select>
+              <div class="select">
+                <select class="" name="type">
+                  <option value="Горный">Горный</option>
+                  <option value="Городской">Городской</option>
+                </select>
+                <i class="fas fa-chevron-down"></i>
+              </div>
               <input type="text" name="min" value="от 4 000 руб." placeholder="0">
               <input type="text" name="max" value="до 45 000 руб." placeholder="450 000">
             </div>
@@ -1070,21 +1073,583 @@
             <p>и мы свяжемся с Вами! В течении 3 минут</p>
             <input type="text" name="name" value="" placeholder="Ваше имя">
             <input type="tel" name="tel" value="" placeholder="Ваш телефон">
-            <h3>параметры подбора:</h3>
+            <h3>Параметры подбора:</h3>
             <div class="options">
               <p>Велосипед для: мужчины</p>
               <p>рост: 175</p>
               <p>тип: горный, 29"</p>
               <p>стоимость: от 4 000 до 45 000</p>
             </div>
-            <button type="button" name="button">Подобрать велосипед</button>
+            <button class="blue-gradient" type="button" name="button">Подобрать велосипед</button>
           </form>
         </div>
 
       </div>
 
+      <div class="best-price">
+
+        <div class="best-price-title">
+          <div class="decoration-left"></div>
+          <div class="text"><h2>Лучшие цены</h2></div>
+          <div class="decoration-right"></div>
+        </div>
+
+        <div class="best-price-slider">
+
+          <div class="slider-left-arrow">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="slider-right-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+
+          <div class="slider-content container">
+
+            <div class="card">
+
+              <div class="image-contain">
+                <img src="image/bike-1.jpg" alt="bike-1">
+                <div class="hover">
+                  <div class="left">-10 %</div>
+                  <div class="right">
+                    <div class="image-contain">
+                      <img src="image/scale-g.svg" alt="scale-g">
+                    </div>
+                    <div class="image-contain">
+                      <img src="image/heart-g.svg" alt="heart-g">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info">
+                <h3>Велосипед</h3>
+                <h2>Stinger Graphite Evo 29" (2021)</h2>
+                <div class="price">
+                  <div class="left">
+                    <p>33 950 руб.</p>
+                    <h2>30 990 руб.</h2>
+                  </div>
+                  <div class="right">
+                    <div class="decoration"><i class="fas fa-check"></i></div>
+                    <div class="text">В наличии</div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button class="green-gradient" type="button" name="button">Купить в 1 клик</button>
+                  <button class="blue-gradient" type="button" name="button">Подробнее</button>
+                </div>
+              </div>
+
+              <div class="additional">
+                <h2><span>Артикул:</span> 544102-кен</h2>
+                <p>Stinger Graphite Evo 29" (2021) – элегантная модель, обладающая накатистыми колесами, удобной рамой и продуманным дизайном. Легкий и эффективный велопривод, система ...</p>
+              </div>
+
+            </div>
+
+            <div class="card">
+
+              <div class="image-contain">
+                <img src="image/bike-2.jpg" alt="bike-2">
+                <div class="hover">
+                  <div class="left hide">-10 %</div>
+                  <div class="right">
+                    <div class="image-contain">
+                      <img src="image/scale-b.svg" alt="scale-b">
+                    </div>
+                    <div class="image-contain">
+                      <img src="image/heart-b.svg" alt="heart-b">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info">
+                <h3>Велосипед</h3>
+                <h2>Stinger Graphite Evo 29" (2021)</h2>
+                <div class="price">
+                  <div class="left">
+                    <p>33 950 руб.</p>
+                    <h2>30 990 руб.</h2>
+                  </div>
+                  <div class="right">
+                    <div class="decoration"><i class="fas fa-check"></i></div>
+                    <div class="text">В наличии</div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button class="green-gradient" type="button" name="button">Купить в 1 клик</button>
+                  <button class="blue-gradient" type="button" name="button">Подробнее</button>
+                </div>
+              </div>
+
+              <div class="additional">
+                <h2><span>Артикул:</span> 544102-кен</h2>
+                <p>Stinger Graphite Evo 29" (2021) – элегантная модель, обладающая накатистыми колесами, удобной рамой и продуманным дизайном. Легкий и эффективный велопривод, система ...</p>
+              </div>
+
+            </div>
+
+            <div class="card">
+
+              <div class="image-contain">
+                <img src="image/bike-3.jpg" alt="bike-3">
+                <div class="hover">
+                  <div class="left">-5 %</div>
+                  <div class="right">
+                    <div class="image-contain">
+                      <img src="image/scale-g.svg" alt="scale-g">
+                    </div>
+                    <div class="image-contain">
+                      <img src="image/heart-b.svg" alt="heart-b">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info">
+                <h3>Велосипед</h3>
+                <h2>Stinger Graphite Evo 29" (2021)</h2>
+                <div class="price">
+                  <div class="left">
+                    <p>33 950 руб.</p>
+                    <h2>30 990 руб.</h2>
+                  </div>
+                  <div class="right">
+                    <div class="decoration"><i class="fas fa-check"></i></div>
+                    <div class="text">В наличии</div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button class="green-gradient" type="button" name="button">Купить в 1 клик</button>
+                  <button class="blue-gradient" type="button" name="button">Подробнее</button>
+                </div>
+              </div>
+
+              <div class="additional">
+                <h2><span>Артикул:</span> 544102-кен</h2>
+                <p>Stinger Graphite Evo 29" (2021) – элегантная модель, обладающая накатистыми колесами, удобной рамой и продуманным дизайном. Легкий и эффективный велопривод, система ...</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="pagination">
+            <div class="active"><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="questions">
+
+        <div class="questions-content container">
+
+          <form class="questions-form" action="index.html" method="post">
+            <h2><span>Остались</span> вопросы?</h2>
+            <p>Заполните форму и мы Вам перезвоним в течение <span>3 минут</span></p>
+            <div class="inputs">
+              <input type="text" name="name" value="" placeholder="Ваше имя">
+              <input type="tel" name="tel" value="" placeholder="Телефон">
+            </div>
+            <div class="textarea">
+              <textarea name="mesage" placeholder="Текст сообщения"></textarea>
+            </div>
+            <div class="buttons">
+              <button class="blue-gradient" type="button" name="button">Отправить</button>
+              <div class="form-checkbox d-flex flex-justify-center flex-align-center">
+                <input class="d-none" type="checkbox" name="block-3-privacy-checkbox" value="" id="block-3-privacy-checkbox">
+                <label class="checkbox-field" for="block-3-privacy-checkbox"><div></div></label>
+                <label class="checkbox-label" for="block-3-privacy-checkbox">
+                  <p>Я согласен на обработку данных</p>
+                  <a href="#">Политика конфиденциальности</a>
+                </label>
+              </div>
+            </div>
+          </form>
+
+          <div class="steps">
+
+            <div class="decoration">
+              <div class="d-1 blue-gradient"></div>
+              <div class="d-2 blue-gradient"></div>
+              <div class="d-3 blue-gradient"></div>
+              <div class="d-4 blue-gradient"></div>
+              <div class="d-5 green-gradient"></div>
+              <div class="d-6 green-gradient"></div>
+              <div class="d-7 green-gradient"></div>
+            </div>
+
+            <div class="step-1">
+              <h2>01</h2>
+              <p>Отправте  нам форму</p>
+            </div>
+
+            <div class="step-2">
+              <h2>02</h2>
+              <p>Ожидайте  звонка</p>
+            </div>
+
+            <div class="step-3">
+              <h2>03</h2>
+              <p>Получите  консультацию</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="videos">
+
+        <div class="videos-title">
+          <div class="decoration-left"></div>
+          <div class="text"><h2>Наши видео</h2></div>
+          <div class="decoration-right"></div>
+        </div>
+
+        <div class="videos-slider">
+
+          <div class="slider-left-arrow">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="slider-right-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+
+          <div class="slider-content container">
+
+            <div class="card">
+              <div class="video image-cover">
+                <img src="image/video-1.jpg" alt="video-1">
+                <!-- <video controls="controls" poster="" preload="none">
+                  <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                  Тег video не поддерживается вашим браузером.
+                  <a href="">Скачайте видео</a>.
+                </video> -->
+              </div>
+              <div class="title">
+                <div class="circle">
+                  <i class="fas fa-bicycle"></i>
+                </div>
+                <p>Обзор фэтбайка STELS Navi...</p>
+              </div>
+              <div class="play-btn">
+                <img src="image/youtube.svg" alt="youtube">
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="video image-cover">
+                <img src="image/video-2.jpg" alt="video-2">
+                <!-- <video controls="controls" poster="" preload="none">
+                  <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                  Тег video не поддерживается вашим браузером.
+                  <a href="">Скачайте видео</a>.
+                </video> -->
+              </div>
+              <div class="title">
+                <div class="circle">
+                  <i class="fas fa-bicycle"></i>
+                </div>
+                <p>Обзор фэтбайка STELS Navi...</p>
+              </div>
+              <div class="play-btn">
+                <img src="image/youtube.svg" alt="youtube">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pagination">
+            <div class="active"><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="news">
+
+        <div class="news-title">
+          <div class="decoration-left"></div>
+          <div class="text"><h2>Новости и обзоры</h2></div>
+          <div class="decoration-right"></div>
+        </div>
+
+        <div class="news-content container">
+
+          <div class="main-news">
+            <h2><span>Emergency Bikes</span> – велосипедная скорая помощь в Париже</h2>
+            <p>17.02.2020</p>
+            <div class="columns">
+              <div class="image-cover">
+                <img src="image/news-1.jpg" alt="/news-1">
+              </div>
+              <p>
+                Имеется спорная точка зрения, гласящая примерно следующее:
+                действия представителей оппозиции, инициированные исключительно синтетически, разоблачены.
+                Предприниматели в сети интернет неоднозначны и будут объявлены нарушающими общечеловеческие нормы этики и морали.
+                Учитывая ключевые сценарии поведения, сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+                участие в формировании соответствующих условий активизации.
+                Семантический разбор внешних противодействий требует от нас анализа соответствующих условий активизации.
+                Также как перспективное планирование напрямую зависит от экономической целесообразности принимаемых решений.
+              </p>
+              <h2>Что вошло в комплектацию:</h2>
+              <p>
+                Следует отметить, что сплочённость команды профессионалов не даёт нам иного выбора, кроме определения как самодостаточных,
+                так и внешне зависимых концептуальных решений. Но сплочённость команды профессионалов позволяет выполнить
+                важные задания по разработке направлений прогрессивного развития. Также как существующая теория однозначно
+                фиксирует необходимость соответствующих условий активизации. Являясь всего лишь частью общей картины,
+                предприниматели в сети интернет неоднозначны и будут объявлены нарушающими общечеловеческие нормы этики и морали.
+                Значимость этих проблем настолько очевидна, что убеждённость некоторых оппонентов создаёт предпосылки для существующих
+                финансовых и административных условий.
+              </p>
+            </div>
+            <div class="links">
+              <a href="#"><i class="fab fa-amazon"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+              <a href="#"><i class="fab fa-skype"></i></a>
+              <a href="#"><i class="fab fa-telegram-plane"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-viber"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="blog">
+
+            <h2><span>Новое</span> в блоге</h2>
+
+            <div class="cards">
+
+              <div class="card">
+                <div class="title">
+                  <div class="date">17.02.2020</div>
+                  <div class="text">С Новым годом! Ура!</div>
+                </div>
+                <p>
+                  Дорогие друзья! Уже этим вечером мы все сядем за новогодний стол
+                </p>
+                <a href="#">Подробнее</a>
+              </div>
+
+              <div class="card">
+                <div class="title">
+                  <div class="date">17.02.2020</div>
+                  <div class="text">Подарки для велосипедистов выбирать очень удобно! Велосипедные </div>
+                </div>
+                <p>
+                  Дорогие друзья! Уже этим вечером мы все сядем за новогодний стол
+                </p>
+                <a href="#">Подробнее</a>
+              </div>
+
+              <div class="card">
+                <div class="title">
+                  <div class="date">17.02.2020</div>
+                  <div class="text">С Новым годом! Ура!</div>
+                </div>
+                <p>
+                  Дорогие друзья! Уже этим вечером мы все сядем за новогодний стол
+                </p>
+                <a href="#">Подробнее</a>
+              </div>
+
+            </div>
+
+            <a href="#">Все новости и обзоры</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="feedback">
+
+        <div class="feedback-title">
+          <div class="decoration-left"></div>
+          <div class="text"><h2>Отзывы</h2></div>
+          <div class="decoration-right"></div>
+        </div>
+
+        <div class="feedback-slider">
+
+          <div class="slider-left-arrow">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="slider-right-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+
+          <div class="slider-content container">
+
+            <div class="card">
+              <h2>Виктор Аленник</h2>
+              <h3>Москва</h3>
+              <h4>01. 02. 2021</h4>
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных</p>
+              <div class="decoration blue-gradient"></div>
+            </div>
+
+            <div class="card">
+              <h2>Виктор Аленник</h2>
+              <h3>Москва</h3>
+              <h4>01. 02. 2021</h4>
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных</p>
+              <div class="decoration blue-gradient"></div>
+            </div>
+
+          </div>
+
+          <div class="pagination">
+            <div class="active"><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+            <div class=""><div class=""></div></div>
+          </div>
+        </div>
+
+        <div class="feedback-button">
+          <button class="blue-gradient" type="button" name="button">Оставить отзыв</button>
+        </div>
+
+      </div>
+
+      <div class="contacts">
+
+        <div class="contacts-title">
+          <div class="decoration-left"></div>
+          <div class="text"><h2>Контакты</h2></div>
+          <div class="decoration-right"></div>
+        </div>
+
+        <div class="contacts-content container">
+
+          <div class="pointer">
+            <div class="">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Москва, Сигнальный проезд, д.16, стр.2</p>
+            </div>
+          </div>
+
+          <div class="text">
+
+            <div class="left">
+              <div class="block">
+                <div class="">
+                  <div class="image-contain">
+                    <img src="image/placeholder.svg" alt="placeholder">
+                  </div>
+                  <h2>Адрес:</h2>
+                </div>
+                <p>Москва, Сигнальный проезд, д.16, стр.2</p>
+                <p>м. Владыкино, МЦК Владыкино</p>
+              </div>
+              <button class="blue-gradient" stype="button" name="button">Заказать звонок</button>
+            </div>
+
+            <div class="right">
+              <div class="block">
+                <div class="">
+                  <div class="image-contain">
+                    <img src="image/phone-call.svg" alt="phone-call">
+                  </div>
+                  <h2>Телефоны:</h2>
+                </div>
+                <p>+7 (495) 787-22-33</p>
+                <p>+7 (495) 787-22-33</p>
+              </div>
+              <div class="block">
+                <div class="">
+                  <div class="image-contain">
+                    <img src="image/reload.svg" alt="reload">
+                  </div>
+                  <h2>Время работы:</h2>
+                </div>
+                <p><span>Пн-Сб:</span> с 10:00 до 21:00</p>
+                <p><span>Вс:</span> с 10:00 до 20:00</p>
+              </div>
+              <button class="green-gradient" stype="button" name="button">Написать нам</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </main>
-    <footer class="footer">FOOTER</footer>
+
+    <footer class="footer">
+
+      <div class="footer-content container">
+
+        <div class="logo">
+
+          <a class="" href="index.html">
+            <h1 class="title"><span class=" blue-gradient">Velo</span>mall</h1>
+            <p>Велосипеды для Вашего сердца</p>
+          </a>
+          <h2>Мы в соц сетях:</h2>
+          <div class="icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+            <a href="#"><i class="fab fa-skype"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-viber"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <h2>Принимаем к оплате:</h2>
+          <div class="icons">
+
+          </div>
+        </div>
+
+        <div class="links">
+
+        </div>
+
+        <div class="tel">
+
+        </div>
+
+        <div class="form">
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <div class="copyrights">
+
+      <div class="copyrights-content">
+        <p>© 2006-2021, Velomall – 15 лет нам доверяют покупатели!</p>
+        <a href="#">Политика кофидециальности</a>
+      </div>
+
+    </div>
     <script src="script/index.js"></script>
   </body>
 </html>

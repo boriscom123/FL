@@ -1,8 +1,9 @@
-.brands {
-  > .brands-title {
+.videos {
+  > .videos-title {
     width: 100%;
-    max-width: 540px;
-    margin: 50px auto 0 auto;
+    max-width: 580px;
+    margin: 50px auto 50px auto;
+    padding: 0 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,9 +33,8 @@
       }
     }
   }
-  > .brands-slider {
-    margin: 50px 0 50px 0;
-    height: 60px;
+  > .videos-slider {
+    margin: 50px 0 0 0;
     position: relative;
     background-color: rgba(255,255,255,0.5);
     > .slider-left-arrow {
@@ -46,7 +46,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      top: 50%;
+      top: #{calc(50% - 15px)};
       left: #{calc((100% - 1110px) / 2)};
       transform: translateY(-50%) translateX(-100%);
       cursor: pointer;
@@ -74,7 +74,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      top: 50%;
+      top: #{calc(50% - 15px)};
       right: #{calc((100% - 1110px) / 2)};
       transform: translateY(-50%) translateX(100%);
       cursor: pointer;
@@ -97,48 +97,101 @@
       height: 100%;
       display: flex;
       justify-content: space-around;
-      padding: 0 10px 0 10px;
+      position: relative;
+      z-index: 10;
       > .card {
-        height: 100%;
-        max-width: 150px;
+        width: 100%;
+        max-width: 540px;
+        height: 280px;
+        border-radius: 5px;
+        overflow: hidden;
         position: relative;
-        cursor: pointer;
-        display: flex;
-        transition: $transition;
-        &:hover {
-            transform: scale(1.1);
-        }
-        > .hover {
-          position: absolute;
-          top: 0;
-          left: 0;
+        > .video {
           height: 100%;
           width: 100%;
-          background-color: rgba(255,255,255,0);
+        }
+        > .title {
+          position: absolute;
+          top: 15px;
+          left: 20px;
+          height: 55px;
+          width: 55%;
+          background-color: rgba(100,100,100,0.8);
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          overflow: hidden;
+          > .circle {
+            height: 50px;
+            width: 50px;
+            min-height: 50px;
+            min-width: 50px;
+            border-radius: 50%;
+            background-color: rgba(30,30,30,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 15px 0 5px;
+            > i {
+              color: grey;
+              font-size: 1.5em;
+            }
+          }
+          > p {
+            white-space: nowrap;
+            font-family: $f300;
+            font-size: 1em;
+            color: white;
+          }
+        }
+        > .play-btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          height: 50px;
+          width: 70px;
+          transform: translateX(-50%) translateY(-50%);
+          cursor: pointer;
+          > img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+          }
         }
       }
-      > .left-out {
-        position: absolute;
-        left: #{calc((100% - 1110px)/2)};
-        top: 50%;
-        transform: translateY(-50%) translateX(-250px);
+    }
+    > .pagination {
+      height: 15px;
+      width: 100%;
+      margin: 30px 0 0 0;
+      display: flex;
+      justify-content: center;
+      > div {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #e5e5e5;
+        margin: 0 5px 0 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover {
-          transform: translateY(-50%) translateX(-250px);
+          background: rgba(0,192,255,0.3);
         }
-        > .hover {
-          background-color: rgba(255,255,255,0.8);
+        > div {
+          height: 7px;
+          width: 7px;
+          border-radius: 50%;
         }
       }
-      > .right-out {
-        position: absolute;
-        right: #{calc((100% - 1110px)/2)};
-        top: 50%;
-        transform: translateY(-50%) translateX(250px);
-        &:hover {
-          transform: translateY(-50%) translateX(250px);
-        }
-        > .hover {
-          background-color: rgba(255,255,255,0.8);
+      > .active {
+        background: rgba(0,192,255,0.3);
+        > div {
+          background: rgb(0,192,255);
+          background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
         }
       }
     }

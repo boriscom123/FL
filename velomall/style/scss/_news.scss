@@ -1,0 +1,200 @@
+.news {
+  > .news-title {
+    width: 100%;
+    max-width: 750px;
+    margin: 50px auto 50px auto;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .decoration-left {
+      height: 4px;
+      width: 50px;
+      border-radius: 3px;
+      background: rgb(0,93,168);
+      background: linear-gradient(to right,  rgba(0,93,168,1) 0%,rgba(25,187,245,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005da8', endColorstr='#19bbf5',GradientType=1 );
+    }
+    > .decoration-right {
+      height: 4px;
+      width: 50px;
+      border-radius: 3px;
+      background: rgb(25,187,245);
+      background: linear-gradient(to right,  rgba(25,187,245,1) 0%,rgba(0,93,168,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19bbf5', endColorstr='#005da8',GradientType=1 );
+    }
+    > .text {
+      margin: 0 50px 0 50px;
+      > h2 {
+        font-family: $f700;
+        font-size: 3em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  > .news-content {
+    display: flex;
+    justify-content: space-between;
+    > .main-news {
+      width: 100%;
+      max-width: 730px;
+      > h2 {
+        font-family: $f900;
+        font-size: 2em;
+        text-transform: uppercase;
+        > span {
+          color: #009bde;
+        }
+      }
+      > p {
+        font-family: $f300;
+        font-size: 1em;
+      }
+      > .columns {
+        margin: 20px 0 0 0;
+        -moz-column-rule: none;
+             column-rule: none; // разделитель между колонками
+        -moz-column-gap: 30px;
+             column-gap: 30px; // расстояние между колонками
+        -moz-column-count: 2;
+             column-count: 2; // количество колонок
+        -moz-column-width: 50%;
+             column-width: 50%; // ширина колонки
+        > .image-cover {
+          width: 100%;
+          height: 225px;
+          margin: 0 0 20px 0;
+        }
+        > p {
+          font-family: $f300;
+          font-size: 1em;
+        }
+        > h2 {
+          font-family: $f700;
+          font-size: 1em;
+          margin: 15px 0 5px 0;
+        }
+      }
+      > .links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 30px 0 0 0;
+        > a {
+          height: 25px;
+          min-height: 25px;
+          width: 25px;
+          min-width: 25px;
+          border-radius: 3px;
+          background-color: #009bde;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:not(:last-child) {
+            margin: 0 5px 0 0;
+          }
+          > i {
+            font-size: 1.2em;
+            color: white;
+          }
+        }
+      }
+    }
+    > .blog {
+      height: -webkit-min-content;
+      height: -moz-min-content;
+      height: min-content;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: $shadow;
+      > h2 {
+        height: 60px;
+        width: 100%;
+        font-family: $f100;
+        font-size: 2em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > span {
+          font-family: $f900;
+          margin: 0 5px 0 0;
+        }
+      }
+      > .cards {
+        > .card {
+          border-top: 1px solid silver;
+          padding: 10px 0 20px 0;
+          &:first-child > .title  > .date {
+            background: rgb(59,229,0);
+            background: linear-gradient(to bottom,  rgba(59,229,0,1) 0%,rgba(37,172,0,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3be500', endColorstr='#25ac00',GradientType=0 );
+          }
+          > .title {
+            display: flex;
+            justify-content: flex-start;
+            > .date {
+              height: 40px;
+              width: 95px;
+              min-width: 95px;
+              border-radius: 0 5px 5px 0;
+              background: rgb(0,192,255);
+              background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: $f900;
+              font-size: 0.8em;
+              color: white;
+              margin: 0 15px 0 0;
+            }
+            > .text {
+              padding: 0 15px 0 0;
+              font-family: $f700;
+              font-size: 0.9em;
+            }
+          }
+          > p {
+            padding: 15px 15px 15px 15px;
+            font-family: $f100;
+            font-size: 1em;
+            color: grey;
+          }
+          > a {
+            margin-left: 15px;
+            font-family: $f900;
+            font-size: 1em;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 100%;
+        max-width: 310px;
+        margin: 10px auto 35px auto;
+        border-radius: 25px;
+        color: white;
+        text-transform: uppercase;
+        font-family: $f900;
+        font-size: 1em;
+        background: rgb(0,192,255);
+        background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+        transition: $transition;
+        &:hover {
+          background: rgb(0,80,136);
+          background: linear-gradient(to bottom,  rgba(0,80,136,1) 0%,rgba(0,62,98,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005088', endColorstr='#003e62',GradientType=0 );
+        }
+      }
+    }
+  }
+}

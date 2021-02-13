@@ -6196,6 +6196,10 @@ button {
   display: none;
 }
 
+.hide {
+  opacity: 0;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -7024,8 +7028,14 @@ button {
   transform: translateY(-50%) translateX(-100%);
   cursor: pointer;
 }
+.brands > .brands-slider > .slider-left-arrow:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  box-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
+}
 .brands > .brands-slider > .slider-left-arrow:hover > i {
-  font-size: 2em;
+  color: white;
 }
 .brands > .brands-slider > .slider-left-arrow > i {
   color: #333333;
@@ -7046,8 +7056,14 @@ button {
   transform: translateY(-50%) translateX(100%);
   cursor: pointer;
 }
+.brands > .brands-slider > .slider-right-arrow:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  box-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
+}
 .brands > .brands-slider > .slider-right-arrow:hover > i {
-  font-size: 2em;
+  color: white;
 }
 .brands > .brands-slider > .slider-right-arrow > i {
   color: #333333;
@@ -7324,6 +7340,1429 @@ button {
   height: 40px;
   width: 160px;
   border-radius: 20px;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+  background-color: rgba(100, 100, 100, 0.9);
+  border: none;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+}
+.selection > .selection-content > .selection-left > .inputs > .select {
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgba(100, 100, 100, 0.9);
+}
+.selection > .selection-content > .selection-left > .inputs > .select > select {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+  background: none;
+  border: none;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.selection > .selection-content > .selection-left > .inputs > .select > select > option {
+  background-color: rgba(100, 100, 100, 0.9);
+  color: white;
+}
+.selection > .selection-content > .selection-left > .inputs > .select > i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 0;
+}
+.selection > .selection-content > .selection-left > .total {
+  margin: 40px 0 0 0;
+}
+.selection > .selection-content > .selection-left > .total > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 2em;
+  color: white;
+  text-align: right;
+}
+.selection > .selection-content > .selection-left > .total > h2 > span {
+  color: #fbe600;
+}
+.selection > .selection-content > .selection-form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.selection > .selection-content > .selection-form > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+}
+.selection > .selection-content > .selection-form > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+}
+.selection > .selection-content > .selection-form > input {
+  height: 45px;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+  background-color: rgba(100, 100, 100, 0.9);
+  border: none;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+}
+.selection > .selection-content > .selection-form > h3 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  color: white;
+}
+.selection > .selection-content > .selection-form > .options > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+}
+.selection > .selection-content > .selection-form > button {
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.best-price > .best-price-title {
+  width: 100%;
+  max-width: 580px;
+  margin: 50px auto 50px auto;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.best-price > .best-price-title > .decoration-left {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #005da8;
+  background: linear-gradient(to right, #005da8 0%, #19bbf5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005da8", endColorstr="#19bbf5",GradientType=1 );
+}
+.best-price > .best-price-title > .decoration-right {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #19bbf5;
+  background: linear-gradient(to right, #19bbf5 0%, #005da8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#19bbf5", endColorstr="#005da8",GradientType=1 );
+}
+.best-price > .best-price-title > .text {
+  margin: 0 50px 0 50px;
+}
+.best-price > .best-price-title > .text > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.best-price > .best-price-slider {
+  margin: 50px 0 50px 0;
+  min-height: 540px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.best-price > .best-price-slider > .slider-left-arrow {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: calc((100% - 1110px) / 2);
+  transform: translateY(-50%) translateX(-100%);
+  cursor: pointer;
+}
+.best-price > .best-price-slider > .slider-left-arrow:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  box-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
+}
+.best-price > .best-price-slider > .slider-left-arrow:hover > i {
+  color: white;
+}
+.best-price > .best-price-slider > .slider-left-arrow > i {
+  color: #333333;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.best-price > .best-price-slider > .slider-right-arrow {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: calc((100% - 1110px) / 2);
+  transform: translateY(-50%) translateX(100%);
+  cursor: pointer;
+}
+.best-price > .best-price-slider > .slider-right-arrow:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  box-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
+}
+.best-price > .best-price-slider > .slider-right-arrow:hover > i {
+  color: white;
+}
+.best-price > .best-price-slider > .slider-right-arrow > i {
+  color: #333333;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.best-price > .best-price-slider > .slider-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+}
+.best-price > .best-price-slider > .slider-content > .card {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 0 10px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  z-index: 5;
+  background-color: white;
+}
+.best-price > .best-price-slider > .slider-content > .card:hover > .additional {
+  display: flex;
+}
+.best-price > .best-price-slider > .slider-content > .card > .image-contain {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  background-color: white;
+}
+.best-price > .best-price-slider > .slider-content > .card > .image-contain > .hover {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  width: 100%;
+}
+.best-price > .best-price-slider > .slider-content > .card > .image-contain > .hover > .left {
+  width: 70px;
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+}
+.best-price > .best-price-slider > .slider-content > .card > .image-contain > .hover > .right {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px 0 0;
+}
+.best-price > .best-price-slider > .slider-content > .card > .image-contain > .hover > .right > .image-contain {
+  height: 100%;
+  width: 25px;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: white;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > h3 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1.2em;
+  color: #0096ff;
+  max-width: 200px;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .price {
+  display: flex;
+  justify-content: space-between;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .price > div > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  text-decoration: line-through;
+  color: #a4a4a4;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .price > div > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1.5em;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .price > div > .decoration {
+  margin: 0 5px 0 0;
+  height: 22px;
+  width: 22px;
+  min-height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3be500;
+  background: linear-gradient(to bottom, #3be500 0%, #25ac00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3be500", endColorstr="#25ac00",GradientType=0 );
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .price > div > .decoration > i {
+  color: white;
+  font-size: 0.8em;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .price > div > .text {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .price > .right {
+  display: flex;
+  align-items: flex-end;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .buttons {
+  margin: 15px 0 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+.best-price > .best-price-slider > .slider-content > .card > .info > .buttons > button {
+  height: 50px;
+  min-height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 5px 0 5px 0;
+  transition: 0.3s;
+}
+.best-price > .best-price-slider > .slider-content > .card > .additional {
+  width: calc(100% + 2px);
+  background-color: white;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 99%;
+  left: -1px;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+  padding: 0 0 10px 0;
+}
+.best-price > .best-price-slider > .slider-content > .card > .additional > h2 {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+}
+.best-price > .best-price-slider > .slider-content > .card > .additional > h2 > span {
+  font-family: "Museo Sans Cyrl 700";
+}
+.best-price > .best-price-slider > .slider-content > .card > .additional > p {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto 0 auto;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.best-price > .best-price-slider > .pagination {
+  height: 15px;
+  width: 100%;
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.best-price > .best-price-slider > .pagination > div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.best-price > .best-price-slider > .pagination > div:hover {
+  background: rgba(0, 192, 255, 0.3);
+}
+.best-price > .best-price-slider > .pagination > div > div {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+.best-price > .best-price-slider > .pagination > .active {
+  background: rgba(0, 192, 255, 0.3);
+}
+.best-price > .best-price-slider > .pagination > .active > div {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+}
+
+.questions {
+  min-height: 800px;
+  background-image: url("../image/questions-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0 0 0;
+}
+.questions > .questions-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.questions > .questions-content > .questions-form {
+  width: 100%;
+  max-width: 570px;
+}
+.questions > .questions-content > .questions-form > h2 {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+}
+.questions > .questions-content > .questions-form > h2 > span {
+  font-family: "Museo Sans Cyrl 900";
+}
+.questions > .questions-content > .questions-form > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  color: white;
+}
+.questions > .questions-content > .questions-form > p > span {
+  font-family: "Museo Sans Cyrl 900";
+  color: #fbe600;
+}
+.questions > .questions-content > .questions-form > .inputs {
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.questions > .questions-content > .questions-form > .inputs > input {
+  height: 45px;
+  width: 100%;
+  max-width: 255px;
+  min-width: 255px;
+  border: none;
+  border-radius: 25px;
+  padding: 0 0 0 20px;
+  overflow: hidden;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+  background-color: rgba(100, 100, 100, 0.5);
+  cursor: pointer;
+}
+.questions > .questions-content > .questions-form > .textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 25px;
+}
+.questions > .questions-content > .questions-form > .textarea > textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 0 0 20px;
+  overflow: hidden;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+  background-color: rgba(100, 100, 100, 0.5);
+  resize: none;
+  cursor: pointer;
+}
+.questions > .questions-content > .questions-form > .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px 0 0 0;
+}
+.questions > .questions-content > .questions-form > .buttons > button {
+  height: 50px;
+  width: 50%;
+  max-width: 290px;
+  border-radius: 25px;
+  border: none;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+}
+@media (max-width: 1080px) {
+  .questions > .questions-content > .questions-form > .buttons > .form-checkbox {
+    margin: 10px 0 0 0;
+  }
+}
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > input[type=checkbox]:checked ~ .checkbox-field > div {
+  background-color: #ffffff;
+}
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-field {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  background-color: #4a4a4a;
+}
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-field > div {
+  margin: 2px 0 0 2px;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: none;
+}
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-label {
+  text-align: center;
+}
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-label > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  cursor: pointer;
+  color: white;
+}
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-label > a {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  color: #1593d5;
+  text-decoration: underline;
+}
+.questions > .questions-content > .steps {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 50px 0 50px 0;
+}
+.questions > .questions-content > .steps > .decoration {
+  height: 350px;
+  min-height: 350px;
+  width: 350px;
+  min-width: 350px;
+  border-radius: 50%;
+  background-color: rgba(50, 75, 90, 0.5);
+  position: relative;
+}
+.questions > .questions-content > .steps > .decoration > div {
+  cursor: pointer;
+}
+.questions > .questions-content > .steps > .decoration > .d-1 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+.questions > .questions-content > .steps > .decoration > .d-2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.questions > .questions-content > .steps > .decoration > .d-3 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 7%;
+  top: 25%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.questions > .questions-content > .steps > .decoration > .d-4 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.questions > .questions-content > .steps > .decoration > .d-5 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 7%;
+  top: 75%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.questions > .questions-content > .steps > .decoration > .d-6 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  top: 90%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.questions > .questions-content > .steps > .decoration > .d-7 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.questions > .questions-content > .steps > .step-1 {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions > .questions-content > .steps > .step-1 > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 2em;
+  color: white;
+}
+.questions > .questions-content > .steps > .step-1 > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+  max-width: 85px;
+  margin: 0 0 0 15px;
+}
+.questions > .questions-content > .steps > .step-2 {
+  position: absolute;
+  top: 40%;
+  left: -30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.questions > .questions-content > .steps > .step-2 > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 2em;
+  color: white;
+}
+.questions > .questions-content > .steps > .step-2 > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+  max-width: 85px;
+  margin: 0 0 0 0;
+}
+.questions > .questions-content > .steps > .step-3 {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions > .questions-content > .steps > .step-3 > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 2em;
+  color: white;
+}
+.questions > .questions-content > .steps > .step-3 > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: white;
+  max-width: 85px;
+  margin: 0 0 0 15px;
+}
+
+.videos > .videos-title {
+  width: 100%;
+  max-width: 580px;
+  margin: 50px auto 50px auto;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.videos > .videos-title > .decoration-left {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #005da8;
+  background: linear-gradient(to right, #005da8 0%, #19bbf5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005da8", endColorstr="#19bbf5",GradientType=1 );
+}
+.videos > .videos-title > .decoration-right {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #19bbf5;
+  background: linear-gradient(to right, #19bbf5 0%, #005da8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#19bbf5", endColorstr="#005da8",GradientType=1 );
+}
+.videos > .videos-title > .text {
+  margin: 0 50px 0 50px;
+}
+.videos > .videos-title > .text > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.videos > .videos-slider {
+  margin: 50px 0 0 0;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.videos > .videos-slider > .slider-left-arrow {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 15px);
+  left: calc((100% - 1110px) / 2);
+  transform: translateY(-50%) translateX(-100%);
+  cursor: pointer;
+}
+.videos > .videos-slider > .slider-left-arrow:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  box-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
+}
+.videos > .videos-slider > .slider-left-arrow:hover > i {
+  color: white;
+}
+.videos > .videos-slider > .slider-left-arrow > i {
+  color: #333333;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.videos > .videos-slider > .slider-right-arrow {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 15px);
+  right: calc((100% - 1110px) / 2);
+  transform: translateY(-50%) translateX(100%);
+  cursor: pointer;
+}
+.videos > .videos-slider > .slider-right-arrow:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  box-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
+}
+.videos > .videos-slider > .slider-right-arrow:hover > i {
+  color: white;
+}
+.videos > .videos-slider > .slider-right-arrow > i {
+  color: #333333;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.videos > .videos-slider > .slider-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+}
+.videos > .videos-slider > .slider-content > .card {
+  width: 100%;
+  max-width: 540px;
+  height: 280px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.videos > .videos-slider > .slider-content > .card > .video {
+  height: 100%;
+  width: 100%;
+}
+.videos > .videos-slider > .slider-content > .card > .title {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 55px;
+  width: 55%;
+  background-color: rgba(100, 100, 100, 0.8);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.videos > .videos-slider > .slider-content > .card > .title > .circle {
+  height: 50px;
+  width: 50px;
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  background-color: rgba(30, 30, 30, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 0 5px;
+}
+.videos > .videos-slider > .slider-content > .card > .title > .circle > i {
+  color: grey;
+  font-size: 1.5em;
+}
+.videos > .videos-slider > .slider-content > .card > .title > p {
+  white-space: nowrap;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  color: white;
+}
+.videos > .videos-slider > .slider-content > .card > .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 70px;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+.videos > .videos-slider > .slider-content > .card > .play-btn > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.videos > .videos-slider > .pagination {
+  height: 15px;
+  width: 100%;
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.videos > .videos-slider > .pagination > div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videos > .videos-slider > .pagination > div:hover {
+  background: rgba(0, 192, 255, 0.3);
+}
+.videos > .videos-slider > .pagination > div > div {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+.videos > .videos-slider > .pagination > .active {
+  background: rgba(0, 192, 255, 0.3);
+}
+.videos > .videos-slider > .pagination > .active > div {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+}
+
+.news > .news-title {
+  width: 100%;
+  max-width: 750px;
+  margin: 50px auto 50px auto;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news > .news-title > .decoration-left {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #005da8;
+  background: linear-gradient(to right, #005da8 0%, #19bbf5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005da8", endColorstr="#19bbf5",GradientType=1 );
+}
+.news > .news-title > .decoration-right {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #19bbf5;
+  background: linear-gradient(to right, #19bbf5 0%, #005da8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#19bbf5", endColorstr="#005da8",GradientType=1 );
+}
+.news > .news-title > .text {
+  margin: 0 50px 0 50px;
+}
+.news > .news-title > .text > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.news > .news-content {
+  display: flex;
+  justify-content: space-between;
+}
+.news > .news-content > .main-news {
+  width: 100%;
+  max-width: 730px;
+}
+.news > .news-content > .main-news > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.news > .news-content > .main-news > h2 > span {
+  color: #009bde;
+}
+.news > .news-content > .main-news > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.news > .news-content > .main-news > .columns {
+  margin: 20px 0 0 0;
+  -moz-column-rule: none;
+  column-rule: none;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-width: 50%;
+  column-width: 50%;
+}
+.news > .news-content > .main-news > .columns > .image-cover {
+  width: 100%;
+  height: 225px;
+  margin: 0 0 20px 0;
+}
+.news > .news-content > .main-news > .columns > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.news > .news-content > .main-news > .columns > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  margin: 15px 0 5px 0;
+}
+.news > .news-content > .main-news > .links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+.news > .news-content > .main-news > .links > a {
+  height: 25px;
+  min-height: 25px;
+  width: 25px;
+  min-width: 25px;
+  border-radius: 3px;
+  background-color: #009bde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news > .news-content > .main-news > .links > a:not(:last-child) {
+  margin: 0 5px 0 0;
+}
+.news > .news-content > .main-news > .links > a > i {
+  font-size: 1.2em;
+  color: white;
+}
+.news > .news-content > .blog {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+}
+.news > .news-content > .blog > h2 {
+  height: 60px;
+  width: 100%;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 2em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news > .news-content > .blog > h2 > span {
+  font-family: "Museo Sans Cyrl 900";
+  margin: 0 5px 0 0;
+}
+.news > .news-content > .blog > .cards > .card {
+  border-top: 1px solid silver;
+  padding: 10px 0 20px 0;
+}
+.news > .news-content > .blog > .cards > .card:first-child > .title > .date {
+  background: #3be500;
+  background: linear-gradient(to bottom, #3be500 0%, #25ac00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3be500", endColorstr="#25ac00",GradientType=0 );
+}
+.news > .news-content > .blog > .cards > .card > .title {
+  display: flex;
+  justify-content: flex-start;
+}
+.news > .news-content > .blog > .cards > .card > .title > .date {
+  height: 40px;
+  width: 95px;
+  min-width: 95px;
+  border-radius: 0 5px 5px 0;
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 0.8em;
+  color: white;
+  margin: 0 15px 0 0;
+}
+.news > .news-content > .blog > .cards > .card > .title > .text {
+  padding: 0 15px 0 0;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 0.9em;
+}
+.news > .news-content > .blog > .cards > .card > p {
+  padding: 15px 15px 15px 15px;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: grey;
+}
+.news > .news-content > .blog > .cards > .card > a {
+  margin-left: 15px;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+}
+.news > .news-content > .blog > .cards > .card > a:hover {
+  text-decoration: underline;
+}
+.news > .news-content > .blog > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  max-width: 310px;
+  margin: 10px auto 35px auto;
+  border-radius: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  transition: 0.3s;
+}
+.news > .news-content > .blog > a:hover {
+  background: #005088;
+  background: linear-gradient(to bottom, #005088 0%, #003e62 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005088", endColorstr="#003e62",GradientType=0 );
+}
+
+.feedback > .feedback-title {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto 50px auto;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feedback > .feedback-title > .decoration-left {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #005da8;
+  background: linear-gradient(to right, #005da8 0%, #19bbf5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005da8", endColorstr="#19bbf5",GradientType=1 );
+}
+.feedback > .feedback-title > .decoration-right {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #19bbf5;
+  background: linear-gradient(to right, #19bbf5 0%, #005da8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#19bbf5", endColorstr="#005da8",GradientType=1 );
+}
+.feedback > .feedback-title > .text {
+  margin: 0 50px 0 50px;
+}
+.feedback > .feedback-title > .text > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.feedback > .feedback-slider {
+  margin: 50px 0 0 0;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.feedback > .feedback-slider > .slider-left-arrow {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 15px);
+  left: calc((100% - 1110px) / 2);
+  transform: translateY(-50%) translateX(-100%);
+  cursor: pointer;
+}
+.feedback > .feedback-slider > .slider-left-arrow:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  box-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
+}
+.feedback > .feedback-slider > .slider-left-arrow:hover > i {
+  color: white;
+}
+.feedback > .feedback-slider > .slider-left-arrow > i {
+  color: #333333;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.feedback > .feedback-slider > .slider-right-arrow {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 15px);
+  right: calc((100% - 1110px) / 2);
+  transform: translateY(-50%) translateX(100%);
+  cursor: pointer;
+}
+.feedback > .feedback-slider > .slider-right-arrow:hover {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  box-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
+}
+.feedback > .feedback-slider > .slider-right-arrow:hover > i {
+  color: white;
+}
+.feedback > .feedback-slider > .slider-right-arrow > i {
+  color: #333333;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.feedback > .feedback-slider > .slider-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+}
+.feedback > .feedback-slider > .slider-content > .card {
+  width: 100%;
+  max-width: 540px;
+  height: 280px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+  padding: 50px 20px 50px 50px;
+  transition: 0.3s;
+}
+.feedback > .feedback-slider > .slider-content > .card:hover {
+  transform: scale(1.02);
+}
+.feedback > .feedback-slider > .slider-content > .card > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1.2em;
+}
+.feedback > .feedback-slider > .slider-content > .card > h3 {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1.2em;
+}
+.feedback > .feedback-slider > .slider-content > .card > h4 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  margin: 10px 0 10px 0;
+}
+.feedback > .feedback-slider > .slider-content > .card > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  color: grey;
+}
+.feedback > .feedback-slider > .slider-content > .card > .decoration {
+  height: 80px;
+  width: 80px;
+  min-height: 80px;
+  min-width: 80px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50px;
+  left: -55px;
+}
+.feedback > .feedback-slider > .pagination {
+  height: 15px;
+  width: 100%;
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.feedback > .feedback-slider > .pagination > div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback > .feedback-slider > .pagination > div:hover {
+  background: rgba(0, 192, 255, 0.3);
+}
+.feedback > .feedback-slider > .pagination > div > div {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+.feedback > .feedback-slider > .pagination > .active {
+  background: rgba(0, 192, 255, 0.3);
+}
+.feedback > .feedback-slider > .pagination > .active > div {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+}
+.feedback > .feedback-button {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 0 0;
+}
+.feedback > .feedback-button > button {
+  height: 45px;
+  min-height: 25px;
+  width: 100%;
+  max-width: 310px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.contacts {
+  min-height: 800px;
+  background-image: url("../image/contacts-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contacts > .contacts-title {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto 50px auto;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts > .contacts-title > .decoration-left {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #005da8;
+  background: linear-gradient(to right, #005da8 0%, #19bbf5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005da8", endColorstr="#19bbf5",GradientType=1 );
+}
+.contacts > .contacts-title > .decoration-right {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background: #19bbf5;
+  background: linear-gradient(to right, #19bbf5 0%, #005da8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#19bbf5", endColorstr="#005da8",GradientType=1 );
+}
+.contacts > .contacts-title > .text {
+  margin: 0 50px 0 50px;
+}
+.contacts > .contacts-title > .text > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.contacts > .contacts-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px auto 0 auto;
+}
+.contacts > .contacts-content > div {
+  width: 50%;
+}
+.contacts > .contacts-content > .pointer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts > .contacts-content > .pointer > div {
+  display: flex;
+}
+.contacts > .contacts-content > .pointer > div > i {
+  font-size: 2em;
+  color: rgba(0, 192, 255, 0.7);
+}
+.contacts > .contacts-content > .pointer > div > p {
+  color: white;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  max-width: 200px;
+  margin: 0 0 0 10px;
+}
+.contacts > .contacts-content > .text {
+  max-width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 20px 30px;
+}
+.contacts > .contacts-content > .text > div {
+  width: 50%;
+  max-width: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts > .contacts-content > .text > div > .block:first-child {
+  margin: 0 0 20px 0;
+}
+.contacts > .contacts-content > .text > div > .block > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contacts > .contacts-content > .text > div > .block > div > .image-contain {
+  height: 25px;
+  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
+  margin: 0 15px 0 0;
+}
+.contacts > .contacts-content > .text > div > .block > div > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+}
+.contacts > .contacts-content > .text > div > .block > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  color: grey;
+  margin: 5px 0 5px 0;
+}
+.contacts > .contacts-content > .text > div > .block > p > span {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  color: #333333;
+}
+.contacts > .contacts-content > .text > div > button {
+  height: 45px;
+  min-height: 45px;
+  border-radius: 25px;
+  border: none;
+  margin: 20px 0 0 0;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: yellow;
+}
+
+.copyrights {
+  height: 125px;
+  padding: 75px 0 10px 0;
+  background-image: url("../image/copyrights-bg.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.copyrights > .copyrights-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.copyrights > .copyrights-content > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.copyrights > .copyrights-content > a {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.copyrights > .copyrights-content > a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.css.map */

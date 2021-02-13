@@ -20,6 +20,7 @@ $border: 1px solid #ececec;
 $cartTitleBg: rgba(248, 243, 244, 1); // цвет для заголовка на странице корзина
 $transition: 0.3s; // скорость для переходов
 $shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+$blue-shadow: 0px 5px 3px 3px rgba(0, 192, 255, 0.3);
 
 @mixin elHover($_color) { // цвет при наведении
   background-color: darken($_color, 10%);
