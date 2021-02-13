@@ -6976,6 +6976,9 @@ button {
   text-decoration: underline;
 }
 
+.brands {
+  overflow: hidden;
+}
 .brands > .brands-title {
   width: 100%;
   max-width: 540px;
@@ -8734,7 +8737,170 @@ button {
 }
 
 .footer {
-  background-color: yellow;
+  background-color: white;
+}
+.footer > .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer > .footer-content > .logo {
+  width: 100%;
+  max-width: 250px;
+}
+.footer > .footer-content > .logo > a > .title {
+  font-family: "Gilroy";
+  font-weight: 300;
+  font-size: 3em;
+}
+.footer > .footer-content > .logo > a > .title > span {
+  font-family: "Gilroy";
+  font-weight: 800;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer > .footer-content > .logo > a > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.8em;
+}
+.footer > .footer-content > .logo > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  margin: 30px 0 15px 0;
+}
+.footer > .footer-content > .logo > .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer > .footer-content > .logo > .icons > a {
+  margin: 0 15px 10px 0;
+}
+.footer > .footer-content > .logo > .icons > a > i {
+  font-size: 1.5em;
+}
+.footer > .footer-content > .logo > .payments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer > .footer-content > .logo > .payments > .image-contain {
+  width: 50px;
+  height: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 15px 10px 0;
+}
+.footer > .footer-content > .links {
+  width: 100%;
+  max-width: 350px;
+  padding: 30px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footer > .footer-content > .links > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+.footer > .footer-content > .links > div > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+.footer > .footer-content > .links > div > a {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  margin: 0 0 10px 0;
+}
+.footer > .footer-content > .links > div > a:hover {
+  text-decoration: underline;
+}
+.footer > .footer-content > .tel {
+  width: 100%;
+  max-width: 280px;
+  padding: 20px 0 0 0;
+}
+.footer > .footer-content > .tel > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 2em;
+  margin: 0 0 30px 0;
+}
+.footer > .footer-content > .tel > h2 > span {
+  color: #00aced;
+}
+.footer > .footer-content > .tel > .block {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 20px 0;
+}
+.footer > .footer-content > .tel > .block > .image-contain {
+  height: 25px;
+  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
+  margin: 0 15px 0 0;
+}
+.footer > .footer-content > .tel > .block > .text > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+}
+.footer > .footer-content > .tel > .block > .text > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.footer > .footer-content > .tel > .alter {
+  display: flex;
+  justify-content: center;
+}
+.footer > .footer-content > .tel > .alter > a {
+  margin: 0 10px 0 10px;
+}
+.footer > .footer-content > .footer-subscribe {
+  width: 100%;
+  max-width: 170px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 0;
+}
+.footer > .footer-content > .footer-subscribe > h2 {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer > .footer-content > .footer-subscribe > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  text-align: center;
+}
+.footer > .footer-content > .footer-subscribe > input {
+  margin: 20px 0 0 0;
+  height: 45px;
+  min-height: 45px;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  padding: 0 0 0 20px;
+  overflow: hidden;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+}
+.footer > .footer-content > .footer-subscribe > button {
+  margin: 20px 0 0 0;
+  height: 45px;
+  min-height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  color: white;
+  transition: 0.3s;
 }
 
 .copyrights {

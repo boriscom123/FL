@@ -1,3 +1,170 @@
 .footer {
-  background-color: yellow;
+  background-color: white;
+  > .footer-content {
+    display: flex;
+    justify-content: space-between;
+    > .logo {
+      width: 100%;
+      max-width: 250px;
+      > a {
+        > .title {
+          font-family: 'Gilroy';
+          font-weight: 300;
+          font-size: 3em;
+          > span {
+            font-family: 'Gilroy';
+            font-weight: 800;
+            -webkit-background-clip: text;
+                    background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        > p {
+          font-family: $f300;
+          font-size: 0.8em;
+        }
+      }
+      > h2 {
+        font-family: $f700;
+        font-size: 1em;
+        margin: 30px 0 15px 0;
+      }
+      > .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        > a {
+          margin: 0 15px 10px 0;
+          > i {
+            font-size: 1.5em;
+          }
+        }
+      }
+      > .payments {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        > .image-contain {
+          width: 50px;
+          height: 30px;
+          border-radius: 3px;
+          overflow: hidden;
+          margin: 0 15px 10px 0;
+        }
+      }
+    }
+    > .links {
+      width: 100%;
+      max-width: 350px;
+      padding: 30px 0 0 0;
+      display: flex;
+      justify-content: space-around;
+      > div {
+        display: flex;
+        flex-direction: column;
+        max-width: 150px;
+        > h2 {
+          font-family: $f700;
+          font-size: 1.2em;
+          text-transform: uppercase;
+          margin: 0 0 30px 0;
+        }
+        > a {
+          font-family: $f300;
+          font-size: 1em;
+          margin: 0 0 10px 0;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    > .tel {
+      width: 100%;
+      max-width: 280px;
+      padding: 20px 0 0 0;
+      > h2 {
+        font-family: $f700;
+        font-size: 2em;
+        margin: 0 0 30px 0;
+        > span {
+          color: #00aced;
+        }
+      }
+      > .block {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 20px 0;
+        > .image-contain {
+          height: 25px;
+          width: 25px;
+          min-height: 25px;
+          min-width: 25px;
+          margin: 0 15px 0 0;
+        }
+        > .text {
+          > h2 {
+            font-family: $f700;
+            font-size: 1em;
+          }
+          > p {
+            font-family: $f300;
+            font-size: 1em;
+          }
+        }
+      }
+      > .alter {
+        display: flex;
+        justify-content: center;
+        > a {
+          margin: 0 10px 0 10px;
+        }
+      }
+    }
+    > .footer-subscribe {
+      width: 100%;
+      max-width: 170px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0 0 0;
+      > h2 {
+        font-family: $f700;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      > p {
+        font-family: $f300;
+        font-size: 1em;
+        text-align: center;
+      }
+      > input {
+        margin: 20px 0 0 0;
+        height: 45px;
+        min-height: 45px;
+        width: 100%;
+        border: 1px solid #dcdcdc;
+        background-color: #f7f7f7;
+        border-radius: 25px;
+        padding: 0 0 0 20px;
+        overflow: hidden;
+        font-family: $f100;
+        font-size: 1em;
+      }
+      > button {
+        margin: 20px 0 0 0;
+        height: 45px;
+        min-height: 45px;
+        width: 100%;
+        border: none;
+        border-radius: 25px;
+        font-family: $f700;
+        font-size: 1em;
+        color: white;
+        transition: $transition;
+      }
+    }
+  }
 }
