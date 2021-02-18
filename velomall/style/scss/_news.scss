@@ -84,19 +84,19 @@
         > a {
           height: 25px;
           min-height: 25px;
-          width: 25px;
-          min-width: 25px;
+          padding: 25px;
           border-radius: 3px;
           background-color: #009bde;
           display: flex;
           justify-content: center;
           align-items: center;
-          &:not(:last-child) {
-            margin: 0 5px 0 0;
-          }
+          color: white;
+          font-family: $f700;
+          font-size: 1em;
           > i {
             font-size: 1.2em;
             color: white;
+            margin-right: 10px;
           }
         }
       }

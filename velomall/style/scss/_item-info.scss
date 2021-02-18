@@ -1,0 +1,129 @@
+.item-info {
+  > .container {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    > .title {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 35px 40px 35px;
+      > .text {
+        width: 100%;
+        max-width: 500px;
+        > .info {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          > .image-contain {
+            height: 30px;
+            width: 30px;
+            margin: 0 25px 0 0;
+          }
+          > div {
+            > p {
+              font-family: $f300;
+              font-size: 1em;
+            }
+          }
+        }
+        > p {
+          font-family: $f100;
+          font-size: 1em;
+          line-height: 20px;
+          margin: 40px 0 0 0;
+          text-indent: 20px;
+        }
+      }
+      > .video {
+        width: 100%;
+        max-width: 500px;
+        > .image-cover {
+          height: 310px;
+          width: 100%;
+          position: relative;
+          > .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 50px;
+            width: 70px;
+            transform: translateX(-50%) translateY(-50%);
+            cursor: pointer;
+            > img {
+              height: 100%;
+              width: 100%;
+              -o-object-fit: cover;
+                 object-fit: cover;
+            }
+          }
+        }
+        > .buttons {
+          display: flex;
+          justify-content: space-between;
+          margin: 30px 0 0 0;
+          > button {
+            height: 55px;
+            min-height: 55px;
+            width: 100%;
+            max-width: 240px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-family: $f700;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    > .spec {
+      margin: 0 0 40px 0;
+      > h2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        padding: 0 0 0 35px;
+        font-family: $f900;
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+      > .list {
+        > .more {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0 30px 0 30px;
+          background-color: white;
+          cursor: pointer;
+          border-radius: 10px;
+          transition: $transition;
+          &:hover {
+            transform: scale(1.02);
+            box-shadow: $shadow;
+          }
+          > .title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            max-width: 330px;
+            > .image-contain {
+              height: 30px;
+              width: 30px;
+              margin: 10px 25px 10px 0;
+            }
+            > p {
+              font-family: $f300;
+              font-size: 1em;
+            }
+          }
+          > p {
+            font-family: $f300;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

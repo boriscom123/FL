@@ -341,8 +341,10 @@
                     margin: 5px 0 5px 0;
                     font-family: $f300;
                     font-size: 0.8em;
+                    transition: $transition;
                     &:hover {
                       text-decoration: underline;
+                      transform: scale(1.05);
                     }
                   }
                 }
@@ -360,6 +362,7 @@
                     transition: $transition;
                     &:hover {
                       text-decoration: underline;
+                      transform: scale(1.05);
                     }
                   }
                 }

@@ -89,39 +89,54 @@
           text-transform: uppercase;
         }
         > .form-checkbox {
-          @media (max-width: 1080px) { margin: 10px 0 0 0; }
-          > input[type=checkbox]:checked ~.checkbox-field > div {
-            background-color: #ffffff;
+          display: flex;
+          justify-content: center;;
+          align-items: center;
+          margin: 10px 0 10px 0;
+          > input[type=checkbox]:checked ~.decoration > label {
+            background: rgb(0,192,255);
+            background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
           }
-          > .checkbox-field {
+          > .decoration {
             height: 15px;
+            min-height: 15px;
             width: 15px;
-            border: 1px solid #ffffff;
+            min-width: 15px;
             border-radius: 50%;
             cursor: pointer;
+            border: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 0 10px 0 0;
-            background-color: #4a4a4a;
-            > div {
-              margin: 2px 0 0 2px;
-              height: 9px;
-              width: 9px;
+            > label {
+              display: flex;
+              height: 100%;
+              min-height: 100%;
+              width: 100%;
+              min-width: 100%;
               border-radius: 50%;
-              background-color: none;
+              border: 3px solid white;
+              background-color: white;
+              cursor: pointer;
             }
           }
-          > .checkbox-label {
-            text-align: center;
+          > .text {
             > p {
-              font-family: 'Museo Sans Cyrl 300';
-              font-size: 1em;
-              cursor: pointer;
+              font-family: $f100;
+              font-size: 0.8em;
               color: white;
+              > label {
+                cursor: pointer;
+              }
             }
             > a {
-              font-family: 'Museo Sans Cyrl 300';
-              font-size: 1em;
-              color: #1593d5;
+              font-family: $f100;
+              font-size: 0.8em;
               text-decoration: underline;
+              cursor: pointer;
+              color: white;
             }
           }
         }

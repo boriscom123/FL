@@ -102,9 +102,12 @@ display: none;
   position: relative;
 }
 .blue-gradient {
+  color: white;
+  border: none;
   background: rgb(0,192,255);
   background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
+  transition: $transition;
   &:hover {
     background: rgb(0,80,136);
     background: linear-gradient(to bottom,  rgba(0,80,136,1) 0%,rgba(0,62,98,1) 100%);
@@ -115,6 +118,7 @@ display: none;
   background: rgb(255,228,0);
   background: linear-gradient(to bottom,  rgba(255,228,0,1) 0%,rgba(255,102,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe400', endColorstr='#ff6600',GradientType=0 );
+  transition: $transition;
   &:hover {
     background: rgb(255,228,0);
     background: linear-gradient(to bottom,  rgba(255,228,0,1) 0%,rgba(255,102,0,1) 18%,rgba(255,102,0,1) 100%);
@@ -125,4 +129,41 @@ display: none;
   background: rgb(59,229,0);
   background: linear-gradient(to bottom,  rgba(59,229,0,1) 0%,rgba(37,172,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3be500', endColorstr='#25ac00',GradientType=0 );
+  transition: $transition;
+  &:hover {
+  background: rgb(255,198,0);
+  background: linear-gradient(to bottom,  rgba(255,198,0,1) 0%,rgba(235,87,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc600', endColorstr='#eb5700',GradientType=0 );
+  }
+}
+.white-gradient {
+  border: 2px solid #00c0ff;
+  background-color: white;
+  color: #00c0ff;
+  transition: $transition;
+  &:hover {
+    border: 2px solid rgb(0,80,136);
+    background: rgb(0,80,136);
+    background: linear-gradient(to bottom,  rgba(0,80,136,1) 0%,rgba(0,62,98,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005088', endColorstr='#003e62',GradientType=0 );
+    color: white;
+  }
+}
+.color-red {
+  background-color: #fb5021;
+  > i {
+    color: white;
+  }
+}
+.color-blue {
+  background-color: #05b6d4;
+}
+.color-black {
+  background-color: #000000;
+}
+.color-white {
+  background-color: #ffffff;
+  > i {
+    color: grey;
+  }
 }

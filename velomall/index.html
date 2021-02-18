@@ -1074,12 +1074,13 @@
             <p>и мы свяжемся с Вами! В течении 3 минут</p>
             <input type="text" name="name" value="" placeholder="Ваше имя">
             <input type="tel" name="tel" value="" placeholder="Ваш телефон">
-            <h3>Параметры подбора:</h3>
-            <div class="options">
-              <p>Велосипед для: мужчины</p>
-              <p>рост: 175</p>
-              <p>тип: горный, 29"</p>
-              <p>стоимость: от 4 000 до 45 000</p>
+            <div class="form-checkbox d-flex flex-justify-center flex-align-center">
+              <input class="d-none" type="checkbox" name="selection-privacy-checkbox" value="" id="selection-privacy-checkbox">
+              <div class="decoration"><label class="checkbox-field" for="selection-privacy-checkbox"></label></div>
+              <div class="text">
+                <p><label class="checkbox-label" for="selection-privacy-checkbox">Я согласен на обработку данных</label></p>
+                <a href="#">Политика конфиденциальности</a>
+              </div>
             </div>
             <button class="blue-gradient" type="button" name="button">Подобрать велосипед</button>
           </form>
@@ -1265,12 +1266,12 @@
             <div class="buttons">
               <button class="blue-gradient" type="button" name="button">Отправить</button>
               <div class="form-checkbox d-flex flex-justify-center flex-align-center">
-                <input class="d-none" type="checkbox" name="block-3-privacy-checkbox" value="" id="block-3-privacy-checkbox">
-                <label class="checkbox-field" for="block-3-privacy-checkbox"><div></div></label>
-                <label class="checkbox-label" for="block-3-privacy-checkbox">
-                  <p>Я согласен на обработку данных</p>
+                <input class="d-none" type="checkbox" name="questions-privacy-checkbox" value="" id="questions-privacy-checkbox">
+                <div class="decoration"><label class="checkbox-field" for="questions-privacy-checkbox"></label></div>
+                <div class="text">
+                  <p><label class="checkbox-label" for="questions-privacy-checkbox">Я согласен на обработку данных</label></p>
                   <a href="#">Политика конфиденциальности</a>
-                </label>
+                </div>
               </div>
             </div>
           </form>
@@ -1418,18 +1419,7 @@
               </p>
             </div>
             <div class="links">
-              <a href="#"><i class="fab fa-amazon"></i></a>
-              <a href="#"><i class="fab fa-discord"></i></a>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-instagram-square"></i></a>
-              <a href="#"><i class="fab fa-odnoklassniki"></i></a>
-              <a href="#"><i class="fab fa-skype"></i></a>
-              <a href="#"><i class="fab fa-telegram-plane"></i></a>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-viber"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-              <a href="#"><i class="fab fa-vk"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fas fa-share"></i>Поделиться</a>
             </div>
           </div>
 
@@ -1613,11 +1603,6 @@
             <a href="#"><i class="fab fa-facebook-square"></i></a>
             <a href="#"><i class="fab fa-instagram-square"></i></a>
             <a href="#"><i class="fab fa-odnoklassniki"></i></a>
-            <a href="#"><i class="fab fa-skype"></i></a>
-            <a href="#"><i class="fab fa-telegram-plane"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-viber"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
             <a href="#"><i class="fab fa-vk"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
@@ -1690,10 +1675,16 @@
           </div>
           <div class="alter">
             <a class="image-contain" href="#">
-              <img src="image/viber.jpg" alt="viber">
+              <img src="image/viber.svg" alt="viber">
             </a>
             <a class="image-contain" href="#">
-              <img src="image/whatsapp.jpg" alt="whatsapp">
+              <img src="image/whatsapp.svg" alt="whatsapp">
+            </a>
+            <a class="image-contain" href="#">
+              <img src="image/telegram.svg" alt="telegram">
+            </a>
+            <a class="image-contain" href="#">
+              <img src="image/skype.svg" alt="skype">
             </a>
           </div>
         </div>
@@ -1704,6 +1695,14 @@
           <input type="text" name="name" value="" placeholder="Ваше имя">
           <input type="tel" name="tel" value="" placeholder="Телефон">
           <button class="blue-gradient" type="button" name="button">Подписаться</button>
+          <div class="form-checkbox d-flex flex-justify-center flex-align-center">
+            <input class="d-none" type="checkbox" name="subscribe-privacy-checkbox" value="" id="subscribe-privacy-checkbox">
+            <div class="decoration"><label class="checkbox-field" for="subscribe-privacy-checkbox"></label></div>
+            <div class="text">
+              <p><label class="checkbox-label" for="subscribe-privacy-checkbox">Я согласен на обработку данных</label></p>
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+          </div>
         </form>
 
       </div>

@@ -1,0 +1,286 @@
+.item {
+  > h2 {
+    font-family: $f700;
+    font-size: 1.5em;
+  }
+  > h3 {
+    font-family: $f300;
+    font-size: 1em;
+  }
+  > .card {
+    margin: 25px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    > .images {
+      width: 100%;
+      max-width: 825px;
+      > .big-image {
+        height: 500px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: $shadow;
+        > .sale {
+          height: 80px;
+          width: 70px;
+          background-color: rgba(100,100,100,0.5);
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 5%;
+          display: flex;
+          justify-content: center;
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+                  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+          > div {
+            height: 95%;
+            width: #{calc(100% - 2px)};
+            background-color: yellow;
+            color: white;
+            font-family: $f700;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+          }
+        }
+        > .icons {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          display: flex;
+          justify-content: flex-end;
+          > .image-contain {
+            height: 25px;
+            width: 25px;
+            margin: 0 5px 0 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      > .mini-images {
+        display: flex;
+        justify-content: flex-start;
+        margin: 15px 0 0 0;
+        > .image-cover {
+          height: 100px;
+          width: 160px;
+          position: relative;
+          border: 1px solid #d9d9d9;
+          cursor: pointer;
+          overflow: hidden;
+          transition: $transition;
+          &:not(:last-child) {
+            margin: 0 10px 0 0;
+          }
+          &:hover {
+            transform: scale(1.1);
+            > .decoration {
+              background-color: rgba(255,255,255,0);
+            }
+          }
+          > .decoration {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255,255,255,0.8);
+          }
+        }
+        > .active {
+          border: 1px solid #009ade;
+          > .decoration {
+            background-color: rgba(255,255,255,0);
+          }
+        }
+      }
+    }
+    > .card-form {
+      width: 100%;
+      max-width: 255px;
+      display: flex;
+      flex-direction: column;
+      > .in-stock {
+        display: flex;
+        align-items: center;
+        > .decoration {
+          margin: 0 5px 0 0;
+          height: 22px;
+          width: 22px;
+          min-height: 22px;
+          min-width: 22px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(59,229,0);
+          background: linear-gradient(to bottom,  rgba(59,229,0,1) 0%,rgba(37,172,0,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3be500', endColorstr='#25ac00',GradientType=0 );
+          > i {
+            color: white;
+            font-size: 0.8em;
+          }
+        }
+        > .text {
+          font-family: $f300;
+          font-size: 1em;
+        }
+      }
+      > h2 {
+        font-family: $f900;
+        font-size: 1.2em;
+        color: #ff5400;
+        > span {
+          font-size: 2em;
+        }
+      }
+      > h3 {
+        font-family: $f300;
+        font-size: 1em;
+        color: grey;
+        text-decoration: line-through;
+        > span {
+          font-size: 1.2em;
+        }
+      }
+      > .size-and-color {
+        margin: 25px 0 25px 0;
+        > p {
+          font-family: $f700;
+          font-size: 1em;
+        }
+        > div {
+          display: flex;
+          margin: 5px 0 5px 0;
+          > p {
+            font-family: $f300;
+            font-size: 1.2em;
+            margin: 0 15px 0 0;
+          }
+          > .decoration {
+            height: 20px;
+            min-height: 20px;
+            width: 20px;
+            min-width: 20px;
+            border-radius: 50%;
+            border: 1px solid grey;
+            cursor: pointer;
+            margin: 0 5px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: $transition;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      > button {
+        height: 45px;
+        min-height: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        margin: 0 0 10px 0;
+        font-family: $f700;
+        font-size: 1em;
+        text-transform: uppercase;
+        > img {
+          height: 50%;
+          margin: 0 10px 0 0;
+          -o-object-fit: contain;
+             object-fit: contain;
+        }
+      }
+      > .btn-buy {
+        color: white;
+        border: none;
+      }
+      > .delivery {
+        border-top: 1px solid grey;
+        margin: 20px 0 0 0;
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        > .image-contain {
+          height: 50px;
+          width: 50px;
+          margin: 0 10px 0 0;
+        }
+        > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          > p {
+            font-family: $f700;
+            font-size: 0.8em;
+          }
+          > h4 {
+            font-family: $f300;
+            font-size: 0.8em;
+          }
+        }
+      }
+      > .credit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ffcc00;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 20px;
+        > .checkbox {
+          height: 30px;
+          min-height: 30px;
+          width: 30px;
+          min-width: 30px;
+          background-color: #ffcc00;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > i {
+            color: white;
+          }
+        }
+        > .text {
+          > p {
+            font-family: $f900;
+            font-size: 0.9em;
+          }
+          > h4 {
+            font-family: $f300;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+  > .opportunity {
+    > .card {
+      margin: 50px 0 0 0;
+      align-items: center;
+      > .image-contain {
+        height: 35px;
+        width: 35px;
+      }
+      > .info {
+        margin: 0 0 0 15px;
+        > h2 {
+          font-family: $f900;
+          font-size: 1em;
+        }
+        > p {
+          font-family: $f300;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

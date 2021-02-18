@@ -1,0 +1,33 @@
+.article {
+  margin: 50px auto 50px auto;
+  > .image-cover {
+    height: 310px;
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    float: left;
+    margin: 0 25px 25px 0;
+    > .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 50px;
+      width: 70px;
+      transform: translateX(-50%) translateY(-50%);
+      cursor: pointer;
+      > img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+      }
+    }
+  }
+  > p {
+    font-family: $f100;
+    font-size: 1em;
+    line-height: 20px;
+    text-indent: 20px;
+    margin: 0 0 20px 0;
+  }
+}

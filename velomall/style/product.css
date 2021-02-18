@@ -6732,728 +6732,118 @@ button {
   margin: 0 5px 0 5px;
 }
 
-.products {
-  background-color: white;
-}
-.products > .products-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.products > .products-title > .title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  max-width: 255px;
-}
-.products > .products-title > .title > div {
-  height: 30px;
-  width: 30px;
-  margin: 0 10px 0 0;
-}
-.products > .products-title > .title > h1 {
-  font-family: "Museo Sans Cyrl 100";
-  font-size: 2em;
-}
-.products > .products-title > .bunner {
-  height: 100%;
-  width: 100%;
-  max-width: 825px;
-  border-radius: 5px;
-  overflow: hidden;
-  display: flex;
-}
-.products > .products-filter {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 25px auto 0 auto;
-}
-.products > .products-filter > .products-search {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 255px;
-  background-color: white;
-}
-.products > .products-filter > .products-search > .search-form {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-.products > .products-filter > .products-search > .search-form > .inputs {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.products > .products-filter > .products-search > .search-form > .inputs > .input {
-  height: 45px;
-  min-height: 45px;
-  width: 50%;
-  max-width: 120px;
-  position: relative;
-}
-.products > .products-filter > .products-search > .search-form > .inputs > .input > input {
-  height: 100%;
-  width: 100%;
-  border: none;
-  padding: 0 0 0 10px;
-  overflow: hidden;
-  border-radius: 25px;
-  border: 1px solid grey;
-  color: #00a5e7;
+.item > h2 {
   font-family: "Museo Sans Cyrl 700";
-  font-size: 1em;
+  font-size: 1.5em;
 }
-.products > .products-filter > .products-search > .search-form > .inputs > .input > input:hover {
-  border: 1px solid #00b9f8;
-  box-shadow: inset 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-}
-.products > .products-filter > .products-search > .search-form > .inputs > .input > input:focus {
-  border: 1px solid #00b9f8;
-  box-shadow: inset 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-}
-.products > .products-filter > .products-search > .search-form > .inputs > .input > i {
-  position: absolute;
-  font-size: 1em;
-  color: grey;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-.products > .products-filter > .products-search > .search-form > .inputs-info {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 10px 0 10px;
-}
-.products > .products-filter > .products-search > .search-form > .inputs-info > p {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 1em;
-}
-.products > .products-filter > .products-search > .search-form > .range {
-  height: 15px;
-  min-height: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.products > .products-filter > .products-search > .search-form > .range > .min {
-  height: 15px;
-  min-height: 15px;
-  width: 15px;
-  min-width: 15px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.products > .products-filter > .products-search > .search-form > .range > .min > .hover {
-  height: 7px;
-  min-height: 7px;
-  width: 7px;
-  min-width: 7px;
-  border-radius: 50%;
-  background-color: white;
-}
-.products > .products-filter > .products-search > .search-form > .range > .max {
-  height: 15px;
-  min-height: 15px;
-  width: 15px;
-  min-width: 15px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.products > .products-filter > .products-search > .search-form > .range > .max > .hover {
-  height: 7px;
-  min-height: 7px;
-  width: 7px;
-  min-width: 7px;
-  border-radius: 50%;
-  background-color: white;
-}
-.products > .products-filter > .products-search > .search-form > .range > .line {
-  width: 100%;
-  height: 3px;
-  background-color: silver;
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .search-form > .range > .line > .hover {
-  width: 100%;
-  height: 100%;
-}
-.products > .products-filter > .products-search > .search-form > .options-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div {
-  width: 100%;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > input[type=checkbox]:checked ~ .checkboxes {
-  display: flex;
-  flex-direction: column;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > input[type=checkbox]:checked ~ .columns {
-  flex-direction: row;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > input[type=checkbox]:checked ~ .option > .chevron > i {
-  transform: rotate(90deg);
-  padding: 10px 0 0 10px;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes {
-  display: none;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div {
-  margin: 5px 0 5px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > input[type=checkbox]:checked ~ .decoration > label {
-  background: #00c0ff;
-  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .text {
-  padding: 0 0 0 20px;
-  width: 100%;
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .decoration {
-  height: 25px;
-  min-height: 25px;
-  width: 25px;
-  min-width: 25px;
-  border: 1px solid grey;
-  border-radius: 3px;
-  cursor: pointer;
-  margin: 0 0 0 20px;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .decoration > label {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  border: 6px solid white;
-  background-color: white;
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .decoration > label:hover {
-  box-shadow: inset 0 0 1px 1px grey;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > p {
-  text-decoration: underline;
-  padding: 10px 0 10px 20px;
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 1em;
-  cursor: pointer;
-  width: 100%;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .columns {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 45px;
-  min-height: 45px;
-  width: 100%;
-  margin: 5px 0 5px 0;
-  background-color: white;
-  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .decoration {
-  height: 100%;
-  width: 6px;
-  border-radius: 3px;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .info {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 1em;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 0 0 10px;
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .chevron {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .chevron > i {
-  padding: 0 10px 0 0;
-  font-size: 1em;
-  transition: 0.3s;
-}
-.products > .products-filter > .products-search > .search-form > .available {
-  margin: 5px 0 5px 0;
-  padding: 0 15px 0 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.products > .products-filter > .products-search > .search-form > .available > input[type=checkbox]:checked ~ .decoration > label {
-  background: #00c0ff;
-  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
-}
-.products > .products-filter > .products-search > .search-form > .available > .text {
-  padding: 0 0 0 20px;
-  width: 100%;
-  cursor: pointer;
+.item > h3 {
   font-family: "Museo Sans Cyrl 300";
   font-size: 1em;
 }
-.products > .products-filter > .products-search > .search-form > .available > .decoration {
-  height: 25px;
-  min-height: 25px;
-  width: 25px;
-  min-width: 25px;
-  border: 1px solid grey;
-  border-radius: 3px;
-  cursor: pointer;
-  margin: 0 0 0 20px;
-}
-.products > .products-filter > .products-search > .search-form > .available > .decoration > label {
-  height: 100%;
-  width: 100%;
+.item > .card {
+  margin: 25px 0 0 0;
   display: flex;
-  border: 6px solid white;
-  background-color: white;
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .search-form > .available > .decoration > label:hover {
-  box-shadow: inset 0 0 1px 1px grey;
-}
-.products > .products-filter > .products-search > .search-form > h2 {
-  margin: 10px 0 10px 0;
-  font-family: "Museo Sans Cyrl 900";
-  font-size: 1.2em;
-}
-.products > .products-filter > .products-search > .search-form > h2 > span {
-  color: #f30000;
-}
-.products > .products-filter > .products-search > .search-form > button {
-  height: 50px;
-  min-height: 50px;
-  width: 100%;
-  border-radius: 25px;
-  border: 1px solid #00c0ff;
-  background-color: white;
-  color: #00c0ff;
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 1.2em;
-  text-transform: uppercase;
-  transition: 0.3s;
-}
-.products > .products-filter > .products-search > .search-form > button:hover {
-  border: 2px solid #005088;
-  background: #005088;
-  background: linear-gradient(to bottom, #005088 0%, #003e62 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005088", endColorstr="#003e62",GradientType=0 );
-  color: white;
-}
-.products > .products-filter > .products-search > .feedback-form {
-  margin: 100px 0 0 0;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
-.products > .products-filter > .products-search > .feedback-form > h2 {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 2em;
-  text-transform: uppercase;
-  text-align: center;
-}
-.products > .products-filter > .products-search > .feedback-form > h2 > span {
-  font-family: "Museo Sans Cyrl 900";
-}
-.products > .products-filter > .products-search > .feedback-form > p {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-  text-align: center;
-  max-width: 200px;
-  margin: 10px auto 10px;
-}
-.products > .products-filter > .products-search > .feedback-form > p > span {
-  font-family: "Museo Sans Cyrl 900";
-  color: #f30000;
-  white-space: nowrap;
-}
-.products > .products-filter > .products-search > .feedback-form > input {
-  height: 45px;
-  min-height: 45px;
-  width: 100%;
-  border: none;
-  margin: 5px 0 5px 0;
-  padding: 0 0 0 10px;
-  overflow: hidden;
-  border-radius: 25px;
-  border: 1px solid grey;
-  font-family: "Museo Sans Cyrl 100";
-  font-size: 1em;
-}
-.products > .products-filter > .products-search > .feedback-form > input:hover {
-  border: 1px solid #00b9f8;
-  box-shadow: inset 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-}
-.products > .products-filter > .products-search > .feedback-form > input:focus {
-  border: 1px solid #00b9f8;
-  box-shadow: inset 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-}
-.products > .products-filter > .products-search > .feedback-form > textarea {
-  height: 100px;
-  min-height: 100px;
-  width: 100%;
-  border: none;
-  margin: 5px 0 5px 0;
-  padding: 10px 0 0 10px;
-  overflow: hidden;
-  border-radius: 25px;
-  border: 1px solid grey;
-  font-family: "Museo Sans Cyrl 100";
-  font-size: 1em;
-  resize: none;
-  outline: none;
-}
-.products > .products-filter > .products-search > .feedback-form > textarea:hover {
-  border: 1px solid #00b9f8;
-  box-shadow: inset 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-}
-.products > .products-filter > .products-search > .feedback-form > textarea:focus {
-  border: 1px solid #00b9f8;
-  box-shadow: inset 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-}
-.products > .products-filter > .products-search > .feedback-form > .form-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0 10px 0;
-}
-.products > .products-filter > .products-search > .feedback-form > .form-checkbox > input[type=checkbox]:checked ~ .decoration > label {
-  background: #00c0ff;
-  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
-}
-.products > .products-filter > .products-search > .feedback-form > .form-checkbox > .decoration {
-  height: 15px;
-  min-height: 15px;
-  width: 15px;
-  min-width: 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 1px solid grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px 0 0;
-}
-.products > .products-filter > .products-search > .feedback-form > .form-checkbox > .decoration > label {
-  display: flex;
-  height: 100%;
-  min-height: 100%;
-  width: 100%;
-  min-width: 100%;
-  border-radius: 50%;
-  border: 3px solid white;
-  background-color: white;
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .feedback-form > .form-checkbox > .text > p {
-  font-family: "Museo Sans Cyrl 100";
-  font-size: 0.8em;
-}
-.products > .products-filter > .products-search > .feedback-form > .form-checkbox > .text > p > label {
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .feedback-form > .form-checkbox > .text > a {
-  font-family: "Museo Sans Cyrl 100";
-  font-size: 0.8em;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.products > .products-filter > .products-search > .feedback-form > button {
-  height: 45px;
-  min-height: 45px;
-  width: 100%;
-  border: none;
-  margin: 5px 0 5px 0;
-  overflow: hidden;
-  border-radius: 25px;
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 1em;
-  text-transform: uppercase;
-  color: white;
-}
-.products > .products-filter > .products-content {
+.item > .card > .images {
   width: 100%;
   max-width: 825px;
 }
-.products > .products-filter > .products-content > .search-tags {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-.products > .products-filter > .products-content > .search-tags > .tag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  min-height: 30px;
-  padding: 0 20px 0 20px;
-  border-radius: 15px;
-  border: 2px solid #00c0ff;
-  background-color: white;
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-  margin: 10px 10px 0 0;
-  cursor: pointer;
-}
-.products > .products-filter > .products-content > .search-tags > .active {
-  border: none;
-  color: white;
-  font-family: "Museo Sans Cyrl 900";
-  font-size: 1em;
-  background: #00c0ff;
-  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
-}
-.products > .products-filter > .products-content > .search-tags > .active:hover {
-  background: #005088;
-  background: linear-gradient(to bottom, #005088 0%, #003e62 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005088", endColorstr="#003e62",GradientType=0 );
-}
-.products > .products-filter > .products-content > .search-tags > .show-all {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  border-bottom: 1px solid grey;
-  cursor: pointer;
-  margin: 0 0 5px 0;
-}
-.products > .products-filter > .products-content > .search-tags > .show-all > i {
-  font-size: 0.8em;
-  margin: 0 0 1px 3px;
-}
-.products > .products-filter > .products-content > .search-direction {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.products > .products-filter > .products-content > .search-direction > input[type=checkbox]:checked ~ .option > .chevron > i {
-  transform: rotate(180deg);
-}
-.products > .products-filter > .products-content > .search-direction > .option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 45px;
-  min-height: 45px;
+.item > .card > .images > .big-image {
+  height: 500px;
   width: 100%;
-  max-width: 255px;
-  margin: 5px 0 5px 0;
-  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
   box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
-  border-radius: 3px;
+}
+.item > .card > .images > .big-image > .sale {
+  height: 80px;
+  width: 70px;
+  background-color: rgba(100, 100, 100, 0.5);
   cursor: pointer;
-  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
 }
-.products > .products-filter > .products-content > .search-direction > .option > .decoration {
-  height: 100%;
-  width: 6px;
-  border-radius: 3px;
-}
-.products > .products-filter > .products-content > .search-direction > .option > .info {
+.item > .card > .images > .big-image > .sale > div {
+  height: 95%;
+  width: calc(100% - 2px);
+  background-color: yellow;
+  color: white;
   font-family: "Museo Sans Cyrl 700";
-  font-size: 1em;
-  width: 100%;
-  height: 100%;
+  font-size: 1.5em;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0 0 0 10px;
-  cursor: pointer;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
 }
-.products > .products-filter > .products-content > .search-direction > .option > .chevron {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.products > .products-filter > .products-content > .search-direction > .option > .chevron > i {
-  padding: 0 10px 0 10px;
-  font-size: 1em;
-  transition: 0.3s;
-}
-.products > .products-filter > .products-content > .search-direction > .available {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 5px 25px 5px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.products > .products-filter > .products-content > .search-direction > .available > input[type=checkbox]:checked ~ .decoration > label {
-  background: #00c0ff;
-  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
-}
-.products > .products-filter > .products-content > .search-direction > .available > .text {
-  padding: 0 0 0 20px;
-  width: 100%;
-  cursor: pointer;
-}
-.products > .products-filter > .products-content > .search-direction > .available > .decoration {
-  height: 25px;
-  min-height: 25px;
-  width: 25px;
-  min-width: 25px;
-  border: 1px solid grey;
-  border-radius: 3px;
-  cursor: pointer;
-  margin: 0 0 0 20px;
-}
-.products > .products-filter > .products-content > .search-direction > .available > .decoration > label {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  border: 6px solid white;
-  background-color: white;
-  cursor: pointer;
-}
-.products > .products-filter > .products-content > .search-direction > .available > .decoration > label:hover {
-  box-shadow: inset 0 0 1px 1px grey;
-}
-.products > .products-filter > .products-content > .search-cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.products > .products-filter > .products-content > .search-cards > .card {
-  margin: 10px 0 10px 0;
-  height: auto;
-  width: 100%;
-  max-width: 265px;
-  padding: 10px 0 10px 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  transition: 0.3s;
-  border: 1px solid #dbdbdb;
-  border-radius: 5px;
-  z-index: 5;
-  background-color: white;
-}
-.products > .products-filter > .products-content > .search-cards > .card:hover {
-  transform: scale(1.05);
-}
-.products > .products-filter > .products-content > .search-cards > .card:hover > .additional {
-  display: flex;
-}
-.products > .products-filter > .products-content > .search-cards > .card > .image-contain {
-  position: relative;
-  height: 250px;
-  width: 100%;
-  background-color: white;
-}
-.products > .products-filter > .products-content > .search-cards > .card > .image-contain > .hover {
+.item > .card > .images > .big-image > .icons {
   position: absolute;
   top: 20px;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  height: 35px;
-  width: 100%;
-}
-.products > .products-filter > .products-content > .search-cards > .card > .image-contain > .hover > .left {
-  width: 70px;
-  background: #00c0ff;
-  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 1em;
-  -webkit-clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
-}
-.products > .products-filter > .products-content > .search-cards > .card > .image-contain > .hover > .right {
+  right: 20px;
   display: flex;
   justify-content: flex-end;
-  padding: 0 10px 0 0;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .image-contain > .hover > .right > .image-contain {
-  height: 100%;
+.item > .card > .images > .big-image > .icons > .image-contain {
+  height: 25px;
   width: 25px;
   margin: 0 5px 0 5px;
   cursor: pointer;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 0 10px 0 10px;
-}
-.products > .products-filter > .products-content > .search-cards > .card > .info > h3 {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-}
-.products > .products-filter > .products-content > .search-cards > .card > .info > h2 {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 1em;
-  color: #0096ff;
-  max-width: 200px;
-}
-.products > .products-filter > .products-content > .search-cards > .card > .info > .price {
+.item > .card > .images > .mini-images {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin: 15px 0 0 0;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info > .price > div > p {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-  text-decoration: line-through;
-  color: #a4a4a4;
+.item > .card > .images > .mini-images > .image-cover {
+  height: 100px;
+  width: 160px;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info > .price > div > h2 {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 1.2em;
+.item > .card > .images > .mini-images > .image-cover:not(:last-child) {
+  margin: 0 10px 0 0;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info > .price > div > .decoration {
+.item > .card > .images > .mini-images > .image-cover:hover {
+  transform: scale(1.1);
+}
+.item > .card > .images > .mini-images > .image-cover:hover > .decoration {
+  background-color: rgba(255, 255, 255, 0);
+}
+.item > .card > .images > .mini-images > .image-cover > .decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.item > .card > .images > .mini-images > .active {
+  border: 1px solid #009ade;
+}
+.item > .card > .images > .mini-images > .active > .decoration {
+  background-color: rgba(255, 255, 255, 0);
+}
+.item > .card > .card-form {
+  width: 100%;
+  max-width: 255px;
+  display: flex;
+  flex-direction: column;
+}
+.item > .card > .card-form > .in-stock {
+  display: flex;
+  align-items: center;
+}
+.item > .card > .card-form > .in-stock > .decoration {
   margin: 0 5px 0 0;
   height: 22px;
   width: 22px;
@@ -7467,91 +6857,336 @@ button {
   background: linear-gradient(to bottom, #3be500 0%, #25ac00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3be500", endColorstr="#25ac00",GradientType=0 );
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info > .price > div > .decoration > i {
+.item > .card > .card-form > .in-stock > .decoration > i {
   color: white;
   font-size: 0.8em;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info > .price > div > .text {
+.item > .card > .card-form > .in-stock > .text {
   font-family: "Museo Sans Cyrl 300";
   font-size: 1em;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info > .price > .right {
-  display: flex;
-  align-items: flex-end;
+.item > .card > .card-form > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1.2em;
+  color: #ff5400;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info > .buttons {
-  margin: 15px 0 15px 0;
-  display: flex;
-  flex-direction: column;
+.item > .card > .card-form > h2 > span {
+  font-size: 2em;
 }
-.products > .products-filter > .products-content > .search-cards > .card > .info > .buttons > button {
-  height: 50px;
-  min-height: 50px;
-  width: 100%;
-  border: none;
-  border-radius: 25px;
-  color: white;
+.item > .card > .card-form > h3 {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  color: grey;
+  text-decoration: line-through;
+}
+.item > .card > .card-form > h3 > span {
+  font-size: 1.2em;
+}
+.item > .card > .card-form > .size-and-color {
+  margin: 25px 0 25px 0;
+}
+.item > .card > .card-form > .size-and-color > p {
   font-family: "Museo Sans Cyrl 700";
   font-size: 1em;
-  text-transform: uppercase;
-  margin: 5px 0 5px 0;
-  transition: 0.3s;
 }
-.products > .products-filter > .products-content > .seach-pagination {
+.item > .card > .card-form > .size-and-color > div {
+  display: flex;
+  margin: 5px 0 5px 0;
+}
+.item > .card > .card-form > .size-and-color > div > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1.2em;
+  margin: 0 15px 0 0;
+}
+.item > .card > .card-form > .size-and-color > div > .decoration {
+  height: 20px;
+  min-height: 20px;
+  width: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin: 0 5px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0 50px 0;
-}
-.products > .products-filter > .products-content > .seach-pagination > i {
-  font-size: 1em;
-  margin: 0 10px 0 10px;
-  cursor: pointer;
   transition: 0.3s;
 }
-.products > .products-filter > .products-content > .seach-pagination > i:hover {
+.item > .card > .card-form > .size-and-color > div > .decoration:hover {
   transform: scale(1.2);
 }
-.products > .products-filter > .products-content > .seach-pagination > .number {
-  margin: 0 5px 0 5px;
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.products > .products-filter > .products-content > .seach-pagination > .number:hover {
-  transform: scale(1.2);
-}
-.products > .products-filter > .products-content > .seach-pagination > .active {
-  color: #00a3e5;
-  font-family: "Museo Sans Cyrl 900";
-}
-.products > .products-filter > .products-content > .search-story > .image-cover {
-  height: 330px;
+.item > .card > .card-form > button {
+  height: 45px;
+  min-height: 45px;
   width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 0 0 10px 0;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  text-transform: uppercase;
 }
-.products > .products-filter > .products-content > .search-story > .text {
+.item > .card > .card-form > button > img {
+  height: 50%;
+  margin: 0 10px 0 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.item > .card > .card-form > .btn-buy {
+  color: white;
+  border: none;
+}
+.item > .card > .card-form > .delivery {
+  border-top: 1px solid grey;
+  margin: 20px 0 0 0;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.item > .card > .card-form > .delivery > .image-contain {
+  height: 50px;
+  width: 50px;
+  margin: 0 10px 0 0;
+}
+.item > .card > .card-form > .delivery > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item > .card > .card-form > .delivery > div > p {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 0.8em;
+}
+.item > .card > .card-form > .delivery > div > h4 {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.8em;
+}
+.item > .card > .card-form > .credit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ffcc00;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px;
+}
+.item > .card > .card-form > .credit > .checkbox {
+  height: 30px;
+  min-height: 30px;
+  width: 30px;
+  min-width: 30px;
+  background-color: #ffcc00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item > .card > .card-form > .credit > .checkbox > i {
+  color: white;
+}
+.item > .card > .card-form > .credit > .text > p {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 0.9em;
+}
+.item > .card > .card-form > .credit > .text > h4 {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.9em;
+}
+.item > .opportunity > .card {
+  margin: 50px 0 0 0;
+  align-items: center;
+}
+.item > .opportunity > .card > .image-contain {
+  height: 35px;
+  width: 35px;
+}
+.item > .opportunity > .card > .info {
+  margin: 0 0 0 15px;
+}
+.item > .opportunity > .card > .info > h2 {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+}
+.item > .opportunity > .card > .info > p {
   font-family: "Museo Sans Cyrl 300";
   font-size: 1em;
-  margin: 50px 0 0 0;
-  text-align: justify;
-  text-indent: 25px;
-  line-height: 20px;
 }
-.products > .products-filter > .products-content > .search-accessories > h2 {
+
+.specifications {
+  height: 55px;
+  width: 100%;
+  margin: 25px 0 25px 0;
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+}
+.specifications > .container {
+  height: 100%;
+}
+.specifications > .container > a {
+  height: 100%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  text-transform: uppercase;
+  color: grey;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.specifications > .container > a:not(:last-child) {
+  margin: 0 1px 0 0;
+}
+.specifications > .container > a:hover {
+  color: white;
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+}
+.specifications > .container > .active {
+  color: white;
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+}
+
+.item-info > .container {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+}
+.item-info > .container > .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 35px 40px 35px;
+}
+.item-info > .container > .title > .text {
+  width: 100%;
+  max-width: 500px;
+}
+.item-info > .container > .title > .text > .info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-info > .container > .title > .text > .info > .image-contain {
+  height: 30px;
+  width: 30px;
+  margin: 0 25px 0 0;
+}
+.item-info > .container > .title > .text > .info > div > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.item-info > .container > .title > .text > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  line-height: 20px;
+  margin: 40px 0 0 0;
+  text-indent: 20px;
+}
+.item-info > .container > .title > .video {
+  width: 100%;
+  max-width: 500px;
+}
+.item-info > .container > .title > .video > .image-cover {
+  height: 310px;
+  width: 100%;
+  position: relative;
+}
+.item-info > .container > .title > .video > .image-cover > .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 70px;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+.item-info > .container > .title > .video > .image-cover > .play-btn > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.item-info > .container > .title > .video > .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+.item-info > .container > .title > .video > .buttons > button {
+  height: 55px;
+  min-height: 55px;
+  width: 100%;
+  max-width: 240px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+}
+.item-info > .container > .spec {
+  margin: 0 0 40px 0;
+}
+.item-info > .container > .spec > h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 0 0 0 35px;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.item-info > .container > .spec > .list > .more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.item-info > .container > .spec > .list > .more:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 5px rgba(195, 195, 195, 0.3);
+}
+.item-info > .container > .spec > .list > .more > .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 330px;
+}
+.item-info > .container > .spec > .list > .more > .title > .image-contain {
+  height: 30px;
+  width: 30px;
+  margin: 10px 25px 10px 0;
+}
+.item-info > .container > .spec > .list > .more > .title > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+.item-info > .container > .spec > .list > .more > p {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+}
+
+.search-accessories > h2 {
   font-family: "Museo Sans Cyrl 900";
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
   margin: 50px 0 50px 0;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list {
+.search-accessories > .cards-list {
   display: flex;
   justify-content: space-between;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card {
+.search-accessories > .cards-list > .card {
   margin: 10px 0 0 0;
   height: auto;
   width: 100%;
@@ -7566,19 +7201,19 @@ button {
   z-index: 5;
   background-color: white;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card:hover {
+.search-accessories > .cards-list > .card:hover {
   transform: scale(1.05);
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card:hover > .additional {
+.search-accessories > .cards-list > .card:hover > .additional {
   display: flex;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .image-contain {
+.search-accessories > .cards-list > .card > .image-contain {
   position: relative;
   height: 250px;
   width: 100%;
   background-color: white;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .image-contain > .hover {
+.search-accessories > .cards-list > .card > .image-contain > .hover {
   position: absolute;
   top: 20px;
   left: 0;
@@ -7587,7 +7222,7 @@ button {
   height: 35px;
   width: 100%;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .image-contain > .hover > .left {
+.search-accessories > .cards-list > .card > .image-contain > .hover > .left {
   width: 70px;
   background: #00c0ff;
   background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
@@ -7601,49 +7236,49 @@ button {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .image-contain > .hover > .right {
+.search-accessories > .cards-list > .card > .image-contain > .hover > .right {
   display: flex;
   justify-content: flex-end;
   padding: 0 10px 0 0;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .image-contain > .hover > .right > .image-contain {
+.search-accessories > .cards-list > .card > .image-contain > .hover > .right > .image-contain {
   height: 100%;
   width: 25px;
   margin: 0 5px 0 5px;
   cursor: pointer;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info {
+.search-accessories > .cards-list > .card > .info {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
   background-color: white;
   padding: 0 10px 0 10px;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > h3 {
+.search-accessories > .cards-list > .card > .info > h3 {
   font-family: "Museo Sans Cyrl 300";
   font-size: 1em;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > h2 {
+.search-accessories > .cards-list > .card > .info > h2 {
   font-family: "Museo Sans Cyrl 700";
   font-size: 1em;
   color: #0096ff;
   max-width: 200px;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .price {
+.search-accessories > .cards-list > .card > .info > .price {
   display: flex;
   justify-content: space-between;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .price > div > p {
+.search-accessories > .cards-list > .card > .info > .price > div > p {
   font-family: "Museo Sans Cyrl 300";
   font-size: 1em;
   text-decoration: line-through;
   color: #a4a4a4;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .price > div > h2 {
+.search-accessories > .cards-list > .card > .info > .price > div > h2 {
   font-family: "Museo Sans Cyrl 700";
   font-size: 1.2em;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .price > div > .decoration {
+.search-accessories > .cards-list > .card > .info > .price > div > .decoration {
   margin: 0 5px 0 0;
   height: 22px;
   width: 22px;
@@ -7657,24 +7292,24 @@ button {
   background: linear-gradient(to bottom, #3be500 0%, #25ac00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3be500", endColorstr="#25ac00",GradientType=0 );
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .price > div > .decoration > i {
+.search-accessories > .cards-list > .card > .info > .price > div > .decoration > i {
   color: white;
   font-size: 0.8em;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .price > div > .text {
+.search-accessories > .cards-list > .card > .info > .price > div > .text {
   font-family: "Museo Sans Cyrl 300";
   font-size: 1em;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .price > .right {
+.search-accessories > .cards-list > .card > .info > .price > .right {
   display: flex;
   align-items: flex-end;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .buttons {
+.search-accessories > .cards-list > .card > .info > .buttons {
   margin: 15px 0 15px 0;
   display: flex;
   flex-direction: column;
 }
-.products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .info > .buttons > button {
+.search-accessories > .cards-list > .card > .info > .buttons > button {
   height: 50px;
   min-height: 50px;
   width: 100%;
@@ -7683,6 +7318,40 @@ button {
   font-size: 1em;
   text-transform: uppercase;
   margin: 5px 0 5px 0;
+}
+
+.article {
+  margin: 50px auto 50px auto;
+}
+.article > .image-cover {
+  height: 310px;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  float: left;
+  margin: 0 25px 25px 0;
+}
+.article > .image-cover > .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 70px;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+.article > .image-cover > .play-btn > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.article > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 1em;
+  line-height: 20px;
+  text-indent: 20px;
+  margin: 0 0 20px 0;
 }
 
 .contacts {
@@ -8076,4 +7745,4 @@ button {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=catalog.css.map */
+/*# sourceMappingURL=product.css.map */

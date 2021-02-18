@@ -6241,9 +6241,12 @@ button {
 }
 
 .blue-gradient {
+  color: white;
+  border: none;
   background: #00c0ff;
   background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  transition: 0.3s;
 }
 .blue-gradient:hover {
   background: #005088;
@@ -6255,6 +6258,7 @@ button {
   background: #ffe400;
   background: linear-gradient(to bottom, #ffe400 0%, #ff6600 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffe400", endColorstr="#ff6600",GradientType=0 );
+  transition: 0.3s;
 }
 .yellow-gradient:hover {
   background: #ffe400;
@@ -6266,6 +6270,48 @@ button {
   background: #3be500;
   background: linear-gradient(to bottom, #3be500 0%, #25ac00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3be500", endColorstr="#25ac00",GradientType=0 );
+  transition: 0.3s;
+}
+.green-gradient:hover {
+  background: #ffc600;
+  background: linear-gradient(to bottom, #ffc600 0%, #eb5700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffc600", endColorstr="#eb5700",GradientType=0 );
+}
+
+.white-gradient {
+  border: 2px solid #00c0ff;
+  background-color: white;
+  color: #00c0ff;
+  transition: 0.3s;
+}
+.white-gradient:hover {
+  border: 2px solid #005088;
+  background: #005088;
+  background: linear-gradient(to bottom, #005088 0%, #003e62 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005088", endColorstr="#003e62",GradientType=0 );
+  color: white;
+}
+
+.color-red {
+  background-color: #fb5021;
+}
+.color-red > i {
+  color: white;
+}
+
+.color-blue {
+  background-color: #05b6d4;
+}
+
+.color-black {
+  background-color: #000000;
+}
+
+.color-white {
+  background-color: #ffffff;
+}
+.color-white > i {
+  color: grey;
 }
 
 .header {
@@ -6610,9 +6656,11 @@ button {
   margin: 5px 0 5px 0;
   font-family: "Museo Sans Cyrl 300";
   font-size: 0.8em;
+  transition: 0.3s;
 }
 .header > .header-bottom-nav > .container > div > .header-bottom-nav-hover > .nav-menu > .item > .nav-menu-links > .nav-links > a:hover {
   text-decoration: underline;
+  transform: scale(1.05);
 }
 .header > .header-bottom-nav > .container > div > .header-bottom-nav-hover > .nav-menu > .item > .nav-menu-links > .nav-brands {
   padding: 10px 0 0 0;
@@ -6630,6 +6678,7 @@ button {
 }
 .header > .header-bottom-nav > .container > div > .header-bottom-nav-hover > .nav-menu > .item > .nav-menu-links > .nav-brands > a:hover {
   text-decoration: underline;
+  transform: scale(1.05);
 }
 .header > .header-bottom-nav > .container > div > .header-bottom-nav-hover > .nav-menu > .active {
   background: #00c0ff;
@@ -7439,9 +7488,55 @@ button {
   font-size: 1em;
   color: white;
 }
-.selection > .selection-content > .selection-form > .options > p {
+.selection > .selection-content > .selection-form > .form-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+.selection > .selection-content > .selection-form > .form-checkbox > input[type=checkbox]:checked ~ .decoration > label {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+}
+.selection > .selection-content > .selection-form > .form-checkbox > .decoration {
+  height: 15px;
+  min-height: 15px;
+  width: 15px;
+  min-width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 0;
+}
+.selection > .selection-content > .selection-form > .form-checkbox > .decoration > label {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: white;
+  cursor: pointer;
+}
+.selection > .selection-content > .selection-form > .form-checkbox > .text > p {
   font-family: "Museo Sans Cyrl 100";
-  font-size: 1em;
+  font-size: 0.8em;
+  color: white;
+}
+.selection > .selection-content > .selection-form > .form-checkbox > .text > p > label {
+  cursor: pointer;
+}
+.selection > .selection-content > .selection-form > .form-checkbox > .text > a {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 0.8em;
+  text-decoration: underline;
+  cursor: pointer;
   color: white;
 }
 .selection > .selection-content > .selection-form > button {
@@ -7846,44 +7941,55 @@ button {
   color: white;
   text-transform: uppercase;
 }
-@media (max-width: 1080px) {
-  .questions > .questions-content > .questions-form > .buttons > .form-checkbox {
-    margin: 10px 0 0 0;
-  }
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
 }
-.questions > .questions-content > .questions-form > .buttons > .form-checkbox > input[type=checkbox]:checked ~ .checkbox-field > div {
-  background-color: #ffffff;
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > input[type=checkbox]:checked ~ .decoration > label {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
 }
-.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-field {
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .decoration {
   height: 15px;
+  min-height: 15px;
   width: 15px;
-  border: 1px solid #ffffff;
+  min-width: 15px;
   border-radius: 50%;
   cursor: pointer;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 10px 0 0;
-  background-color: #4a4a4a;
 }
-.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-field > div {
-  margin: 2px 0 0 2px;
-  height: 9px;
-  width: 9px;
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .decoration > label {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
   border-radius: 50%;
-  background-color: none;
-}
-.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-label {
-  text-align: center;
-}
-.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-label > p {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
+  border: 3px solid white;
+  background-color: white;
   cursor: pointer;
+}
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .text > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 0.8em;
   color: white;
 }
-.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .checkbox-label > a {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 1em;
-  color: #1593d5;
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .text > p > label {
+  cursor: pointer;
+}
+.questions > .questions-content > .questions-form > .buttons > .form-checkbox > .text > a {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 0.8em;
   text-decoration: underline;
+  cursor: pointer;
+  color: white;
 }
 .questions > .questions-content > .steps {
   display: flex;
@@ -8312,20 +8418,20 @@ button {
 .news > .news-content > .main-news > .links > a {
   height: 25px;
   min-height: 25px;
-  width: 25px;
-  min-width: 25px;
+  padding: 25px;
   border-radius: 3px;
   background-color: #009bde;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.news > .news-content > .main-news > .links > a:not(:last-child) {
-  margin: 0 5px 0 0;
+  color: white;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
 }
 .news > .news-content > .main-news > .links > a > i {
   font-size: 1.2em;
   color: white;
+  margin-right: 10px;
 }
 .news > .news-content > .blog {
   height: -webkit-min-content;
@@ -8780,9 +8886,14 @@ button {
 }
 .footer > .footer-content > .logo > .icons > a {
   margin: 0 15px 10px 0;
+  transition: 0.3s;
+}
+.footer > .footer-content > .logo > .icons > a:hover {
+  transform: scale(1.2);
 }
 .footer > .footer-content > .logo > .icons > a > i {
-  font-size: 1.5em;
+  font-size: 2em;
+  color: #00c0ff;
 }
 .footer > .footer-content > .logo > .payments {
   display: flex;
@@ -8796,6 +8907,11 @@ button {
   border-radius: 3px;
   overflow: hidden;
   margin: 0 15px 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer > .footer-content > .logo > .payments > .image-contain:hover {
+  transform: scale(1.5);
 }
 .footer > .footer-content > .links {
   width: 100%;
@@ -8819,9 +8935,11 @@ button {
   font-family: "Museo Sans Cyrl 300";
   font-size: 1em;
   margin: 0 0 10px 0;
+  transition: 0.3s;
 }
 .footer > .footer-content > .links > div > a:hover {
   text-decoration: underline;
+  transform: scale(1.2);
 }
 .footer > .footer-content > .tel {
   width: 100%;
@@ -8861,7 +8979,18 @@ button {
   justify-content: center;
 }
 .footer > .footer-content > .tel > .alter > a {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 10px 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.footer > .footer-content > .tel > .alter > a:hover {
+  transform: scale(1.5);
 }
 .footer > .footer-content > .footer-subscribe {
   width: 100%;
@@ -8893,6 +9022,55 @@ button {
   overflow: hidden;
   font-family: "Museo Sans Cyrl 100";
   font-size: 1em;
+}
+.footer > .footer-content > .footer-subscribe > .form-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+.footer > .footer-content > .footer-subscribe > .form-checkbox > input[type=checkbox]:checked ~ .decoration > label {
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+}
+.footer > .footer-content > .footer-subscribe > .form-checkbox > .decoration {
+  height: 15px;
+  min-height: 15px;
+  width: 15px;
+  min-width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 0;
+}
+.footer > .footer-content > .footer-subscribe > .form-checkbox > .decoration > label {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: white;
+  cursor: pointer;
+}
+.footer > .footer-content > .footer-subscribe > .form-checkbox > .text > p {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 0.8em;
+}
+.footer > .footer-content > .footer-subscribe > .form-checkbox > .text > p > label {
+  cursor: pointer;
+}
+.footer > .footer-content > .footer-subscribe > .form-checkbox > .text > a {
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 0.8em;
+  text-decoration: underline;
+  display: block;
 }
 .footer > .footer-content > .footer-subscribe > button {
   margin: 20px 0 0 0;
