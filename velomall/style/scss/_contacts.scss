@@ -3,7 +3,7 @@
   background-image: url('../image/contacts-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  // background-size: cover;
   > .contacts-title {
     width: 100%;
     max-width: 500px;
@@ -95,6 +95,15 @@
             > h2 {
               font-family: $f900;
               font-size: 1em;
+            }
+            > .icon-pointer {
+              background-image: url('../image/icon/pointer.svg');
+            }
+            > .icon-phone-call {
+              background-image: url('../image/icon/phone-call.svg');
+            }
+            > .icon-reload {
+              background-image: url('../image/icon/reload.svg');
             }
           }
           > p {

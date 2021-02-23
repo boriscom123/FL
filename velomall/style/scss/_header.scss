@@ -44,6 +44,24 @@
               > a {
                 color: white;
               }
+              > .icon-bank {
+                background-image: url('../image/icon/pig-white.svg');
+              }
+              > .icon-body {
+                background-image: url('../image/icon/body-white.svg');
+              }
+              > .icon-star {
+                background-image: url('../image/icon/star-white.svg');
+              }
+            }
+            > .icon-bank {
+              background-image: url('../image/icon/pig.svg');
+            }
+            > .icon-body {
+              background-image: url('../image/icon/body.svg');
+            }
+            > .icon-star {
+              background-image: url('../image/icon/star.svg');
             }
           }
         }
@@ -89,6 +107,21 @@
               text-decoration: underline;
             }
           }
+          > .icon-email {
+            background-image: url('../image/icon/email.svg');
+            cursor: pointer;
+          }
+          > .icon-heart {
+            background-image: url('../image/icon/heart.svg');
+            cursor: pointer;
+            &:hover {
+              background-image: url('../image/icon/heart-fill.svg');
+            }
+          }
+          > .icon-cart {
+            background-image: url('../image/icon/cart.svg');
+            cursor: pointer;
+          }
         }
       }
     }
@@ -127,6 +160,9 @@
           font-family: $f300;
           font-size: 0.8em;
           margin: 0 0 0 10px;
+        }
+        > .icon-pointer {
+          background-image: url('../image/icon/pointer.svg');
         }
       }
       > .search {
@@ -248,6 +284,24 @@
           background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
           color: white;
+          > .icon-pump {
+            background-image: url('../image/icon/pump-white.svg');
+          }
+          > .icon-spare {
+            background-image: url('../image/icon/spare-white.svg');
+          }
+          > .icon-helmet {
+            background-image: url('../image/icon/helmet-white.svg');
+          }
+          > .icon-wrench {
+            background-image: url('../image/icon/wrench-white.svg');
+          }
+          > .icon-scooter {
+            background-image: url('../image/icon/scooter-white.svg');
+          }
+          > .icon-contacts {
+            background-image: url('../image/icon/contacts-white.svg');
+          }
         }
         &:hover > .header-bottom-nav-hover {
           display: flex;
@@ -255,6 +309,27 @@
         > div {
           height: 30px;
           width: 30px;
+        }
+        > .icon-bike {
+          background-image: url('../image/icon/bike-white.svg');
+        }
+        > .icon-pump {
+          background-image: url('../image/icon/pump.svg');
+        }
+        > .icon-spare {
+          background-image: url('../image/icon/spare.svg');
+        }
+        > .icon-helmet {
+          background-image: url('../image/icon/helmet.svg');
+        }
+        > .icon-wrench {
+          background-image: url('../image/icon/wrench.svg');
+        }
+        > .icon-scooter {
+          background-image: url('../image/icon/scooter.svg');
+        }
+        > .icon-contacts {
+          background-image: url('../image/icon/contacts.svg');
         }
         > p {
           font-family: $f300;
@@ -394,6 +469,24 @@
         color: white;
         > p {
           font-family: $f700;
+        }
+        > .icon-pump {
+          background-image: url('../image/icon/pump-white.svg');
+        }
+        > .icon-spare {
+          background-image: url('../image/icon/spare-white.svg');
+        }
+        > .icon-helmet {
+          background-image: url('../image/icon/helmet-white.svg');
+        }
+        > .icon-wrench {
+          background-image: url('../image/icon/wrench-white.svg');
+        }
+        > .icon-scooter {
+          background-image: url('../image/icon/scooter-white.svg');
+        }
+        > .icon-contacts {
+          background-image: url('../image/icon/contacts-white.svg');
         }
       }
     }

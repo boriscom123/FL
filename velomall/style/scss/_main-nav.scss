@@ -19,6 +19,24 @@
         background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
         color: white;
+        > .icon-pump {
+          background-image: url('../image/icon/pump-white.svg');
+        }
+        > .icon-spare {
+          background-image: url('../image/icon/spare-white.svg');
+        }
+        > .icon-helmet {
+          background-image: url('../image/icon/helmet-white.svg');
+        }
+        > .icon-wrench {
+          background-image: url('../image/icon/wrench-white.svg');
+        }
+        > .icon-scooter {
+          background-image: url('../image/icon/scooter-white.svg');
+        }
+        > .icon-contacts {
+          background-image: url('../image/icon/contacts-white.svg');
+        }
       }
       > div {
         height: 30px;
@@ -28,6 +46,27 @@
         font-family: $f300;
         font-size: 1em;
         margin: 0 0 0 10px;
+      }
+      > .icon-bike {
+        background-image: url('../image/icon/bike-white.svg');
+      }
+      > .icon-pump {
+        background-image: url('../image/icon/pump.svg');
+      }
+      > .icon-spare {
+        background-image: url('../image/icon/spare.svg');
+      }
+      > .icon-helmet {
+        background-image: url('../image/icon/helmet.svg');
+      }
+      > .icon-wrench {
+        background-image: url('../image/icon/wrench.svg');
+      }
+      > .icon-scooter {
+        background-image: url('../image/icon/scooter.svg');
+      }
+      > .icon-contacts {
+        background-image: url('../image/icon/contacts.svg');
       }
     }
     > .active {

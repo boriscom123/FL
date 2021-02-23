@@ -104,7 +104,7 @@
         height: auto;
         width: 100%;
         max-width: 350px;
-        padding: 10px 0 10px 0;
+        padding: 0 0 10px 0;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -119,37 +119,69 @@
           height: 250px;
           width: 100%;
           background-color: white;
-          > .hover {
+          > .sale {
+            height: 50px;
+            min-width: 50px;
+            background-color: none; // rgba(100,100,100,0.5);
+            cursor: pointer;
             position: absolute;
-            top: 20px;
-            left: 0;
+            top: 0;
+            left: 5%;
             display: flex;
-            justify-content: space-between;
-            height: 35px;
-            width: 100%;
-            > .left {
-              width: 70px;
-              background: rgb(0,192,255);
-              background: linear-gradient(to bottom,  rgba(0,192,255,1) 0%,rgba(0,127,197,1) 100%);
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0ff', endColorstr='#007fc5',GradientType=0 );
-              display: flex;
-              align-items: center;
-              justify-content: center;
+            justify-content: center;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+            > div {
+              height: 95%;
+              width: #{calc(100% - 2px)};
+              background-color: yellow;
               color: white;
               font-family: $f700;
               font-size: 1em;
-              -webkit-clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
-                      clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
-            }
-            > .right {
               display: flex;
-              justify-content: flex-end;
-              padding: 0 10px 0 0;
-              > .image-contain {
-                height: 100%;
-                width: 25px;
-                margin: 0 5px 0 5px;
-                cursor: pointer;
+              justify-content: center;
+              align-items: center;
+              -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+                      clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+            }
+          }
+          > .right {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 10px 0 0;
+            > .image-contain {
+              height: 25px;
+              min-height: 25px;
+              width: 25px;
+              min-width: 25px;
+              margin: 0 5px 0 5px;
+              cursor: pointer;
+            }
+            > .icon-compare {
+              background-image: url('../image/icon/compare-grey.svg');
+              &:hover {
+                background-image: url('../image/icon/compare.svg');
+              }
+            }
+            > .icon-compare-active {
+              background-image: url('../image/icon/compare.svg');
+              &:hover {
+                background-image: url('../image/icon/compare.svg');
+              }
+            }
+            > .icon-heart {
+              background-image: url('../image/icon/heart-grey.svg');
+              &:hover {
+                background-image: url('../image/icon/heart-fill.svg');
+              }
+            }
+            > .icon-heart-active {
+              background-image: url('../image/icon/heart.svg');
+              &:hover {
+                background-image: url('../image/icon/heart-fill.svg');
               }
             }
           }
@@ -219,9 +251,7 @@
               height: 50px;
               min-height: 50px;
               width: 100%;
-              border: none;
               border-radius: 25px;
-              color: white;
               font-family: $f700;
               font-size: 1em;
               text-transform: uppercase;

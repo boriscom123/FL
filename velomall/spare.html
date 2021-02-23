@@ -431,7 +431,7 @@
         <div class="breadcrumbs-content container">
           <a href="index.html">Главная</a>
           <i class="fas fa-angle-double-right"></i>
-          <a href="index.html">Велосипеды</a>
+          <a href="index.html">Запчасти</a>
         </div>
       </div>
 
@@ -442,63 +442,69 @@
           <div class="products-search">
 
             <div class="title">
-              <div class="image-contain icon-bike"></div>
-              <h1>Велосипеды</h1>
+              <div class="image-contain icon-spare"></div>
+              <h1>Запчасти</h1>
             </div>
 
             <form class="search-form" action="index.html" method="post" id="products-search">
-              <div class="inputs">
-                <div class="input">
-                  <input type="text" name="min" value="0" placeholder="0">
-                  <i class="fas fa-ruble-sign"></i>
-                </div>
-                <div class="input">
-                  <input type="text" name="max" value="1 000 000" placeholder="1 000 000">
-                  <i class="fas fa-ruble-sign"></i>
-                </div>
-              </div>
-              <div class="inputs-info">
-                <p>от</p>
-                <p>до</p>
-              </div>
-              <div class="range">
-                <div class="min blue-gradient"><div class="hover"></div></div>
-                <div class="max blue-gradient"><div class="hover"></div></div>
-                <div class="line"><div class="hover blue-gradient"></div></div>
-              </div>
+
               <div class="options-list">
 
                 <div class="">
-                  <input class="d-none" type="checkbox" name="forwho" value="" id="forwho" checked>
-                  <!-- <div class="option d-none">
-                    <div class="decoration blue-gradient"></div>
-                    <label class="info" for="forwho">Для кого:</label>
+                  <input class="d-none" type="checkbox" name="forwho" value="" id="forwho">
+                  <div class="option d-none">
+                    <div class="image-contain icon-camera"></div>
+                    <label class="info" for="forwho">Велокамера</label>
                     <label class="chevron" for="forwho"><i class="fas fa-chevron-right"></i></label>
-                  </div> -->
+                  </div>
                   <div class="checkboxes">
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="mans" value="" id="mans">
-                      <label class="text" for="mans">Мужской</label>
-                      <div class="decoration"><label class="" for="mans"></label></div>
+                      <input class="d-none" type="checkbox" name="camera-12-18" value="" id="camera-12-18">
+                      <label class="text" for="camera-12-18">Камера 12"-18"</label>
+                      <div class="decoration"><label class="" for="camera-12-18"></label></div>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="childrens" value="" id="childrens">
-                      <label class="text" for="childrens">Детский</label>
-                      <div class="decoration"><label class="" for="childrens"></label></div>
+                      <input class="d-none" type="checkbox" name="camera-20" value="" id="camera-20">
+                      <label class="text" for="camera-20">Камера 20"</label>
+                      <div class="decoration"><label class="" for="camera-20"></label></div>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="womans" value="" id="womans">
-                      <label class="text" for="womans">Женский</label>
-                      <div class="decoration"><label class="" for="womans"></label></div>
+                      <input class="d-none" type="checkbox" name="camera-24" value="" id="camera-24">
+                      <label class="text" for="camera-24">Камера 24"</label>
+                      <div class="decoration"><label class="" for="camera-24"></label></div>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="teenage" value="" id="teenage">
-                      <label class="text" for="teenage">Подростковый</label>
-                      <div class="decoration"><label class="" for="teenage"></label></div>
+                      <input class="d-none" type="checkbox" name="camera-26" value="" id="camera-26">
+                      <label class="text" for="camera-26">Камера 26"</label>
+                      <div class="decoration"><label class="" for="camera-26"></label></div>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="camera-27" value="" id="camera-27">
+                      <label class="text" for="camera-27">Камера 27.5""</label>
+                      <div class="decoration"><label class="" for="camera-27"></label></div>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="camera-28" value="" id="camera-28">
+                      <label class="text" for="camera-28">Камера 28"</label>
+                      <div class="decoration"><label class="" for="camera-28"></label></div>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="camera-29" value="" id="camera-29">
+                      <label class="text" for="camera-29">Камера 29"</label>
+                      <div class="decoration"><label class="" for="camera-29"></label></div>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="kit" value="" id="kit">
+                      <label class="text" for="kit">Велоаптечка</label>
+                      <div class="decoration"><label class="" for="kit"></label></div>
                     </div>
 
                   </div>
@@ -507,157 +513,581 @@
                 <div class="">
                   <input class="d-none" type="checkbox" name="type" value="" id="type">
                   <div class="option">
-                    <div class="decoration blue-gradient"></div>
-                    <label class="info" for="type">Тип:</label>
+                    <div class="image-contain icon-tyre"></div>
+                    <label class="info" for="type">Велошина</label>
                     <label class="chevron" for="type"><i class="fas fa-chevron-right"></i></label>
                   </div>
                   <div class="checkboxes">
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="mountain" value="" id="mountain">
-                      <div class="decoration"><label class="" for="mountain"></label></div>
-                      <label class="text" for="mountain">Горные</label>
+                      <input class="d-none" type="checkbox" name="tyre-12-18" value="" id="tyre-12-18">
+                      <div class="decoration"><label class="" for="tyre-12-18"></label></div>
+                      <label class="text" for="tyre-12-18">Шина 12"-18"</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="folding" value="" id="folding">
-                      <div class="decoration"><label class="" for="folding"></label></div>
-                      <label class="text" for="folding">Складные</label>
+                      <input class="d-none" type="checkbox" name="tyre-20" value="" id="tyre-20">
+                      <div class="decoration"><label class="" for="tyre-20"></label></div>
+                      <label class="text" for="tyre-20">Шина 20"</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="comfort" value="" id="comfort">
-                      <div class="decoration"><label class="" for="comfort"></label></div>
-                      <label class="text" for="comfort">Комфортные</label>
+                      <input class="d-none" type="checkbox" name="tyre-24" value="" id="tyre-24">
+                      <div class="decoration"><label class="" for="tyre-24"></label></div>
+                      <label class="text" for="tyre-24">Шина 24"</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="тwo-suspension" value="" id="тwo-suspension">
-                      <div class="decoration"><label class="" for="тwo-suspension"></label></div>
-                      <label class="text" for="тwo-suspension">Двухподвесы</label>
+                      <input class="d-none" type="checkbox" name="tyre-26" value="" id="tyre-26">
+                      <div class="decoration"><label class="" for="tyre-26"></label></div>
+                      <label class="text" for="tyre-26">Шина 26"</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="extreme" value="" id="extreme">
-                      <div class="decoration"><label class="" for="extreme"></label></div>
-                      <label class="text" for="extreme">Экстремальные</label>
+                      <input class="d-none" type="checkbox" name="tyre-27" value="" id="tyre-27">
+                      <div class="decoration"><label class="" for="tyre-27"></label></div>
+                      <label class="text" for="tyre-27">Шина 27.5"</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="highway" value="" id="highway">
-                      <div class="decoration"><label class="" for="highway"></label></div>
-                      <label class="text" for="highway">Шоссейные</label>
+                      <input class="d-none" type="checkbox" name="tyre-28" value="" id="tyre-28">
+                      <div class="decoration"><label class="" for="tyre-28"></label></div>
+                      <label class="text" for="tyre-28">Шина 28"</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="urban" value="" id="urban">
-                      <div class="decoration"><label class="" for="urban"></label></div>
-                      <label class="text" for="urban">Городские</label>
+                      <input class="d-none" type="checkbox" name="tyre-29" value="" id="tyre-29">
+                      <div class="decoration"><label class="" for="tyre-29"></label></div>
+                      <label class="text" for="tyre-29">Шина 29"</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="electric" value="" id="electric">
-                      <div class="decoration"><label class="" for="electric"></label></div>
-                      <label class="text" for="electric">Электровелосипеды</label>
+                      <input class="d-none" type="checkbox" name="spike" value="" id="spike">
+                      <div class="decoration"><label class="" for="spike"></label></div>
+                      <label class="text" for="spike">Шипованная</label>
                     </div>
 
                   </div>
                 </div>
 
                 <div class="">
-                  <input class="d-none" type="checkbox" name="type" value="" id="brand">
+                  <input class="d-none" type="checkbox" name="fork" value="" id="fork">
                   <div class="option">
-                    <div class="decoration blue-gradient"></div>
-                    <label class="info" for="brand">Бренд:</label>
-                    <label class="chevron" for="brand"><i class="fas fa-chevron-right"></i></label>
+                    <div class="image-contain icon-fork"></div>
+                    <label class="info" for="fork">Вилки</label>
+                    <label class="chevron" for="fork"><i class="fas fa-chevron-right"></i></label>
                   </div>
-                  <div class="checkboxes columns">
+                  <div class="checkboxes">
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="aspect" value="" id="aspect">
-                      <div class="decoration"><label class="" for="aspect"></label></div>
-                      <label class="text" for="aspect">Aspect</label>
+                      <input class="d-none" type="checkbox" name="damping" value="" id="damping">
+                      <div class="decoration"><label class="" for="damping"></label></div>
+                      <label class="text" for="damping">Вилка амортизационная</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="cube" value="" id="cube">
-                      <div class="decoration"><label class="" for="cube"></label></div>
-                      <label class="text" for="cube">Cube</label>
+                      <input class="d-none" type="checkbox" name="air" value="" id="air">
+                      <div class="decoration"><label class="" for="air"></label></div>
+                      <label class="text" for="air">Вилка воздушная</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="dahon" value="" id="dahon">
-                      <div class="decoration"><label class="" for="dahon"></label></div>
-                      <label class="text" for="dahon">Dahon</label>
+                      <input class="d-none" type="checkbox" name="hard" value="" id="hard">
+                      <div class="decoration"><label class="" for="hard"></label></div>
+                      <label class="text" for="hard">Вилка жесткая</label>
                     </div>
 
                     <div class="">
-                      <input class="d-none" type="checkbox" name="electra" value="" id="electra">
-                      <div class="decoration"><label class="" for="electra"></label></div>
-                      <label class="text" for="electra">Electra</label>
+                      <input class="d-none" type="checkbox" name="spare" value="" id="spare">
+                      <div class="decoration"><label class="" for="spare"></label></div>
+                      <label class="text" for="spare">Запчасти вилки</label>
                     </div>
 
-                    <p>Еще бренды</p>
-
-                  </div>
-
-                </div>
-
-                <div class="">
-                  <input class="d-none" type="checkbox" name="diameter" value="" id="diameter">
-                  <div class="option">
-                    <div class="decoration blue-gradient"></div>
-                    <label class="info" for="diameter">Диаметр колес:</label>
-                    <label class="chevron" for="diameter"><i class="fas fa-chevron-right"></i></label>
                   </div>
                 </div>
 
                 <div class="">
-                  <input class="d-none" type="checkbox" name="year" value="" id="year">
+                  <input class="d-none" type="checkbox" name="bush" value="" id="bush">
                   <div class="option">
-                    <div class="decoration blue-gradient"></div>
-                    <label class="info" for="year">Модельный год:</label>
-                    <label class="chevron" for="year"><i class="fas fa-chevron-right"></i></label>
+                    <div class="image-contain icon-bush"></div>
+                    <label class="info" for="bush">Втулка</label>
+                    <label class="chevron" for="bush"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="bush-f" value="" id="bush-f">
+                      <div class="decoration"><label class="" for="bush-f"></label></div>
+                      <label class="text" for="bush-f">Втулка передняя</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="bush-r" value="" id="bush-r">
+                      <div class="decoration"><label class="" for="bush-r"></label></div>
+                      <label class="text" for="bush-r">Втулка задняя</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="bush-planetary" value="" id="bush-planetary">
+                      <div class="decoration"><label class="" for="bush-planetary"></label></div>
+                      <label class="text" for="bush-planetary">Втулка планетарная</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="eccentric" value="" id="eccentric">
+                      <div class="decoration"><label class="" for="eccentric"></label></div>
+                      <label class="text" for="eccentric">Эксцентрик</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="bush-parts" value="" id="bush-parts">
+                      <div class="decoration"><label class="" for="bush-parts"></label></div>
+                      <label class="text" for="bush-parts">Запчасти втулки</label>
+                    </div>
+
                   </div>
                 </div>
 
                 <div class="">
-                  <input class="d-none" type="checkbox" name="color" value="" id="color">
+                  <input class="d-none" type="checkbox" name="wheel-removal" value="" id="wheel-removal">
                   <div class="option">
-                    <div class="decoration blue-gradient"></div>
-                    <label class="info" for="color">Цвет:</label>
-                    <label class="chevron" for="color"><i class="fas fa-chevron-right"></i></label>
+                    <div class="image-contain icon-wheel-removal"></div>
+                    <label class="info" for="wheel-removal">Вынос руля</label>
+                    <label class="chevron" for="wheel-removal"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="treaded" value="" id="treaded">
+                      <div class="decoration"><label class="" for="treaded"></label></div>
+                      <label class="text" for="treaded">Вынос резьбовой</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="wheel-removal-main" value="" id="wheel-removal-main">
+                      <div class="decoration"><label class="" for="wheel-removal-main"></label></div>
+                      <label class="text" for="wheel-removal-main">Вынос руля</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="wheel-removal-variable" value="" id="wheel-removal-variable">
+                      <div class="decoration"><label class="" for="wheel-removal-variable"></label></div>
+                      <label class="text" for="wheel-removal-variable">Вынос регулируемый</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="wheel-removal-parts" value="" id="wheel-removal-parts">
+                      <div class="decoration"><label class="" for="wheel-removal-parts"></label></div>
+                      <label class="text" for="wheel-removal-parts">Запчасти выноса</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="grips" value="" id="grips">
+                  <div class="option">
+                    <div class="image-contain icon-grips"></div>
+                    <label class="info" for="grips">Грипсы и рога</label>
+                    <label class="chevron" for="grips"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="grips-wheel" value="" id="grips-wheel">
+                      <div class="decoration"><label class="" for="grips-wheel"></label></div>
+                      <label class="text" for="grips-wheel">Грипсы на руль</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="horn-wheel" value="" id="horn-wheel">
+                      <div class="decoration"><label class="" for="horn-wheel"></label></div>
+                      <label class="text" for="horn-wheel">Рога на руль</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="grips-parts" value="" id="grips-parts">
+                      <div class="decoration"><label class="" for="grips-parts"></label></div>
+                      <label class="text" for="grips-parts">Запчасти грипс</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="cassettes-ratchets" value="" id="cassettes-ratchets">
+                  <div class="option">
+                    <div class="image-contain icon-cassettes-ratchets"></div>
+                    <label class="info" for="cassettes-ratchets">Касеты и трещетки</label>
+                    <label class="chevron" for="cassettes-ratchets"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="cassettes" value="" id="cassettes">
+                      <div class="decoration"><label class="" for="cassettes"></label></div>
+                      <label class="text" for="cassettes">Касеты</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="ratchets" value="" id="ratchets">
+                      <div class="decoration"><label class="" for="ratchets"></label></div>
+                      <label class="text" for="ratchets">Трещетки</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="cassettes-ratchets-parts" value="" id="cassettes-ratchets-parts">
+                      <div class="decoration"><label class="" for="cassettes-ratchets-parts"></label></div>
+                      <label class="text" for="cassettes-ratchets-parts">Запчасти касет и трещеток</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="bike-wheel" value="" id="bike-wheel">
+                  <div class="option">
+                    <div class="image-contain icon-bike-wheel"></div>
+                    <label class="info" for="bike-wheel">Колеса</label>
+                    <label class="chevron" for="bike-wheel"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="wheel-assembly" value="" id="wheel-assembly">
+                      <div class="decoration"><label class="" for="wheel-assembly"></label></div>
+                      <label class="text" for="wheel-assembly">Колесо в сборе</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="wheel-rim" value="" id="wheel-rim">
+                      <div class="decoration"><label class="" for="wheel-rim"></label></div>
+                      <label class="text" for="wheel-rim">Обод</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="wheel-additional" value="" id="wheel-additional">
+                      <div class="decoration"><label class="" for="wheel-additional"></label></div>
+                      <label class="text" for="wheel-additional">Дополнительные колеса</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="wheel-spoke" value="" id="wheel-spoke">
+                      <div class="decoration"><label class="" for="wheel-spoke"></label></div>
+                      <label class="text" for="wheel-spoke">Спицы</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="wheel-parts" value="" id="wheel-parts">
+                      <div class="decoration"><label class="" for="wheel-parts"></label></div>
+                      <label class="text" for="wheel-parts">Запчасти колес</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="manettes-shifters" value="" id="manettes-shifters">
+                  <div class="option">
+                    <div class="image-contain icon-manettes-shifters"></div>
+                    <label class="info" for="manettes-shifters">Манетки и шифтеры</label>
+                    <label class="chevron" for="manettes-shifters"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="manettes" value="" id="manettes">
+                      <div class="decoration"><label class="" for="manettes"></label></div>
+                      <label class="text" for="manettes">Манетки</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="shifters" value="" id="shifters">
+                      <div class="decoration"><label class="" for="shifters"></label></div>
+                      <label class="text" for="shifters">Шифтеры</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="manettes-shifters-parts" value="" id="manettes-shifters-parts">
+                      <div class="decoration"><label class="" for="manettes-shifters-parts"></label></div>
+                      <label class="text" for="manettes-shifters-parts">Запчасти манеток</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="pedals" value="" id="pedals">
+                  <div class="option">
+                    <div class="image-contain icon-pedals"></div>
+                    <label class="info" for="pedals">Педали</label>
+                    <label class="chevron" for="pedals"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="pedals-plastic" value="" id="pedals-plastic">
+                      <div class="decoration"><label class="" for="pedals-plastic"></label></div>
+                      <label class="text" for="pedals-plastic">Педали пластиковые</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="pedals-metal" value="" id="pedals-metal">
+                      <div class="decoration"><label class="" for="pedals-metal"></label></div>
+                      <label class="text" for="pedals-metal">Педали металические</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="pedals-contact" value="" id="pedals-contact">
+                      <div class="decoration"><label class="" for="pedals-contact"></label></div>
+                      <label class="text" for="pedals-contact">Педали контактные</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="pedals-junior" value="" id="pedals-junior">
+                      <div class="decoration"><label class="" for="pedals-junior"></label></div>
+                      <label class="text" for="pedals-junior">Педали детские</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="clips" value="" id="clips">
+                      <div class="decoration"><label class="" for="clips"></label></div>
+                      <label class="text" for="clips">Туклипсы</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="pedals-parts" value="" id="pedals-parts">
+                      <div class="decoration"><label class="" for="pedals-parts"></label></div>
+                      <label class="text" for="pedals-parts">Запчасти педалей</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="switches" value="" id="switches">
+                  <div class="option">
+                    <div class="image-contain icon-switches"></div>
+                    <label class="info" for="switches">Переключатели</label>
+                    <label class="chevron" for="switches"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="switches-f" value="" id="switches-f">
+                      <div class="decoration"><label class="" for="switches-f"></label></div>
+                      <label class="text" for="switches-f">Переключатель передний</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="switches-r" value="" id="switches-r">
+                      <div class="decoration"><label class="" for="switches-r"></label></div>
+                      <label class="text" for="switches-r">Переключатель задний</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="switches-p" value="" id="switches-p">
+                      <div class="decoration"><label class="" for="switches-p"></label></div>
+                      <label class="text" for="switches-p">Петух</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="switches-parts" value="" id="switches-parts">
+                      <div class="decoration"><label class="" for="switches-parts"></label></div>
+                      <label class="text" for="switches-parts">Запчасти переключателя</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="base" value="" id="base">
+                  <div class="option">
+                    <div class="image-contain icon-base"></div>
+                    <label class="info" for="base">Рама</label>
+                    <label class="chevron" for="base"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="base-steel" value="" id="base-steel">
+                      <div class="decoration"><label class="" for="base-steel"></label></div>
+                      <label class="text" for="base-steel">Рама стальная</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="base-al" value="" id="base-al">
+                      <div class="decoration"><label class="" for="base-al"></label></div>
+                      <label class="text" for="base-al">Рама аллюминиевая</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="base-carbon" value="" id="base-carbon">
+                      <div class="decoration"><label class="" for="base-carbon"></label></div>
+                      <label class="text" for="base-carbon">Рама карбон</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="base-parts" value="" id="base-parts">
+                      <div class="decoration"><label class="" for="base-parts"></label></div>
+                      <label class="text" for="base-parts">Запчасти рамы</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="handlebar" value="" id="handlebar">
+                  <div class="option">
+                    <div class="image-contain icon-handlebar"></div>
+                    <label class="info" for="handlebar">Руль</label>
+                    <label class="chevron" for="handlebar"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="handlebar-steel" value="" id="handlebar-steel">
+                      <div class="decoration"><label class="" for="handlebar-steel"></label></div>
+                      <label class="text" for="handlebar-steel">Руль стальной</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="handlebar-al" value="" id="handlebar-al">
+                      <div class="decoration"><label class="" for="handlebar-al"></label></div>
+                      <label class="text" for="handlebar-al">Руль аллюминиевый</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="handlebar-carbon" value="" id="handlebar-carbon">
+                      <div class="decoration"><label class="" for="handlebar-carbon"></label></div>
+                      <label class="text" for="handlebar-carbon">Руль карбон</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="handlebar-parts" value="" id="handlebar-parts">
+                      <div class="decoration"><label class="" for="handlebar-parts"></label></div>
+                      <label class="text" for="handlebar-parts">Запчасти рулевой</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="seat" value="" id="seat">
+                  <div class="option">
+                    <div class="image-contain icon-seat"></div>
+                    <label class="info" for="seat">Седло</label>
+                    <label class="chevron" for="seat"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="seat-comfort" value="" id="seat-comfort">
+                      <div class="decoration"><label class="" for="seat-comfort"></label></div>
+                      <label class="text" for="seat-comfort">Седло комфорт</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="seat-fitness" value="" id="seat-fitness">
+                      <div class="decoration"><label class="" for="seat-fitness"></label></div>
+                      <label class="text" for="seat-fitness">Седло фитнес</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="seat-sport" value="" id="seat-sport">
+                      <div class="decoration"><label class="" for="seat-sport"></label></div>
+                      <label class="text" for="seat-sport">Седло спорт</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="seat-parts" value="" id="seat-parts">
+                      <div class="decoration"><label class="" for="seat-parts"></label></div>
+                      <label class="text" for="seat-parts">Запчасти седла</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="">
+                  <input class="d-none" type="checkbox" name="spokes" value="" id="spokes">
+                  <div class="option">
+                    <div class="image-contain icon-spokes"></div>
+                    <label class="info" for="spokes">Спицы</label>
+                    <label class="chevron" for="spokes"><i class="fas fa-chevron-right"></i></label>
+                  </div>
+                  <div class="checkboxes">
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="spokes-spoke" value="" id="spokes-spoke">
+                      <div class="decoration"><label class="" for="spokes-spoke"></label></div>
+                      <label class="text" for="spokes-spoke">Спицы</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="union" value="" id="union">
+                      <div class="decoration"><label class="" for="union"></label></div>
+                      <label class="text" for="union">Нипели</label>
+                    </div>
+
                   </div>
                 </div>
 
                 <div class="">
                   <input class="d-none" type="checkbox" name="brakes" value="" id="brakes">
                   <div class="option">
-                    <div class="decoration blue-gradient"></div>
-                    <label class="info" for="brakes">Тормоза:</label>
+                    <div class="image-contain icon-brakes"></div>
+                    <label class="info" for="brakes">Тормозная система</label>
                     <label class="chevron" for="brakes"><i class="fas fa-chevron-right"></i></label>
                   </div>
-                </div>
+                  <div class="checkboxes">
 
-                <div class="">
-                  <input class="d-none" type="checkbox" name="material" value="" id="material">
-                  <div class="option">
-                    <div class="decoration blue-gradient"></div>
-                    <label class="info" for="material">Материал рамы:</label>
-                    <label class="chevron" for="material"><i class="fas fa-chevron-right"></i></label>
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="spokes-spoke" value="" id="spokes-spoke">
+                      <div class="decoration"><label class="" for="spokes-spoke"></label></div>
+                      <label class="text" for="spokes-spoke">Тормозные ручки</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="union" value="" id="union">
+                      <div class="decoration"><label class="" for="union"></label></div>
+                      <label class="text" for="union">Дисковый гидравлический</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="union" value="" id="union">
+                      <div class="decoration"><label class="" for="union"></label></div>
+                      <label class="text" for="union">Дисковый механический</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="union" value="" id="union">
+                      <div class="decoration"><label class="" for="union"></label></div>
+                      <label class="text" for="union">Тормоз ободной</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="union" value="" id="union">
+                      <div class="decoration"><label class="" for="union"></label></div>
+                      <label class="text" for="union">Колодки дисковые</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="union" value="" id="union">
+                      <div class="decoration"><label class="" for="union"></label></div>
+                      <label class="text" for="union">Колодки V-brake</label>
+                    </div>
+
+                    <div class="">
+                      <input class="d-none" type="checkbox" name="union" value="" id="union">
+                      <div class="decoration"><label class="" for="union"></label></div>
+                      <label class="text" for="union">Запчасти тормозов</label>
+                    </div>
+
                   </div>
                 </div>
 
               </div>
 
-              <div class="available">
-                <input class="d-none" type="checkbox" name="available" value="" id="available">
-                <label class="text" for="available">В наличии</label>
-                <div class="decoration"><label class="" for="available"></label></div>
-              </div>
-
-              <h2>Велосипеды: <span>14232 шт.</span></h2>
-              <button type="button" name="button">Показать</button>
             </form>
 
             <form class="feedback-form" action="index.html" method="post">
@@ -1023,131 +1453,6 @@
               <div class="number">...</div>
               <div class="number">25</div>
               <i class="fas fa-chevron-right"></i>
-            </div>
-
-            <div class="search-story">
-              <div class="image-cover">
-                <img src="image/catalog-story.jpg" alt="story-image">
-              </div>
-              <div class="text">
-                <p>
-                  Следует отметить, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса вывода текущих активов. Вот вам яркий пример современных тенденций - выбранный нами инновационный путь является качественно новой ступенью первоочередных требований. Внезапно, сделанные на базе интернет-аналитики выводы представлены в исключительно положительном свете. Есть над чем задуматься: элементы политического процесса набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям.
-
-                  Современные технологии достигли такого уровня, что современная методология разработки обеспечивает широкому кругу (специалистов) участие в формировании инновационных методов управления процессами. Вот вам яркий пример современных тенденций - сплочённость команды профессионалов однозначно фиксирует необходимость стандартных подходов. Прежде всего, укрепление и развитие внутренней структуры требует определения и уточнения экспериментов, поражающих по своей масштабности и грандиозности. В рамках спецификации современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии, инициированные исключительно синтетически, представлены в исключительно положительном свете. А ещё ключевые особенности структуры проекта будут своевременно верифицированы.
-
-                  Современные технологии достигли такого уровня, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Как принято считать, непосредственные участники технического прогресса будут призваны к ответу. С учётом сложившейся международной обстановки, сплочённость команды профессионалов выявляет срочную потребность благоприятных перспектив. Задача организации, в особенности же укрепление и развитие внутренней структуры не оставляет шанса для инновационных методов управления процессами. Таким образом, понимание сути ресурсосберегающих технологий влечет за собой процесс внедрения и модернизации как самодостаточных, так и внешне зависимых концептуальных решений.
-
-                  Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира объединены в целые кластеры себе подобных. Противоположная точка зрения подразумевает, что акционеры крупнейших компаний, вне зависимости от их уровня, должны быть разоблачены. Прежде всего, экономическая повестка сегодняшнего дня однозначно фиксирует необходимость системы обучения кадров, соответствующей насущным потребностям.
-
-                  Непосредственные участники технического прогресса будут представлены в исключительно положительном свете. Предварительные выводы неутешительны: реализация намеченных плановых заданий способствует подготовке и реализации как самодостаточных, так и внешне зависимых концептуальных решений. Господа, существующая теория создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса дальнейших направлений развития.                </p>
-              </div>
-            </div>
-
-            <div class="search-accessories">
-
-              <h2>Выберете аксессуары</h2>
-
-              <div class="cards-list">
-
-                <div class="card">
-
-                  <div class="image-contain">
-                    <img src="image/access-1.jpg" alt="access-1">
-                    <div class="sale"><div class="blue-gradient">-10%</div></div>
-                    <div class="right">
-                      <div class="image-contain icon-compare"></div>
-                      <div class="image-contain icon-heart"></div>
-                    </div>
-                  </div>
-
-                  <div class="info">
-                    <h3>Велосипед</h3>
-                    <h2>Stinger Graphite Evo 29" (2021)</h2>
-                    <div class="price">
-                      <div class="left">
-                        <p>33 950 руб.</p>
-                        <h2>30 990 руб.</h2>
-                      </div>
-                      <div class="right">
-                        <div class="decoration"><i class="fas fa-check"></i></div>
-                        <div class="text">В наличии</div>
-                      </div>
-                    </div>
-                    <div class="buttons">
-                      <button class="green-gradient" type="button" name="button">Добавить в корзину</button>
-                      <button class="white-gradient" type="button" name="button">Подробнее</button>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="card">
-
-                  <div class="image-contain">
-                    <img src="image/access-2.jpg" alt="access-2">
-                    <div class="sale"><div class="blue-gradient">-10%</div></div>
-                    <div class="right">
-                      <div class="image-contain icon-compare"></div>
-                      <div class="image-contain icon-heart"></div>
-                    </div>
-                  </div>
-
-                  <div class="info">
-                    <h3>Велосипед</h3>
-                    <h2>Stinger Graphite Evo 29" (2021)</h2>
-                    <div class="price">
-                      <div class="left">
-                        <p>33 950 руб.</p>
-                        <h2>30 990 руб.</h2>
-                      </div>
-                      <div class="right">
-                        <div class="decoration"><i class="fas fa-check"></i></div>
-                        <div class="text">В наличии</div>
-                      </div>
-                    </div>
-                    <div class="buttons">
-                      <button class="green-gradient" type="button" name="button">Добавить в корзину</button>
-                      <button class="white-gradient" type="button" name="button">Подробнее</button>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="card">
-
-                  <div class="image-contain">
-                    <img src="image/access-3.jpg" alt="access-3">
-                    <div class="sale"><div class="blue-gradient">-10%</div></div>
-                    <div class="right">
-                      <div class="image-contain icon-compare"></div>
-                      <div class="image-contain icon-heart"></div>
-                    </div>
-                  </div>
-
-                  <div class="info">
-                    <h3>Велосипед</h3>
-                    <h2>Stinger Graphite Evo 29" (2021)</h2>
-                    <div class="price">
-                      <div class="left">
-                        <p>33 950 руб.</p>
-                        <h2>30 990 руб.</h2>
-                      </div>
-                      <div class="right">
-                        <div class="decoration"><i class="fas fa-check"></i></div>
-                        <div class="text">В наличии</div>
-                      </div>
-                    </div>
-                    <div class="buttons">
-                      <button class="green-gradient" type="button" name="button">Добавить в корзину</button>
-                      <button class="white-gradient" type="button" name="button">Подробнее</button>
-                    </div>
-                  </div>
-
-                </div>
-
-
-              </div>
-
             </div>
 
           </div>

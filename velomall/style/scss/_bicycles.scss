@@ -18,6 +18,24 @@
           font-size: 1em;
         }
       }
+      > .icon-bike {
+        background-image: url('../image/icon/bike.svg');
+      }
+      > .icon-wrench {
+        background-image: url('../image/icon/wrench.svg');
+      }
+      > .icon-oil {
+        background-image: url('../image/icon/oil.svg');
+      }
+      > .icon-map {
+        background-image: url('../image/icon/map.svg');
+      }
+      > .icon-call-center {
+        background-image: url('../image/icon/call-center.svg');
+      }
+      > .icon-money {
+        background-image: url('../image/icon/money.svg');
+      }
     }
   }
   > .bicycles-title {
@@ -127,21 +145,12 @@
       }
       > .details {
         position: absolute;
-        left: 0;
-        bottom: 15px;
-        width: 100%;
+        right: 0;
+        top: 0;
+        width: 65%;
+        height: 100%;
         text-align: center;
         z-index: 3;
-        > a {
-          color: white;
-          font-family: $f900;
-          font-size: 1em;
-          text-transform: uppercase;
-          transition: $transition;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
       }
     }
   }

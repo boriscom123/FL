@@ -116,6 +116,15 @@
           min-width: 25px;
           margin: 0 15px 0 0;
         }
+        > .icon-pointer {
+          background-image: url('../image/icon/pointer.svg');
+        }
+        > .icon-email {
+          background-image: url('../image/icon/email.svg');
+        }
+        > .icon-chat {
+          background-image: url('../image/icon/chat.svg');
+        }
         > .text {
           > h2 {
             font-family: $f700;
