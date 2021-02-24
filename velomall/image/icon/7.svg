@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 17 25" style="enable-background:new 0 0 17 25;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Фигура_667_1_);}
+</style>
+<linearGradient id="Фигура_667_1_" gradientUnits="userSpaceOnUse" x1="8.6645" y1="31.486" x2="8.3115" y2="2.5448">
+	<stop  offset="0" style="stop-color:#004B98"/>
+	<stop  offset="1" style="stop-color:#00C0FF"/>
+</linearGradient>
+<path id="Фигура_667" class="st0" d="M13.26,7.74c0.41,0,0.74-0.32,0.74-0.73V3.87C13.98,1.72,12.23-0.01,10.09,0H3.74
+	c-0.4,0-0.73,0.32-0.74,0.72c0,0.4,0.32,0.73,0.72,0.74c0,0,0.01,0,0.01,0h0.85v1.68H3.74C3.34,3.14,3,3.46,3,3.87v3.14
+	c0,0.41,0.34,0.73,0.74,0.73h0.85v1.79C3.64,9.84,3,10.72,3,11.72L0,17l3,1.84v1.44L0,19l3,5.27C3,24.68,3.34,25,3.74,25h9.52
+	c0.41,0,0.74-0.32,0.74-0.73L17,19l-3,1.09v-1.64L17,17l-3-5.28c0-1-0.64-1.88-1.59-2.19V7.74L13.26,7.74L13.26,7.74z M9.24,1.46
+	h0.85c1.05,0,1.99,0.68,2.32,1.68H9.24V1.46z M6.07,1.46h1.69v1.68H6.07V1.46z M12.52,11.72L15,16l-2,2l-0.48,5.53H4.48L4,18l-2-2
+	l2.48-4.28c0-0.46,0.37-0.84,0.84-0.84c0,0,0.01,0,0.01,0h6.35c0.46,0,0.84,0.37,0.85,0.83C12.52,11.71,12.52,11.72,12.52,11.72
+	L12.52,11.72z M6.07,9.41V7.74h4.86v1.67H6.07z M4.48,6.28V4.6h8.04v1.68H4.48z"/>
+</svg>

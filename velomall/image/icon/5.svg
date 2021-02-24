@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+	.st3{fill:url(#SVGID_4_);}
+</style>
+<g id="Waist_Bag">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="472.0233" y1="444.5798" x2="467.0233" y2="140.5798">
+		<stop  offset="0" style="stop-color:#004B98"/>
+		<stop  offset="1" style="stop-color:#00C0FF"/>
+	</linearGradient>
+	<path class="st0" d="M480,184c0-4.4-3.6-8-8-8h-16v40h16c4.4,0,8-3.6,8-8V184z"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="151.8461" y1="449.8459" x2="146.8461" y2="145.8459">
+		<stop  offset="0" style="stop-color:#004B98"/>
+		<stop  offset="1" style="stop-color:#00C0FF"/>
+	</linearGradient>
+	<path class="st1" d="M136,208h24v16h-24V208z"/>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="48.2684" y1="451.5495" x2="43.2684" y2="147.5495">
+		<stop  offset="0" style="stop-color:#004B98"/>
+		<stop  offset="1" style="stop-color:#00C0FF"/>
+	</linearGradient>
+	<path class="st2" d="M40,216h16v-40H40c-4.4,0-8,3.6-8,8v24C32,212.4,35.6,216,40,216z"/>
+</g>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="249.0734" y1="450.4357" x2="256.0734" y2="191.4357">
+	<stop  offset="0" style="stop-color:#004B98"/>
+	<stop  offset="1" style="stop-color:#00C0FF"/>
+</linearGradient>
+<path class="st3" d="M432,168H80c-4.4,0-8,3.6-8,8v40c0,4.4,3.6,8,8,8c3.9,0,7.3,2.9,7.9,6.8l11.8,173.6
+	c1.7,11.7,11.8,20.4,23.7,20.3h265.1c11.9,0.1,21.9-8.6,23.7-20.3L424,230.8c0.6-3.9,4-6.8,7.9-6.8c4.4,0,8-3.6,8-8v-40
+	C440,171.6,436.4,168,432,168z M390.9,391.6H128.3l-9.9-112.9h68.8l13.4-50.1l204,2.8L390.9,391.6z M136,264v-16h24v16H136z
+	 M408,208H176v24c0,4.4-3.6,8-8,8h-40c-4.4,0-8-3.6-8-8v-24h-16v-16h304V208z"/>
+</svg>
