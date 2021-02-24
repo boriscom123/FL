@@ -6275,9 +6275,9 @@ button {
   transition: 0.3s;
 }
 .green-gradient:hover {
-  background: #ffc600;
-  background: linear-gradient(to bottom, #ffc600 0%, #eb5700 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffc600", endColorstr="#eb5700",GradientType=0 );
+  background: #52b152;
+  background: linear-gradient(to bottom, #52b152 0%, #008a00 50%, #005700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#52b152", endColorstr="#005700",GradientType=0 );
 }
 
 .white-gradient {
@@ -6300,13 +6300,26 @@ button {
 .color-red > i {
   color: white;
 }
+.color-red > label > i {
+  display: none;
+}
 
 .color-blue {
   background-color: #05b6d4;
 }
+.color-blue > label > i {
+  display: none;
+}
 
 .color-black {
   background-color: #000000;
+}
+.color-black > i {
+  color: white;
+}
+.color-black > label > i {
+  display: none;
+  color: white;
 }
 
 .color-white {
@@ -6314,6 +6327,38 @@ button {
 }
 .color-white > i {
   color: grey;
+}
+.color-white > label > i {
+  display: none;
+}
+
+.color-green {
+  background-color: green;
+}
+.color-green > i {
+  color: white;
+}
+.color-green > label > i {
+  display: none;
+  color: white;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+.color-yellow > label > i {
+  display: none;
+}
+
+.color-brown {
+  background-color: brown;
+}
+.color-brown > i {
+  color: white;
+}
+.color-brown > label > i {
+  display: none;
+  color: white;
 }
 
 .header {

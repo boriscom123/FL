@@ -24,7 +24,7 @@
         > .sale {
           height: 80px;
           width: 70px;
-          background-color: rgba(100,100,100,0.5);
+          // background-color: rgba(100,100,100,0.5);
           cursor: pointer;
           position: absolute;
           top: 0;
@@ -280,6 +280,24 @@
           font-family: $f300;
           font-size: 1em;
         }
+      }
+      > .icon-bike {
+        background-image: url('../image/icon/bike.svg');
+      }
+      > .icon-wrench {
+        background-image: url('../image/icon/wrench.svg');
+      }
+      > .icon-oil {
+        background-image: url('../image/icon/oil.svg');
+      }
+      > .icon-map {
+        background-image: url('../image/icon/map.svg');
+      }
+      > .icon-call-center {
+        background-image: url('../image/icon/call-center.svg');
+      }
+      > .icon-money {
+        background-image: url('../image/icon/money.svg');
       }
     }
   }

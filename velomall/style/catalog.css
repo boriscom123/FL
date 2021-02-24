@@ -6275,9 +6275,9 @@ button {
   transition: 0.3s;
 }
 .green-gradient:hover {
-  background: #ffc600;
-  background: linear-gradient(to bottom, #ffc600 0%, #eb5700 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffc600", endColorstr="#eb5700",GradientType=0 );
+  background: #52b152;
+  background: linear-gradient(to bottom, #52b152 0%, #008a00 50%, #005700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#52b152", endColorstr="#005700",GradientType=0 );
 }
 
 .white-gradient {
@@ -6300,13 +6300,26 @@ button {
 .color-red > i {
   color: white;
 }
+.color-red > label > i {
+  display: none;
+}
 
 .color-blue {
   background-color: #05b6d4;
 }
+.color-blue > label > i {
+  display: none;
+}
 
 .color-black {
   background-color: #000000;
+}
+.color-black > i {
+  color: white;
+}
+.color-black > label > i {
+  display: none;
+  color: white;
 }
 
 .color-white {
@@ -6314,6 +6327,38 @@ button {
 }
 .color-white > i {
   color: grey;
+}
+.color-white > label > i {
+  display: none;
+}
+
+.color-green {
+  background-color: green;
+}
+.color-green > i {
+  color: white;
+}
+.color-green > label > i {
+  display: none;
+  color: white;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+.color-yellow > label > i {
+  display: none;
+}
+
+.color-brown {
+  background-color: brown;
+}
+.color-brown > i {
+  color: white;
+}
+.color-brown > label > i {
+  display: none;
+  color: white;
 }
 
 .header {
@@ -7025,6 +7070,9 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
   box-shadow: inset 0 0 0px 1px #00c0ff;
 }
+.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > input[type=checkbox]:checked ~ .color > label > i {
+  display: flex;
+}
 .products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .text {
   padding: 0 0 0 20px;
   width: 100%;
@@ -7036,7 +7084,7 @@ button {
   width: 25px;
   min-width: 25px;
   border: 1px solid grey;
-  border-radius: 3px;
+  border-radius: 50%;
   cursor: pointer;
   margin: 0 0 0 20px;
 }
@@ -7045,12 +7093,38 @@ button {
   width: 100%;
   display: flex;
   border: 6px solid white;
+  border-radius: 50%;
   background-color: white;
   cursor: pointer;
   box-shadow: inset 0 0 0px 1px grey;
 }
 .products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .decoration > label:hover {
   box-shadow: inset 0 0 0px 1px #00c0ff;
+}
+.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .color {
+  height: 25px;
+  min-height: 25px;
+  width: 25px;
+  min-width: 25px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0 0 20px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .color:hover {
+  transform: scale(1.2);
+}
+.products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > div > .color > label {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .products > .products-filter > .products-search > .search-form > .options-list > div > .checkboxes > p {
   text-decoration: underline;
@@ -7161,6 +7235,22 @@ button {
 .products > .products-filter > .products-search > .search-form > .options-list > div > .option > .icon-brakes {
   background-image: url("../image/icon/brakes.svg");
 }
+.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .icon-cables {
+  background-image: url("../image/icon/cables.svg");
+}
+.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .icon-chains {
+  background-image: url("../image/icon/chains.svg");
+}
+.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .icon-rods {
+  background-image: url("../image/icon/rods.svg");
+}
+.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .icon-seatpost-pin {
+  background-image: url("../image/icon/seatpost-pin.svg");
+}
+.products > .products-filter > .products-search > .search-form > .options-list > div > .option > .icon-other-parts {
+  background-image: url("../image/icon/other-parts.svg");
+  transform: rotateY(180deg);
+}
 .products > .products-filter > .products-search > .search-form > .available {
   margin: 5px 0 5px 0;
   padding: 0 15px 0 15px;
@@ -7188,7 +7278,7 @@ button {
   width: 25px;
   min-width: 25px;
   border: 1px solid grey;
-  border-radius: 3px;
+  border-radius: 50%;
   cursor: pointer;
   margin: 0 0 0 20px;
 }
@@ -7197,6 +7287,7 @@ button {
   width: 100%;
   display: flex;
   border: 6px solid white;
+  border-radius: 50%;
   background-color: white;
   cursor: pointer;
   box-shadow: inset 0 0 0px 1px grey;
@@ -7397,6 +7488,17 @@ button {
   font-size: 1em;
   margin: 10px 10px 0 0;
   cursor: pointer;
+  transition: 0.3s;
+}
+.products > .products-filter > .products-content > .search-tags > .tag:hover {
+  border: 2px solid white;
+  color: white;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 1em;
+  background: #00c0ff;
+  background: linear-gradient(to bottom, #00c0ff 0%, #007fc5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00c0ff", endColorstr="#007fc5",GradientType=0 );
+  transform: scale(1.1);
 }
 .products > .products-filter > .products-content > .search-tags > .active {
   border: none;
@@ -7499,7 +7601,7 @@ button {
   width: 25px;
   min-width: 25px;
   border: 1px solid grey;
-  border-radius: 3px;
+  border-radius: 50%;
   cursor: pointer;
   margin: 0 0 0 20px;
 }
@@ -7508,6 +7610,7 @@ button {
   width: 100%;
   display: flex;
   border: 6px solid white;
+  border-radius: 50%;
   background-color: white;
   cursor: pointer;
   box-shadow: inset 0 0 0px 1px grey;
@@ -7534,6 +7637,7 @@ button {
   border-radius: 5px;
   z-index: 5;
   background-color: white;
+  overflow: hidden;
 }
 .products > .products-filter > .products-content > .search-cards > .card:hover {
   transform: scale(1.05);
@@ -7686,6 +7790,20 @@ button {
   margin: 5px 0 5px 0;
   transition: 0.3s;
 }
+.products > .products-filter > .products-content > .search-cards > .card > .info > .buttons > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 5px 0 5px 0;
+  transition: 0.3s;
+}
 .products > .products-filter > .products-content > .seach-pagination {
   display: flex;
   justify-content: center;
@@ -7770,7 +7888,6 @@ button {
 .products > .products-filter > .products-content > .search-accessories > .cards-list > .card > .image-contain > .sale {
   height: 50px;
   min-width: 50px;
-  background-color: rgba(100, 100, 100, 0.5);
   cursor: pointer;
   position: absolute;
   top: 0;
