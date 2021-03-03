@@ -580,31 +580,31 @@ get_header();
                     </div>
                     <div class="info d-flex">
                       <div class="">4×3×2,1</div>
-                      <div class="">10 200р.</div>
+                      <div class="">13 000р.</div>
                       <div class="">19 000р.</div>
                       <div class="">3 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">6×3×2,1</div>
-                      <div class="">11 700р.</div>
+                      <div class="">15 600р.</div>
                       <div class="">23 600р.</div>
                       <div class="">4 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">8×3×2,1</div>
-                      <div class="">13 200р.</div>
+                      <div class="">18 100р.</div>
                       <div class="">28 600р.</div>
                       <div class="">4 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">10×3×2,1</div>
-                      <div class="">14 700р.</div>
+                      <div class="">20 000р.</div>
                       <div class="">33 000р.</div>
                       <div class="">5 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">12×3×2,1</div>
-                      <div class="">18 700р.</div>
+                      <div class="">22 300р.</div>
                       <div class="">38 000р.</div>
                       <div class="">5 500р.</div>
                     </div>
@@ -694,32 +694,32 @@ get_header();
                     </div>
                     <div class="info d-flex">
                       <div class="">4×3×2,1</div>
-                      <div class="">13 200р.</div>
-                      <div class="">22 800р.</div>
+                      <div class="">18 000р.</div>
+                      <div class="">24 300р.</div>
                       <div class="">3 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">6×3×2,1</div>
-                      <div class="">14 700р.</div>
-                      <div class="">28 100р.</div>
+                      <div class="">20 500р.</div>
+                      <div class="">29 600р.</div>
                       <div class="">4 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">8×3×2,1</div>
-                      <div class="">17 200р.</div>
-                      <div class="">33 300р.</div>
+                      <div class="">23 000р.</div>
+                      <div class="">34 900р.</div>
                       <div class="">4 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">10×3×2,1</div>
-                      <div class="">19 200р.</div>
-                      <div class="">38 300р.</div>
+                      <div class="">25 500р.</div>
+                      <div class="">39 000р.</div>
                       <div class="">5 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">12×3×2,1</div>
-                      <div class="">21 200р.</div>
-                      <div class="">43 200р.</div>
+                      <div class="">28 500р.</div>
+                      <div class="">43 900р.</div>
                       <div class="">5 500р.</div>
                     </div>
 
@@ -807,32 +807,32 @@ get_header();
                     </div>
                     <div class="info d-flex">
                       <div class="">4×3×2,1</div>
-                      <div class="">14 700р.</div>
-                      <div class="">22 000р.</div>
+                      <div class="">19 000р.</div>
+                      <div class="">23 300р.</div>
                       <div class="">3 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">6×3×2,1</div>
-                      <div class="">17 000р.</div>
-                      <div class="">26 600р.</div>
+                      <div class="">21 500р.</div>
+                      <div class="">27 500р.</div>
                       <div class="">4 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">8×3×2,1</div>
-                      <div class="">19 200р.</div>
-                      <div class="">33 000р.</div>
+                      <div class="">24 000р.</div>
+                      <div class="">34 000р.</div>
                       <div class="">4 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">10×3×2,1</div>
-                      <div class="">21 500р.</div>
-                      <div class="">39 000р.</div>
+                      <div class="">26 500р.</div>
+                      <div class="">40 000р.</div>
                       <div class="">5 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">12×3×2,1</div>
-                      <div class="">24 500р.</div>
-                      <div class="">44 000р.</div>
+                      <div class="">29 900р.</div>
+                      <div class="">45 000р.</div>
                       <div class="">5 500р.</div>
                     </div>
 
@@ -923,32 +923,32 @@ get_header();
                     </div>
                     <div class="info d-flex">
                       <div class="">4×3×2,1</div>
-                      <div class="">16 100р.</div>
-                      <div class="">25 200р.</div>
+                      <div class="">20 700р.</div>
+                      <div class="">26 000р.</div>
                       <div class="">3 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">6×3×2,1</div>
-                      <div class="">19 200р.</div>
-                      <div class="">31 000р.</div>
+                      <div class="">22 500р.</div>
+                      <div class="">31 800р.</div>
                       <div class="">4 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">8×3×2,1</div>
-                      <div class="">21 200р.</div>
-                      <div class="">36 700р.</div>
+                      <div class="">25 000р.</div>
+                      <div class="">37 700р.</div>
                       <div class="">4 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">10×3×2,1</div>
-                      <div class="">23 700р.</div>
-                      <div class="">42 400р.</div>
+                      <div class="">27 500р.</div>
+                      <div class="">43 300р.</div>
                       <div class="">5 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">12×3×2,1</div>
-                      <div class="">25 700р.</div>
-                      <div class="">48 200р.</div>
+                      <div class="">30 000р.</div>
+                      <div class="">49 200р.</div>
                       <div class="">5 500р.</div>
                     </div>
 
@@ -1038,32 +1038,32 @@ get_header();
                     </div>
                     <div class="info d-flex">
                       <div class="">4×3×2,1</div>
-                      <div class="">16 300р.</div>
-                      <div class="">28 200р.</div>
+                      <div class="">19 900р.</div>
+                      <div class="">30 400р.</div>
                       <div class="">4 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">6×3×2,1</div>
-                      <div class="">19 200р.</div>
-                      <div class="">34 600р.</div>
+                      <div class="">22 200р.</div>
+                      <div class="">36 800р.</div>
                       <div class="">5 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">8×3×2,1</div>
-                      <div class="">21 900р.</div>
-                      <div class="">41 000р.</div>
+                      <div class="">24 900р.</div>
+                      <div class="">42 300р.</div>
                       <div class="">6 500р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">10×3×2,1</div>
-                      <div class="">24 600р.</div>
-                      <div class="">47 400р.</div>
+                      <div class="">27 500р.</div>
+                      <div class="">49 400р.</div>
                       <div class="">7 000р.</div>
                     </div>
                     <div class="info d-flex">
                       <div class="">12×3×2,1</div>
-                      <div class="">27 400р.</div>
-                      <div class="">52 800р.</div>
+                      <div class="">30 400р.</div>
+                      <div class="">53 900р.</div>
                       <div class="">7 500р.</div>
                     </div>
 
